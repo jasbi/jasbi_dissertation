@@ -1,0 +1,273 @@
+# Acquisition of Disjunction {#devoLit}
+
+<!-- 
+Ardery, Gail. 1979.  The development of coordinations in child language.
+       Journal of Verbal Learning & Verbal Behavior, 18, 745-756.
+
+Ardery, Gail.  1980.   On coordination in child language. Journal of Child
+Language, 7, 305-320.
+
+
+Some comments:
+1. With respect to logical concepts being innate. it is not clear that they cannot be quickly learned. Work by Marvin Minsky fifty years ago suggests that boolean connectives are not that hard to learn/represent using a simple neural network.
+
+2. comments on parameter setting and scope? maybe a comment on how it can be captured without innate assumptions?
+
+-->
+
+The rapid development of formal and logical semantics in the past 50 years, has brought renewed interest in children's interpretation and acquisition of connectives such as *or*. However, research on the development of linguistic connectives in children predates the advances in formal semantics and pragmatics in the 70s. In the late 1950s and early 1960s, many psychologists were conducting research on children's development of logical reasoning kicked off by @piaget1958growth. Even though this line of research started by investigating the interpretation of linguistic connectives such as *and* and *or*, the main interest was the development of logical concepts and later investigations focused on non-linguistic logical reasoning. In late 90s, a separate line of research inspired by advances in formal semantics/pragmatics and language acquisition started which focused on the development of linguistic connectives rather than their associated concepts.
+
+With respect to children's comprehension of *or*, these two research programs diverge both empirically and theoretically. Empirically, the early research on logical reasoning suggested that children first learn the exclusive interpretation of *or* ($\oplus$) and later they develop the inclusive (often called logical) interpretation. Furthermore, some children who struggle with the meaning of *or*, interpret this word like a conjunction. On the contrary, later research on semantic acquisition suggests that children learn the inclusive interpretation before the exclusive one. The existence of conjunctive interpretations was denied for a long time but it has resurfaced recently [@Singh2016]. Theoretically, the research on logical reasoning considered logical thinking as an abstract kind of thinking that is present only in late stages of development. The research in semantic acquisition considers logical concepts present early in development and some researchers even consider it innate.
+
+These two research programs also diverge in their assumptions with respect to the learning process. Similar to many other areas of developmental research, the present accounts of children's acquisition of disjunction fall either closer to the nature side or the nurture side of the nativist-empiricist debate. In fact, the interpretation of *or* has become a stronghold for nativist theories of language acquisition in the past decade [@crain2008logic]. The nature side has not been as unified and vocal but it is possible to see it represented by the early work on logical reasoning as well as a usage based approach advocated by @morris2008logically. 
+
+The nativist and usage-based positions differ on almost every major acquisition issue: the nature of the input data (poverty vs. richness), the cognitive mechanisms applied to the data (domain specific vs. domain general), and the nature of linguistic knowledge (abstract generative model vs. constructions and shallow generalizations). In the nativist account, linguistic knowledge is the result of the triggering effect of the poor and noisy input data on innate linguistic (hence domain specific) principles and parameters. The common metaphor is that of maturation, from an initial state of the language faculty to a final stage. In the usage-based approach, linguistic knowledge is the result of applying general purpose cognitive mechanisms and principles to the input linguistic data. The input data is rich and plays a major role in children's acquisition of language. Frequency in the input is an important component of the usage based theory's predictions on the acquisition pattern. More frequent constructions are predicted to be acquired earlier and faster. 
+
+The debate on children's acquisition of logical connectives mirrors this overarching nature-nurture debate. The nativist literature emphasizes the poverty of the stimulus and posits innate logical principles and parameters. The usage-based approach emphasizes the richness of the input and the predictive power of child direct speech on children's linguistic productions. In the next three subsections, I go over the existing literature on children's acquisition of logical connectives. I start with the research program on children's development of logical reasoning. Then I discuss the usage-based approach to the acquisition of logical connectives which can be considered as the true heir of the research on logical reasoning. In the third subsection I discuss the literature on semantic acquisition, specifically the logical nativist position that stands in sharp contrast to the first two.
+
+##The Development of Logical Reasoning
+
+###Theoretical Landscape
+
+Investigations on children and adults' comprehension of logical words such as *or* started in the 60s with the work of @nitta1966basic on Japanese and @neimark1970development on English, and continued until mid 80s. These studies focused mainly on children's conceptual development and more specifically, children's development of logical reasoning. The theoretical paradigm behind them was Piaget's theory of cognitive development. There were four main stages of development in Piaget's theory: sensorimotor stage (ages 0-2;0), pre-operational stage (ages 2-7 years), concrete operational stage (ages 7-11 years), and formal operational stage (11 years and above). The operational stages (concrete and formal) were considered the period where children develop logical thinking [@piaget1958growth]. The idea was that children start applying logical thinking or operations (rule-based thinking) around the age of 7. At first, they can only apply logical thinking to concrete objects (concrete operational stage) but later when they are about 11, they learn logical reasoning in an abstract and hypothetical fashion.
+
+To test the predictions of this hypothesis, the majority of research on children's understanding of logical connectives in this period focused on children and adolescents between the ages of 6 and 18. With respect to the acquisition of logical connectives, the main claim was that while *and* is understood better than *or* they both improve as children move from the concrete operational stage to the formal operational stage. However, the meaning of *or* is not understood until late in the period of formal operations [@neimark1970development]. Later research such as @johansson1975preschool and @braine1981development showed that the development of children's connective comprehension does not fully match the stages of the Piagetian theory. However, the idea that a full mastery of the "logical" (inclusive) meaning of *or* is acquired later survived and was inherited by the usage-based approach. The claim was that children's initial interpretation of *or* is simply a "choice" between two options (exclusive) and only later do they learn the inclusive meaning of *or*. In other words, these approaches predicted that the exclusive interpretation emerges before the inclusive interpretation in child language.
+
+##Empirical Landscape
+
+Studies in this period used a variety of tasks to assess children's understanding of logical connectives. Studies like @nitta1966basic and @neimark1970development were designed as in-class tests and students had to simply circle all the items that were described by some statement (akin to current picture selection task). @paris1973comprehension explicitly asked the participants to provide truth value judgments for statements containing *and* and *or*. In @suppes1969young, there were several wooden blocks with different attributes and the participants were asked to give the experimenter some of the blocks using the words *and* and *or* (akin to give-X tasks used with numerals and quantifiers; see @barner2009finding).
+
+Almost all of the studies in this period agree that children interpret *and* successfully. The main problem is posed by *or*. Table \@ref(tab:piagetable) summarizes the conclusions of 7 studies. A surprising finding in these studies is that some children interpret *or* as *and* in contexts where conjunctive readings are not to be expected. The results of the studies listed in Table \@ref(tab:piagetable) suggest that these conjunctive reading interacts with age and task. It is more common among younger groups and reduces until it is very rare among adults, but surprisingly, some adults still show these readings where they are not expected.
+
+The conjunctive reading is also detected at a higher rate in some tasks rather than others. For example, @paris1973comprehension and the third task of @braine1981development that used truth value judgments report a high level of conjunctive readings while other studies that rely on participants performing an appropriate action with respect to the statement report a very low levels of conjunctive readings. A more detailed look at tasks 1 and 3 in @braine1981development show the task dependency of conjunctive readings better. In the first task, @braine1981development used the same paradigm as @suppes1969young and found only a few conjunctive readings and a strict majority of exclusive (choice) readings. In their third task on the same participants, they used a truth value judgement task in which the participants had to say whether a puppet was right or wrong in its description of the contents of a box. There is a substantial increase in the number of conjunctive readings in this task to the point that the youngest group produced more conjunctive readings than inclusive readings and did not show any pattern for an exclusive reading. @suppes1969young also noticed that children's errors had two interesting patterns: they either went for a conjunctive reading, or they simply answered with respect to the first mentioned disjunct or conjunct and ignored the second one completely. This emphasizes the possibility of children's non-linguistic strategies which has not been systematically investigated in the case of logical connectives. It is possible that the conjunctive reading is the result of some non-linguistic strategies in cases where the child does not know the meaning of the connective or fails at processing the task properly.
+
+The nativist inquiry started by criticizing the research in the literature on logical reasoning for not choosing their stimuli such that *or* is embedded under the right contexts. Inspired by research in semantics and pragmatics, they argued that *or* is often accompanied by an exclusivity implicature. If we want to really understand children's semantic knowledge of *or*, we need to use it in contexts where the exclusivity implicature does not arise. Since the studies on logical reasoning did not control for the exclusivity implicature, they painted an inaccurate picture in which children interpret *or* as exclusive ($\oplus$). As we will see in the third subsection, most nativist research focuses on "implicature-canceling" contexts such as making predictions, or embedding the disjunction word under negation or the restriction of the universal quantifier. However, the claim that the literature on logical reasoning did not use *or* in such implicature-canceling environments is not completely accurate. For example, @johansson1977levels asked the participants to "circle all figures that are blue or square" or @braine1981development asked children to give them "all those things that are either blue or round". In these sentences, *or* is embedded in the restriction of the universal quantifier *all*. Both studies report that the inclusive reading is present only among a subset of adults. Younger participants interpret the disjunction word as exclusive. Similar nativist studies where *or* is in the restriction of the universal quantifier *every* or its counterpart in Mandarin report that children successfully interpret it as inclusive. However, the nativist studies differed in that they used the truth value judgement task.
+
+| Study | Age | $n$ | Language | Environment | Interpretation |
+|---------------|:-----:|:-----:|-----|:--------------------------:|:--------:|
+|@nitta1966basic | K, G2,4,6,8 | 679 | Japanese | Imperatives | $\land$, $\oplus$, $\lor$ |
+|@neimark1970development | 3-9G, C | | English | Imperatives | $\land$, $\oplus$, $\lor$ |
+|@suppes1969young | 4;5-6;7 | 64 | English | Imperatives | $\oplus$, $\land$ |
+|@paris1973comprehension | G2,5,8,11, C | 200 | English | Present Declarative | $\land$, $\oplus$, $\lor$|
+|@johansson1975preschool | 2;0-7;6 | 60 | English | Present Declarative | $\oplus$, (low $\land$)|
+| |  |  | | Imperative | $\oplus$, (low $\land$)|
+|@beilin1975study | |  | | | |
+|@ford1976language | | | English | | |
+|@johansson1977levels | 6-10, 12, 22 | 70 | English | Imperative | $\oplus$|
+| | | | | Imperative, *all* restrictor | $\oplus$, ($\lor$ 2 oldest groups)|
+@braine1981development | 5-10, C | 88 | English | Imperative | $\oplus$|
+ | | | | |Imperative, *all* restriction | $\oplus$, ($\lor$ for C)|
+ | | | | |Present Declarative | $\land$, $\lor$ ($\oplus$ for C)|
+Table: (\#tab:piagetable) Summary of studies on children's interpretation of the disjunction word in the literature on children's cognitive development. K is short for kindergarten, G for grade, and C for college.
+
+##The Usage Based Approach
+
+Usage-based researchers have not been active in children's acquisition of logical words. There is only one paper by @morris2008logically that investigates children's acquisition of *and* and *or* by conducting a corpus study. Here I summarize the assumptions, claims, and hypotheses of this paper and often more generally the usage based approach to the acquisition of meaning.
+
+###Theoertical Landscape
+
+The usage-based theory contends that "meaning is use" and "structure emerges from use" [@tomasello2009usage]. Therefore communication is viewed as raison d'etre of language and it is used as an explanatory factor either in the study of adult language or children's acquisition of it. Most importantly, linguistic structure is viewed as a phenomenon emergent from communicative principles and conventions, and domain general cognitive mechanisms recruited to achieve communicative goals. In stark contrast to the nativist theories, the usage-based theory of language acquisition emphasizes children's reliance on their linguistic input. They consider the language children hear around them, especially child directed speech, as the main source of their linguistic knowledge. Under the usage-based approach, children's input language is a rich source of linguistic information for domain general cognitive mechanisms to analyze and learn their structure. Therefore, children's early language closely matches what they hear around them.
+
+The usage-based approach contends that children's acquisition of language is item-based. Children acquire words and word uses (meanings) item by item and in an isolated fashion. Later they form generalizations over these isolated items and extract abstract information and use a word to convey a broader range of meanings [@lieven1997lexically; @akhtar1999acquiring].
+
+In the usage based theory, meaning is represented as a usage protocol. In usage-based acquisition of meaning children form representations for use based on input from their natural language environments, which may best be described as a conceptual prototype associated with a usage script [@levy1994words; @tomasello2003constructing].
+
+One hypothesis regarding the development of meaning in this framework is the confirmed core-meaning hypothesis:
+
+> "The initial meaning of a connective should be limited to a single, essential meaning [@macwhinney2002competition]. Through increased attention to the productions of others and more heterogeneous functional contexts, children acquire additional meanings (i.e., logical uses) and rules for appropriate use (i.e., pragmatics), and generalize items to more abstract grammatical structures. This confirmed core should (a) have a prototypical meaning, (b) have the least interference with other meanings, and (c) require the least amount of additional cognitive resources [@macwhinney1989competition]. A prototypical meaning likely covers the core function ascribed to a word. The likely prototypical meaning for *and* is conjunction (denoting the inclusion of two or more objects or phrases in a set) while choice (exclusive-or) is a likely candidate for *or*. These functions may help form the basis of word meanings and aid in their acquisition" [@morris2008logically].
+
+The assumption here is that lexical items have multiple meanings or uses, and logical connectives are not exempt. Both *and* and *or* are considered polysemous. They express a variety of uses (interpretations). *And* has a conjunctive use (e.g. that's a mommy and two dogs.), an explanatory use (e.g. you hit him and that is not OK), a temporal use (e.g. He broke the window and then stole the television.), and an extension use (e.g. And who should this be?). *Or* has an exclusive (choice) use (e.g. You can go the table or to the free play area), an inclusive use (e.g. you can have apples or bananas), and a conditional use (e.g. stop hitting him or you will have to have a time out?)
+
+The developmental predictions of the usage-based approach is that *and* starts from the core meaning of conjunction and later is associated with other uses such as the temporal interpretation and the causal interpretation. *or* starts with the core "exclusive" use but expands into the other uses such as "inclusive" and "conditional" (Exclusive-First Hypothesis). Children start with the exclusive meaning since it is more frequent in the input data and furthermore, it has less interference with the meaning of conjunction.
+
+###Empirical Landscape
+
+In order to support the hypotheses mentioned in the previous section, @morris2008logically investigated the use of *and* and *or* in child-directed speech and children's production between the ages of 2;0 and 5;0, using 240 transcriptions of audiotaped exchanges obtained in the CHILDES database. Each connective was analyzed with respect to its frequency, syntactic frame, meaning, and formal/informal use. With respect to frequency, the study found that overall, *and* is approximately 12.8 times more likely to be produced than *or*. There were a total of 6,459 connective uses: *and* was produced 5,994 times whereas *or* was produced 465 times. 
+
+Considering syntactic frames, instances of the connective use were coded as appearing in *statements* or *questions*. The study reports that *and* appears predominantly in statements (more than \%90 of the time) while *or* is extremely common in questions (more than \%85 of the time). For the meanings and uses of *and* and *or*, the study reports that for both adults and children, the dominant meaning of *and* and *or* were "conjunction" and "exclusive disjunction" respectively. This is taken to confirm the confirmed core-meaning hypothesis. There was also a significant increase in the mean number of different uses for AND and OR. *And* started with only the core conjunctive meaning at 2;0-2;6 and around the ages 3;0 and 4;0, children increased that to two different uses on average. Only at 4;6-5 children were producing three different uses of *and*. The production of *or* starts at around 3;0-3;6 with the "exclusive" meaning and expands to 1.5 uses on average by 4;6-5;0.
+
+However, the account above faces an important issue. The conjunctive *and* and temporal/explanation *and*s do not have the same syntactic status. The former often conjoins noun phrases while that latter two only conjoin sentences. We can have conjoined nouns phrases in utterances with 3 or 4 words while conjoined sentences require utterances longer than 4 words. How can a two-year-old with an average MLU of 1.5-2.5 words produce the temporal or explanation *and* which require conjoined sentences? It is possible that the increase in the number of word usage can be explained by syntactic development rather than semantic development. The absence of the non-conjunctive uses of *and* in the corpus data may only be a phenomenon in production and not comprehension. Even if children understand the meaning of temporal *and*, if they cannot yet produce conjoined sentences, we are not going to observe such uses in the corpus data. This question cannot be resolved by the corpus evidence alone.
+
+Utterances were also coded as informal or formal. Formal uses of connectives were those with explicit truth-value judgments. For example, "Does the dog have a tennis ball and a hockey puck?" to which the child answered with "No" was coded as formal. However, "I'd like peanut butter and jelly" was considered informal. The study found that there are rare cases of formal use in child and child-directed speech. This is interpreted as evidence for the developmental claim that the connectives' logical meanings are acquired later in development and not part of the core meaning. However, the definition of formal vs informal use which is translated into logical versus non-logical meaning in Morris's analysis seems to differ substantially from that of logical nativism and more generally formal semantics.
+
+##Logical Nativism
+
+###The Theoretical Landscape
+Logical nativism supposes that humans are biologically endowed with the tools for logical reasoning. The meanings of logical expressions in natural languages are captured by the semantics of logical operators in classical logic. The semantics of these logical operators along with some logical principles and parameters are hypothesized to be innate. The logical nativist position is extensively argued for in @crain2008interpretation; @crain2012emergence; @crain2008logic; @crain2010logic. Here I summarize the main claims, assumptions, and hypotheses very briefly. I start with the nativist assumption on language processing in general.
+
+According to the Modularity Matching Model, the human language faculty is modular and operations within the language faculty are hierarchically organized (syntax $\rightarrow$ semantics $\rightarrow$ pragmatics). Operations of the higher level components apply to the output of lower level components. The syntax module may propose several analyses of a string of which only some satisfy the input requirements of the semantics module and create a well-formed logical form. The semantics module may propose more than one logical form for a sentences while only one is deemed felicitous by the pragmatics module. [@crain1998investigations; @crain1999methodology]
+
+The famous aphorism of the modularity matching hypothesis is that "syntax proposes and semantics disposes"; in turn semantics proposes and pragmatics disposes. Let's consider the nativist claim on the meaning of logical words such as *and* and *or* across languages. The claim is that the native speaker knowledge of the meanings of logical expressions in natural languages is captured by the semantics of logical operators in classical logic. For example, the meaning of *or* and similar logical words across languages correspond to $\lor$ (inclusive) and not $\oplus$ (exclusive). Let's call this the "logical meaning". 
+
+The above claim is one that logical nativists share, more or less, with many formal semanticists. Discrepancies between the meanings of logical words in natural languages and the logical operators are often attributed to either pragmatic enrichment or crosslinguistic differences in scope assignment. However, a formal semanticist may argue for the logical meaning claim while remaining agnostic with respect to how logical representations relate to psychological representations. This is not so for logical nativists. Implicit in the arguments of logical nativism is the assumption that the formal (logical) descriptions used in modeling linguistic meaning also have psychological reality. 
+
+In fact, the logical nativist position is even stronger. The main claim is that "the human genome contains a set of innate logical structures" [@crain2012emergence, p. 76]. This set of logical structures includes at least the semantics of logical operators in classical logic, downward entailment, and two scope parameters. I will investigate the elements of this set in more detail here. 
+
+First it is hypothesized that the meanings of logical operators such as $\lnot, \land, \lor, \exists, \forall$ are part of the biological endowment of human beings. Let's call this hypothesis the "Innateness of Logical Meaning". This hypothesis strictly limits the hypothesis space for the meaning of logical words to only those provided by classical logic. The meaning of *or* is a good example here. While the meaning of $\lor$ is innate, the meaning of $\oplus$ is not. The innateness of logical meaning predicts that children do not assign the meaning of $\oplus$ to *or* and similar disjunctive expressions in other language at any stage in their development because the meaning of $\oplus$ is simply not provided to them by the Universal Grammar. This is also offered as an explanation for the claim that languages do not lexicalize the meaning of $\oplus$. In other words, if $\oplus$ is never available to humans for form-meaning mapping, it will never appear in world languages as the meaning of a lexical item. 
+
+At this point, a fair objection to the nativist position is the limitation of classical logic in capturing the meaning of L-expressions such as *most*, *many*, and *few*. There are no operators in classical logic that correspond to the meaning of these expressions and under the current formulation of the nativist position, we expect children to never learn them. This is clearly a false prediction. However, logical nativism can avoid this criticism by assuming that the human logical faculty is not completely modeled by classical logic and several operators provided by UG fall outside its scope. The nativist can argue that classical logic is a good approximation to the human logical faculty in many cases such as the meaning of *every*, *some*, *and*, and *or*.
+
+Another prediction of the innateness of logical meaning hypothesis is that children acquire the meaning of *and* and *or* almost simultaneously. This prediction has not been explicitly acknowledged in the nativist literature but it is an inevitable prediction of the nativist account. The main reason is that the syntactic distribution of connectives make it clear that *and* and *or* should correspond to either $\land$ or $\lor$. Universal Grammar does not allow other possible connectives such as $\oplus$ to be considered. Once the child has figured out that *and* corresponds to $\land$, then the meaning of *or* comes for free since there are no other options provided by UG. This is on difference between the nativist approach and approaches that rely on domain general learning mechanisms.
+
+Moving on to the next hypothesis, @crain2012emergence suggests that the property of downward entailment is also innate. More specifically, he argues that the child is innately instructed that downward entailing environments license Negative Polarity Items (NPIs) and and generate a conjunctive reading of *or*. Below, $\Delta$ stands for a downward entailing operator such as negation, the restrictor of *every*, the meaning of *before*, or the antecedent of a conditional [@crain2008interpretation, @crain2012emergence].
+
+> Innateness of Downward Entailment: Downward entailment and the behavior of logical operators in such environments are innate. Example; The conjunctive entailment of disjunction: $\Delta (A \lor B) \Leftrightarrow \Delta (A) \land \Delta (B)$.
+
+It is not clear why the property of downward entailment needs to be innate. One way to explain this is that downward entailment is a grammatical feature that is not learnable and needs to be part of UG. However, on purely semantic grounds, children's awareness of subset-superset relations along with the innateness of logical meaning may predict the DE behavior of operators or NPIs, without the need to resort to the innateness of downward entailment. 
+
+Logical nativism also claims that languages vary with respect to their scope taking properties of disjunction and conjunction with negation. Languages like English require disjunction and conjunction to scope under negation while those like Mandarin require disjunction and conjunction to scope above negation. Two scope parameters are proposed to explain this scope variation. One guides the scope of negation and conjunction and the other commands the scope relation of negation and disjunction: 1. [$\lnot > \lor$] vs. [$\lor > \lnot$] 2. [$\land > \lnot$] vs. [$\lnot > \land$]. 
+
+I have written the default value of each parameter on the left. The default value for disjunction is [$\lnot > \lor$] and for conjunction [$\land > \lnot$]. Children speaking any language in the world are expected to start with these default values and if the input data is consistent with the non-default value, then there will be a switch in the parameter setting. As a result, the pattern of children's early scope errors in different languages is attributed to the default settings of the scope parameters that happen to not match the target language, but are perfectly acceptable in many other languages of the world. According to nativists, these patterns of errors conform to the continuity hypothesis, namely that children's non-adult like linguistic behavior will consist of constructions that are attested in other human languages [@crain1991language].
+
+Let me point out a problem with the parametric scope claim and the innate scope claim here. The nativist literature is not clear on whether one scope relation is more salient than the other in such languages or that only one scope relation is available. Given the modularity matching model, the claim seems to be that given the syntactic parameters of the language, only one logical form is available for *and* and *or* under negation. However, such an account will face empirical issues. In the following English example, the salient reading of *or* is one where it scopes above negation (contrary to the generalization in innateness of scope) :
+
+(15)
+
+A: Did you know that Mike Huckabee has been running for every presidential election since 2000? 
+
+B: No, he missed one. He didn't run in 2008 or 2012. I'm not sure which.
+
+Below is a naturally-occurring example of Mandarin where disjunction scopes under negation, again contrary to the generalization presented in the nativist literature for Mandarin.
+
+
+(16) 
+
+liang	xueya			qian,	bu		yao	chi	zaocan		huo	fu	yao
+
+measure	blood-pressure	before,	NEG	will 	eat	breakfast 	or	take	medicine
+
+"Before measuring blood pressure, do not eat breakfast or take medicine."
+
+And finally in this example from Persian, both scope relations are available and are disambiguated by the context. 
+
+(17)  
+
+Ali ya Reza ro davat na-kon
+
+Ali or Reza OM invite NEG-do
+
+1. "Don't invite Ali and don't invite Reza" 
+
+2. "Either don't invite Ali or don't invite Reza"
+
+It is not clear what the disjunction scope parameter setting should be for the Persian speaker. One way to remedy this is to add a third value to the parameters that makes both scope relations possible. Therefore, the correct setting for English, Mandarin, and Persian would be this third value. However, adding a third value to each parameter has consequences for the the nativist theory including on how to choose the default parameter. Currently, the choice of the default parameter is based on the semantic subset principle. Given a sentence with more than one interpretation such that the interpretations form a subset-superset relationship, learners are innately guided to initially choose the representation that is true in the smallest set of circumstances. [@crain1994learning]
+
+The hypothesis above is a semantic version of the more general "subset principle" for language learning [@berwick1985acquisition, @wexler1987parameters]. The subset principle suggests that "the learner must guess the smallest possible language compatible with the input at each stage of the learning procedure" [@clark1993computational]. The subset principle aids the learner in situations where no negative evidence is present. However, the claim that children's input does not contain negative evidence has been a major source of contention in children's acquisition of syntax (see @marcus1993negative, chouinard2003adult) and it is even more dubious whether it can extend to semantic acquisition. The main reason is that even those arguing for this claim acknowledge that adults do correct children on the content and semantics of their utterances. Therefore, the claim that there is no negative evidence with respect to the meaning of logical words and subsequently the semantic subset hypothesis need much more empirical support. Logical nativism also argues that children do not have sufficient evidence from experience to learn the meaning of logical expressions by observing how adult speakers use them. For example, *or* is rare in children's input data and it is more consistent with an exclusive meaning in its most frequent use.
+
+Finally, the hypothesis that logical meaning is innate along with the claim that young children fail at adult-like computation of scalar implicatures leads to the formulation of the logical stage hypothesis. According to this hypothesis, children's acquisition of meaning for certain logical operators follow two stages. First, the logical stage in which they assign the basic logical meaning to the logical words and do not compute standard implicatures associated with them. Second, the pragmatic (adult-like) stage in which the basic semantics of these words is enriched with pragmatic implicatures.
+
+The logical stage hypothesis along with the innateness of logical meaning hypothesis result in the prediction that children's initial interpretation of *or* should be inclusive and that only later when they reach the pragmatic stage they are capable of deriving the exclusive reading (Inclusive-First hypothesis). The prediction above is the opposite of the exclusive-first prediction made by the usage-based account of language acquisition.
+
+### The Empirical Landscape
+
+Nativists have mostly investigated children's interpretation of disjunction words using experimental studies. Table \@ref(tab:nativtable) summarizes the nativist studies on the acquisition of disjunction words. There is not enough space to go over all the studies in detail here but I will discuss some overall themes and issues in the literature listed.
+
+The nativist experimental investigations into children's interpretation of *or* started with @chierchia1998some. This paper criticizes the semantic and pragmatic assumptions of the research on children's logical reasoning. The main argument is that in order to truly understand children's interpretation of logical expressions such as *some* and *or*, we need to test them in contexts where they are not accompanied by exclusivity implicatures. This reasoning is adopted by the majority of nativist studies since then and as a result, in most of these studies the disjunction word is embedded under some implicature-cancelling operator. Unfortunately, most of these studies have not tested for children's understanding of these operators separately and it is hard to know how much children's non-adult-like responses are due to their non-adult-like comprehension of the operators rather than the disjunction words. 
+
+@chierchia1998some argued that scalar implicatures are not generated when the speaker has uncertainty with respect to the outcome. So they tested children in two conditions: one in which the sentence with *or* was with a past tense verb and as a description, and another where the sentence had the modal *will* and was a prediction. They reported that when both disjuncts were true, children rejected the test sentence as a description but accepted it as a prediction. The conclusion was that contrary to the reports in the literature on children's logical reasoning, children understand *or* as $\lor$ and not $\oplus$. The culprit behind the previous findings was the exclusivity implicature that the experiments did not control for. Since @chierchia1998some did not report the children's age range, it is hard to compare the results with the current investigations of scalar implicatures. @chierchia1998some and subsequent studies up until @su2014acquisition, rejected @paris1973comprehension's suggestion that some children interpret *or* as a conjunction. However, recent studies of @singh2015children and @tieu2016 have detected conjunctive readings again.
+
+Since almost all nativist experiments use the Truth Value Judgement Task (TVJT) of @crain1998investigations, let me briefly describe how TVJT works. It involves a storyteller, a story, and a puppet. One experimenter is in charge of narrating the story and the other experimenter is in charge of the puppet. The story creates the context for the evaluation of the target sentence and then the puppet utters the target sentence either as a description of what happened in the story (Description Mode), or as a prediction of what will happen next (Prediction Mode). In Prediction Mode, the story continues so that the child can see whether the prediction of the puppet was realized or not. Then the puppet repeats the prediction and either the puppet itself or the storyteller asks the child whether the puppet was right. Children can provide their judgments either by saying "Yes" or "No" (or other equivalent utterances) or sometimes by rewarding the puppet if it was right. When children say that the puppet is wrong, they are asked to explain why.
+
+An advantage of TVJT is that it allows for an explicit truth value judgement from children rather than relying on implicit measures or behaviors. However, as @crain1998investigations acknowledge, children tend to accept utterances when they are confused as well. As a result, their rejections and explanations about their rejections are much more informative than their acceptances of the target sentence. This methodological issue with TVJT may have been neglected in a lot of later investigations of disjunction words where children's acceptance of *or* when both disjuncts are true is argued as a sign of the inclusive meaning for *or*. It may be the case that children accept such cases due to the uncertainty they have with respect to the judgment.
+
+<!-- discuss pragmatic development in more detail -->
+
+Recent TVJT studies have reported a conjunctive interpretation of *or* in contexts where *or* commonly does not have a conjunctive reading [@tieu2016, @singh2015children]. @singh2015children suggest that children who interpret *or* as a conjunction, differ from adults in the pragmatic operations they perform. Children perform an adult-like strengthening of meaning on non-adult-like set of alternatives which results in an $\land$ interpretation of $\lor$. In other words, children know that *or* has the meaning of $\lor$ but they do some non-adult-like pragmatic reasoning to interpret it as a conjunction. The main reason to reject an explanation based on incorrect or incomplete semantics is the previous nativist investigations of children's comprehension of *or* which conclude that children know *or* as $\lor$. However, as I have argued above, the previous studies have several methodological issues and cannot be simply taken for granted. 
+
+Finally, I would like to add that the nativist investigations do not address the main nativist hypothesis that logical meaning is innate. The age column of Table \@ref(tab:nativtable) shows that most nativist studies have been conducted on children who are older than 4;0 or 4;6. It is hard to argue that some type of knowledge that exists at this age range is in fact innate. I assume that the nativist focus on older children is simply due to the demands of TVJT and that younger children would not be able to follow it properly. However, it is crucial for testing the nativist hypothesis that children at much younger age ranges are tested. This requires the development of simpler tasks than TVJT.
+
+|Study | Age | $n$ | Languages | Environment | Interpretation|
+|-------------------|:---:|:-:|:------:|---------------------|:--------:|
+|@chierchia1998some | Not Reported | 23 + 10 | English + Italian | Past Declarative | $\oplus$|
+| | |  |  | Future (*will*) | $\lor$|
+|@gualmini2000inclusion | 4;1-6;1 (M=4;11) | 16 | English | *can* | $\lor$|
+|@gualmini2000 | 3;2-5;9 (M=4;8) | 14 | English | *if* (antecedent) | $\lor$|
+|@crain2000acquisition | 3;5-6;1 (M=4;1) | 13 | English | *will not* | $\lor$|
+|@chierchia2001acquisition | 3;7-6;3 (M=4;11) | 15 | English | *every* restriction | $\lor$|
+| | 3;5-6;2 (M=5;2) | 15 | English | *every* nuclear scope | $\oplus$|
+|@gualminicrain2002 | 3;10-5;10 (M=4;7) | 30 | English | *none* nuclear scope | $\lor$|
+|@chierchia2004semantic | 5;1-6;0 (M=5;5) | 9 | Italian | Future Tense | $\lor$|
+|@goro2004acquisition | 3;7-6;3 (M=5;3) | 30 | Japanese | Negation (*nakat) | $\lor$|
+|@notley2012children | 3;4-5;1 (M=4;4) | 24 | English | *before* | $\lor$|
+| | 4;6-5;4 (M=4;7) | 20 | Mandarin | *before* | $\lor$|
+|@notley2012notevery | 4;2-5;2 (M=4;8) | 17 | English | *not every* restriction | $\lor$|
+| | |  |  | *not every* nuclear scope | ?|
+|@su2013disjunction | 3;11-5;11 (M=4;10) | 31 | Mandarin | *mei* (every restriction) | $\lor$|
+| | | | | *mei* (every nuclear scope) | $\oplus$|
+|(DO construction) | 4;1-5;8 (M=4;11) | 34 | Mandarin | *mei* (every restriction) | $\lor$|
+|	| | | | *mei* (every nuclear scope) | $\oplus$|
+|@su2014acquisition | 2;6-5;0 (M=3;9) | 32 | Mandarin | *ruguo* (if antecedent) | $\lor$|
+| | | | | *ruguo* (if consequent) | $\lor$|
+| | 3;11-5;11, (M=4;11) | 23 | Mandarin | *ruguo* (if consequent) | $\lor$|
+| | | | | *ruguo* (if consequent) | $\lor$|
+|@singh2015children | 3;9-6;4 (M=4;11) | 31 (+25 excluded) | English | Present Declarative | $\land$, $\lor$, $\oplus$|
+| | | | | *every* nuclear scope |
+|@tieu2015children | 3;7-6;6 (M=4;5) | 28 | French | Past Declarative | $\land$, $\lor$, $\oplus$|
+| | 4;7-6;6 (M=5;5) | 18 | Japanese | Past Declarative |
+Table: (#tab:nativtable) The summary of nativist studies on disjunction words.
+
+<!--
+##Discussion
+-->
+<!--
+In the past decade or two, there has been a surge of research on children's interpretation logical words. This recent surge is in fact a second wave of interest in these expressions. The first wave started in the 60s and ended in mid 80s. Back then, psychologists were continuing the investigations on children's development of logical reasoning kicked off by @piaget1958growth. The second wave which started in late 90s, however, was mostly motivated by formal semantic and pragmatic theories. By 2010, this line of inquiry had taken a strong nativist position. With respect to children's comprehension of the logical connectives *and* and *or*, these two eras of research diverge both empirically and theoretically. 
+
+The first wave contends that children first learn the exclusive meaning of *or* ($\oplus$) -or "choice" as they call it- because it is a simpler concept, and only late in their development do they become aware of the inclusive reading. Furthermore, some children who struggle with the meaning of *or*, interpret this word as a conjunction. The second wave denied the existence of such conjunctive readings for a long time and attributed them to the methods used in the first wave until these conjunctive readings surfaced again in some recent studies. Furthermore, the second wave contends that children are more "logical" early in their development, in the sense that they interpret *or* as inclusive and the reason is that such logical meanings are innate in humans. Only later and during the period where children master pragmatic reasoning do they learn to generate the exclusivity inference for *or*. Both periods of investigations on *and* concluded that children have no difficulty understanding it.
+
+The goal of this dissertation is to conduct corpus and experimental research on areas that are left uncovered in previous work. These topics include children's comprehension of logical connectives between the ages of 2;0 and 4;0, the richness/poverty of the input, the role of non-linguistic strategies [@clark1973non, and the role of prosody in children's acquisition and comprehension of the logical connectives. 
+
+There are two main sections in this paper. The first section provides a review of the previous work on children's acquisition of logical connectives and aims at clarifying and highlighting the assumptions, hypotheses, claims, and predictions of the current theories. The second section presents some proposals for corpus and experimental research on children's acquisiton of logical connectives during the course of this dissertation. 
+
+Grice [-@grice1975logicconvo] argued against this ambiguity account. He maintained that the core meaning of *or* is inclusive disjunction. The exclusive interpretation of it is derived from the inclusive meaning via pragmatic reasoning. For example, "*There is a cat or a dog in the picture*" implies that not both animals are in the picture. This is called the *exclusivity implicature*. Grice argued that this implicature is derived via reasoning on what the speaker of the sentence could have said. If the speaker meant to communicate that both animals are in the picture, s/he could have used the connective *and*. He chose *or* instead, so he did not mean to communicate that both animals are in the picture. In the Gricean account, the exclusivity implicature is not part of *or*'s meaning, but rather the result of our reasoning on why the speaker chose *or* instead of *and*. 
+
+The advent of Gricean pragmatics changed the landscape of research on children's development of *and* and *or* interpretations. The focus shifted to the differences between adults and children in semantic vs. pragmatic aspects of interpretation. In a series of influential studies, Stephen Crain and his colleagues argued that unlike adults who have an implicature-rich exclusive interpretation of *or*, children as young as three years old, interpret the meaning of *or* in its logical and inclusive sense. [@chierchia2001acquisition; @crain2008interpretation; @crain2012emergence; @notley2012children] They argued that children develop the semantics of *or* before its pragmatics: they interpret *or* as inclusive disjunction but fail to enrich it with the exclusivity implicature the way adults do. Therefore, the main difference between children and adults is that children interpret *or* as inclusive, but adults interpret it as exclusive.
+
+## Conjunctive Interpretations of Disjunction
+
+Two recent investgiations of disjunction found systematic conjunctive interpretations of disjunction. First, then [@tieu2016].  
+
+While conjunctive interpretations of disjunction are surprising, they are in no way new. Such interpretations were present in the earliest investigations of conjunction and disjunction. 
+
+Suppes and Feldman [-@suppes1969young] were the first to rigorously investigate preshcool children's  comprehension of logical connectives in an experimental situation.  
+
+Methods: set up a "Give me X task" 
+
+For our purposes here, we focus on four crucial test sentences in their experiment: 
+
+| Example command | $X AND Y$ | $X \lor Y$ | $X$ | $Y$ | Other |
+|--|--|--|--|--|--|
+"Give me all the things that are black and square." | 42 | 13 | 22 | 11 | 12 |
+"Give me the things that are green or square." | 47 | 3 | 25 | 6 | 19 |
+"Give me the red things and the square things." | 11 | 33 | 33 | 0 | 23 |
+"Give me the green things, or, the round things." | 9 | 6 | 45 | 23 | 17 |
+
+| Example command | X AND Y | X IOR Y | X XOR Y | Other |
+|--|--|--|--|--|--|
+"Give me all the things that are black and square." | 42\% | 13 | 33 | 12 |
+"Give me the things that are green or square." | 47 | 3 | 31 | 19 |
+"Give me the red things and the square things." | 11 | 33 | 33 | 23 |
+"Give me the green things, or, the round things." | 9 | 6 | 68 | 17 |
+
+They report the use of exaggerated stress. For example, green or square was pronoucned as a unit. It can be inferred from the paper, especially the use of commas, that command 4 had individual intonation contours on each disjunct.
+
+
+```{r}
+# "Example command", "X AND Y", "X OR Y", "X", "Y", "Other"
+# 5, "Give me all the things that are black and square.", 42, 13, 22, 11, 12
+# 11, "Give me the things that are green or square.", 47, 3, 25, 6, 19
+# 2, "Give me the red things and the square things.", 11, 33, 33, 0, 23
+# 6, "Give me the green things, or, the round things.", 9, 6, 45, 23, 17
+```
+
+
+# Disjunction Puzzles
+
+The acquisition of disjunction poses three puzzles: 
+
+1. **Non-adult-like Comprehension**: comprehension studies suggest that in simple declarative sentences, children interpret a disjunction either as inclusive disjunciton or a conjunction. Adults on the other hand interpret a disjunction as exclusive. 
+
+2. **Comprehension vs. Production**: The discrepency between the comprehension and production of *or*. Comprehension studies show that children understand the semantic of *or* at the earliest age that we test them, often 3 and 4 years. However, production studies suggest that children do not reach the adult rate of production until the age 6. What stops children from producing *or*s? 
+
+3. **Poverty of the Stimulus** studies on child-directed speech show that the vast majority of *or* examples children hear receive an exclusive interpretation. 
+
+-->

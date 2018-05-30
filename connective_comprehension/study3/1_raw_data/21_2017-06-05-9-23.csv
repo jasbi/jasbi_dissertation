@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.X,DOG,dog,2017-06-05-9-23,1946,yes,J,Y,0,Y
+2,X.Z,DOG,cat,2017-06-05-9-23,1946,dog!,D,0,0,N
+3,XY.X,CAT-DOG,dog,2017-06-05-9-23,1946,AND a cat,C,0,I,Y
+4,X.XorY,DOG,cat or dog,2017-06-05-9-23,1946,a dog,D,0,0,Y
+5,XY.Z,CAT-ELE,dog,2017-06-05-9-23,1946,cat and elephant Jazzy!,D,0,0,N
+6,X.XandY,ELE,cat and elephant,2017-06-05-9-23,1946,Just an elephant!,C,0,E,N
+7,XY.XorY,CAT-DOG,cat or dog,2017-06-05-9-23,1946,Both!,C,0,I,Y
+8,X.XandY,CAT,cat and elephant,2017-06-05-9-23,1946,Just a cat!,C,0,E,N
+9,XY.Z,DOG-ELE,cat,2017-06-05-9-23,1946,a dog and a cat É a dog and an elephant,D,N,0,N
+10,X.XorY,DOG,dog or elephant,2017-06-05-9-23,1946,A doggie,D,0,0,Y
+11,XY.X,DOG-ELE,dog,2017-06-05-9-23,1946,and an elephant,C,0,I,N
+12,XY.XandY,CAT-ELE,cat and elephant,2017-06-05-9-23,1946,yes he was right,J,Y,0,Y
+13,X.X,ELE,elephant,2017-06-05-9-23,1946,yes,J,Y,0,Y
+14,XY.XandY,DOG-ELE,dog and elephant,2017-06-05-9-23,1946,Yes,J,Y,0,Y
+15,X.Z,ELE,cat,2017-06-05-9-23,1946,elephant. You were wrong Jazzy!,D,N,0,N
+16,XY.XorY,CAT-ELE,cat or elephant,2017-06-05-9-23,1946,both! Was wrong!,C,N,I,N

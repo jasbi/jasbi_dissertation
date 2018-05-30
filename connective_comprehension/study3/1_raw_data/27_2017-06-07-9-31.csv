@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,ELE,dog,2017-06-07-9-31,1778,no!,J,N,0,N
+2,X.X,CAT,cat,2017-06-07-9-31,1778,you were right Jazzy,J,Y,0,Y
+3,X.XorY,ELE,cat or elephant,2017-06-07-9-31,1778,elephant Jazzy,D,0,0,Y
+4,XY.XorY,CAT-DOG,cat or dog,2017-06-07-9-31,1778,Jazzy you are right. Cat and a dog,D,Y,0,Y
+5,XY.X,CAT-DOG,dog,2017-06-07-9-31,1778,no. you have the same É [was Jazzy right?] No! You have a dog and a cat.,D,N,0,N
+6,X.XandY,DOG,cat and dog,2017-06-07-9-31,1778,you are right. Just a dog,C,Y,E,Y
+7,X.XorY,DOG,cat or dog,2017-06-07-9-31,1778,another just a dog,C,0,E,Y
+8,XY.XandY,CAT-ELE,cat and elephant,2017-06-07-9-31,1778,did you see it?! [throws the cart] he can't see it. [was he right?] yeah.,0,0,0,Y
+9,X.Z,CAT,elephant,2017-06-07-9-31,1778,nope. It's a cat,D,N,0,Y
+10,XY.X,CAT-ELE,elephant,2017-06-07-9-31,1778,[pig noise],0,0,0,Y
+11,X.X,ELE,elephant,2017-06-07-9-31,1778,ah you saw it! É ,0,0,0,Y
+12,XY.XandY,DOG-ELE,dog and elephant,2017-06-07-9-31,1778,why did you guess that because I showed you? É I showed him and it was right,0,0,0,Y
+13,XY.Z,DOG-ELE,cat,2017-06-07-9-31,1778,there is a dog and an elephant,D,0,0,N
+14,X.XandY,DOG,dog and elephant,2017-06-07-9-31,1778,no. Jazzy it was a dog,D,N,0,Y
+15,XY.Z,CAT-ELE,dog,2017-06-07-9-31,1778,nope.,J,N,0,N
+16,XY.XorY,DOG-ELE,dog or elephant,2017-06-07-9-31,1778,dog and elephant,D,0,0,Y

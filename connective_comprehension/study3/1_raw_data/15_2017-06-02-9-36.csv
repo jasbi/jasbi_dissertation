@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,CAT,dog,2017-06-02-9-36,1797,No! A cat!,D,N,0,N
+2,X.X,CAT,cat,2017-06-02-9-36,1797,Yes!,J,Y,0,Y
+3,XY.XandY,CAT-ELE,cat and elephant,2017-06-02-9-36,1797,Yes!,J,Y,0,Y
+4,X.XandY,ELE,cat and elephant,2017-06-02-9-36,1797,Yes! É he said cat first and then elephant. [repeat] No!,J,N,0,N
+5,XY.XandY,CAT-DOG,cat and dog,2017-06-02-9-36,1797,Yes!,J,Y,0,Y
+6,XY.XorY,CAT-ELE,cat or elephant,2017-06-02-9-36,1797,Yes!,J,Y,0,Y
+7,X.Z,CAT,elephant,2017-06-02-9-36,1797,Nope!,J,N,0,N
+8,X.XandY,CAT,cat and dog,2017-06-02-9-36,1797,Just a cat!,C,0,E,N
+9,X.XorY,CAT,cat or dog,2017-06-02-9-36,1797,Nope!,J,N,0,N
+10,XY.X,CAT-DOG,dog,2017-06-02-9-36,1797,Nope! Cat and a dog!,D,N,0,N
+11,X.X,DOG,dog,2017-06-02-9-36,1797,Yes!,J,Y,0,Y
+12,XY.Z,CAT-ELE,dog,2017-06-02-9-36,1797,Nope! Cat and an elephant!,D,N,0,N
+13,XY.X,DOG-ELE,dog,2017-06-02-9-36,1797,Nope! There's a dog and an elephant!,D,N,0,NA
+14,XY.Z,DOG-ELE,cat,2017-06-02-9-36,1797,Nope! A dog and an elephant!,D,N,0,N
+15,X.XorY,ELE,dog or elephant,2017-06-02-9-36,1797,No there's just an elephant!,C,N,E,N
+16,XY.XorY,DOG-ELE,dog or elephant,2017-06-02-9-36,1797,Yes!,J,Y,0,Y

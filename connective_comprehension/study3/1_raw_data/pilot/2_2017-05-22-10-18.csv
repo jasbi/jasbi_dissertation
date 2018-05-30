@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.Z,CAT,dog,2017-05-22-10-18,1631,kitty!,D,0,0,NA
+2,X.X,ELE,elephant,2017-05-22-10-18,1631,yes!,J,Y,0,NA
+3,XY.XandY,DOG-ELE,dog and elephant,2017-05-22-10-18,1631,yes!,J,Y,0,NA
+4,X.XorY,DOG,cat or dog,2017-05-22-10-18,1631,yes!,J,Y,0,NA
+5,X.XandY,DOG,cat and dog,2017-05-22-10-18,1631,no! [can he say it better?] dog!,D,N,0,NA
+6,XY.X,DOG-ELE,elephant,2017-05-22-10-18,1631,yes! [can he say it better?] Elephant doggie!,D,Y,0,NA
+7,X.XandY,DOG,dog and elephant,2017-05-22-10-18,1631,no!dog!,D,N,0,NA
+8,X.Z,ELE,cat,2017-05-22-10-18,1631,no! elephant.,D,N,0,NA
+9,XY.X,CAT-DOG,cat,2017-05-22-10-18,1631,no! cat AND puppy.,C,N,I,NA
+10,XY.Z,CAT-ELE,dog,2017-05-22-10-18,1631,no!,J,N,0,NA
+11,X.XorY,CAT,cat or dog,2017-05-22-10-18,1631,cat! A cat!,D,0,0,NA
+12,X.X,DOG,dog,2017-05-22-10-18,1631,yes!,J,Y,0,NA
+13,XY.XorY,CAT-DOG,cat or dog,2017-05-22-10-18,1631,yes!,J,Y,0,NA
+14,XY.Z,CAT-DOG,elephant,2017-05-22-10-18,1631,no!,J,N,0,NA
+15,XY.XandY,CAT-ELE,cat and elephant,2017-05-22-10-18,1631,yes!,J,Y,0,NA
+16,XY.XorY,DOG-ELE,dog or elephant,2017-05-22-10-18,1631,yeah! [can he say it better?] dog AND elephant. [what did Jazzy say?] dog or elephant. [and he can say it better?] Both!,C,Y,I,NA

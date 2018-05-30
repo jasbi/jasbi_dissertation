@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,DOG,elephant,2017-06-01-10-18,1291,not an elehpant. A dog!,D,N,0,N
+2,X.X,DOG,dog,2017-06-01-10-18,1291,that's a dog,D,0,0,Y
+3,XY.XandY,CAT-ELE,cat and elephant,2017-06-01-10-18,1291,there is an elephant and a cat. That's true.,D,Y,0,Y
+4,X.XorY,CAT,cat or elephant,2017-06-01-10-18,1291,that's not an elephant!,J,N,0,N
+5,X.Z,CAT,dog,2017-06-01-10-18,1291,that's not a dog. It's a cat,D,N,0,N
+6,XY.X,CAT-DOG,cat,2017-06-01-10-18,1291,there is a cat,J,Y,0,Y
+7,XY.Z,DOG-ELE,cat,2017-06-01-10-18,1291,there is not a cat,J,N,0,N
+8,X.XorY,ELE,cat or elephant,2017-06-01-10-18,1291,that's not a cat. He's not right,J,N,0,N
+9,XY.XandY,CAT-DOG,cat and dog,2017-06-01-10-18,1291,that's a dog and that's a cat,D,0,0,Y
+10,XY.X,DOG-ELE,dog,2017-06-01-10-18,1291,And an elephant.,C,0,I,Y
+11,X.XandY,DOG,dog and elephant,2017-06-01-10-18,1291,that's not an elephant!,J,N,0,N
+12,X.XandY,CAT,cat and elephant,2017-06-01-10-18,1291,that's not an elephant. That's a cat,D,N,0,N
+13,XY.XorY,CAT-ELE,cat or elephant,2017-06-01-10-18,1291,it's elephant and a cat.,D,0,0,Y
+14,X.X,ELE,elephant,2017-06-01-10-18,1291,Yeah!,J,Y,0,Y
+15,XY.XorY,CAT-DOG,cat or dog,2017-06-01-10-18,1291,that's a cat and a dog,D,0,0,Y
+16,XY.Z,CAT-ELE,dog,2017-06-01-10-18,1291,that's not a dog! Was not right!,J,N,0,N

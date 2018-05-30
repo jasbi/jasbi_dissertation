@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,ELE,dog,2017-05-31-14-11,1614,Wrong!,J,N,0,N
+2,X.X,CAT,cat,2017-05-31-14-11,1614,that's right!,J,Y,0,Y
+3,X.XandY,ELE,cat and elephant,2017-05-31-14-11,1614,Wrong! Elephant!,D,N,0,N
+4,XY.X,DOG-ELE,dog,2017-05-31-14-11,1614,Wrong!,J,N,0,N
+5,XY.X,CAT-ELE,elephant,2017-05-31-14-11,1614,An elephant ƒ ,D,0,0,N
+6,X.Z,DOG,cat,2017-05-31-14-11,1614,No! A dog!,D,N,0,N
+7,XY.XandY,DOG-ELE,dog and elephant,2017-05-31-14-11,1614,Yes right!,J,Y,0,Y
+8,X.XorY,DOG,dog or elephant,2017-05-31-14-11,1614,A dog.,D,0,0,N
+9,X.XandY,CAT,cat and dog,2017-05-31-14-11,1614,there is a cat,D,0,0,N
+10,X.X,ELE,elephant,2017-05-31-14-11,1614,yes!,J,Y,0,Y
+11,X.XorY,CAT,cat or dog,2017-05-31-14-11,1614,there is a cat,D,0,0,N
+12,XY.XorY,CAT-ELE,cat or elephant,2017-05-31-14-11,1614,there is a cat AND an elephant!,C,0,I,Y
+13,XY.XandY,CAT-ELE,cat and elephant,2017-05-31-14-11,1614,Yes!,J,Y,0,Y
+14,XY.Z,CAT-ELE,dog,2017-05-31-14-11,1614,there is a cat and an elephant!,D,0,0,N
+15,XY.XorY,DOG-ELE,dog or elephant,2017-05-31-14-11,1614,there is both,C,0,I,Y
+16,XY.Z,DOG-ELE,cat,2017-05-31-14-11,1614,an elephant and a dog,D,0,0,N

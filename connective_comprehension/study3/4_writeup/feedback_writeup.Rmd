@@ -1,0 +1,438 @@
+---
+title: "Study 3: Children's Linguistic Feedback to Connective Guesses"
+author: "Masoud Jasbi"
+date: "4/12/2017"
+output: html_document
+---
+
+
+```{r setup, include=FALSE, message=FALSE,echo=FALSE,warning=FALSE}
+library(tidyverse)
+library(bootstrap)
+library(ggthemes)
+library(lubridate)
+library(forcats)
+library(brms)
+
+library(jpeg)
+library(gtable)
+library(RCurl)
+library(grid)
+```
+
+```{r bootstrapping}
+## for bootstrapping 95% confidence intervals
+theta <- function(x,xdata) {mean(xdata[x])}
+ci.low <- function(x) {
+  quantile(bootstrap(1:length(x),1000,theta,x)$thetastar,.025)}
+ci.high <- function(x) {
+  quantile(bootstrap(1:length(x),1000,theta,x)$thetastar,.975)}
+```
+
+```{r data}
+x2_data <- read.csv("../2_processed_data/study2_data")
+
+ANDs <- grep("AND", x2_data$response, value=FALSE, ignore.case = FALSE)
+both <- grep("both", x2_data$response, value=FALSE, ignore.case = TRUE)
+
+x2_data[,"AND"] <- "0"
+x2_data[ANDs,"AND"] <- "1"
+
+x2_data[,"BOTH"] <- "0"
+x2_data[both,"BOTH"] <- "1"
+
+filter(x2_data, Guess=="XorY", AND=="1")
+filter(x2_data, Guess=="XorY", Animal=="XY", tvjt=="N")
+```
+# Method
+
+The study uses the same paradigm as Jasbi \& Frank (2017). The only difference is the dependent variable. Jasbi \& Frank use a three-dlevel reward variable: A big star, a small star and a circle. The big star means the puppet was right, the small star means the puppet was a little bit right, and the circle means the puppet was not right.
+
+## Procedure
+
+In this study we only ask children to verbally correct the puppet. 
+
+## Annotation
+
+Children's responses are coded as "0" if the child resonded with "Yes! That's right" and 1 if the child said "No!" and provided the right guess.
+
+## Participants
+```{r age, }
+# converting age in days to age in years
+x2_data$age_years <- x2_data$age * 0.00273791
+
+x2_data %>%
+  select(id, age_years) %>%
+  unique %>%
+  ggplot(aes(x=age_years)) +
+  geom_histogram() + 
+  theme_few() +
+  labs(x="Age in Years", y="Number of Participants") +
+  geom_vline(xintercept=mean(x2_data$age_years), linetype="dashed") +
+  annotate("text", label = "Mean Age", x = 4.85, y = 5.5, size = 4, colour = "red3")
+```
+
+
+# Results
+
+**Exclusions**: we are going to set aside trials that did not receive any answers from the the child in the TVJT or Feedback tasks, or children that responsded with intermediate answers like "yes" and "no" in the TVJT task. This results in the exclusion of `r length(exclude)` trials out of `r nrow(x2_data)`.
+```{r exclusion}
+exclude <-
+  x2_data %>%    
+  filter(feedback=="0" | tvjt=="YN" | is.na(tvjt))
+
+study2_data <- 
+  x2_data %>%    
+  filter(feedback!="0", tvjt!="YN", !is.na(tvjt))
+
+# Tidy up factor levels and names
+study2_data$Guess <- 
+  study2_data$Guess %>%
+  factor(levels = c("Z", "X", "XandY", "XorY")) %>%
+  fct_recode(Elephant = "Z", Cat = "X", `Cat and Dog`="XandY", `Cat or Dog`="XorY")
+
+study2_data$tvjt <- 
+  study2_data$tvjt %>%
+  factor(levels = c("N", "Y")) %>%
+  fct_recode(Yes = "Y", No = "N")
+```
+
+## Truth Value Judgements
+
+```{r control_tvjt}
+tvjt <-
+  study2_data %>%
+  group_by(id, Animal, critical, Guess, tvjt) %>%
+  summarise(counts= n()) %>%
+  spread(tvjt, counts) %>%
+  replace(is.na(.), 0) %>%
+  mutate(total = No + Yes) %>%
+  gather(tvjt, counts, No:Yes) %>%
+  mutate(prop = counts / total) %>%
+  group_by(Animal, Guess, tvjt, critical) %>%
+  summarize(cih = ci.high(prop),
+            cil = ci.low(prop),
+            prop = mean(prop)) 
+```
+
+
+```{r tvjt_plot}
+tvjt_plot <-
+  tvjt %>%
+#  filter(critical==0) %>%
+  ggplot(aes(x=tvjt, y=prop, fill=tvjt)) + 
+  geom_bar(stat="identity", width = 0.6, position="dodge") + 
+  geom_linerange(aes(ymax = cih, ymin = cil)) + 
+  facet_grid(Animal~Guess) + 
+  guides(fill=FALSE) + 
+  labs(title = "", x = "", y = "") + 
+  theme_few() + 
+  theme(text = element_text(size=15)) + 
+  scale_fill_manual(values = c("red3", "springgreen3"))
+
+cat <- 
+  readJPEG("../0_methods/children/stimuli/cat_card.jpg") %>%
+  rasterGrob(width=0.9)
+
+cat_dog <- 
+  readJPEG("../0_methods/children/stimuli/catdog_card.jpg")%>%
+  rasterGrob(width=0.9)
+
+tvjt_plot_g <- ggplot_gtable(ggplot_build(tvjt_plot))
+
+strips <- grep("strip-r", tvjt_plot_g$layout$name)
+
+new_grobs <- list(cat, cat_dog)
+
+tvjt_plot_g <- with(tvjt_plot_g$layout[strips,],
+          gtable_add_grob(tvjt_plot_g, new_grobs,
+                          t=t, l=l, b=b, r=r, name="cards"))        
+
+tvjt_plot_g$widths[[11]] <- unit(2.5,"cm")
+
+grid.draw(tvjt_plot_g)
+```
+
+## Linguistic Feedback
+
+```{r eval=FALSE}
+feedback_data <- study2_data
+
+feedback_data[,"new_feedback"] <- NA
+
+feedback_data[feedback_data$judgment=="Y" & 
+                feedback_data$correction=="0" & 
+                feedback_data$feedback!="D","new_feedback"] <- "Yes"
+
+feedback_data[feedback_data$judgment=="N" & 
+                feedback_data$correction=="0" & 
+                feedback_data$feedback!="D","new_feedback"] <- "No"
+
+feedback_data[feedback_data$judgment=="Y" & 
+                feedback_data$correction=="0" & 
+                feedback_data$feedback=="D","new_feedback"] <- "Yes. Cat (and Dog)"
+
+feedback_data[feedback_data$judgment=="N" & 
+                feedback_data$correction=="0" & 
+                feedback_data$feedback=="D","new_feedback"] <- "No. Cat (and Dog)"
+
+feedback_data[feedback_data$judgment=="0" & 
+                feedback_data$correction=="0" & 
+                feedback_data$feedback=="D","new_feedback"] <- "Cat (and Dog)"
+
+feedback_data[feedback_data$judgment=="Y" & 
+                feedback_data$correction=="I" & 
+                feedback_data$feedback!="D","new_feedback"] <- "Yes. Both/cat AND dog"
+
+feedback_data[feedback_data$judgment=="N" & 
+                feedback_data$correction=="I" & 
+                feedback_data$feedback!="D","new_feedback"] <- "No. Both/cat AND dog"
+
+feedback_data[feedback_data$judgment=="Y" & 
+                feedback_data$correction=="E" & 
+                feedback_data$feedback!="D","new_feedback"] <- "Yes. Only/Just cat"
+
+feedback_data[feedback_data$judgment=="N" & 
+                feedback_data$correction=="E" & 
+                feedback_data$feedback!="D","new_feedback"] <- "No. Only/Just cat"
+
+feedback_data[feedback_data$judgment=="0" & 
+                feedback_data$correction=="I" & 
+                feedback_data$feedback!="D","new_feedback"] <- "Both/cat AND dog"
+
+feedback_data[feedback_data$judgment=="0" & 
+                feedback_data$correction=="E" & 
+                feedback_data$feedback!="D","new_feedback"] <- "Only/just cat"
+
+feedback_table <-
+  feedback_data %>%
+  filter(!is.na(new_feedback))%>%
+  group_by(id, Animal, Guess, new_feedback) %>%
+  summarise(counts= n()) %>%
+  spread(new_feedback, counts) %>%
+  replace(is.na(.), 0) %>%
+  mutate(total = Yes + No + `Yes. Cat (and Dog)` + `No. Cat (and Dog)` + `Cat (and Dog)` + `Yes. Both/cat AND dog` + `No. Both/cat AND dog` + `Yes. Only/Just cat` + `No. Only/Just cat` +  `Both/cat AND dog` + `Only/just cat`) %>%
+  gather(new_feedback, counts, `Both/cat AND dog`:`Yes. Only/Just cat`) %>%
+  mutate(prop = counts / total) %>%
+  group_by(Animal, Guess, new_feedback) %>%
+  summarize(cih = ci.high(prop),
+            cil = ci.low(prop),
+            prop = mean(prop)) 
+```
+
+```{r}
+feedback_data <- study2_data
+
+feedback_data <- unite(feedback_data, Feedback, c(feedback, correction), sep="")
+
+feedback_data$judgment <- fct_relevel(feedback_data$judgment, "N", "0", "Y", "YN")
+feedback_data$judgment <- fct_recode(feedback_data$judgment, No="N", Other="0", Yes="Y")
+
+feedback_data$Feedback <- fct_relevel(feedback_data$Feedback, "J0", "D0", "CE" , "CI")
+feedback_data$Feedback <- fct_recode(feedback_data$Feedback, `-` = "J0", `Just/Only Cat`="CE", `Both/Cat AND Dog`="CI", `Cat (and Dog)`="D0")
+```
+
+```{r judgment}
+judgment_data <- 
+  study2_data %>%
+  filter(judgment!="YN") %>%
+  group_by(id, Animal, Guess, judgment) %>%
+  summarise(counts= n()) %>%
+  spread(judgment, counts) %>%
+  replace(is.na(.), 0) %>%
+  mutate(total = `0` + N + Y) %>%
+  gather(judgment, counts, `0`:Y) %>%
+  mutate(prop = counts / total) %>%
+  group_by(Animal, Guess, judgment) %>%
+  summarize(cih = ci.high(prop),
+            cil = ci.low(prop),
+            prop = mean(prop))
+
+judgment_data$judgment <- fct_recode(judgment_data$judgment, No="N", `-`="0", Yes="Y")
+judgment_data$judgment <- fct_relevel(judgment_data$judgment, "No", "-", "Yes")
+```
+
+```{r}
+judgment_plot <-
+  judgment_data %>%
+  ggplot(aes(x=judgment, y=prop, fill=judgment)) + 
+  geom_bar(stat = "identity") + 
+  geom_linerange(aes(ymax=cih,ymin=cil)) +
+  facet_grid(Animal~Guess) + 
+  theme_few() + labs(x="", y="") + scale_fill_manual(values= c("red3", "grey", "springgreen3")) + guides(fill=FALSE)
+
+judgment_plot_g <- ggplot_gtable(ggplot_build(judgment_plot))
+
+strips <- grep("strip-r", judgment_plot_g$layout$name)
+
+new_grobs <- list(cat, cat_dog)
+
+judgment_plot_g <- with(judgment_plot_g$layout[strips,],
+          gtable_add_grob(judgment_plot_g, new_grobs,
+                          t=t, l=l, b=b, r=r, name="cards"))        
+
+judgment_plot_g$widths[[11]] <- unit(2.5,"cm")
+
+grid.draw(judgment_plot_g)
+```
+
+```{r feedbacks}
+feedback_plot <-
+  feedback_data %>%
+  filter(judgment!="YN") %>%
+  ggplot(aes(x=judgment, fill=Feedback, order=Feedback)) + geom_bar() + facet_grid(Animal~Guess) + theme_few() + labs(x="", y="") + scale_fill_manual(values= c("red3", "blue3","gold", "grey"))
+
+feedback_plot_g <- ggplot_gtable(ggplot_build(feedback_plot))
+
+strips <- grep("strip-r", feedback_plot_g$layout$name)
+
+new_grobs <- list(cat, cat_dog)
+
+feedback_plot_g <- with(feedback_plot_g$layout[strips,],
+          gtable_add_grob(feedback_plot_g, new_grobs,
+                          t=t, l=l, b=b, r=r, name="cards"))        
+
+feedback_plot_g$widths[[11]] <- unit(2.5,"cm")
+
+grid.draw(feedback_plot_g)
+```
+
+```{r}
+feedback_data$Feedback <- fct_recode(feedback_data$Feedback, `Yes/No` = "-")
+
+feedback_table <- 
+  feedback_data %>%
+  filter(judgment!="YN") %>%
+  group_by(id, Animal, Guess, Feedback) %>%
+  summarise(counts= n()) %>%
+  spread(Feedback, counts) %>%
+  replace(is.na(.), 0) %>%
+  mutate(total = `Yes/No` + `Cat (and Dog)` + `Just/Only Cat` + `Both/Cat AND Dog`) %>%
+  gather(Feedback, counts, `Yes/No`:`Both/Cat AND Dog`) %>%
+  mutate(prop = counts / total) %>%
+  group_by(Animal, Guess, Feedback) %>%
+  summarize(cih = ci.high(prop),
+            cil = ci.low(prop),
+            prop = mean(prop))
+
+feedback_table$Feedback <- fct_relevel(feedback_table$Feedback, "Yes/No", "Cat (and Dog)", "Just/Only Cat", "Both/Cat AND Dog")
+```
+
+
+```{r}
+inclusion_plot <-
+  feedback_table %>%
+  filter(Guess == "Cat or Dog") %>%
+  ggplot(aes(x=Feedback, y=prop, fill=Feedback)) + geom_bar(stat="identity") +
+  geom_linerange(aes(ymin=cil, ymax=cih)) + facet_grid(Animal~.) + labs(x="", y="") + theme_few() + scale_fill_manual(values=c("grey", "gold", "blue3" ,"red3")) + theme (text = element_text(size=15), axis.text.x = element_text(angle=30, hjust = 1, vjust = 1)) + guides(fill=FALSE)
+
+inclusion_plot_g <- ggplot_gtable(ggplot_build(inclusion_plot))
+
+strips <- grep("strip-r", inclusion_plot_g$layout$name)
+
+inclusion_plot_g <- with(inclusion_plot_g$layout[strips,],
+          gtable_add_grob(inclusion_plot_g, new_grobs,
+                          t=t, l=l, b=b, r=r, name="cards"))        
+
+inclusion_plot_g$widths[[5]] <- unit(2.5,"cm")
+
+grid.draw(inclusion_plot_g)
+```
+
+```{r}
+feedback_data %>%
+  filter(judgment!="YN", Guess=="Cat or Dog") %>%
+  ggplot(aes(x=Feedback, fill=Feedback)) + geom_bar() + facet_grid(Animal~Guess) + theme_few() + labs(x="", y="") + scale_fill_manual(values= c("grey", "springgreen4", "blue3" , "red3")) + theme(axis.text.x = element_text(angle=45, hjust = 1, vjust = 1), text = element_text(size=17)) + guides(fill=FALSE)
+```
+
+```{r}
+feedback_data$binary_feedback <- fct_recode(feedback_data$Feedback, other = "Yes/No", other = "Just/Only Cat", other = "Cat (and Dog)")
+
+or_feedback <- filter(feedback_data, Guess == "Cat or Dog")
+
+summary(glm(binary_feedback ~ Animal, family="binomial",  data=or_feedback))
+
+brm_binary_feedback <- summary(brm(as.numeric(binary_feedback) ~ Animal + (1 + Animal|id), family="binomial",  data=or_feedback))
+```
+
+```{r}
+correction <- 
+  study2_data %>%
+  group_by(id, Animal, Guess, correction, critical) %>%
+  summarise(counts= n()) %>%
+  spread(correction, counts) %>%
+  replace(is.na(.), 0) %>%
+  mutate(total = `0` + E + I) %>%
+  gather(correction, counts, `0`:I) %>%
+  mutate(prop = counts / total) %>%
+  group_by(Animal, Guess, correction, critical) %>%
+  summarize(cih = ci.high(prop),
+            cil = ci.low(prop),
+            prop = mean(prop)) 
+```
+
+```{r control_feedback_graph}
+feedback_table$new_feedback <- fct_relevel(feedback_table$new_feedback, "No", "No. Only/Just cat", "No. Cat (and Dog)", "No. Both/cat AND dog", "Only/just cat", "Cat (and Dog)", "Both/cat AND dog", "Yes. Only/Just cat", "Yes. Cat (and Dog)", "Yes. Both/cat AND dog", "Yes")
+
+feedback_plot <-
+  feedback_table %>%
+  filter(prop!=0)%>%
+  ggplot(aes(x=new_feedback, y=prop, fill=new_feedback)) + 
+  geom_bar(stat="identity", width = 0.6, position="dodge") + 
+  geom_linerange(aes(ymax = cih, ymin = cil)) + 
+  facet_grid(Animal~Guess, drop = TRUE) + 
+  guides(fill=FALSE) + 
+  labs(title = "", x = "", y = "") + 
+  theme_few() + 
+  theme(axis.text.x = element_text(angle=45, hjust = 1, vjust = 1), text = element_text(size=15))
+
+#  scale_fill_manual(values = c("red2", "red3", "red4"), guide=FALSE)
+
+cat <- 
+  readJPEG("../0_methods/children/stimuli/cat_card.jpg") %>%
+  rasterGrob(width=0.9)
+
+cat_dog <- 
+  readJPEG("../0_methods/children/stimuli/catdog_card.jpg")%>%
+  rasterGrob(width=0.9)
+
+feedback_plot_g <- ggplot_gtable(ggplot_build(feedback_plot))
+
+strips <- grep("strip-r", feedback_plot_g$layout$name)
+
+new_grobs <- list(cat, cat_dog)
+
+feedback_plot_g <- with(feedback_plot_g$layout[strips,],
+          gtable_add_grob(feedback_plot_g, new_grobs,
+                          t=t, l=l, b=b, r=r, name="cards"))        
+
+feedback_plot_g$widths[[11]] <- unit(2.5,"cm")
+
+grid.draw(feedback_plot_g)
+```
+
+```{r control_judgement_graph}
+judgement %>%
+#  filter(critical==0)%>%
+  ggplot(aes(x=judgement, y=prop)) + 
+  geom_bar(stat="identity", width = 0.6, position="dodge") + 
+  geom_linerange(aes(ymax = cih, ymin = cil)) + 
+  facet_grid(Animal~Guess) + 
+  guides(fill=FALSE) + 
+  labs(title = "", x = "", y = "") + 
+  theme_few() + 
+  scale_fill_solarized()
+```
+
+```{r control_correction_graph}
+correction %>%
+  ggplot(aes(x=correction, y=prop)) + 
+  geom_bar(stat="identity", width = 0.6, position="dodge") + 
+  geom_linerange(aes(ymax = cih, ymin = cil)) + 
+  facet_grid(Animal~Guess) + 
+  guides(fill=FALSE) + 
+  labs(title = "", x = "", y = "") + 
+  theme_few() + 
+  scale_fill_solarized()
+```
+

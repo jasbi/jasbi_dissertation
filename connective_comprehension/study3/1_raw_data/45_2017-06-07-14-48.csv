@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.X,CAT,cat,2017-06-07-14-48,1380,yes,J,Y,0,Y
+2,X.Z,ELE,cat,2017-06-07-14-48,1380,no [was Jazzy right?] there's an elephant,D,N,0,N
+3,X.X,DOG,dog,2017-06-07-14-48,1380,yes,J,Y,0,Y
+4,XY.XorY,DOG-ELE,dog or elephant,2017-06-07-14-48,1380,both,C,0,I,Y
+5,X.Z,DOG,cat,2017-06-07-14-48,1380,[headshake] no [was Jazzy right?] no. dog,D,N,0,N
+6,XY.Z,CAT-DOG,elephant,2017-06-07-14-48,1380,[headshake] just a cat and a dog,C,N,E,N
+7,XY.X,CAT-DOG,cat,2017-06-07-14-48,1380,cat AND dog,C,0,I,Y
+8,X.XorY,CAT,cat or dog,2017-06-07-14-48,1380,just cat,C,0,E,N
+9,XY.X,DOG-ELE,dog,2017-06-07-14-48,1380,dog or an elephant É [dog or an elephant] É dog AND an elephant,C,0,I,N
+10,X.XorY,ELE,dog or elephant,2017-06-07-14-48,1380,just elephant,C,0,E,N
+11,X.XandY,CAT,cat and elephant,2017-06-07-14-48,1380,just cat,C,0,E,N
+12,XY.Z,CAT-ELE,dog,2017-06-07-14-48,1380,[headshake] elephant or É and cat,D,N,0,N
+13,X.XandY,ELE,dog and elephant,2017-06-07-14-48,1380,just elephant,C,0,E,N
+14,XY.XorY,CAT-DOG,cat or dog,2017-06-07-14-48,1380,yes,J,Y,0,Y
+15,XY.XandY,CAT-DOG,cat and dog,2017-06-07-14-48,1380,yes,J,Y,0,Y
+16,XY.XandY,DOG-ELE,dog and elephant,2017-06-07-14-48,1380,yes,J,Y,0,Y

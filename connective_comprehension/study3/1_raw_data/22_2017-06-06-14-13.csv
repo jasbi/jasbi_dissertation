@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,CAT,elephant,2017-06-06-14-13,1987,nope! It's a cat,D,N,0,N
+2,X.X,CAT,cat,2017-06-06-14-13,1987,Yes,J,Y,0,Y
+3,X.XandY,DOG,cat and dog,2017-06-06-14-13,1987,there is only a dog [was Jazzy right?] A little,C,0,E,YN
+4,XY.XorY,DOG-ELE,dog or elephant,2017-06-06-14-13,1987,there is BOTH! [was Jazzy right?] Yes I think so. Really right,C,0,I,Y
+5,X.XorY,CAT,cat or elephant,2017-06-06-14-13,1987,only a cat. You are right!,C,Y,E,YN
+6,XY.X,CAT-ELE,elephant,2017-06-06-14-13,1987,and a cat! So you are a little right!,C,YN,I,YN
+7,XY.X,CAT-ELE,cat,2017-06-06-14-13,1987,AND an elephant.,C,0,I,YN
+8,X.XorY,DOG,dog or elephant,2017-06-06-14-13,1987,only a dog. You are right,C,Y,E,Y
+9,XY.Z,DOG-ELE,cat,2017-06-06-14-13,1987,dog and elephant. You are completely wrong!,D,N,0,N
+10,XY.XandY,DOG-ELE,dog and elephant,2017-06-06-14-13,1987,good. ,J,Y,0,Y
+11,X.Z,ELE,dog,2017-06-06-14-13,1987,nope. Elephant. Completely wrong again.,D,N,0,N
+12,X.X,DOG,dog,2017-06-06-14-13,1987,Yes,J,Y,0,Y
+13,X.XandY,CAT,cat and elephant,2017-06-06-14-13,1987,only a cat. A little right.,C,YN,E,YN
+14,XY.XorY,CAT-ELE,cat or elephant,2017-06-06-14-13,1987,Both!,C,0,I,Y
+15,XY.XandY,CAT-DOG,cat and dog,2017-06-06-14-13,1987,you are right! There is a cat and a dog,D,Y,0,Y
+16,XY.Z,CAT-ELE,dog,2017-06-06-14-13,1987,Nope. Cat and elephant. You are wrong.,D,N,0,N

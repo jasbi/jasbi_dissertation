@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.X,ELE,elephant,2017-06-02-9-58,1458,Correct!,J,Y,0,Y
+2,X.Z,ELE,cat,2017-06-02-9-58,1458,No! cat É an elephant!,D,N,0,N
+3,XY.XandY,CAT-DOG,cat and dog,2017-06-02-9-58,1458,Yeah Jazzy!,J,Y,0,Y
+4,X.XandY,CAT,cat and elephant,2017-06-02-9-58,1458,No! elephant could just like break the card right? They are so big they can take the whole card!,J,N,0,N
+5,X.XorY,DOG,dog or elephant,2017-06-02-9-58,1458,No! there's no elephant on it! Just a dog!,C,N,E,Y
+6,X.XandY,ELE,dog and elephant,2017-06-02-9-58,1458,No! there is not a dog on it! There is an elephant on it only!,C,N,E,Y
+7,X.XorY,CAT,cat or dog,2017-06-02-9-58,1458,Cat!,D,0,0,Y
+8,XY.XorY,DOG-ELE,dog or elephant,2017-06-02-9-58,1458,dog AND elephant!,C,0,I,Y
+9,XY.X,CAT-ELE,elephant,2017-06-02-9-58,1458,No! There is a cat AND elephant,C,0,I,Y
+10,XY.Z,CAT-ELE,dog,2017-06-02-9-58,1458,No! It's an elephant and a cat!,D,N,0,Y
+11,XY.XandY,DOG-ELE,dog and elephant,2017-06-02-9-58,1458,Correct!,J,Y,0,Y
+12,X.X,CAT,cat,2017-06-02-9-58,1458,[hands in the card],J,Y,0,Y
+13,XY.X,CAT-DOG,dog,2017-06-02-9-58,1458,AND a cat,C,0,I,Y
+14,X.Z,CAT,dog,2017-06-02-9-58,1458,No a cat Jazzy!,D,N,0,NA
+15,XY.Z,DOG-ELE,cat,2017-06-02-9-58,1458,No! É There is a dog AND an elephant!,C,N,I,NA
+16,XY.XorY,CAT-DOG,cat or dog,2017-06-02-9-58,1458,cat and dog!,D,0,0,Y

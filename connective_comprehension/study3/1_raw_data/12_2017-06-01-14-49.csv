@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,ELE,dog,2017-06-01-14-49,1343,No!,J,N,0,N
+2,X.X,DOG,dog,2017-06-01-14-49,1343,Yeah!,J,Y,0,Y
+3,XY.Z,DOG-ELE,cat,2017-06-01-14-49,1343,No! A dog and an elephant!,D,N,0,Y
+4,X.XorY,ELE,dog or elephant,2017-06-01-14-49,1343,An elephant!,D,0,0,Y
+5,X.XandY,DOG,dog and elephant,2017-06-01-14-49,1343,No!,J,N,0,N
+6,X.XorY,CAT,cat or dog,2017-06-01-14-49,1343,A cat!,D,0,0,Y
+7,XY.X,CAT-ELE,elephant,2017-06-01-14-49,1343,an elephant and a CAT!,D,0,0,Y
+8,XY.XandY,CAT-DOG,cat and dog,2017-06-01-14-49,1343,Yeah!,J,Y,0,Y
+9,XY.X,CAT-ELE,cat,2017-06-01-14-49,1343,elephant ... and a cat!,D,0,0,Y
+10,XY.XorY,DOG-ELE,dog or elephant,2017-06-01-14-49,1343,A dog AND an elephant!,C,0,I,Y
+11,X.Z,CAT,elephant,2017-06-01-14-49,1343,No a cat!,D,N,0,Y
+12,XY.Z,CAT-DOG,elephant,2017-06-01-14-49,1343,No a dog and a cat!,D,N,0,NA
+13,X.XandY,ELE,cat and elephant,2017-06-01-14-49,1343,No! elephant!,D,N,0,Y
+14,XY.XorY,CAT-DOG,cat or dog,2017-06-01-14-49,1343,A cat AND a dog!,C,0,I,Y
+15,X.X,ELE,elephant,2017-06-01-14-49,1343,Yeah!,J,Y,0,Y
+16,XY.XandY,CAT-ELE,cat and elephant,2017-06-01-14-49,1343,[nod],J,Y,0,Y

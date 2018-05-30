@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,CAT,dog,2017-05-31-13-56,1730,No!,J,N,0,N
+2,X.X,CAT,cat,2017-05-31-13-56,1730,Yes!,J,Y,0,Y
+3,X.XandY,ELE,cat and elephant,2017-05-31-13-56,1730,No! [do you wanna tell Jazzy how to say it right?] elephant!,J,N,0,YN
+4,XY.XorY,CAT-ELE,cat or elephant,2017-05-31-13-56,1730,Right!,J,Y,0,Y
+5,XY.XandY,CAT-DOG,cat and dog,2017-05-31-13-56,1730,Yes!,J,Y,0,Y
+6,X.XorY,CAT,cat or elephant,2017-05-31-13-56,1730,Right and no!,J,YN,0,YN
+7,X.Z,CAT,elephant,2017-05-31-13-56,1730,No!,J,N,0,N
+8,XY.Z,CAT-DOG,elephant,2017-05-31-13-56,1730,No!,J,N,0,N
+9,XY.X,CAT-ELE,elephant,2017-05-31-13-56,1730,Yes!,J,Y,0,N
+10,XY.X,DOG-ELE,dog,2017-05-31-13-56,1730,Right and no!,J,YN,0,YN
+11,X.XandY,ELE,dog and elephant,2017-05-31-13-56,1730,Wrong and yes! [Can you help Jazzy say it better?] Just an elephant.,J,YN,0,N
+12,X.XorY,DOG,dog or elephant,2017-05-31-13-56,1730,Again! No and Yes! [can you help Jazzy say it better?] Dog!,J,YN,0,YN
+13,XY.Z,DOG-ELE,cat,2017-05-31-13-56,1730,No! [can you help Jazzy say it better?] Dog and elephant!,J,N,0,N
+14,XY.XandY,CAT-ELE,cat and elephant,2017-05-31-13-56,1730,Right!,J,Y,0,Y
+15,XY.XorY,CAT-DOG,cat or dog,2017-05-31-13-56,1730,Right!,J,Y,0,Y
+16,X.X,DOG,dog,2017-05-31-13-56,1730,Right!,J,Y,0,Y

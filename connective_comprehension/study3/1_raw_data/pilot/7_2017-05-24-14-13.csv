@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.X,CAT,cat,2017-05-24-14-13,1840,yeah!,J,Y,0,NA
+2,X.Z,ELE,dog,2017-05-24-14-13,1840,No!,J,N,0,NA
+3,XY.X,DOG-ELE,elephant,2017-05-24-14-13,1840,Yes! But there is something else! [do you wanna tell Jazzy how to say it right?] Doggie and elephant!,C,Y,I,NA
+4,X.XandY,DOG,dog and elephant,2017-05-24-14-13,1840,No! a dog! Only a dog!,C,N,E,NA
+5,X.XandY,CAT,cat and elephant,2017-05-24-14-13,1840,No! Only a cat!,C,N,E,NA
+6,XY.XandY,CAT-DOG,cat and dog,2017-05-24-14-13,1840,Yeah!,J,Y,0,NA
+7,XY.X,CAT-ELE,elephant,2017-05-24-14-13,1840,Yeah! But there is a cat too!,C,Y,I,NA
+8,X.XorY,ELE,cat or elephant,2017-05-24-14-13,1840,an elephant! [was Jazzy right?] yeah!,D,0,0,1
+9,X.XorY,CAT,cat or dog,2017-05-24-14-13,1840,a cat! [was jazzy right?] uhum! (half right half wrong!),D,0,0,1
+10,X.Z,DOG,elephant,2017-05-24-14-13,1840,No there is a doggie!,D,N,0,NA
+11,X.X,DOG,dog,2017-05-24-14-13,1840,Yeah!,J,Y,0,NA
+12,XY.XandY,DOG-ELE,dog and elephant,2017-05-24-14-13,1840,yeah!,J,Y,0,NA
+13,XY.XorY,CAT-DOG,cat or dog,2017-05-24-14-13,1840,there is both!,C,0,I,NA
+14,XY.Z,CAT-ELE,dog,2017-05-24-14-13,1840,no! there is only a cat and an elephant!,C,N,E,NA
+15,XY.Z,DOG-ELE,cat,2017-05-24-14-13,1840,no!,J,N,0,NA
+16,XY.XorY,CAT-ELE,cat or elephant,2017-05-24-14-13,1840,Both!,C,0,I,NA

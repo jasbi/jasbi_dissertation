@@ -1,0 +1,198 @@
+---
+title: "Analyeses"
+author: "Masoud Jasbi"
+date: "5/29/2017"
+output: html_document
+---
+
+```{r packages, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(lme4)
+library(brms)
+```
+# Response Annotation
+
+Children's linguistic feedback to the puppet will be classified into three categories:
+
+| Feedback Category | Definition |
+| ------------|----------------------------------------------------------|
+|Jedgment Only| only said "yes" or "no". |
+|Description| said what was on the card with or without judgement | "cat and a dog!"|
+|Corrective Feedback | corrected the error in the puppet's utterance using exclusive focus markers (Just, Only) or Inclusive markers (Both, stressted AND)  |"cat AND a dog!", "both", "No, only a cat!", "Just a cat"|
+
+Judgements are further subdivided into three categories:
+
+|Judgment Category| Definition |
+|-|-|
+|N| The child said "no". |
+|YN| The child provided a graded answer between a "no" and a "yes".|
+|Y| The child said "yes" |
+
+Corrections are further sub-divided into three caegories:
+
+|Correction Category | Definition |
+|-|-|
+|0| The child did not provide correction. |
+|E| The child provided exclusive correction using "just" and "only"|
+|I| The child provided inclusive correction using "both" and stressed "AND" |
+
+# Predictions
+
+In truth value judgment data, children are much more likely to respond with "yes" in true conditions compared to false conditions. They are also more likely to response with "yes" in felicitous conditions compared to infelicitous ones.
+
+In the feedback data, corrections will significantly increase when the guess was false or carried a pragmatically false implication. This includes X-XandY and XY-XorY trials. Highest number of judgements will be in the most optimal cases: X-X and XY-XandY. 
+
+# Analysis
+
+```{r combine_CSVs, warning=FALSE, message=FALSE}
+study2_data <- read.csv("../2_processed_data/study2_data")
+
+model_data <- 
+  study2_data %>%
+  filter(feedback!=0) %>%
+  na.omit() %>%
+  filter(tvjt!="YN") %>%
+  select(-X, id, age, Animal, Guess, feedback, tvjt)
+
+model_data_1 <- 
+  study2_data %>%
+  filter(feedback!=0) %>%
+  na.omit() %>%
+  filter(tvjt!="YN") %>%
+#  filter(critical==1) %>%
+  select(-X, id, age, Animal, Guess, feedback, tvjt) %>%
+  unite(trial_type, Animal, Guess, sep="-")
+
+#model_data_1$trial_type <- as.factor(model_data$trial_type)
+```
+
+Some examples from the brms packege.
+
+```{r brm_examples}
+#Logistic binomial
+# fit_b <- brm(success | trials(n) ~ x, family = binomial("probit"))
+
+#Ordinal
+#fit_i <- brm(rating ~ treat + period + carry, data = inhaler, 
+#             family = sratio("cloglog"), prior = set_prior("normal(0,5)"))
+```
+
+## Truth Value Judgments
+
+### BRMS
+
+```{r brm_tvjt_XY_XorY}
+#model_data_1$trial_type <- relevel(as.factor(model_data_1$trial_type), "XY-XorY")
+
+#brm_or2 <- brm(as.numeric(tvjt) ~ trial_type + (1 + trial_type|id),
+#               family="binomial", 
+#               data=model_data_1)
+
+#saveRDS(brm_or2, "brm_or2")
+
+brm_or2<- readRDS("brm_or2")
+summary(brm_or2)
+```
+
+```{r}
+plot(brm_or2)
+```
+
+```{r}
+VarCorr(brm_or2)
+```
+
+```{r brm_tvjt_X_XorY}
+#model_data_1$trial_type <- relevel(as.factor(model_data_1$trial_type), "X-XorY")
+
+#brm_or1 <- brm(as.numeric(tvjt) ~ trial_type + (1 + trial_type|id), 
+#             family="binomial", data=model_data_1)
+
+#saveRDS(brm_or1, "brm_or1")
+readRDS("brm_or1")
+summary(brm_or1)
+```
+
+```{r}
+plot(brm_or1)
+```
+
+```{r}
+VarCorr(brm_or1)
+```
+
+```{r brm_trialtype_X_XorY}
+#model_data_1$trial_type <- relevel(as.factor(model_data_1$trial_type), "X-XorY")
+
+brm_age <- brm(as.numeric(tvjt) ~ trial_type * age + (trial_type * age|id), 
+             family="binomial", data=model_data_1)
+#There were 4000 transitions after warmup that exceeded the maximum treedepth. Increase max_treedepth above 10. See
+#http://mc-stan.org/misc/warnings.html#maximum-treedepth-exceededExamine the pairs() plot to diagnose sampling problems
+
+#saveRDS(brm_age, "brm_age")
+#readRDS("brm_age")
+```
+
+### LME4
+
+```{r tvjt_glmer}
+# setting the X-XorY level as the intercept
+#model_data$trial_type <- relevel(as.factor(model_data_1$trial_type), "X-XorY")
+
+glmer_tvjt_or1 <- glmer(tvjt ~ trial_type + (1 | id),
+                        family="binomial", data=model_data_1)
+summary(glmer_tvjt_or1)
+
+glmer_tvjt_or1_2 <- glmer(tvjt ~ trial_type + (1 + trial_type | id),
+                             family="binomial", data=model_data_1)
+#maxfun < 10 * length(par)^2 is not recommended.convergence code 1 from bobyqa: bobyqa -- maximum number of function evaluations exceededfailure to converge in 10000 evaluationsunable to evaluate scaled gradientModel failed to converge: degenerate  Hessian with 4 negative eigenvalues
+
+#glmer_age_1 <- glmer(tvjt ~ trial_type * age + (1 + trial_type * age |id), family="binomial", data=model_data_1)
+# failure to converge in 10000 evaluationsunable to evaluate scaled gradientModel failed to converge: degenerate  Hessian with 1 negative eigenvalues
+
+#glmer_age_2 <- glmer(tvjt ~ trial_type * age + (1 + trial_type|id), family="binomial", data=model_data)
+#Model failed to converge with max|grad| = 0.00195424 (tol = 0.001, component 1)Model is nearly unidentifiable: very large eigenvalue
+
+#glmer_age_3 <- glmer(tvjt ~ trial_type + age + (1 + trial_type + age |id), family="binomial", data=model_data)
+
+#glmer_age_trial <- glmer(tvjt ~ trial_type + age + (1 + age|id), family="binomial", data=model_data)
+
+#glmer_trial_X_XandY <- glmer(tvjt ~ trial_type + (1 + trial_type | id),
+#                             family="binomial", data=model_data)
+#maxfun < 10 * length(par)^2 is not recommended.convergence code 1 from bobyqa: bobyqa -- maximum number of function evaluations exceededfailure to converge in 10000 evaluationsunable to evaluate scaled gradientModel failed to converge: degenerate  Hessian with 4 negative eigenvalues
+#summary(glmer_trial_X_XandY)
+```
+
+```{r}
+# setting the X-XorY level as the intercept
+model_data$trial_type <- relevel(model_data$trial_type, "X-XorY")
+
+glmer_trial_XY_XorY <- glmer(tvjt ~ trial_type + (1|id), family="binomial", data=model_data)
+summary(glmer_trial_XY_XorY)
+```
+
+## Feedback
+
+```{r brm_feedback}
+#brm_feedback <- brm(as.numeric(feedback) ~ trial_type + (1 + trial_type|id), 
+#                    data = model_data_1, 
+#                    family = sratio, 
+#                    prior = set_prior("normal(0,5)"))
+
+# What is the difference between sratio and cratio exactly? 
+# P(y=j | y>=j) stopping ratio, P(y>j | y>=j) continuation ratio
+
+#saveRDS(brm_feedback, "brm_feedback")
+readRDS("brm_feedback")
+summary(brm_feedback)
+```
+
+```{r}
+plot(brm_feedback)
+```
+
+```{r}
+VarCorr(brm_feedback)
+```
+
+

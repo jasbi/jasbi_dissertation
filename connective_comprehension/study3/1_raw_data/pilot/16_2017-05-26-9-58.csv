@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.X,DOG,dog,2017-05-26-9-58,1412,[nod],J,Y,0,NA
+2,X.Z,CAT,dog,2017-05-26-9-58,1412,[headshake] there is a cat!,D,N,0,NA
+3,XY.XorY,CAT-ELE,cat or elephant,2017-05-26-9-58,1412,[nod] there is a cat and an elephant.,D,Y,0,NA
+4,XY.X,DOG-ELE,dog,2017-05-26-9-58,1412,a dog and an elephant,D,0,0,NA
+5,X.XorY,ELE,dog or elephant,2017-05-26-9-58,1412,there's just an elephant,C,0,E,NA
+6,X.XorY,CAT,cat or elephant,2017-05-26-9-58,1412,there's just a cat,C,0,E,NA
+7,X.XandY,CAT,cat and dog,2017-05-26-9-58,1412,there's just a cat,C,0,E,NA
+8,X.XandY,DOG,cat and dog,2017-05-26-9-58,1412,there's just a dog!,C,0,E,NA
+9,XY.X,DOG-ELE,elephant,2017-05-26-9-58,1412,there's elephant or a cat! ó no no ó there is an elephant or a dog.,D,0,0,NA
+10,X.X,CAT,cat,2017-05-26-9-58,1412,There's just a cat,C,0,E,NA
+11,XY.XandY,CAT-ELE,cat and elephant,2017-05-26-9-58,1412,he was right!,J,Y,0,NA
+12,XY.Z,CAT-DOG,elephant,2017-05-26-9-58,1412,there is just a dog or a cat!,C,0,E,NA
+13,X.Z,ELE,cat,2017-05-26-9-58,1412,there's just an elephant,C,0,E,NA
+14,XY.XandY,CAT-DOG,cat and dog,2017-05-26-9-58,1412,he's right!,J,Y,0,NA
+15,XY.Z,CAT-ELE,dog,2017-05-26-9-58,1412,there's just a cat or an elephant!,C,0,E,NA
+16,XY.XorY,CAT-DOG,cat or dog,2017-05-26-9-58,1412,he was right!,J,Y,0,NA

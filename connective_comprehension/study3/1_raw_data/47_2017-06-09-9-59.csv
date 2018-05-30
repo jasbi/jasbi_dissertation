@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.X,DOG,dog,2017-06-09-9-59,1507,yeah É it's this dog,D,Y,0,Y
+2,X.Z,DOG,elephant,2017-06-09-9-59,1507,nope dog É it's a dog,D,N,0,N
+3,XY.XorY,DOG-ELE,dog or elephant,2017-06-09-9-59,1507,dog and elephant,D,0,0,Y
+4,X.Z,CAT,elephant,2017-06-09-9-59,1507,"nope, there's cat",D,N,0,N
+5,XY.X,CAT-ELE,elephant,2017-06-09-9-59,1507,elephant and cat [was Jazzy right] no É yeah he is,D,0,0,Y
+6,X.XorY,CAT,cat or elephant,2017-06-09-9-59,1507,a cat,D,0,0,Y
+7,XY.Z,CAT-DOG,elephant,2017-06-09-9-59,1507,no a dog and a cat,D,N,0,N
+8,XY.X,CAT-DOG,cat,2017-06-09-9-59,1507,cat and dog,D,0,0,Y
+9,XY.XandY,CAT-DOG,cat and dog,2017-06-09-9-59,1507,cat and dog yeah,D,Y,0,Y
+10,X.XandY,DOG,cat and dog,2017-06-09-9-59,1507,dog É this is a dog,D,0,0,N
+11,X.X,ELE,elephant,2017-06-09-9-59,1507,yup É true,J,Y,0,Y
+12,X.XorY,CAT,cat or dog,2017-06-09-9-59,1507,cat,D,0,0,Y
+13,XY.Z,CAT-ELE,dog,2017-06-09-9-59,1507,cat and dog É nope it's not dog and cat it's just elephant and dog É elephant and cat,D,0,0,N
+14,XY.XandY,DOG-ELE,dog and elephant,2017-06-09-9-59,1507,right,J,Y,0,Y
+15,X.XandY,DOG,dog and elephant,2017-06-09-9-59,1507,[laughter],0,0,0,N
+16,XY.XorY,CAT-ELE,cat or elephant,2017-06-09-9-59,1507,cat I guess and an elephant,D,0,0,Y

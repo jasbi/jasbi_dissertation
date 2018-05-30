@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.X,CAT,cat,2017-06-07-14-3,1787,yeah,J,Y,0,Y
+2,X.Z,CAT,elephant,2017-06-07-14-3,1787,no É it's a cat,D,N,0,N
+3,X.XandY,ELE,cat and elephant,2017-06-07-14-3,1787,it's a elephant,D,0,0,N
+4,XY.Z,CAT-ELE,dog,2017-06-07-14-3,1787,no there is a elephant and a cat,D,N,0,N
+5,X.XandY,CAT,cat and dog,2017-06-07-14-3,1787,"no, there is just a cat",C,N,E,N
+6,XY.XandY,DOG-ELE,dog and elephant,2017-06-07-14-3,1787,yeah,J,Y,0,Y
+7,XY.XandY,CAT-ELE,cat and elephant,2017-06-07-14-3,1787,Yeah,J,Y,0,Y
+8,X.XorY,ELE,dog or elephant,2017-06-07-14-3,1787,There is only an elephant,C,0,E,N
+9,XY.XorY,CAT-ELE,cat or elephant,2017-06-07-14-3,1787,a cat AND an elephant,C,0,I,Y
+10,XY.X,DOG-ELE,elephant,2017-06-07-14-3,1787,there is a dog and an elephant,D,0,0,N
+11,X.XorY,CAT,cat or elephant,2017-06-07-14-3,1787,only a cat É he is not right,C,N,E,N
+12,X.Z,CAT,dog,2017-06-07-14-3,1787,there is only a cat,C,0,E,N
+13,XY.X,CAT-ELE,cat,2017-06-07-14-3,1787,no there is a cat AND an elephant,C,N,I,N
+14,XY.XorY,CAT-DOG,cat or dog,2017-06-07-14-3,1787,there is a cat AND a dog,C,0,I,N
+15,X.X,ELE,elephant,2017-06-07-14-3,1787,Yes,J,Y,0,Y
+16,XY.Z,CAT-DOG,elephant,2017-06-07-14-3,1787,there is a dog and a cat. He is not right,D,N,0,N

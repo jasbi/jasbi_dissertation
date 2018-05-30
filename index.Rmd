@@ -1,0 +1,128 @@
+---
+title: 'Learning Disjunction'
+author: 'Masoud Jasbi'
+date: 'May 2018'
+advisor: 'Eve V. Clark'
+firstreader: 'Christopher Potts'
+secondreader: 'Michael Frank'
+thirdreader: 'Ellen Markman'
+department: 'Linguistics'
+institution: 'Stanford University'
+knit: "bookdown::render_book"
+site: bookdown::bookdown_site
+output: 
+  thesisdown::thesis_pdf: default
+#  thesisdown::thesis_gitbook: default
+#  thesisdown::thesis_word: default
+#  thesisdown::thesis_epub: default
+# If you are creating a PDF you'll need to write your preliminary content here or
+# use code similar to line 20 for the files.  If you are producing in a different
+# format than PDF, you can delete or ignore lines 20-31 in this YAML header.  
+abstract: |
+  `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
+# If you'd rather include the preliminary content in files instead of inline
+# like below, use a command like that for the abstract above.  Note that a tab is 
+# needed on the line after the |.
+#acknowledgements: |
+#  I want to thank a few people.
+#dedication: |
+#  You can have a dedication here if you wish. 
+#preface: |
+#  This is an example of a thesis setup to use the reed thesis document class
+#  (for LaTeX) and the R bookdown package, in general.
+bibliography: bib/dissertation_biblio.bib
+# Download your specific bibliography database file and refer to it in the line above.
+csl: csl/apa.csl
+# Download your specific csl file and refer to it in the line above.
+lot: true
+lof: true
+#space_between_paragraphs: true
+# Delete the # at the beginning of the previous line if you'd like
+# to have a blank new line between each paragraph
+#header-includes:
+#- \usepackage{tikz}
+---
+
+<!--
+Above is the YAML (YAML Ain't Markup Language) header that includes a lot of metadata used to produce the document.  Be careful with spacing in this header!
+
+If you'd prefer to not include a Dedication, for example, simply delete lines 17 and 18 above or add a # before them to comment them out.  If you have other LaTeX packages you would like to include, delete the # before header-includes and list the packages after hyphens on new lines.
+
+If you'd like to include a comment that won't be produced in your resulting file enclose it in a block like this.
+-->
+
+<!--
+If you receive a duplicate label error after knitting, make sure to delete the index.Rmd file and then knit again.
+-->
+
+```{r include_packages, include = FALSE}
+# This chunk ensures that the thesisdown package is
+# installed and loaded. This thesisdown package includes
+# the template files for the thesis.
+if(!require(devtools))
+  install.packages("devtools", repos = "http://cran.rstudio.com")
+if(!require(thesisdown))
+  devtools::install_github("ismayc/thesisdown")
+library(thesisdown)
+```
+
+<!-- You'll need to include the order that you'd like Rmd files to appear in the _bookdown.yml file for
+PDF files and also delete the # before rmd_files: there.  You'll want to not include 00(two-hyphens)prelim.Rmd
+and 00-abstract.Rmd since they are handled in the YAML above differently for the PDF version.
+-->
+
+<!-- The {.unnumbered} option here means that the introduction will be "Chapter 0." You can also use {-} for no numbers
+on chapters.
+-->
+
+# Introduction {.unnumbered}
+
+In the literature on word learning, the story goes that one day, a linguist with great mastery of phonetics and phonology, heard of a people with an unknown language. She immediately packed her bags and traveled to learn about this new language. When she arrived, she saw a man walking down the road. Suddenly a rabbit scurried by. The man saw the rabbit and said "gavagai". The linguist immediately pulled out her notebook. As an excellent phonetician with trained ears for detecting linguistic sounds, she wrote down the phonetic transcription of what she heard with great confidence. It was only when she tried to write the meaning that doubt and uncertainty seeped in. "Does *gavagai* mean rabbit?", she whispered quietly. As a good scientist, she could see that her observation was compatible with a large number of hypotheses for the meaning of *gavagai*: "white-thing", "furry thing", "animal", "fast", "what was that?", "oh gosh!", "rabbit-on-the-road", and even "undetached rabbit parts"! She shook her head and let out a sigh. She found this "referential uncertainty" challenging [@quine1960word].
+
+Unlike what most of us think, the story did not end there. The linguist continued with her observations and soon she learned the meaning of *gavagai* as well as many other words, mostly nouns, adjectives, and verbs. But soon she encountered a new challenge. One day when she was walking down the same road with the same man she met the first day, there was some movement in the nearby bushes. The man pointed to the bushes and said: "tonomi yok gavagai". She now knew that *gavagai* meant rabbit. She also knew that *tonomi* is another animal. But she had never heard the word *yok* before. What did *yok* mean? "Maybe the man saw an animal and was not sure whether it was a gavagai **or** a tonomi", she thought. However, the man did not sound uncertain. "What if he was trying to say that the animal was a gavagai **and not** a tonomi ... or maybe he saw two animals and wanted to let me know that there was a gavagai **and** a tonomi in the bushes." It was also possible that by that time, the man knew she was trying to learn their language and wanted to let her know that "gavagai" and "tonomi" are terms that apply to the same animal; something like: "this is called a gavagai **or** a tonomi". The linguist in our story sighed again. Even though she knew the meaning of words for things and actions, she needed to know the meaning of words that put them together to convey larger concepts. Legend has it that she did not go home until she discovered the meaning of every "function word" in this new language.
+
+## Word Learning
+
+Learning the meaning of a word is often construed as mapping a linguistic form such as *gavagai* to a concept/meaning such as "rabbit". This mapping process is described in three stages: First the learner isolates the word form; then s/he isolates a meaning from a set of possible meanings; and finally s/he maps (or associates) the isolated word to the isolated meaning [@clark1993lexicon]. A fundamental question in the acquisition of meaning concerns the second step of mapping: how do children select the right meaning of a word from a set of candidate meanings? @quine1960word's thought experiment with the linguist and the new language showed that this is not a trivial task. In any given context, a word is compatible with many possible meanings. The problem of selecting the right meaning for a given word is called the "mapping problem" or the "gavagai problem".
+
+Solutions to the mapping problem often place constraints on either the hypothesis space or the structure of the lexicon to make word learning tractable [@clark1993lexicon]. For example, the taxonomic constraint [@markman1984children] proposes that children generate semantic hypotheses for nouns that denote a set of taxonomically related entities and do not hypothesize meanings that capture sets of entities with thematic relations. For example, given the word *gavagai*, children hypothesize the meaning "rabbit" which denotes the set of rabbits (taxonomically related) but not "rabbit and carrot" (thematically related). Therefore, the taxonomic constraint limits the space of hypotheses that the learner entertains. On the other hand, the mutual exclusivity constraint [@markman1988children] as well as the pragmatic principle of contrast [@clark1987principle] limit the structure of the lexicon such that two words are not mapped into the same meaning. This constraint on the lexicon makes the word learning task easier by removing hypotheses that are already associated with learned words.
+
+Another solution to the mapping problem is to propose cues that bias the learner towards one hypothesis rather than another. For example, socio-pragmatic cues such as pointing and joint-attention [@baldwin1993infants; @tomasello2003constructing; @clark2009first] direct the learner to bias one hypothesis over others. For example, given a rabbit and a cat, the speaker pointing to the rabbit and saying *gavagai* biases the learner to map the meaning of *gavagai* to "rabbit" rather than "cat". Learning models can also integrate cues and constraints to develop a learning account that uses multiple cues to home in on the target meaning of a word [@hollich2000breaking].
+
+While there has been a large body of research on the set of cues and constraints that aid the acquisition of content word semantics, cues that assist the acquisition of function words have not received as much attention. This dissertation aims at advancing a multiple cue-based acquisition of functions words by investigating the acquisition of the disjunction word *or*. In the next section I explain the scope of this dissertation within a program of research that aims at developing a cue-based acquisition of function words.
+
+<!--
+## Why disjunction?
+
+Explain that *or* provides massive ambiguity/underspecificity.
+
+Explain that *or* has been a lab rat of formal semantics and pragmatics. As a result, much more is known about the meaning and interpretation of *or* than any other function word. So studying the acquisition of *or* can be very helpful in better undertanding how the meaning of function words can be learned in general. 
+
+Studying the acquisition of disjunction words is important for theories of language acquisition, and more specifically semantic developement, in four ways.
+
+Development of logical thought and language
+
+Acquisition of function words
+
+Development of pragmatic reasoning
+-->
+
+## Defining the Scope
+
+The lexicon of a language can be divided into two groups of words: content words and function words. Content words consist of nouns (e.g. *cat*, *Bob*, *freedom*), verbs (e.g. *run*, *blink*, *imagine*), adjectives (e.g. *happy*, *red*, *fake*), and adverbs (e.g. *fast*, *quietly*, *quickly*). Function words include articles (e.g. *a*, *the*), quantifiers (e.g. *some*, *most*, *all*), prepositions (e.g. *in*, *on*, *at*), pronouns (e.g. *he*, *they*, *her*), auxiliary verbs (e.g. *did*, *can*, *am/is/are*), connectives (e.g. *or*, *if*, *because*), interrogatives (e.g. *who*, *what*, *when*), among others. Function words differ from content words in (at least) five crucial ways. First, function words are phonologically simpler than content words [@shi1996perceptual]. Second, even though content words vastly outnumber function words, function words are a lot more frequent. Third, while content words frequently admit new members, function words rarely do so. This is why content words are considered an open class in the lexicon while function words are called a closed-class. Fourth, the common intuition is that content words carry more meaning and the concepts they denote are more tangible. The meanings of function words, however, are subtle and abstract. Finally, function words appear in children's speech later than content words<!--citation-->.
+
+Even though content words commonly steal the spotlight, the unique properties of function words make them a valuable resource to linguists and cognitive scientists. They are few in number, extremely frequent, and very abstract in meaning. They are the essential nuts and bolts that combine smaller concepts to form larger thoughts. They provide crucial information on the structure and inner workings of human language and mind. The crosslinguistic and psycholinguistic study of function words provides us with an exceptional window into structure and building blocks of the human thought and reasoning.
+
+Within function words, logical connectives *and*, *or*, *not*, *if*, have received considerable attention in the linguistic and psychological literature due to the foundational role that the concepts of conjunction, disjunction, negation, and implication play in logic and mathematics. In linguistics and philosophy, a large body of research has investigated the connections between the meanings of these words and their corresponding operators in formal logics. Similarly in psychology, there has been substantial research on children's development and adults comprehension of logical concepts and logical reasoning. This dissertation focuses on the acquisition of the disjunction word *or* by preschool children. It proposes a learning account for *or* (and its counterpart *and*), that can be expanded in the future to linguistic connectives in general such as *but*, *because*, *yet*, *so*, *after*, *before*, *although*, *however*, etc. 
+
+## The Structure of the Dissertation
+
+This dissertation consists of four parts: literature review (Chapters \@ref(sempragLit) and \@ref(devoLit)), comprehension studies (Chapter \@ref(comprehension)), corpus studies (Chapter \@ref(corpus)), and modeling (Chapter \@ref(corpus)). Starting with the literature review, Chapter \@ref(sempragLit) provides an overview of the semantics and pragmatics of *or* in English. The main focus of the chapter is the empirical discoveries about the interpretations of disjunction in different linguistic and nonlinguistic contexts. The chapter shows that on the surface, a disjunction like "A or B" can be interpreted as inclusive disjunction, exclusive disjunction, or a conjunction.  These interpretations are often accompanied by ignorance inferences (the speaker does not know which option is true) or indifference inferences (the speaker does not care which option is true). The chapter discusses the factors that affect the interpretation of *or* in a given context. These factors include conversational principles, entailment environment, modality, disjunct semantics, intonation, syntax, metalinguistic speech acts, and some specific constructions such as embedded imperatives and unconditionals. The chapter argues that these factors can act as cues for the acquisition and interpretation of disjunction.
+
+Chapter \@ref(devoLit) provides an overview of research on the acquisition and interpretation of disjunction in children. It discusses three accounts of children's acquisition of logical connectives: development of logical reasoning, usage-based account, and logical nativism. The first two consider logical concepts such as disjunction as emergent from more primitive concepts such as "choice". Logical nativism, however, proposes that humans are born with logical concepts necessary for linguistic interpretation, as part of their Universal Grammar. The first two accounts -- development of logical reasoning and the usage-based account-- predict that children start with an exclusive interpretation of disjunction and only later, around age 5 or 6, do they interpret *or* in its "logical" inclusive sense. The nativist account predicts that children interpret *or* as inclusive disjunction from the beginning and only later with the development of pragmatic reasoning, they derive the exclusive interpretation. 
+
+Chapter \@ref(comprehension), presents three studies on adults' and children's comprehension of *or* in simple existential sentences ("there is A or B"). The first study tests adults comprehension of discussion using two and three-alternative forced-choice truth-value judgment tasks (2AFC and 3AFC TVJTs). The 2AFC task showed that adults interpret *and* as conjunction and *or* as inclusive disjunction. The 3AFC task showed that adults do not consider a disjunction completely felicitous when both disjuncts are true. The second study used a similar 3AFC task to test three-to-five year old children's comprehension of *and* and *or*. The study also analyzed and categorized children's open-ended spontaneous feedback in the task. Children's interpretations were similar to adults except in cases where both disjuncts were true. In such cases, children's forced choice responses showed no sign of infelicity while their spontaneous feedback showed such signs: children corrected the utterance with *or* and suggested that *and* should have been used instead. Study 3 used a two-alternative forced choice (2AFC) task and categorized children's open-ended feedback. The two-alternative forced choice task showed similar results to adults and the study replicated children's open-ended feedback in study 2: children provided corrections to the utterance when both disjuncts were true and offered the connective *and*. Overall the results suggested that three-to-five year old children's interpretations of disjunction do not substantially differ from those of adults. 
+
+Chapter \@ref(corpus) presents two corpus studies. First, it presents a large-scale analysis of parents and children's productions of *and* and *or*. The results show that children start producing *and* between the first and the second years of their lives and reach their parents rate of *and* production around their third birthday. For disjunction, children start producing *or* between two and three years of age and by the time they are four, they reach a constant rate of *or* production. This rate is slightly lower than that of their parents. Overall the results of this study support the findings of Chapter \@ref(comprehension): by age four, children develop a good understanding of connectives *and* and *or*. The second study selected a subset of *and* and *or* in child-directed speech for children between the ages of one and three. The study annotated utterances containing *and* and *or* for seven cue categories: their interpretation (exclusive, inclusive, conjunction), intonation, utterance type (declarative, question, imperative), syntax, consistency (clean or dirty vs. clean or tidy), communicative function, and answer type (correct vs. incorrect answers to questions with *or*). The results showed that intonation, and consistency play a large role in determining the interpretation of a disjunction. The results also show that around age 2, children start providing appropriate answers to questions with disjunction. The findings of this chapter suggest that children develop their understanding of disjunction mostly between their second and fourth birthday.
+
+Finally, in chapter \@ref(modeling), I report the results of applying random decision forests [@ho1995random] to the annotation dataset. The modeling study uses the annotation categories in study 2 of Chapter \@ref(corpus) to learn a decision structure to successfully interpret conjunction and disjunction. The results show that using the cues proposed in Chapter \@ref(corpus), a random forest can reach above 85% accuracy in classifying the correct interpretation of a conjunction or a disjunction. Given the results of the annotation study and the computational modeling, Chapter \@ref(conclusions) provides a learning account for connectives *and* and *or*.

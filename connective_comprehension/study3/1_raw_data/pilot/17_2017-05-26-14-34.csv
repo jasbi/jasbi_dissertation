@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.Z,ELE,cat,2017-05-26-14-34,1744,No!,J,N,0,NA
+2,X.X,CAT,cat,2017-05-26-14-34,1744,Yes!,J,Y,0,NA
+3,X.XandY,CAT,cat and elephant,2017-05-26-14-34,1744,No!,J,N,0,NA
+4,X.XandY,DOG,cat and dog,2017-05-26-14-34,1744,No! Just a dog!,C,N,E,NA
+5,XY.XandY,CAT-DOG,cat and dog,2017-05-26-14-34,1744,yes!,J,Y,0,NA
+6,X.XorY,DOG,cat or dog,2017-05-26-14-34,1744,I see a dog!,D,0,0,NA
+7,XY.X,CAT-DOG,cat,2017-05-26-14-34,1744,No! There was a DOG and a cat.,C,N,I,NA
+8,X.X,ELE,elephant,2017-05-26-14-34,1744,Yes!,J,Y,0,NA
+9,XY.XandY,DOG-ELE,dog and elephant,2017-05-26-14-34,1744,Yes!,J,Y,0,NA
+10,X.XorY,CAT,cat or elephant,2017-05-26-14-34,1744,Just one!,C,0,E,NA
+11,XY.XorY,DOG-ELE,dog or elephant,2017-05-26-14-34,1744,"dog, elephant [repeat] there is a dog AND an elephant.",C,0,I,NA
+12,XY.X,DOG-ELE,dog,2017-05-26-14-34,1744,"No, there is an elephant!",D,N,0,NA
+13,X.Z,ELE,dog,2017-05-26-14-34,1744,No!,J,N,0,NA
+14,XY.Z,DOG-ELE,cat,2017-05-26-14-34,1744,No!,J,N,0,NA
+15,XY.Z,CAT-ELE,dog,2017-05-26-14-34,1744,[headshake] it was a kittycat and an elephant!,D,N,0,NA
+16,XY.XorY,CAT-ELE,cat or elephant,2017-05-26-14-34,1744,CAT!,D,0,0,NA

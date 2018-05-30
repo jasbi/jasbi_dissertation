@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.X,ELE,elephant,2017-06-07-10-12,1436,[hands the card to the experimenter],0,0,0,Y
+2,X.Z,CAT,dog,2017-06-07-10-12,1436,[headshake] ,J,N,0,N
+3,XY.X,CAT-ELE,elephant,2017-06-07-10-12,1436,yes,J,Y,0,Y
+4,XY.XandY,CAT-DOG,cat and dog,2017-06-07-10-12,1436,Yes,J,Y,0,Y
+5,X.XandY,CAT,cat and elephant,2017-06-07-10-12,1436,only cat silly bean,C,0,E,N
+6,XY.XorY,CAT-DOG,cat or dog,2017-06-07-10-12,1436,right,J,Y,0,Y
+7,XY.Z,DOG-ELE,cat,2017-06-07-10-12,1436,no,J,N,0,N
+8,XY.XandY,DOG-ELE,dog and elephant,2017-06-07-10-12,1436,gotcha. Yes,J,Y,0,Y
+9,XY.X,DOG-ELE,dog,2017-06-07-10-12,1436,yes sillies,J,Y,0,Y
+10,X.Z,DOG,elephant,2017-06-07-10-12,1436,um'um [headshake] dog,D,N,0,N
+11,X.XorY,CAT,cat or dog,2017-06-07-10-12,1436,cat,D,0,0,Y
+12,X.XorY,DOG,dog or elephant,2017-06-07-10-12,1436,dog,D,0,0,N
+13,XY.XorY,CAT-ELE,cat or elephant,2017-06-07-10-12,1436,cat and elephant,D,0,0,Y
+14,XY.Z,CAT-DOG,elephant,2017-06-07-10-12,1436,um'um [headshake],J,N,0,N
+15,X.XandY,DOG,dog and elephant,2017-06-07-10-12,1436,dog. You were right,D,Y,0,N
+16,X.X,CAT,cat,2017-06-07-10-12,1436,yeah,J,Y,0,Y

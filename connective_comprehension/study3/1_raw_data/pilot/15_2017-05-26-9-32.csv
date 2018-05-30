@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.X,DOG,dog,2017-05-26-9-32,1931,Yes!,J,Y,0,1
+2,X.Z,DOG,elephant,2017-05-26-9-32,1931,No!,J,N,0,0
+3,X.XorY,ELE,dog or elephant,2017-05-26-9-32,1931,No! That no right. It's just an elephant.,C,N,E,0
+4,XY.Z,CAT-ELE,dog,2017-05-26-9-32,1931,It's an elephant AND a cat!,C,0,I,0
+5,X.X,ELE,elephant,2017-05-26-9-32,1931,Yes! It's right! That is right!,J,Y,0,NA
+6,XY.X,CAT-ELE,elephant,2017-05-26-9-32,1931,No! It's a cat AND an elephant!,C,N,I,0
+7,X.XorY,ELE,cat or elephant,2017-05-26-9-32,1931,No! ƒ Yes! An elephant!,D,Y,0,0
+8,XY.XandY,DOG-ELE,dog and elephant,2017-05-26-9-32,1931,Yes! He's right! Great job!,J,Y,0,NA
+9,XY.XorY,CAT-ELE,cat or elephant,2017-05-26-9-32,1931,He's right again!,J,Y,0,NA
+10,XY.Z,DOG-ELE,cat,2017-05-26-9-32,1931,no it's a dog and an elephant!,D,N,0,NA
+11,XY.XorY,CAT-DOG,cat or dog,2017-05-26-9-32,1931,He's right!,J,Y,0,NA
+12,XY.X,DOG-ELE,dog,2017-05-26-9-32,1931,No! there is an elephant AND a dog!,C,N,I,0
+13,XY.XandY,CAT-ELE,cat and elephant,2017-05-26-9-32,1931,He's right! Yes!,J,Y,0,NA
+14,X.Z,ELE,cat,2017-05-26-9-32,1931,No! It's an elephant!,D,N,0,0
+15,X.XandY,CAT,cat and dog,2017-05-26-9-32,1931,"No, just a cat!",C,N,E,0
+16,X.XandY,ELE,cat and elephant,2017-05-26-9-32,1931,No! It's just a doggie ƒ no it's an elephant not a dog!,C,N,E,0

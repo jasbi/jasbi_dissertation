@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,DOG,elephant,2017-06-09-10-56,2084,no ƒ it's a dog,D,N,0,N
+2,X.X,ELE,elephant,2017-06-09-10-56,2084,yes,J,Y,0,Y
+3,XY.X,CAT-DOG,dog,2017-06-09-10-56,2084,no ƒ it's a dog AND a cat,C,N,I,N
+4,X.XandY,ELE,dog and elephant,2017-06-09-10-56,2084,no just an elephant,C,N,E,N
+5,XY.X,DOG-ELE,elephant,2017-06-09-10-56,2084,[laughter] hey  before she said there's a dog and an elephant and there was an elephant and now she says elephant and there is a dog and an elephant [drops card],0,0,0,N
+6,X.XandY,DOG,cat and dog,2017-06-09-10-56,2084,no it's just a dog,C,N,E,N
+7,X.XorY,DOG,dog or elephant,2017-06-09-10-56,2084,a dog,D,0,0,N
+8,X.Z,ELE,cat,2017-06-09-10-56,2084,no an elephant,D,N,0,N
+9,XY.Z,CAT-DOG,elephant,2017-06-09-10-56,2084,no it's a cat and a dog,D,N,0,N
+10,X.XorY,CAT,cat or dog,2017-06-09-10-56,2084,a cat,D,0,0,N
+11,XY.XandY,DOG-ELE,dog and elephant,2017-06-09-10-56,2084,yes,J,Y,0,Y
+12,XY.XorY,DOG-ELE,dog or elephant,2017-06-09-10-56,2084,both,C,0,I,N
+13,XY.Z,CAT-ELE,dog,2017-06-09-10-56,2084,"no, a cat and elephant",D,N,0,N
+14,XY.XorY,CAT-ELE,cat or elephant,2017-06-09-10-56,2084,"yes, there's a cat and elephant",D,Y,0,N
+15,XY.XandY,CAT-ELE,cat and elephant,2017-06-09-10-56,2084,yes,J,Y,0,Y
+16,X.X,DOG,dog,2017-06-09-10-56,2084,yes,J,Y,0,Y

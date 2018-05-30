@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.Z,CAT,dog,2017-05-25-14-4,2092,No! [] cat!,J,N,0,NA
+2,X.X,ELE,elephant,2017-05-25-14-4,2092,Yes!,J,Y,0,NA
+3,X.XorY,CAT,cat or elephant,2017-05-25-14-4,2092,Cat!,D,0,0,NA
+4,XY.X,CAT-DOG,cat,2017-05-25-14-4,2092,No! [] cat and dog!,J,N,0,NA
+5,XY.Z,DOG-ELE,cat,2017-05-25-14-4,2092,No! [] dog and elephant!,J,N,0,NA
+6,XY.XorY,CAT-ELE,cat or elephant,2017-05-25-14-4,2092,Not cat OR elephant just cat AND elephant!,C,0,I,NA
+7,X.XandY,CAT,cat and dog,2017-05-25-14-4,2092,Just a cat!,C,0,E,NA
+8,X.XorY,ELE,dog or elephant,2017-05-25-14-4,2092,Just an elephant!,C,0,E,NA
+9,XY.X,DOG-ELE,dog,2017-05-25-14-4,2092,"Well, not only a dog, also an elephant!",C,0,I,NA
+10,XY.XorY,DOG-ELE,dog or elephant,2017-05-25-14-4,2092,Not a dog OR an elephant a dog AND elephant!,C,0,I,NA
+11,XY.Z,CAT-DOG,elephant,2017-05-25-14-4,2092,No! there is a cat and a dog!,D,N,0,NA
+12,XY.XandY,CAT-ELE,cat and elephant,2017-05-25-14-4,2092,Yes!,J,Y,0,NA
+13,X.Z,DOG,cat,2017-05-25-14-4,2092,No! there is a dog!,D,N,0,NA
+14,X.XandY,DOG,dog and elephant,2017-05-25-14-4,2092,No! Just a dog!,C,N,E,NA
+15,XY.XandY,DOG-ELE,dog and elephant,2017-05-25-14-4,2092,Yes!,J,Y,0,NA
+16,X.X,CAT,cat,2017-05-25-14-4,2092,Yes!,J,Y,0,NA

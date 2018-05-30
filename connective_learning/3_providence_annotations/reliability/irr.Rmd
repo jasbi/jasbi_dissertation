@@ -1,0 +1,431 @@
+---
+title: "Inter-rater Reliability for the Corpus Research on And and Or"
+author: "Masoud Jasbi and Akshay Jaggi"
+date: "June 23, 2016"
+output: html_document
+---
+
+```{r packages, warning=FALSE}
+library (irr)
+library(tidyverse)
+library(caret)
+library(forcats)
+library(ggthemes)
+```
+
+* For all variables except communicative functions, a top-down approach of defining categories were used. (list the variables and justify the categories).
+* For communicative functions, a bottom-up approach was used using 100 examples of "or" usage.
+* All the categories developed were mutually exclusive and exhaustive.
+* Coder training: 200 examples were coded by each coder separately, the examples were discussed and the categories and their definitions were refined to enhance measurement.
+
+* 10% of the data will be coded by both raters and IRR will be calculated
+* The reliability sample will be a subset of the full sample.
+* There were two coders, one of the coders is the researcher. All dat was rated by one or both of these coders.
+* Reliability Index: Cohen's Kappa 
+* Informal Reliability: 30 examples are coded by both raters and IRR is calculated
+* Refinement for better reliability, report the sources of disagreement and how they were resolved
+* Formal Reliability (10% of the full sample): 100 examples in Naima are coded by both raters, IRR is calculated
+* Make sure to Report:
+    + The categories and their precise definitions
+    + The measures of reliability
+    + The size of the informal/formal reliability samples 
+    + The size of the full sample 
+    + the size of the samples coded by each coder 
+    + the sources of disagreement 
+    + how disagreements were resolved
+    + How much training and what kind of training went into the coding
+
+Data for each child are stored separately and then combined in a data-frame called `or_data`. All data frame columns are defined as "factors".
+
+##OR annotations
+
+```{r ORiterations}
+or_agreement <- data.frame()
+
+or_rater_1 <-
+  read.csv("annotators/masoud.csv") %>%
+  select(speech_act_1:exclusivity_1)
+
+or_rater_2 <- 
+  read.csv("annotators/akshay.csv") %>%
+  select(speech_act_2:exclusivity_2)
+
+for (i in 0:7) {
+
+Rs <- cbind(or_rater_1[(i*30):(30*(i+1)),], or_rater_2[(i*30):(30*(i+1)),])
+
+connective_kappa <- 
+  Rs %>% 
+  select(connective_1,connective_2) %>%
+  kappa2()
+
+connective_agree <- 
+  Rs %>% 
+  select(connective_1,connective_2) %>%
+  agree()
+
+consistency_kappa <-
+  Rs %>% 
+  select(exclusion_1,exclusion_2) %>%
+  kappa2()
+
+consistency_agree <-
+  Rs %>% 
+  select(exclusion_1,exclusion_2) %>%
+  agree()
+
+synlevel_kappa <-
+  Rs %>% 
+  select(syn_level_1,syn_level_2) %>% 
+  kappa2()
+
+synlevel_agree <-
+  Rs %>% 
+  select(syn_level_1,syn_level_2) %>% 
+  agree()
+
+utterance_type_kappa <- 
+  Rs %>% 
+  select(utterance_type_1,utterance_type_2) %>% 
+  kappa2()
+
+utterance_type_agree <- 
+  Rs %>% 
+  select(utterance_type_1,utterance_type_2) %>% 
+  agree()
+
+intonation_kappa <-
+  Rs %>% 
+  select(intonation_1,intonation_2) %>%
+  kappa2()
+
+intonation_agree <-
+  Rs %>% 
+  select(intonation_1,intonation_2) %>%
+  agree()
+
+ speechAct_kappa <- 
+   Rs %>% 
+   select(speech_act_1,speech_act_2) %>%
+   kappa2("unweighted")
+
+speechAct_agree <- 
+   Rs %>% 
+   select(speech_act_1,speech_act_2) %>%
+   agree()
+  
+answers_kappa <- 
+  Rs %>% 
+  select(answer_1,answer_2) %>%
+  kappa2()
+
+answers_agree <- 
+  Rs %>% 
+  select(answer_1,answer_2) %>%
+  agree()
+
+agreement <- 
+  data.frame(
+    iteration = i+1,
+    statistic = c("kappa", "pct_agree"),
+    `Utterance Type` = c(utterance_type_kappa$value, utterance_type_agree$value),
+    Intonation = c(intonation_kappa$value, intonation_agree$value),
+    `Syntactic Level` = c(synlevel_kappa$value, synlevel_agree$value),
+    Consistency = c(consistency_kappa$value, consistency_agree$value),
+    `Communicative Function` = c(speechAct_kappa$value, speechAct_agree$value),
+    Answers = c(answers_kappa$value, answers_agree$value),
+    `Connective Interpretation` = c(connective_kappa$value, connective_agree$value)
+      )
+
+or_agreement <- rbind(or_agreement, agreement)
+}
+
+write.csv(or_agreement, "agreement/or_agreement.csv", row.names = FALSE)
+#knitr::kable(or_agreement, digit=2)
+```
+
+```{r orGraph}
+graph_datas <- 
+  or_agreement %>%
+  filter(statistic=="kappa") %>%
+  gather(annotation_category, kappa_value, Utterance.Type:Answers) 
+
+ggplot(graph_datas, aes(x=iteration,y=kappa_value, color=annotation_category)) + geom_line() + labs(y="Kappa Value") + geom_hline(yintercept=0.7) + theme_few()
+```
+
+## AND Reliability
+
+```{r andIterations}
+and_agreement <- data.frame()
+
+and_rater_1 <-
+  read_csv("annotators/kutay.csv") %>%
+  select(speech_act_1:connective_1)
+
+and_rater_2 <- 
+  read_csv("annotators/salma.csv") %>%
+  select(speech_act_2:connective_2)
+
+and_rater_1 <- and_rater_1[1:300,]
+and_rater_2 <- and_rater_2[1:300,]
+
+for (i in 0:9) {
+
+Rs <- cbind(and_rater_1[(i*30):(30*(i+1)),], and_rater_2[(i*30):(30*(i+1)),])
+
+connective_kappa <- 
+  Rs %>% 
+  select(connective_1,connective_2) %>%
+  kappa2()
+
+connective_agree <- 
+  Rs %>% 
+  select(connective_1,connective_2) %>%
+  agree()
+
+consistency_kappa <-
+  Rs %>% 
+  select(consistency_1,consistency_2) %>%
+  kappa2()
+
+consistency_agree <-
+  Rs %>% 
+  select(consistency_1,consistency_2) %>%
+  agree()
+
+synlevel_kappa <-
+  Rs %>% 
+  select(syn_level_1,syn_level_2) %>% 
+  kappa2()
+
+synlevel_agree <-
+  Rs %>% 
+  select(syn_level_1,syn_level_2) %>% 
+  agree()
+
+utterance_type_kappa <- 
+  Rs %>% 
+  select(utterance_type_1,utterance_type_2) %>% 
+  kappa2()
+
+utterance_type_agree <- 
+  Rs %>% 
+  select(utterance_type_1,utterance_type_2) %>% 
+  agree()
+
+intonation_kappa <-
+  Rs %>% 
+  select(intonation_1,intonation_2) %>%
+  kappa2()
+
+intonation_agree <-
+  Rs %>% 
+  select(intonation_1,intonation_2) %>%
+  agree()
+
+ speechAct_kappa <- 
+   Rs %>% 
+   select(speech_act_1,speech_act_2) %>%
+   kappa2("unweighted")
+
+speechAct_agree <- 
+   Rs %>% 
+   select(speech_act_1,speech_act_2) %>%
+   agree()
+  
+answers_kappa <- 
+  Rs %>% 
+  select(answer_1,answer_2) %>%
+  kappa2()
+
+answers_agree <- 
+  Rs %>% 
+  select(answer_1,answer_2) %>%
+  agree()
+
+agreement <- 
+  data.frame(
+    iteration = i+1,
+    statistic = c("kappa", "pct_agree"),
+    `Utterance Type` = c(utterance_type_kappa$value, utterance_type_agree$value),
+    Intonation = c(intonation_kappa$value, intonation_agree$value),
+    `Syntactic Level` = c(synlevel_kappa$value, synlevel_agree$value),
+    Consistency = c(consistency_kappa$value, consistency_agree$value),
+    `Communicative Function` = c(speechAct_kappa$value, speechAct_agree$value),
+    Answers = c(answers_kappa$value, answers_agree$value),
+    `Connective Interpretation` = c(connective_kappa$value, connective_agree$value)
+      )
+
+and_agreement <- rbind(and_agreement, agreement)
+}
+
+#knitr::kable(and_agreement, digits = 2)
+write.csv(and_agreement, "agreement/and_agreement.csv", row.names = FALSE)
+```
+
+```{r andGraph}
+graph_datas <- 
+  and_agreement %>%
+  filter(statistic=="kappa") %>%
+  gather(annotation_category, kappa_value, Utterance.Type:Answers) 
+
+ggplot(graph_datas, aes(x=iteration,y=kappa_value, color=annotation_category)) + geom_line() + labs(y="Kappa Value") + geom_hline(yintercept=0.7) + theme_few()
+```
+
+```{r confusionMatrix}
+# relevling so that "clausal" is the reference for syntactic level
+and_rater_1$syn_level_1<- relevel(factor(and_rater_1$syn_level_1),"S")
+and_rater_2$syn_level_2<- relevel(factor(and_rater_2$syn_level_2),"S")
+
+# getting the Precision, Recall, and Prevalence, for the most common type in each category and the overall Kappa for each category
+and_agreeStats<- data.frame(
+  `flat intonation` = c(confusionMatrix(and_rater_1$intonation_1,and_rater_2$intonation_2)$byClass[1,5:8], confusionMatrix(and_rater_1$intonation_1,and_rater_2$intonation_2)$overall["Kappa"]),
+  `clausal syntactic_level` = c(confusionMatrix(and_rater_1$syn_level_1,and_rater_2$syn_level_2)$byClass[5:8],
+                      confusionMatrix(and_rater_1$syn_level_1,and_rater_2$syn_level_2)$overall["Kappa"]),
+  `NA answer` = c(confusionMatrix(and_rater_1$answer_1,and_rater_2$answer_2)$byClass[3,5:8],
+             confusionMatrix(and_rater_1$answer_1,and_rater_2$answer_2)$overall["Kappa"]),
+  `description communicative_function` = c(confusionMatrix(and_rater_1$speech_act_1,and_rater_2$speech_act_2)$byClass[4,5:8],
+                 confusionMatrix(and_rater_1$speech_act_1,and_rater_2$speech_act_2)$overall["Kappa"]),
+  `consistent consistency` = c(confusionMatrix(and_rater_1$consistency_1,and_rater_2$consistency_2)$byClass[5:8],
+                  confusionMatrix(and_rater_1$consistency_1,and_rater_2$consistency_2)$overall["Kappa"]),
+  `declarative utterance_type` = c(confusionMatrix(and_rater_1$utterance_type_1,and_rater_2$utterance_type_2)$byClass[1,5:8],
+                     confusionMatrix(and_rater_1$utterance_type_1,and_rater_2$utterance_type_2)$overall["Kappa"]),
+  `AND interpretation` = c(confusionMatrix(and_rater_1$connective_1,and_rater_2$connective_2)$byClass[1,5:8],
+                 confusionMatrix(and_rater_1$connective_1,and_rater_2$connective_2)$overall["Kappa"])
+  )
+
+# ordering the rows
+and_agreeStats <- rbind(and_agreeStats[4,], and_agreeStats[1:3,], and_agreeStats[5,])
+
+write.csv(and_agreeStats, "agreement/and_agreement_stats.csv")
+```
+
+```{r specificAgreement}
+library(obs.agree)
+# computing specific agreement for each class in each category
+intonation_rai <- data.frame(
+  RAI(as.matrix(data.frame(and_rater_1$intonation_1, and_rater_2$intonation_2)))$Specific_agreement,
+  annotation = "intonation"
+)
+
+connective_rai <- data.frame(
+  RAI(as.matrix(data.frame(and_rater_1$connective_1, and_rater_2$connective_2)))$Specific_agreement,
+  annotation = "interpretation"
+)
+answer_rai <- data.frame(
+  RAI(as.matrix(data.frame(and_rater_1$answer_1, and_rater_2$answer_2)))$Specific_agreement,
+  annotation = "answer"
+)
+utterance_type_rai <- data.frame(
+  RAI(as.matrix(data.frame(and_rater_1$utterance_type_1, and_rater_2$utterance_type_2)))$Specific_agreement,
+  annotation = "utterance_type"
+)
+speechact_rai <- data.frame(
+  RAI(as.matrix(data.frame(and_rater_1$speech_act_1, and_rater_2$speech_act_2)))$Specific_agreement,
+  annotation = "communicative_function"
+  )
+syn_level_rai <- data.frame(
+  RAI(as.matrix(data.frame(and_rater_1$syn_level_1, and_rater_2$syn_level_2)))$Specific_agreement,
+  annotation = "syntactic_level"
+)
+consistency_rai <- data.frame(
+  RAI(as.matrix(data.frame(and_rater_1$consistency_1, and_rater_2$consistency_2)))$Specific_agreement,
+  annotation = "consistency"
+)
+
+and_specific_agreement <- rbind(intonation_rai, connective_rai, answer_rai, utterance_type_rai, speechact_rai, syn_level_rai, consistency_rai)
+
+write.csv(and_specific_agreement, "agreement/and_specific_agreement.csv")
+```
+
+```{r prevalentCategoriesTable}
+and_specific_agreement <- read_csv("agreement/and_specific_agreement.csv")
+and_agreement_stats <- read_csv("agreement/and_agreement_stats.csv")
+
+and_prevalence <- 
+  and_agreement_stats %>%
+  filter(X1=="Prevalence" | X1=="Kappa") %>% t()
+
+colnames(and_prevalence) <- and_prevalence[1,]
+and_prevalence <- and_prevalence[-1,]
+and_prevalence <- data.frame(and_prevalence)
+and_prevalence <- add_rownames(and_prevalence, "category.class")
+
+and_prevalence <- separate(and_prevalence, category.class, into=c("class","annotation"), sep = "\\.")
+
+and_agreement <-
+and_specific_agreement %>%
+  filter(X1=="AND"| X1=="S"| X1=="description" | X1=="0"| X1=="declarative"| X1=="02" | X1=="N") %>% select(value, X1, annotation) %>%
+  full_join(and_prevalence, by="annotation")
+
+and_specific_Kappa <- and_agreement[,c("annotation","class","Prevalence", "value", "Kappa")]
+
+write.csv(and_specific_Kappa, "agreement/and_specific_Kappa.csv", row.names = FALSE)
+```
+
+```{r oneTime}
+rater_1 <-
+  read.csv("annotators/Masoud_all.csv") %>%
+  select(speech_act_1:exclusivity_1)
+
+rater_2 <- 
+  read.csv("annotators/Akshay_all.csv") %>%
+  select(speech_act_2:exclusivity_2)
+
+Rs <- cbind(rater_1[150:241,], rater_2[150:241,])
+
+connective_kappa <- 
+  Rs %>% 
+  select(connective_1,connective_2) %>%
+  kappa2("unweighted")
+
+connective2_kappa <-
+  Rs %>% 
+  select(exclusivity_1,exclusivity_2) %>%
+  kappa2("unweighted")
+
+synlevel_kappa <-
+  Rs %>% 
+  select(syn_level_1,syn_level_2) %>% 
+  kappa2("unweighted")
+
+utterance_type_kappa <- 
+  Rs %>% 
+  select(utterance_type_1,utterance_type_2) %>% 
+  kappa2("unweighted")
+
+exclusion_kappa <- 
+  Rs %>% 
+  select(exclusion_1,exclusion_2) %>%
+  kappa2("unweighted")
+
+intonation_kappa <-
+  Rs %>% 
+  select(intonation_1,intonation_2) %>%
+  kappa2("unweighted")
+
+speechAct_kappa <- 
+  Rs %>% 
+  select(speech_act_1,speech_act_2) %>%
+  kappa2("unweighted")
+
+answers_kappa <- 
+  Rs %>% 
+  select(answer_1,answer_2) %>%
+  kappa2("unweighted")
+
+Kappas <- 
+  data.frame(
+    `Utterance Type` = c(utterance_type_kappa$value),#, utterance_type_kappa$p.value),
+    Intonation = c(intonation_kappa$value),#, intonation_kappa$p.value),
+    `Syntactic Level` = c(synlevel_kappa$value),#, synlevel_kappa$p.value),
+    Consistency = c(exclusion_kappa$value),#, exclusion_kappa$p.value),
+    `Speech Act Type` = c(speechAct_kappa$value),#, speechAct_kappa$p.value),
+    Answers = c(answers_kappa$value),#, answers_kappa$p.value),
+    Connective = c(connective_kappa$value),#, connective_kappa$p.value),
+    Exclusivity = c(connective2_kappa$value)#, connective2_kappa$p.value)
+      )
+
+knitr::kable(Kappas)
+```
+

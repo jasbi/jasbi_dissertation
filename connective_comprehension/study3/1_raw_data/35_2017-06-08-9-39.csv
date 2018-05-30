@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,ELE,dog,2017-06-08-9-39,1895,no you are not right,J,N,0,N
+2,X.X,DOG,dog,2017-06-08-9-39,1895,yes you are right,J,Y,0,Y
+3,XY.XandY,CAT-DOG,cat and dog,2017-06-08-9-39,1895,you are right,J,Y,0,Y
+4,X.XorY,CAT,cat or dog,2017-06-08-9-39,1895,a cat,D,0,0,Y
+5,X.XandY,DOG,dog and elephant,2017-06-08-9-39,1895,no you are not right,J,N,0,N
+6,XY.X,DOG-ELE,elephant,2017-06-08-9-39,1895,no you are not right,J,N,0,N
+7,XY.Z,DOG-ELE,cat,2017-06-08-9-39,1895,no,J,N,0,N
+8,X.XandY,ELE,cat and elephant,2017-06-08-9-39,1895,no you are not right,J,N,0,N
+9,XY.X,CAT-ELE,cat,2017-06-08-9-39,1895,no you are not right,J,N,0,N
+10,XY.Z,CAT-DOG,elephant,2017-06-08-9-39,1895,no,J,N,0,N
+11,X.Z,DOG,cat,2017-06-08-9-39,1895,no,J,N,0,N
+12,XY.XorY,CAT-ELE,cat or elephant,2017-06-08-9-39,1895,a cat AND an elephant,C,0,I,Y
+13,X.XorY,ELE,cat or elephant,2017-06-08-9-39,1895,an elephant,D,0,0,Y
+14,X.X,CAT,cat,2017-06-08-9-39,1895,yes he is right,J,Y,0,Y
+15,XY.XorY,DOG-ELE,dog or elephant,2017-06-08-9-39,1895,a dog and an elephant,D,0,0,Y
+16,XY.XandY,CAT-ELE,cat and elephant,2017-06-08-9-39,1895,Yeah,J,Y,0,Y

@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,ELE,cat,2017-06-09-13-53,1568,no,J,N,0,N
+2,X.X,CAT,cat,2017-06-09-13-53,1568,yeah,J,Y,0,Y
+3,X.XandY,ELE,cat and elephant,2017-06-09-13-53,1568,no there is an elephant,D,N,0,N
+4,X.XorY,DOG,dog or elephant,2017-06-09-13-53,1568,dog,D,0,0,N
+5,XY.XandY,DOG-ELE,dog and elephant,2017-06-09-13-53,1568,[nod],J,Y,0,Y
+6,X.XandY,DOG,cat and dog,2017-06-09-13-53,1568,no there is a dog,D,N,0,N
+7,X.Z,DOG,cat,2017-06-09-13-53,1568,no there is a dog,D,N,0,N
+8,XY.XandY,CAT-ELE,cat and elephant,2017-06-09-13-53,1568,yeah,J,Y,0,Y
+9,XY.X,CAT-ELE,elephant,2017-06-09-13-53,1568,[headshake] cat and an elephant,D,N,0,N
+10,X.XorY,CAT,cat or elephant,2017-06-09-13-53,1568,no it's a cat,D,N,0,N
+11,XY.XorY,DOG-ELE,dog or elephant,2017-06-09-13-53,1568,yeah,J,Y,0,Y
+12,XY.X,CAT-ELE,cat,2017-06-09-13-53,1568,no it's a cat and an elephant,D,N,0,N
+13,XY.Z,CAT-DOG,elephant,2017-06-09-13-53,1568,no dog and a cat,D,N,0,N
+14,XY.XorY,CAT-DOG,cat or dog,2017-06-09-13-53,1568,yeah,J,Y,0,Y
+15,X.X,DOG,dog,2017-06-09-13-53,1568,yeah,J,Y,0,Y
+16,XY.Z,DOG-ELE,cat,2017-06-09-13-53,1568,no,J,N,0,N

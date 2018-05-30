@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,DOG,cat,2017-06-08-11-15,1725,no. wrong,J,N,0,N
+2,X.X,CAT,cat,2017-06-08-11-15,1725,yeah. A cat,D,Y,0,Y
+3,X.XorY,DOG,dog or elephant,2017-06-08-11-15,1725,only a dog,C,0,E,Y
+4,X.XorY,ELE,cat or elephant,2017-06-08-11-15,1725,it's only an elephant,C,0,E,Y
+5,XY.XorY,CAT-DOG,cat or dog,2017-06-08-11-15,1725,yeah. Cat and dog,D,0,0,Y
+6,XY.Z,CAT-DOG,elephant,2017-06-08-11-15,1725,no. there is a cat and a dog,D,N,0,N
+7,XY.X,CAT-ELE,cat,2017-06-08-11-15,1725,yeah. There's a cat AND an elephant,C,Y,I,Y
+8,XY.X,CAT-DOG,dog,2017-06-08-11-15,1725,it's a dog and a cat,D,0,0,Y
+9,X.X,ELE,elephant,2017-06-08-11-15,1725,yeah,J,Y,0,Y
+10,X.Z,CAT,dog,2017-06-08-11-15,1725,no. a cat,D,N,0,N
+11,XY.Z,DOG-ELE,cat,2017-06-08-11-15,1725,no. dog elephant,D,N,0,N
+12,X.XandY,ELE,cat and elephant,2017-06-08-11-15,1725,only an elephant,C,0,E,Y
+13,XY.XorY,DOG-ELE,dog or elephant,2017-06-08-11-15,1725,yeah,J,Y,0,Y
+14,XY.XandY,DOG-ELE,dog and elephant,2017-06-08-11-15,1725,yeah,J,Y,0,Y
+15,X.XandY,DOG,cat and dog,2017-06-08-11-15,1725,yes. Dog,J,Y,0,Y
+16,XY.XandY,CAT-ELE,cat and elephant,2017-06-08-11-15,1725,yeah,J,Y,0,Y

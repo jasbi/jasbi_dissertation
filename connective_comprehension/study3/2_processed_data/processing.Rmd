@@ -1,0 +1,29 @@
+---
+title: "Data_Processing"
+author: "Masoud Jasbi"
+date: "5/29/2017"
+output: html_document
+---
+
+The participant CSV files need to be compiled into one CSV file.
+
+
+```{r combine_CSVs, warning=FALSE, message=FALSE}
+child_data <- data.frame()
+
+file_names <- list.files("../1_raw_data/", pattern=".csv")
+
+for (file_name in file_names){
+  file <- read.csv(paste("../1_raw_data/", file_name, sep=""))
+  child_data <- rbind(child_data, file)
+}
+
+child_data <- 
+  child_data %>% 
+  separate(trial_type, c("Animal","Guess"), sep="\\.")
+  
+child_data[,"critical"] <- 0
+child_data[child_data$Guess=="XorY" | child_data$Guess=="XandY","critical"] <- 1
+
+write.csv(child_data, "study2_data")
+```

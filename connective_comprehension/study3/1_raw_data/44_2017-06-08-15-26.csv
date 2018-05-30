@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,ELE,dog,2017-06-08-15-26,1844,nope,J,N,0,N
+2,X.X,ELE,elephant,2017-06-08-15-26,1844,yes,J,Y,0,Y
+3,XY.Z,CAT-ELE,dog,2017-06-08-15-26,1844,no ,J,N,0,N
+4,X.XorY,ELE,dog or elephant,2017-06-08-15-26,1844,an elephant,J,Y,0,Y
+5,XY.Z,DOG-ELE,cat,2017-06-08-15-26,1844,no.,J,N,0,N
+6,XY.XandY,DOG-ELE,dog and elephant,2017-06-08-15-26,1844,Yes,J,Y,0,Y
+7,XY.XandY,CAT-ELE,cat and elephant,2017-06-08-15-26,1844,yes,J,Y,0,Y
+8,XY.X,DOG-ELE,elephant,2017-06-08-15-26,1844,"nope , there was an elephant and a dog",D,N,0,Y
+9,XY.XorY,CAT-ELE,cat or elephant,2017-06-08-15-26,1844,a cat AND an elephant,C,0,I,Y
+10,XY.X,CAT-DOG,dog,2017-06-08-15-26,1844,yes,J,Y,0,Y
+11,X.XorY,CAT,cat or dog,2017-06-08-15-26,1844,a cat,D,0,0,Y
+12,X.XandY,CAT,cat and elephant,2017-06-08-15-26,1844,a cat,D,0,0,Y
+13,X.XandY,CAT,cat and dog,2017-06-08-15-26,1844,there's a cat [was Jazzy right?] he guessed cat and the dog,D,0,0,Y
+14,XY.XorY,DOG-ELE,dog or elephant,2017-06-08-15-26,1844,a dog AND an elephant,C,0,I,Y
+15,X.Z,ELE,cat,2017-06-08-15-26,1844,nope,J,N,0,N
+16,X.X,DOG,dog,2017-06-08-15-26,1844,yes,J,Y,0,Y

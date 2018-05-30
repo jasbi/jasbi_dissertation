@@ -1,0 +1,52 @@
+---
+title: "Decision Tree Development"
+author: "Akshay Jaggi"
+date: "March 25, 2018"
+output: pdf_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(downloader) 
+library(ggplot2)
+```
+
+# Main Text
+To demonstrate a potential methodology for discerning the use of connectives in context, we modeled connective learning using a random forest approach. Random forests are an ensemble model that aggregates many decision trees. A decision tree is a series of binary decisions that classifies data into two or more classes. The order and structure of these decisions can be learned from data. Here, we randomly subsample subsets of the annotated CHILDES corpus as training data and then test on the remaining data. 
+
+## Discerning XOR-IOR
+From 300 annotated examples labeled as either IOR or XOR, we use intonation and consistency to separate the two categories. \newline
+
+If intonation is rise-fall, XOR. \newline
+If inconsistent, XOR. \newline
+Otherwise, IOR \newline
+
+!["XOR-IOR Tree"](plots/exin.pdf)
+\newpage
+
+## Discerning XOR-IOR-AND
+From 300 annotated examples labeled IOR, XOR, or AND, we use intonation, speech act, consistency, and annotation to separate them. \newline
+
+If Annotation is AND, AND \newline
+If intonation is rise-fall, XOR \newline
+If intonation is rising and inconsistent, XOR \newline
+If intonation is rising and consistent, IOR \newline
+If intonation is flat and speech act options/defex/unconditional, AND \newline
+If intonation is flat and other speech act, XOR \newline
+
+!["XOR-IOR-AND Tree"](plots/exinand.pdf)
+\newpage
+
+## Discerning Everything 
+From 300 annotated examples labeled IOR, XOR, AND, NPQ, XNOR, or NOR, we use intonation, speech act, consistency, utterance type, and annotation to separate them. \newline
+
+If Annotation is AND, AND \newline
+IF intonation is rise-fall, XOR \newline
+If intonation is rising and inconsistent, XOR \newline
+If intonation is rising and consistent, IOR \newline
+If intonation is flat and speech act is (unconditional or repair or directive description), NPQ \newline
+If intonation is flat and speech act is defex, AND \newline
+If intonation is flat and speech act is (conditional, identification, clarification, or directive), XOR \newline
+If intonation is flat and speech act is (description, options, preference), ???
+\newline
+
+!["Everything Tree"](plots/everything.pdf)

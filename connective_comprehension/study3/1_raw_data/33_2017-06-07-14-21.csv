@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,CAT,dog,2017-06-07-14-21,1625,no,J,N,0,N
+2,X.X,ELE,elephant,2017-06-07-14-21,1625,Yes,J,Y,0,Y
+3,XY.Z,DOG-ELE,cat,2017-06-07-14-21,1625,[headshake] no É. Elephant and dog,D,N,0,N
+4,XY.XandY,CAT-ELE,cat and elephant,2017-06-07-14-21,1625,yes,J,Y,0,Y
+5,XY.XandY,CAT-DOG,cat and dog,2017-06-07-14-21,1625,yes,J,Y,0,Y
+6,X.Z,ELE,cat,2017-06-07-14-21,1625,no É it's an elephant,D,N,0,N
+7,X.XandY,DOG,cat and dog,2017-06-07-14-21,1625,no É  a dog,D,N,0,N
+8,XY.X,CAT-ELE,cat,2017-06-07-14-21,1625,and an elephant,C,0,I,N
+9,XY.X,CAT-DOG,dog,2017-06-07-14-21,1625,[headshake] a cat AND a dog,C,N,I,N
+10,X.XorY,DOG,dog or elephant,2017-06-07-14-21,1625,a dog,D,0,0,N
+11,XY.XorY,DOG-ELE,dog or elephant,2017-06-07-14-21,1625,a dog AND an elephant,C,0,I,N
+12,XY.XorY,CAT-DOG,cat or dog,2017-06-07-14-21,1625,a cat and a dog,D,0,0,N
+13,XY.Z,CAT-DOG,elephant,2017-06-07-14-21,1625,no,J,N,0,N
+14,X.XorY,CAT,cat or elephant,2017-06-07-14-21,1625,a cat,D,0,0,Y
+15,X.XandY,CAT,cat and elephant,2017-06-07-14-21,1625,only a cat,C,0,E,N
+16,X.X,DOG,dog,2017-06-07-14-21,1625,yes,J,Y,0,Y

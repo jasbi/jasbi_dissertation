@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.X,DOG,dog,2017-06-01-14-2,1945,Yes,J,Y,0,Y
+2,X.Z,DOG,elephant,2017-06-01-14-2,1945,No. A dog.,D,N,0,N
+3,XY.X,CAT-ELE,elephant,2017-06-01-14-2,1945,Yes! There is two!,C,Y,I,Y
+4,X.XorY,CAT,cat or dog,2017-06-01-14-2,1945,the first one is right.,D,0,0,YN
+5,X.XorY,DOG,dog or elephant,2017-06-01-14-2,1945,Dog!,D,0,0,YN
+6,X.XandY,ELE,cat and elephant,2017-06-01-14-2,1945,No! É no yes! Yes no!,J,N,0,N
+7,XY.XorY,CAT-ELE,cat or elephant,2017-06-01-14-2,1945,Both,C,0,I,Y
+8,XY.XorY,CAT-DOG,cat or dog,2017-06-01-14-2,1945,Both right.,C,0,I,Y
+9,XY.Z,CAT-ELE,dog,2017-06-01-14-2,1945,No!,J,N,0,N
+10,XY.X,DOG-ELE,elephant,2017-06-01-14-2,1945,Yes! And one more.,C,Y,I,Y
+11,XY.XandY,CAT-ELE,cat and elephant,2017-06-01-14-2,1945,Yes!,J,Y,0,Y
+12,X.Z,DOG,cat,2017-06-01-14-2,1945,No!,J,N,0,N
+13,X.XandY,DOG,dog and elephant,2017-06-01-14-2,1945,dog!,D,0,0,YN
+14,X.X,CAT,cat,2017-06-01-14-2,1945,yes!,J,Y,0,Y
+15,XY.Z,DOG-ELE,cat,2017-06-01-14-2,1945,No!,J,N,0,N
+16,XY.XandY,DOG-ELE,dog and elephant,2017-06-01-14-2,1945,Yes!,J,Y,0,Y

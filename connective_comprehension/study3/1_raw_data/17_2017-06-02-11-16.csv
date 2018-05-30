@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,CAT,elephant,2017-06-02-11-16,1421,A cat!,D,0,0,N
+2,X.X,DOG,dog,2017-06-02-11-16,1421,she is right!,J,Y,0,Y
+3,XY.XorY,DOG-ELE,dog or elephant,2017-06-02-11-16,1421,A dog and an elephant! She is right!,D,Y,0,Y
+4,X.XandY,ELE,dog and elephant,2017-06-02-11-16,1421,She is not right! Not a dog! Just an elephant!,C,N,E,Y
+5,X.Z,CAT,dog,2017-06-02-11-16,1421,No! a kitty cat,D,N,0,N
+6,XY.X,CAT-DOG,dog,2017-06-02-11-16,1421,Yeah É and there is a kitty cat on it,C,Y,I,Y
+7,XY.Z,CAT-ELE,dog,2017-06-02-11-16,1421,Nope! An elephant and a kitty cat,D,N,0,Y
+8,X.XorY,DOG,dog or elephant,2017-06-02-11-16,1421,A dog!,D,0,0,Y
+9,X.XandY,DOG,cat and dog,2017-06-02-11-16,1421,there's just a dog,C,0,E,Y
+10,XY.Z,DOG-ELE,cat,2017-06-02-11-16,1421,No! a dog and an elephant,D,N,0,N
+11,XY.X,CAT-ELE,cat,2017-06-02-11-16,1421,Yeah,J,Y,0,Y
+12,XY.XorY,CAT-DOG,cat or dog,2017-06-02-11-16,1421,A cat and a dog!,D,0,0,Y
+13,X.X,CAT,cat,2017-06-02-11-16,1421,Yeah!,J,Y,0,Y
+14,X.XorY,DOG,cat or dog,2017-06-02-11-16,1421,a dog,D,0,0,Y
+15,XY.XandY,CAT-DOG,cat and dog,2017-06-02-11-16,1421,she was right,J,Y,0,Y
+16,XY.XandY,DOG-ELE,dog and elephant,2017-06-02-11-16,1421,Yeah,J,Y,0,Y

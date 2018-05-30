@@ -1,0 +1,23 @@
+# Conclusion {#conclusions}
+
+
+Talk about claims of innateness maybe? Are logical concepts innate? are they any more special than size etc.? 
+
+I asked what constraints and cues aid children's acquisition of function words? 
+
+The general account:
+Syntactic bootstrapping constrains the hypothsis space for the function word.
+Cues such as intonation, semantics of the content words being combined, the communicative function of the sentence, etc. help the learner in mapping the function word to its meaning.
+
+In case of disjunction:
+Syntactic bootstrapping constrains the hypothesis space to the connective meanings.
+"syntactic constructions in which two or more units of the same type are combined into a larger unit and still have the same semantic relations with other surrounding elements."
+Intonation, disjunct semantics 
+
+* The role of ruotines and common conceptual representations in learning the meaning of function words.
+    + Eve's work on spatial prepositions of in/on/under
+    + Eve's work on temporal connectives before and after
+    + Bloom's work on number words
+    + Piantedosi et al on quantifier learning
+* Forming interpretations at the top level based on the routines, mapping at the top level, then breaking them down to retrieve word meaning consistent across constructions
+* However, mapping should take into account the formal and conceptual environment of mapping

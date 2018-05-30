@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.X,DOG,dog,2017-06-08-13-46,1363,yes you're right,J,Y,0,Y
+2,X.Z,DOG,cat,2017-06-08-13-46,1363,"No, you're not right",J,N,0,N
+3,X.XandY,ELE,cat and elephant,2017-06-08-13-46,1363,"No, there's no cat just an elephant",C,N,E,N
+4,XY.XandY,CAT-ELE,cat and elephant,2017-06-08-13-46,1363,that is right,J,Y,0,Y
+5,XY.X,CAT-DOG,dog,2017-06-08-13-46,1363,and a cat!,C,0,I,N
+6,X.XorY,ELE,cat or elephant,2017-06-08-13-46,1363,elephant,D,0,0,Y
+7,XY.Z,CAT-DOG,elephant,2017-06-08-13-46,1363,no,J,N,0,N
+8,XY.X,CAT-ELE,cat,2017-06-08-13-46,1363,yes,J,Y,0,Y
+9,X.XandY,CAT,cat and elephant,2017-06-08-13-46,1363,no,J,N,0,Y
+10,X.XorY,CAT,cat or dog,2017-06-08-13-46,1363,a cat,D,0,0,Y
+11,X.Z,DOG,elephant,2017-06-08-13-46,1363,no,J,N,0,N
+12,XY.XandY,DOG-ELE,dog and elephant,2017-06-08-13-46,1363,yes,J,Y,0,Y
+13,XY.Z,CAT-ELE,dog,2017-06-08-13-46,1363,No,J,N,0,NA
+14,XY.XorY,CAT-DOG,cat or dog,2017-06-08-13-46,1363,cat and a dog,D,0,0,Y
+15,X.X,ELE,elephant,2017-06-08-13-46,1363,Yes,J,Y,0,Y
+16,XY.XorY,CAT-ELE,cat or elephant,2017-06-08-13-46,1363,cat and elephant,D,0,0,Y

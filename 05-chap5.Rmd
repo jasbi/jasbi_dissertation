@@ -1,0 +1,302 @@
+# Learning disjunction from multiple cues  {#modeling}
+
+```{r global_options6, include=FALSE}
+knitr::opts_chunk$set(fig.width=3, fig.height=3, 
+                      fig.crop = F, fig.pos = "tb", fig.path='figs/',
+                      echo=F, warning=F, cache=TRUE, 
+                      message=F, sanitize = T)
+```
+
+## Introduction
+
+In Chapter \@ref(sempragLit), I reviewed the complexities involved in interpreting a disjunction word such as *or* in English. I showed that a disjunction can be interpreted as inclusive, exclusive, and even conjunctive. In adition to these truth-conditional interpretations, a disjunction is sometimes associated with speaker ignorance/indifference as well. Given the wide range of interpretations that *or* can have, how can children learn to interpret it correctly? In Chapter \@ref(devoLit), I presented the results of a previous corpus study that suggested children rarely hear the word *or*; and when they do, they largely hear the exclusive interpretation (75-80\% of the time) [@morris2008logically]. The annotation study of Chapter \@ref(corpus) replicated this finding. In Chapter \@ref(devoLit), I also reported the results of recent comprehension studies that show children between the ages of three and five interpret *or* as inclusive disjunction [@crain2012emergence]. Chapter \@ref(comprehension) confirmed that children between three and can interpret *or* as inclusive in simple existential sentences. The findings of corpus studies and comprehension studies present a learning puzzle. How can children learn to interpret *or* as inclusive if they mostly hear it as exclusive? This chapter provides a solution by developing a cue-based account for children's acquisition of connectives.
+
+A similar approach to what I advocate in this chapter has been proposed by @wynn1992children in the domain of number words. In the next section, I briefly review their proposal and report their findings. Section 
+
+Then I extend previous research with the findings on disjunction and present a cue-based account of *and*/*or*. I present the results of three modeling experiments that use the proposed cues to learn the interpretation of a disjunction or a conjunction using random decision forests [@ho1995random]. I end with a discussion of how this account can be generalized to  
+
+## The Cue-based Account for Number Words 
+
+Research on children's acquisition of numeral words (e.g. *one*, *two*, *three*, etc.) has suggested that children initially know that number words more than "one" refer to precise numerosities but they do not know exactly which number refers to which word [@wynn1992children]. @bloom1997linguistic searched for linguistic cues that could help children associate numerals with quantity and numerosity. They considered two classes of cues: syntactic and semantic. Syntactic cues to word meaning were first discussed by @brown1957linguistic. He wrote: "If a part of speech has reliable semantic implications, it could call attention to the kind of attribute likely to belong to the meaning of the word ... the part of speech memebership of the new word could operate as a filter selecting for attention probably relevant features of the nonlinguistic world." He tested preschoolers with nonce constructions "to sib", "a sib", and "any sib" showing that children can use the modifying function words to decide witheher the nonce word *sib* should refer to an action, an object, or a substance. 
+
+Semantics cues, on the other hand, are provided by the meaning of the known words in the sentence. Consider the sentence "there were several gloobs." The use of *gloob* in the plural noun phrase "several gloobs" makes it possible to infer that "gloob" is not an action or a spatial relationship but rather an entity that can have multiple instances. Using only the syntactic cues, there still remains a wide range of referential uncertainty since a gloob may be anythign from an egg to an alien creature. Now consider the sentence "I ate several gloobs for breakfast." What a gloob may be is now restricted to edible entities, probably those that are suitable for breakfast. The meanings of the verb *eat* and the adverbial phrase "for breakfast" help us further narrow down the possible meaning for *gloob*. 
+
+It is not always easy to tell whether a cue is syntactic or semantic. Here I avoid this issue by using the term "compositional cues" to refer to both syntactic and semantic cues that aid the interpretation of an unknown word. Using the term "compositional" also brings into attention the fact that syntactic and semantic cues are interrelated and do not act in a an independent or unstructured way. Consider the sentence "After eating breakfast, I saw several gloobs." Even though the words *eat* and *breakfast* are present in the sentence, they do not restrict the possible meanings for *gloob* as they did before. In other words, it is not the mere presence of these words in the sentence that act as cues but rather the way they combine with the unknown word to convey the main communicative message of the utterance.
+
+@bloom1997linguistic proposed that children learn number word meanings by attending to the compositional cues that accompany number words such as the words' ordering relative to other words, other funciton words they co-occur with, and the count-mass status of the nouns they modify. They specifically discussed four cues. Two cues could help children notice that number words pattern like quantifiers. First, similar to quantifiers, number words precede adjectives and do not follow them. Second, they participate in the "... of the Xs" construction: "one of the gloobs", "some of the gloobs", "most of the gloobs", etc. The third cue is the co-occurrence of number words with count nouns. This cue can inform learners that their meaning is restricted to the quantification of individuals. Finally, unlike other adjectives, numerals cannot be modified further using an adverb such as *very* or *too* ("very big animals" vs. "\\*very two animals"). According to @bloom1997linguistic, this cue can help a learner understand that number words pick an absolute property of a set rather than a continuous one.
+
+Using the data available in the CHILDES corpora, corpora@bloom1997linguistic investigated the presence of cues to number word emaning in chlild directed speech for three children between the ages of one and three. They found that these children and their parents only use number words with count nouns. They do not use number words with modifiers and only use them before adjectives; not after. Finally, they found that these children and their parents use only number words and quantifiers in the partitive construction and not adjectives. The results of their corpus study shows that the compositional cues they proposed for number word acquisition are available in children's linguistic input.
+
+The issues in the development of disjunction are quite similar to those in the development of number words. Similar to number words, previous research has provided insight into how children comprehend a disjunction and what they hear from their parents. The main questions is how children learn what they comprehend from what they hear. I turn to this issue in the next section.
+
+## Learning *and*/*or*: A cue-based account {#myaccount}
+
+Previous comprehension studies as well as the one reported in Chapter \@ref(comprehension) have shown that children as early as age three can interpret a disjunction as inclusive. However, studies of child-directed speech like the one in Chapter \@ref(corpus) have shown that exclusive interpretations dwarf other interpretations of disjunction in children's input. How can children learn the inclusive interpretation of a disjunction when the majority of the examples they hear are exclusive? To answer this question, I draw insight from the Gricean approach to semantics and pragmatics discussed in Chapter \@ref(sempragLit). 
+
+Research in Gricean semantics and pragmatics has shown that the word *or* is not the only factor relevant to the interpretation of a disjunction. It is not only the presence of the word *or* that makes us interpret a disjunction as inclusive, exclusive, or conjunctive, but rather the presence of *or* along with several interpretive factors such as intonation [@pruitt2013interpretation], the meaning of the disjuncts [@geurts2006exclusive], and the conversational principles governing communication [@grice1989studies]. Therefore, interpretation and acquisition of the word *or* cannot be separated from all the factors that accompany it and shape the final interpretation of a disjunciton. 
+
+In the literature on word learning and semantic acquisition, form-meaning mapping is construed as mapping an isolated form such as *gavagai* to an isolated concept such as "rabbit". While this approach may be feasible for content words, it will not work for function words such as *or*. First, the word *or* cannot be mapped isolated from its formal context. As @pruitt2013interpretation showed, the intonation that accompanies a disjunction affects its interpretation. Therefore, a learner needs to pay attention to the word *or* as well as the intonation contour that accompanies it. Second, the word *or* cannot be mapped to its meaning isolated from the semantics of the disjuncts that accompany it. As @geurts2006exclusive argued, the exclusive interpretation is often enforced simply because the options are incompatible. For example, "to be or not to be" is exclusive simply because one cannot both be and not be! In addition, conversational factors play an important role in the interpretation of *or* as @grice1989studies argued as well. In sum, the interpretation and acquisition of function words such as *or* require the learner to consider the linguistic and nonlinguistic context of the word and map the meaning of the word accordingly.
+
+Previous accounts have tacitly adopted a model in which a function word such as *or* is mapped to its most common interpretation: *or* $\rightarrow \oplus$. Here I argue that the direct mapping of *or* to its interpretation without consideration of its linguistic context is the primary cause of *or*'s learning puzzle. Instead, I propose that the word *or* is mapped to an interpretation along with the interpretive cues that accompany it such as intonation and disjunct semantics: 
+
+[connective: *or*, Intonation: rise-fall, Disjuncts: inconsistent] $\rightarrow \oplus$
+
+[connective: *or*, Intonation: rising, Disjuncts: consistent] $\rightarrow \lor$
+
+In this account, it is not a single word that gets mapped to an interpretation but rather a cluster of features. This method has two advantages. First, it deals with the context dependency of disjunction interpretation. The learner knows that *or* with some intonation has to be interpreted differently from one with another. Second, it allows the learner to pull apart the contribution of *or* from the interpretive cues that often accompany it. In fact, analysis of all mapping clusters in which *or* participates and generalization over them can help the learner extract the semantics of *or* the way it is intended by Gricean semanticists. For those skeptical of such an underlying semantics for *or*, there is no need for further analysis of the mapping clusters and the meaning of *or* as a single lexical item is distributed among the many mappings in which it participats. In the next section, I implement this idea using decition tree learning.
+
+## Modeling {#modeling}
+
+
+
+### Methods
+
+### Results
+
+```{r data_prep, echo=FALSE, warning=FALSE, message=FALSE}
+alex_data <- read.csv("decision_trees/annotation_data/ProvidenceData-alex.csv", nrows=100)
+lily_data <- read.csv("decision_trees/annotation_data/ProvidenceData-lily.csv", nrows=99)
+vio_data <- read.csv("decision_trees/annotation_data/ProvidenceData-vio.csv", nrows=102)
+will_data <- read.csv("decision_trees/annotation_data/ProvidenceData-will.csv", nrows=100)
+naima_data <- read.csv("decision_trees/annotation_data/ProvidenceOR-Naima.csv", nrows=241)
+
+naima_data <- 
+  naima_data %>%
+  filter(!is.na(exclusivity), !is.na(intonation))
+
+all_data <- rbind(alex_data, lily_data, vio_data, will_data, naima_data)
+
+all_data$intonation <- as.factor(all_data$intonation)
+
+all_data$exclusion <- fct_recode(all_data$exclusion, "Consistent" = "ELS", "Inconsistent" = "EXC")
+all_data$intonation <- fct_recode(all_data$intonation, "Flat" = "0", "Rising" = "1", "Rise-Fall" = "2")
+all_data$intonation <- fct_recode(all_data$intonation, "Flat" = "0", "Rising" = "1", "Rise-Fall" = "2")
+```
+
+```{r data_wrangling, echo=FALSE, warning=FALSE, message=FALSE}
+raw_data <- 
+  all_data %>%
+  group_by(id, exclusivity) %>%
+  summarise(counts= n()) %>%
+  spread(exclusivity, counts) %>%
+  replace(is.na(.), 0) %>%
+  mutate(total = IN + EX) %>%
+  gather(EXIN, counts, EX:IN) %>%
+  mutate(prop = counts / total) %>%
+  group_by(EXIN) %>%
+  summarize(cih = ci.high(prop),
+            cil = ci.low(prop),
+            prop = mean(prop))
+
+graph_data <- 
+  all_data %>%
+  group_by(id, intonation, exclusion, exclusivity) %>%
+  summarise(counts= n()) %>%
+  spread(exclusivity, counts) %>%
+  replace(is.na(.), 0) %>%
+  mutate(total = EX + IN) %>%
+  gather(exclusivity, counts, EX:IN) %>%
+  mutate(prop = counts / total) %>%
+  group_by(exclusivity, intonation, exclusion) %>%
+  summarize(cih = ci.high(prop),
+            cil = ci.low(prop),
+            prop = mean(prop)) 
+
+counts_table<-  
+  all_data %>%
+  group_by(intonation, exclusion, syn_level, exclusivity) %>%
+  summarise(counts= n()) %>%
+  spread(exclusivity, counts) %>%
+  replace(is.na(.), 0) %>%
+  mutate(total = IN + EX)
+
+exclusivity_overall <-
+  all_data %>%
+  group_by(exclusivity) %>%
+  summarise(counts= n()) %>%
+  spread(exclusivity, counts) %>%
+  replace(is.na(.), 0) %>%
+  mutate(total = IN + EX) %>%
+  gather(exclusivity, counts, EX:IN) %>%
+  mutate(prop = counts / total)
+
+cds_disjunction_model <- summary(glmer(exclusivity ~ intonation + exclusion + (1|id), family="binomial", data=all_data))
+```
+
+```{r interpretation, fig.env='figure',fig.width=1.8, fig.height=1.8, fig.show='hold', fig.pos="b", set.cap.width=T, num.cols.cap=2, fig.align="center",fig.cap = "Proportion of exclusive and inclusive interpretations of disjunction in child-directed speech. Error bars represent bootstrapped 95\\% confidence intervals."}
+ggplot(raw_data, aes(x= EXIN, y=prop, fill=EXIN)) + 
+  theme_few(base_size = 10) + 
+  geom_col(width=0.7) +
+  geom_linerange(aes(ymax = cih, ymin = cil)) + 
+  guides(fill=FALSE) +
+  labs(title = "", x = "", y = "Proportion") + 
+  theme(text = element_text(family = "Times"))+
+  scale_colour_solarized()
+```
+
+
+```{r interpretationByIntonationAndConsistency, fig.env='figure',fig.pos='t',fig.width=3.5, fig.height=2.5, fig.align="center",fig.show='hold',set.cap.width=T, num.cols.cap=2, fig.cap = "Exclusive and inclusive interpretations broken down by intonation (flat, rise, rise-fall) and consistency. Error bars represent bootstrapped 95\\% confidence intervals."}
+ggplot(graph_data, aes(x= exclusivity, y=prop, fill=exclusivity)) + 
+  geom_col(width=0.7) +
+  geom_linerange(aes(ymax = cih, ymin = cil)) +
+  guides(fill=FALSE) +
+  theme_few(base_size = 10) + 
+  labs(title = "", x = "", y = "Proportion") + 
+  scale_colour_solarized() + facet_grid(exclusion~intonation) + theme(text = element_text(family = "Times"))
+```
+
+## Results 
+
+First, similar to Morris (2008), we found that the majority of *or* examples in CDS receive an exclusive interpretation ($\sim$%`r 100 * round(exclusivity_overall$prop[1],2)`). Figure \ref{fig:interpretation} shows this difference in distribution. However, the rate of exclusive interpretations change systematically when we break the data down by intonation and consistency (Figure \ref{fig:interpretationByIntonationAndConsistency}). Given a rise-fall intonation contour, a disjunction is almost always interpreted as exclusive. Similarly, if the propositions are inconsistent, the disjunction is most likely interpreted as exclusive. When either of these two features are absent, a disjunction is more likely to receive an inclusive interpretation.
+
+We fit a mixed-effects binomial logistic regression using the package \{lme4\} [@bates2014lme4] in R with fixed effects of intonation and consistency as well as random intercepts for children. Both intonation and consistency were significant predictors of exclusivity. Disjunctions were more likely to be interpreted as exclusive if they received a rise-fall intonation ($\beta$=`r round(cds_disjunction_model$coefficients[3],2)`, $z$=`r round(cds_disjunction_model$coefficients[11],2)`, $p < 0.001$) or if they were inconsistent ($\beta$=`r round(cds_disjunction_model$coefficients[4],2)`, $z$=`r round(cds_disjunction_model$coefficients[12],2)`, $p < 0.001$). Disjunctions were more likely to be interpreted as inclusive if they were consistent and received a rising ($\beta$=`r round(cds_disjunction_model$coefficients[2],2)`, $z$=`r round(cds_disjunction_model$coefficients[10],2)`, $p < 0.001$) or flat intonation ($\beta$=`r round(cds_disjunction_model$coefficients[1],2)`, $z$=`r round(cds_disjunction_model$coefficients[9],2)`, $p < 0.001$).
+
+```{r treeDiagram, fig.env = "figure", fig.align='center', fig.width=3, fig.height=2,fig.cap="Optimal decision tree training on 100 datapoints. Provides series of two binary decisions to decide exlcusivity interpretation. Intonation $>$ 1.5 are rise-fall while intonation $<$ 1.5 are flat or rising. Consistency $>$ 0.5 are consistent while consistency $<$ 0.5 are  inconsistent."}
+
+treeDiagram <- png::readPNG('decision_trees/plots/treeDiagram.png')
+grid::grid.raster(treeDiagram)
+```
+
+###Classification Model 
+The preceding analysis suggests that intonation and consistency are related to the interpretation of disjunction. To investigate how informative these patterns were more quantitatively, we built a model to predict the interpretation of a disjunction after training on examples annotated for intonation and consistency. To more easily understand the rules governing exclusivity, we fit a decision tree model using Sci-kit Learn's Decision Tree Module [@pedregosa2011scikit]. We randomly sampled 100 examples for training and 300 examples for testing. Averaged over 100 trials, the average accuracy of a binary tree was 83%. More remarkably, the tree achieved an average of 80% accuracy after training on only 20 examples (Figure \ref{fig:learningCurve}). The control flow of the average decision tree on a single example is as follows. If *or* has neither rise-fall nor inconsistent disjuncts, it is marked inclusive. Otherwise, exclusive (Figure \ref{fig:treeDiagram}). The success of such a simple decision-tree indicates that children could use a simple model to rapidly learn the exclusive interpretation of *or* from infrequent data. 
+
+To demonstrate a potential methodology for discerning the use of connectives in context, we modeled connective learning using decision trees. Random forests are ensemble models that aggregate many decision trees. A decision tree is a series of binary decisions that classifies data into two or more classes. The order and structure of these decisions can be learned from data. Here, the model randomly samples subsets of the annotated CHILDES corpus as training data and then test on the remaining data. 
+
+The first model uses intonation and consistency of the disjuncts to interpret a disjunction as exclusive or inclusive. 
+
+From 300 annotated examples labeled as either IOR or XOR, we use intonation and consistency to separate the two categories. \newline
+
+If intonation is rise-fall, XOR. \newline
+If inconsistent, XOR. \newline
+Otherwise, IOR \newline
+
+```{r exorTree, fig.cap="A caption", out.width = '60%'}
+knitr::include_graphics("decision_trees/plots/exin.pdf")
+```
+
+```{r exorLearning, fig.env="figure", fig.align="center", fig.width=5.5, fig.height=2.5, fig.cap="Laerning Curve for Exclusive interpretations."}
+exorLearning<- png::readPNG("decision_trees/plots/learning_curve1.png")
+grid::grid.raster(exorLearning)
+```
+
+## Learning Exclusive and Conjunctive Interpretations
+From 300 annotated examples labeled IOR, XOR, or AND, we use intonation, speech act, consistency, and annotation to separate them. \newline
+
+If Annotation is AND, AND \newline
+If intonation is rise-fall, XOR \newline
+If intonation is rising and inconsistent, XOR \newline
+If intonation is rising and consistent, IOR \newline
+If intonation is flat and speech act options/defex/unconditional, AND \newline
+If intonation is flat and other speech act, XOR \newline
+
+```{r exinandTree, echo=FALSE, fig.cap="A caption", out.width = '90%'}
+knitr::include_graphics("decision_trees/plots/exinand.pdf")
+```
+
+```{r exinandLearning, fig.env="figure", fig.align="center", fig.width=5.5, fig.height=2.5, fig.cap="Laerning Curve for Exclusive, Inclusive, and Conjunctive interpretations."}
+exorLearning<- png::readPNG("decision_trees/plots/learning_curve2.png")
+grid::grid.raster(exorLearning)
+```
+
+## Discerning Everything 
+From 300 annotated examples labeled IOR, XOR, AND, NPQ, XNOR, or NOR, we use intonation, speech act, consistency, utterance type, and annotation to separate them. \newline
+
+If Annotation is AND, AND \newline
+IF intonation is rise-fall, XOR \newline
+If intonation is rising and inconsistent, XOR \newline
+If intonation is rising and consistent, IOR \newline
+If intonation is flat and speech act is (unconditional or repair or directive description), NPQ \newline
+If intonation is flat and speech act is defex, AND \newline
+If intonation is flat and speech act is (conditional, identification, clarification, or directive), XOR \newline
+If intonation is flat and speech act is (description, options, preference), ???
+\newline
+
+```{r everyTree, echo=FALSE, fig.cap="A caption", out.width = '90%'}
+knitr::include_graphics("decision_trees/plots/everything.pdf")
+```
+
+```{r everythingLearning, fig.env="figure", fig.align="center", fig.width=5.5, fig.height=2.5, fig.cap="Laerning Curve for Exclusive, Inclusive, and Conjunctive interpretations."}
+exorLearning<- png::readPNG("decision_trees/plots/learning_curve3.png")
+grid::grid.raster(exorLearning)
+```
+
+## Discussion
+
+* Summary
+
+* The proposed account allows for both Gricean and ambguity approaches to semantics to have a developmental story. 
+
+It is important to be explicit about the assumptions and the limitations of the account described in this chapter. First the account assumes that the learner limits the hypothesis space to a small set of binary logical connectives. This is no simple task and it is important to investigate what constraints or cues can help it. A viable option is to rely on the peculiar syntactic properties of coordination. The literature on syntactic bootstrapping suggests that children can use syntactic bootstrapping to limit their word meaning hypotheses to the relevant domain. A coordinator such as *and*/*or* conjoins similar syntactic categories: two sentences, two verbs, or two nominals. This is not a common pattern for other functional elements and syntactic theories posit specific rules for coordination. It is possible that the special syntactic status of coordinators can cue their meaning and help the learner distinguish them from other types of function words.
+
+Within binary logical meanings , it is reasonable to assume that not all binary meanings are as likely for mapping.
+
+
+A major limitation of the model is that it only from about 500 data points. This is substantially fewer number of examples than what children hear until they reach the age of 3. It is reasonable to expect that the model's performance, especially for inclusive and conjunctive interpretations improves with more example data that allows the model to learn the features that correlate systematically with uncommon interpretations. 
+
+
+* next step is ruling out conjunction for the meaning of *or* using consistency of the disjuncts
+Semantic properties of the coordinands can help children distinguish the meaning of *and* and *or*. While *or* appears with both consistent and inconsistent coordinands, *and* only appears with consistent coordinands. Therefore, conjunction is not a viable hypothesis for the meaning of *or*.
+
+
+
+Children can also use the semantics of the words a function word combines with to bias their hypotheses. Example: Syrett et al's slowly but surely. Call this something: semantic bootstraping of semantics. 
+
+You also consider cross-situational learnig to be present in the acqusition of function words.
+
+
+1. Syntactic/compositional Bootstrapping: use syntactic and compositional information to limit the hypothesis space to the relevant set of functional meanings. For binary connectives, this amounts to the space of 16 possible binary meanings.
+
+2. It is reasonable to assume that the learner has different prior expectationas on which functional meanings are the most likely candidate for a function word. For example, the tautology or contradiction connectives are very uniformative and a pragmatic learner can assign them low probability as a connective meaning.
+
+3. The learner can track the co-occurance of funcitonal meanings with the formal properties of the utterance such as intonation and other function words such as negation and modals.
+
+The case of *or* shows that a bottom-up approach to mapping may face serious hurdles. It is likely that as Siskind suggests in a computational implimentation as well as usage based accounts, form-meaning mapping occurs at the utterance and speech act level and candidate semantics for a word is extracted after early mappings to cosntructions are performed.
+
+From the perspective of learning, learners never have direct access to the underlying semantics posited by semanticists. The learner only observes enriched meanings in context. Therefore, the problem of lexical semantic acquisition is the problem of discovering the underlying semantics of a word from the pragmatically enriched interpretations observed in the contexts of learning.
+
+
+Explain how much you expect these to generalize to other connective words or more generally function words.
+
+## How do children learn the scope of conjunction and disjunciton with negation?
+
+In the amount of data that we annotated, we found only a few examples of conjunction and disjunction interacting with negation. How can children learn this?
+
+One possibility is Crain's proposal
+
+Another is the possibility that children consider a larger body of evidence than what was annotated in the annotation study.
+
+It is also important to think about the role of attention in learning. Currently models assume that each example has equal siginficance to learning and the learner pays equal attention to them. This does not match the intuitive understanding of learning. We dedicate more resources and attention to tasks we have not yet mastered while skills or knowledge we already possess becomes part of the daily routine and we do not need to assign learning resources to them.
+
+In the case of conjunction and disjunction, a large part of the input is very similar and repetetive. Children can learn their meaning and structure quickly and future exmples are not informative or challenging. It is reasonable to assume that children dedicate their resources to the more challenging instances and focus on mastering them. In such a model, learning is surprisal driven. If a usage is novel and unfamiliar, the learner assigns more learning resources to it and focuses on learning them. This way, the learner can move from extremely frequent instances in the input to the rare ones. Under such a model, frequency determines order of acquisition (to some degree) but not whether a construction is learned or not. Under the right circumstances even a one time occurance of a word or construction can result in successful learning. 
+
+
+<!--
+Bloom, Lois; Lahey, Margaret ; Hood, Lois ;  Lifter, Karin,  &  Fiess, Kathleen. 1980. Complex sentences: Acquisition of syntactic connectives 
+and the semantic relations they encode." Journal of Child Language 7, no. 2, 235-261.
+
+Clark, Eve V.  1971. On the acquisition of the meaning of before and after. Journal of Verbal Learning & Verbal Behavior 10, no. 3, 266-275.
+
+Coker, Pamela L.  1978. Syntactic and semantic factors in the acquisition of before and after. Journal of Child Language 5, no. 2. 261-277.
+
+Eisenberg, Ann R.  1985.  Learning to describe past experiences in conversation. Discourse Processes 8, no. 2, 177-204.
+
+Emerson, Harriet F.  1979. Children's comprehension of ‘because’in reversible and non-reversible sentences. Journal of Child Language 6, no. 2, 279-300.
+
+Evers-Vermeul, Jacqueline, & Sanders, Ted .  2009.  The emergence of Dutch connectives; how cumulative cognitive complexity explains
+ the order of acquisition. Journal of Child Language 36, no. 4, 829-854.
+
+Feagans, Lynne.  1980.  Children's understanding of some temporal terms denoting order, duration, and simultaneity." Journal of 
+Psycholinguistic Research 9, no. 1, 41-57.
+
+Ferreiro, Emilia, & Sinclair, Hermina .  1971.  Temporal relationships in language. International Journal of Psychology 6, no. 1, 39-47.
+
+Friedman, William J., & Seely, Pamela B.  1976. "The child's acquisition of spatial and temporal word meanings." Child Development , 47, 1103-1108.
+
+Johnson, Helen L.  1975. The meaning of before and after for preschool children. Journal of Experimental Child Psychology 19, no. 1, 88-99.
+
+Peterson, Carole, & McCabe, Allyssa .  1987.  The connective ‘and’: Do older children use it less as they learn other connectives?.Journal of Child Language 14, no. 2, 375-381.
+
+Silva, Marilyn N.  1991. Simultaneity in children's narratives: the case of when, while and as. Journal of Child Language 18, no. 3,  641-662.
+
+Stevenson, Rosemary J., & Pollitt, Caroline .  1985.  The acquisition of temporal terms. Journal of Child Language 14, no. 3,  533-545.
+-->

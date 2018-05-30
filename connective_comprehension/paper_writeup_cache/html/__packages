@@ -1,0 +1,12 @@
+base
+png
+ggplot2
+xtable
+tidyverse
+tibble
+tidyr
+readr
+purrr
+dplyr
+bootstrap
+ggthemes

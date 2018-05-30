@@ -1,0 +1,152 @@
+---
+title: "Analysis of Adult Comprehension of Connectives in the Study 1 Guessing Game"
+author: "Masoud Jasbi"
+date: "7/15/2017"
+output: html_document
+---
+
+# Intro
+
+```{r preliminaries, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(forcats)
+library(lme4)
+
+adults_data <- read.csv("../2_processed_data/cardgame_adults_data_processed.csv")
+
+adults_data$dv_type <- as.factor(adults_data$dv_type)
+```
+
+```{r bootstrapping}
+## for bootstrapping 95% confidence intervals
+theta <- function(x,xdata) {mean(xdata[x])}
+ci.low <- function(x) {
+  quantile(bootstrap(1:length(x),1000,theta,x)$thetastar,.025)}
+ci.high <- function(x) {
+  quantile(bootstrap(1:length(x),1000,theta,x)$thetastar,.975)}
+```
+
+
+```{r plots}
+adults_prop_table <- 
+  adults_data %>% 
+  group_by(sid, trial_type, dv_type, response) %>%
+  summarise(counts= n()) %>%
+  spread(response, counts) %>%
+  replace(is.na(.), 0) %>%
+  mutate(total = Wrong + Right + `Kinda Right`) %>%
+  gather(response, counts, `Kinda Right`:Wrong) %>%
+  mutate(prop = counts / total) %>%
+  group_by(trial_type, dv_type, response) %>%
+  summarize(cih = ci.high(prop),
+            cil = ci.low(prop),
+            prop = mean(prop)) %>%
+  separate(trial_type, c("Card", "Guess"), sep="\\.", remove=FALSE)
+
+# order the levels as Wrong, Kinda Right, and Right
+adults_prop_table$response <- relevel(as.factor(adults_prop_table$response), ref="Wrong")
+
+adults_prop_table$Guess <- fct_recode(adults_prop_table$Guess,  Z="Y")
+
+adults_prop_table  <- rename(adults_prop_table, Options = dv_type)
+
+adults_prop_table$Guess <- 
+  adults_prop_table$Guess %>%
+  factor(levels = c("Z", "X", "YandZ", "YorZ", "XandY", "XorY")) %>%
+  fct_recode(Elephant = "Z", Cat = "X", `Cat and Dog`="XandY", `Cat or Dog`="XorY", `Dog and Elephant` = "YandZ", `Cat or Elephant` = "YorZ")
+```
+
+# Plots
+
+## Binary TVJT
+
+```{r}
+adults_plot2<-
+  adults_prop_table %>%
+  filter(Options==2) %>%
+  filter(response!="Kinda Right") %>%
+  filter(trial_type!= "X.YorZ", trial_type!= "XY.YorZ", trial_type!= "XY.YandZ") %>%
+  ggplot(aes(x=response, y=prop, fill=response)) +
+  geom_bar(stat = "identity", position="dodge", width = 0.6) +
+  geom_linerange(aes(ymax=cih, ymin=cil), position= position_dodge(width=0.9)) + 
+  facet_grid(Card~Guess) +
+  labs(x="", y="")+
+  theme_few() +
+  theme(text = element_text(size=17)) +
+  scale_fill_manual(values = c("red4", "springgreen3"), guide=FALSE)
+
+cat <- 
+  readJPEG("../0_methods/stimuli/cat_card.jpg") %>%
+  rasterGrob(width=0.9)
+
+cat_dog <- 
+  readJPEG("../0_methods/stimuli/catdog_card.jpg")%>%
+  rasterGrob(width=0.9)
+
+adults_plot_g <- ggplot_gtable(ggplot_build(adults_plot2))
+
+strips <- grep("strip-r", adults_plot_g$layout$name)
+
+new_grobs <- list(cat, cat_dog)
+
+adults_plot_g <- with(adults_plot_g$layout[strips,],
+          gtable_add_grob(adults_plot_g, new_grobs,
+                          t=t, l=l, b=b, r=r, name="cards"))        
+
+adults_plot_g$widths[[11]] <- unit(2.5,"cm")
+
+grid.draw(adults_plot_g)
+```
+
+## Ternary TVJT
+
+```{r}
+adults_plot3<-
+  adults_prop_table %>%
+  filter(Options==3) %>%
+  filter(trial_type!= "X.YorZ", trial_type!= "XY.YorZ", trial_type!= "XY.YandZ") %>%
+  ggplot(aes(x=response, y=prop, fill=response)) +
+  geom_bar(stat = "identity", position="dodge", width = 0.6) +
+  geom_linerange(aes(ymax=cih, ymin=cil), position= position_dodge(width=0.9)) + 
+  facet_grid(Card~Guess) +
+  labs(x="", y="")+
+  theme_few() +
+  theme(axis.text.x = element_text(angle=45, hjust = 1, vjust = 1), text = element_text(size=17)) +
+  scale_fill_manual(values = c("red4", "grey","springgreen3"), guide=FALSE)
+
+cat <- 
+  readJPEG("../0_methods/stimuli/cat_card.jpg") %>%
+  rasterGrob(width=0.9)
+
+cat_dog <- 
+  readJPEG("../0_methods/stimuli/catdog_card.jpg")%>%
+  rasterGrob(width=0.9)
+
+adults_plot_g <- ggplot_gtable(ggplot_build(adults_plot3))
+
+strips <- grep("strip-r", adults_plot_g$layout$name)
+
+new_grobs <- list(cat, cat_dog)
+
+adults_plot_g <- with(adults_plot_g$layout[strips,],
+          gtable_add_grob(adults_plot_g, new_grobs,
+                          t=t, l=l, b=b, r=r, name="cards"))        
+
+adults_plot_g$widths[[11]] <- unit(2.5,"cm")
+
+grid.draw(adults_plot_g)
+```
+
+GLMer for the adult judgments
+
+```{r}
+adults_data$binary_response <- fct_recode(adults_data$response, Wrong = "Kinda Right")
+
+or_trials <- filter (adults_data, trial_type == "X.XorY" | trial_type == "XY.XorY")
+
+summary(glmer(binary_response ~ trial_type * dv_type + (1 + trial_type|sid), family= "binomial", data=or_trials))
+
+
+summary(glmer(binary_response ~ trial_type + (1 + trial_type|sid), family= "binomial", data=filter(or_trials, dv_type==3)))
+
+```

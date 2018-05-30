@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.Z,ELE,cat,2017-05-24-14-43,2063,no! there is an elephant!,D,N,0,NA
+2,X.X,CAT,cat,2017-05-24-14-43,2063,Yes!,J,Y,0,NA
+3,X.XandY,CAT,cat and elephant,2017-05-24-14-43,2063,no!,J,N,0,NA
+4,X.XandY,ELE,cat and elephant,2017-05-24-14-43,2063,nope! There is just an elephant!,C,N,E,NA
+5,X.Z,DOG,cat,2017-05-24-14-43,2063,Nope! There is a dog!,D,N,0,NA
+6,XY.X,CAT-ELE,elephant,2017-05-24-14-43,2063,AND there is a cat!,C,0,I,NA
+7,X.XorY,DOG,dog or elephant,2017-05-24-14-43,2063,A DOG! [was Jazzy right?] [nods],D,0,0,1
+8,XY.X,DOG-ELE,dog,2017-05-24-14-43,2063,AND there is an elephant too! [was Jazzy right?] Nope!,C,0,I,0
+9,X.XorY,DOG,cat or dog,2017-05-24-14-43,2063,A DOG! [was Jazzy right?] [nods],D,0,0,1
+10,XY.Z,CAT-DOG,elephant,2017-05-24-14-43,2063,Nope! There is a cat and a dog!,D,N,0,NA
+11,XY.XorY,DOG-ELE,dog or elephant,2017-05-24-14-43,2063,Both of them! [was Jazzy right?] yeah!,C,0,I,1
+12,XY.XorY,CAT-DOG,cat or dog,2017-05-24-14-43,2063,Both of them! [was Jazzy right?] yeah!,C,0,I,1
+13,XY.Z,CAT-ELE,dog,2017-05-24-14-43,2063,Nope! There is a cat and a dog Ä elephant!,D,N,0,NA
+14,XY.XandY,DOG-ELE,dog and elephant,2017-05-24-14-43,2063,Yes!,J,Y,0,NA
+15,XY.XandY,CAT-ELE,cat and elephant,2017-05-24-14-43,2063,Yeah!,J,Y,0,NA
+16,X.X,DOG,dog,2017-05-24-14-43,2063,Yeah!,J,Y,0,NA

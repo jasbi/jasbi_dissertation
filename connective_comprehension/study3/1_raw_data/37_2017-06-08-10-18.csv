@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,DOG,elephant,2017-06-08-10-18,1365,it's a dog,D,0,0,N
+2,X.X,CAT,cat,2017-06-08-10-18,1365,right,J,Y,0,Y
+3,XY.X,DOG-ELE,dog,2017-06-08-10-18,1365,dog and elephant [was Jazzy right?] he was right with one animal,D,0,0,YN
+4,X.XorY,CAT,cat or dog,2017-06-08-10-18,1365,it's a cat,D,0,0,N
+5,X.XorY,CAT,cat or elephant,2017-06-08-10-18,1365,there's just cat,C,0,E,N
+6,XY.X,CAT-DOG,dog,2017-06-08-10-18,1365,dog and a cat ƒ there is a dog and a CAT,D,0,0,N
+7,XY.Z,CAT-ELE,dog,2017-06-08-10-18,1365,no,J,N,0,N
+8,X.Z,CAT,dog,2017-06-08-10-18,1365,a cat,D,0,0,N
+9,XY.Z,DOG-ELE,cat,2017-06-08-10-18,1365,there's not a cat,J,N,0,N
+10,XY.XandY,CAT-ELE,cat and elephant,2017-06-08-10-18,1365,he was right,J,Y,0,Y
+11,XY.XandY,DOG-ELE,dog and elephant,2017-06-08-10-18,1365,he was right,J,Y,0,Y
+12,X.XandY,CAT,cat and dog,2017-06-08-10-18,1365,a cat,D,0,0,N
+13,XY.XorY,CAT-DOG,cat or dog,2017-06-08-10-18,1365,a cat and dog,D,0,0,N
+14,X.XandY,ELE,dog and elephant,2017-06-08-10-18,1365,no,J,N,0,N
+15,X.X,ELE,elephant,2017-06-08-10-18,1365,elephant,D,0,0,Y
+16,XY.XorY,DOG-ELE,dog or elephant,2017-06-08-10-18,1365,both,C,0,I,Y

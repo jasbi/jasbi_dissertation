@@ -1,0 +1,187 @@
+---
+title: "Study 2 Plots"
+author: "Masoud Jasbi"
+date: "August 18, 2016"
+output: html_document
+---
+
+```{r packages, include=FALSE}
+require(tidyverse)
+require(ggplot2)
+require(extrafont)
+library(bootstrap)
+library(forcats)
+library(rstan)
+library(ggmcmc)
+detach("package:plyr", unload=TRUE)
+```
+
+```{r}
+## for bootstrapping 95% confidence intervals
+theta <- function(x,xdata) {mean(xdata[x])}
+ci.low <- function(x) {
+  quantile(bootstrap(1:length(x),1000,theta,x)$thetastar,.025)}
+ci.high <- function(x) {
+  quantile(bootstrap(1:length(x),1000,theta,x)$thetastar,.975)}
+```
+
+```{r}
+## reading the processed data
+data_main <- read.csv("../2_processed_data/cardgame_data_processed.csv")
+
+## isolating the trials with 3 values as DV
+data_main_dv3 <-
+  data_main %>%
+  filter(dv_type==3) 
+
+graph_data <-
+  data_main_dv3 %>% 
+  group_by(sid, trial_type, age_category, response) %>%
+  summarise(counts= n()) %>%
+  spread(response, counts) %>%
+  replace(is.na(.), 0) %>%
+  mutate(total = Wrong + Right + `Kinda Right`) %>%
+  gather(response, counts, `Kinda Right`:Wrong) %>%
+  mutate(prop = counts / total) %>%
+  group_by(trial_type, age_category, response) %>%
+  summarize(cih = ci.high(prop),
+            cil = ci.low(prop),
+            prop = mean(prop)) %>%
+  separate(trial_type, c("Card", "Guess"), sep="\\.", remove = FALSE)
+
+graph_data$response <- factor(graph_data$response, levels = c("Wrong", "Kinda Right", "Right"))
+graph_data$response <- fct_recode(graph_data$response, `A Little Right` = "Kinda Right")
+
+graph_data$Guess <- fct_relevel(graph_data$Guess, "Z", "X", "XandY", "XorY")
+graph_data$Guess <- fct_recode(graph_data$Guess, Elephant = "Z", Cat="X", `Cat and Dog`="XandY", `Cat or Dog`="XorY")
+```
+
+
+#Plots
+
+## Ternary TVJT
+
+```{r child_plot}
+child_plot_tvjt <-
+  graph_data %>%
+  filter(age_category=="Children") %>%
+  ggplot(aes(x=response, y=prop, fill=response)) + 
+  geom_bar(stat="identity", width=0.6) + 
+  facet_grid(Card~Guess) +
+  geom_linerange(aes(ymin=cil, ymax=cih)) +
+  labs(x="",y="") +
+  theme_few() +
+  theme(axis.text.x = element_text(angle=45, hjust=1, vjust=1), text = element_text(size=17)) + 
+  scale_fill_manual(values = c("red4", "grey","springgreen3"), guide=FALSE)
+
+cat <- 
+  readJPEG("../0_methods/stimuli/cat.jpg") %>%
+  rasterGrob(width=0.9)
+
+cat_dog <- 
+  readJPEG("../0_methods/stimuli/catdog.jpg")%>%
+  rasterGrob(width=0.9)
+
+child_plot_tvjt_g <- ggplot_gtable(ggplot_build(child_plot_tvjt))
+
+strips <- grep("strip-r", child_plot_tvjt_g$layout$name)
+
+new_grobs <- list(cat, cat_dog)
+
+child_plot_tvjt_g <- with(child_plot_tvjt_g$layout[strips,],
+          gtable_add_grob(child_plot_tvjt_g, new_grobs,
+                          t=t, l=l, b=b, r=r, name="cards"))        
+
+child_plot_tvjt_g$widths[[11]] <- unit(2.5,"cm")
+
+grid.draw(child_plot_tvjt_g)
+```
+
+## Feedback
+
+```{r }
+graph_data <-
+  data_main %>%
+  filter(age_category=="Children") %>%
+  group_by(sid, trial_type, feedback) %>%
+  summarise(counts= n()) %>%
+  spread(response, counts) %>%
+  replace(is.na(.), 0) %>%
+  mutate(total = Wrong + Right + `Kinda Right`) %>%
+  gather(response, counts, `Kinda Right`:Wrong) %>%
+  mutate(prop = counts / total) %>%
+  group_by(trial_type, age_category, response) %>%
+  summarize(cih = ci.high(prop),
+            cil = ci.low(prop),
+            prop = mean(prop)) %>%
+  separate(trial_type, c("Card", "Guess"), sep="\\.", remove = FALSE)
+```
+
+
+```{r}
+
+data_main_dv3 %>%
+  filter(age_category=="Children") %>%
+  group_by(sid, trial_type, feedback) %>%
+  summarise(counts= n()) %>%
+  spread(feedback, counts) %>%
+  replace(is.na(.), 0) %>%
+  mutate(total = None + Judgement + Description + Correction) %>%
+  gather(feedback, counts, Correction:None) %>%
+  mutate(prop = counts / total) %>%
+  group_by(trial_type, feedback) %>%
+  summarize(cih = ci.high(prop),
+            cil = ci.low(prop),
+            prop = mean(prop)) -> graph_data_2
+
+critical_2 <- filter(graph_data_2, trial_type=="XY.XorY" | trial_type=="XY.XandY" | trial_type=="X.XorY" | trial_type=="X.XandY")
+critical_2$trial_type <- factor(critical_2$trial_type, levels = c("X.XorY", "XY.XorY", "X.XandY", "XY.XandY"))
+
+  ggplot(critical_2, aes(x=trial_type, y=prop,fill=trial_type)) + 
+  geom_bar(stat="identity", width = 0.6, position="dodge") + 
+  geom_errorbar(aes(ymax = cih, ymin= cil), position = position_dodge(.6), width=0.2) + facet_wrap(~feedback)
+
+  ggplot(critical_2, aes(x=feedback, y=prop,fill=feedback)) + 
+  geom_bar(stat="identity", width = 0.6, position="dodge") + 
+  geom_errorbar(aes(ymax = cih, ymin= cil), position = position_dodge(.6), width=0.2) + facet_wrap(~trial_type)
+  
+```
+
+```{r}
+data_main_dv3 %>%
+  filter(age_category=="Children") %>%
+  filter(response != "") %>%
+  group_by(trial_type, sid) %>%
+  mutate(trial_number = 1:n()) %>%
+  unite(trials, trial_type, trial_number, sep=".") %>%
+  select(sid, trials, response) %>% 
+  spread(trials, response) %>%
+  select(XY.XandY.1, XY.XandY.2, X.XandY.1, X.XandY.2, XY.XorY.1, XY.XorY.2, X.XorY.1, X.XorY.2) %>%
+  group_by(XY.XorY.1, XY.XorY.2, X.XorY.1, X.XorY.2) %>%
+  mutate(index = 1:n()) %>%
+  summarise(mixim = max(index)) %>% View()
+
+data_main_dv3 %>%
+  filter(age_category=="Adults") %>%
+  select(sid, trial_type, response) %>%
+  spread(trial_type, response) %>%
+  select(XY.XandY, X.XandY,XY.XorY, X.XorY) %>%
+  group_by(XY.XandY, X.XandY,XY.XorY, X.XorY) %>% 
+  mutate(index = 1:n()) %>%
+  summarise(mixim = max(index)) %>% View()
+```
+
+
+```{r data_cleanup}
+df_stan <- as_tibble(data_main_dv3) %>%
+  filter(age_category == "Children") %>%
+  select(-age_category, -dv_type) %>%
+  mutate(response = fct_relevel(response, "Wrong","Kinda Right"), 
+         age_centered_years = as.numeric(scale(age_year, scale=FALSE))) %>%
+  filter(!is.na(response)) 
+  
+df_stan_small <- df_stan %>%
+  filter(sid %in% unique(data_main_dv3$sid)[1:5]) %>%
+  mutate(sid = factor(sid))
+  
+```

@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.X,DOG,dog,2017-06-01-9-41,1373,yes!,J,Y,0,Y
+2,X.Z,ELE,dog,2017-06-01-9-41,1373,No! ,J,N,0,N
+3,X.XorY,DOG,dog or elephant,2017-06-01-9-41,1373,No! it is a dog!,D,N,0,Y
+4,XY.X,DOG-ELE,elephant,2017-06-01-9-41,1373,Jazzy is NOT right,J,N,0,N
+5,XY.XorY,CAT-DOG,cat or dog,2017-06-01-9-41,1373,Cat AND a dog!,C,0,I,Y
+6,XY.Z,CAT-ELE,dog,2017-06-01-9-41,1373,No! A cat and an elephant!,D,N,0,N
+7,X.XorY,ELE,cat or elephant,2017-06-01-9-41,1373,An elephant,D,0,0,Y
+8,XY.Z,CAT-DOG,elephant,2017-06-01-9-41,1373,No! A dog AND a cat!,C,N,I,Y
+9,XY.XorY,DOG-ELE,dog or elephant,2017-06-01-9-41,1373,No! A dog AND an elephant!,C,N,I,Y
+10,X.X,CAT,cat,2017-06-01-9-41,1373,Yes!,J,Y,0,Y
+11,X.XandY,ELE,dog and elephant,2017-06-01-9-41,1373,No! Only an elephant,C,N,E,Y
+12,XY.X,DOG-ELE,dog,2017-06-01-9-41,1373,No! A dog and an elephant!,D,N,0,Y
+13,XY.XandY,CAT-ELE,cat and elephant,2017-06-01-9-41,1373,Yes!,J,Y,0,Y
+14,X.XandY,CAT,cat and elephant,2017-06-01-9-41,1373,No! cat!,D,N,0,Y
+15,X.Z,DOG,elephant,2017-06-01-9-41,1373,No! A dog!,D,N,0,Y
+16,XY.XandY,CAT-DOG,cat and dog,2017-06-01-9-41,1373,Yes!,J,Y,0,Y

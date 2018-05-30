@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.Z,ELE,cat,2017-05-22-9-35,1698,an elephant silly!,D,0,0,NA
+2,X.X,DOG,dog,2017-05-22-9-35,1698,yeah!,J,Y,0,NA
+3,X.XorY,ELE,cat or elephant,2017-05-22-9-35,1698,elephant!,D,0,0,NA
+4,XY.X,DOG-ELE,dog,2017-05-22-9-35,1698,no! elephant AND dog!,C,N,I,NA
+5,X.XandY,ELE,dog and elephant,2017-05-22-9-35,1698,only an elephant.,C,0,E,NA
+6,X.XorY,DOG,cat or dog,2017-05-22-9-35,1698,a dog!,D,0,0,NA
+7,X.XandY,DOG,cat and dog,2017-05-22-9-35,1698,it's only a dog!,C,0,E,NA
+8,X.X,ELE,elephant,2017-05-22-9-35,1698,yesss! You're right!,J,Y,0,NA
+9,X.Z,CAT,dog,2017-05-22-9-35,1698,no it's cat silly!,D,N,0,NA
+10,XY.XandY,CAT-DOG,cat and dog,2017-05-22-9-35,1698,yes! You're right!,J,Y,0,NA
+11,XY.X,CAT-DOG,dog,2017-05-22-9-35,1698,cat AND a dog silly!,C,0,I,NA
+12,XY.XandY,DOG-ELE,dog and elephant,2017-05-22-9-35,1698,yes! You're right!,J,Y,0,NA
+13,XY.XorY,CAT-ELE,cat or elephant,2017-05-22-9-35,1698,here's two silly!,C,0,I,NA
+14,XY.Z,CAT-ELE,dog,2017-05-22-9-35,1698,no silly only a cat and an elephant.,C,N,E,NA
+15,XY.Z,DOG-ELE,cat,2017-05-22-9-35,1698,no it's only an elephant and a dog!,C,N,E,NA
+16,XY.XorY,DOG-ELE,dog or elephant,2017-05-22-9-35,1698,yes you are right!,J,Y,0,NA

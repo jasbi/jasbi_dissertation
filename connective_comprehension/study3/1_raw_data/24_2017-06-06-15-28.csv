@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.X,DOG,dog,2017-06-06-15-28,2052,Yes,J,Y,0,Y
+2,X.Z,CAT,dog,2017-06-06-15-28,2052,No. it's a CAT,D,N,0,N
+3,XY.X,CAT-ELE,elephant,2017-06-06-15-28,2052,not just an elephant ƒ not just an elephant there is something else too.,C,0,I,N
+4,X.XorY,ELE,cat or elephant,2017-06-06-15-28,2052,An elephant ƒ but there was just an elephant,D,0,0,Y
+5,X.XandY,ELE,dog and elephant,2017-06-06-15-28,2052,nope. Just an elephant,C,N,E,N
+6,X.XandY,DOG,cat and dog,2017-06-06-15-28,2052,nope. Just a dog,C,N,E,N
+7,X.XorY,CAT,cat or elephant,2017-06-06-15-28,2052,a cat!,D,0,0,Y
+8,XY.X,CAT-DOG,cat,2017-06-06-15-28,2052,not just a cat. Guess another one which is with the cat. I'll give him a little clue . So he knows. So it's something which chases cats.,C,0,I,N
+9,XY.Z,CAT-DOG,elephant,2017-06-06-15-28,2052,no I'll give you a little clue. It's something which chases a cat and... ,J,N,0,N
+10,X.Z,DOG,cat,2017-06-06-15-28,2052,Nope. A dog,D,N,0,N
+11,XY.XandY,CAT-ELE,cat and elephant,2017-06-06-15-28,2052,Yes,J,Y,0,Y
+12,XY.XorY,DOG-ELE,dog or elephant,2017-06-06-15-28,2052,Both,C,0,I,Y
+13,XY.Z,CAT-ELE,dog,2017-06-06-15-28,2052,not a dog. I'll give you a little clue. Something big and something that a dog chases,J,N,0,N
+14,X.X,ELE,elephant,2017-06-06-15-28,2052,Yup,J,Y,0,Y
+15,XY.XandY,DOG-ELE,dog and elephant,2017-06-06-15-28,2052,Yes,J,Y,0,Y
+16,XY.XorY,CAT-DOG,cat or dog,2017-06-06-15-28,2052,Both,C,0,I,Y

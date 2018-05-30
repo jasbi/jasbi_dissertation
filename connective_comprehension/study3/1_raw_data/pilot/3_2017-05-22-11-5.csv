@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.Z,CAT,dog,2017-05-22-11-5,2034,no Jazzy. It's a cat.,D,N,0,NA
+2,X.X,DOG,dog,2017-05-22-11-5,2034,yes Jazzy you're right.,J,Y,0,NA
+3,X.XorY,ELE,dog or elephant,2017-05-22-11-5,2034,I don't know. There's just an elephant Jazzy.,C,0,E,NA
+4,X.XandY,DOG,dog and elephant,2017-05-22-11-5,2034,There is just a dog Jazzy.,C,0,E,NA
+5,XY.XorY,CAT-DOG,cat or dog,2017-05-22-11-5,2034,yes Jazzy you're right.,J,Y,0,NA
+6,X.XorY,DOG,cat or dog,2017-05-22-11-5,2034,there is only a dog Jazzy.,C,0,E,NA
+7,X.XandY,ELE,dog and elephant,2017-05-22-11-5,2034,there is only an elephant Jazzy.,C,0,E,NA
+8,X.Z,ELE,dog,2017-05-22-11-5,2034,No Jazzy. It's an elephant.,D,N,0,NA
+9,XY.X,CAT-ELE,elephant,2017-05-22-11-5,2034,there is only a cat and an elephant.,C,0,E,NA
+10,XY.XorY,DOG-ELE,dog or elephant,2017-05-22-11-5,2034,yes Jazzy you're right.,J,Y,0,NA
+11,XY.X,DOG-ELE,elephant,2017-05-22-11-5,2034,there is only a dog and an elephant Jazzy.,C,0,E,NA
+12,XY.Z,CAT-DOG,elephant,2017-05-22-11-5,2034,no Jazzy there is only a cat and a dog.,C,N,E,NA
+13,XY.XandY,CAT-ELE,cat and elephant,2017-05-22-11-5,2034,yes Jazzy there is an elephant and a cat,D,Y,0,NA
+14,XY.Z,DOG-ELE,cat,2017-05-22-11-5,2034,no Jazzy there is only a dog and an elephant.,C,N,E,NA
+15,XY.XandY,DOG-ELE,dog and elephant,2017-05-22-11-5,2034,yes Jazzy you're right.,J,Y,0,NA
+16,X.X,ELE,elephant,2017-05-22-11-5,2034,NA,NA,NA,NA,NA

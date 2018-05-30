@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.X,CAT,cat,2017-06-01-15-26,1877,Yes!,J,Y,0,Y
+2,X.Z,CAT,elephant,2017-06-01-15-26,1877,No! A cat!,D,N,0,N
+3,XY.XandY,CAT-ELE,cat and elephant,2017-06-01-15-26,1877,Yes!,J,Y,0,Y
+4,XY.X,CAT-DOG,dog,2017-06-01-15-26,1877,No! A dog and a KITTEN!,D,N,0,N
+5,XY.XorY,CAT-DOG,cat or dog,2017-06-01-15-26,1877,Yes!,J,Y,0,Y
+6,X.XorY,ELE,cat or elephant,2017-06-01-15-26,1877,No! It's an elephant!,D,N,0,N
+7,XY.XandY,DOG-ELE,dog and elephant,2017-06-01-15-26,1877,Yes!,J,Y,0,Y
+8,X.XandY,CAT,cat and elephant,2017-06-01-15-26,1877,No!,J,N,0,N
+9,X.X,ELE,elephant,2017-06-01-15-26,1877,Yes!,J,Y,0,Y
+10,XY.XorY,DOG-ELE,dog or elephant,2017-06-01-15-26,1877,Yes!,J,Y,0,Y
+11,XY.X,CAT-ELE,elephant,2017-06-01-15-26,1877,No! elephant and a KITTEN!,D,N,0,N
+12,X.XorY,CAT,cat or dog,2017-06-01-15-26,1877,No! Only a cat!,C,N,E,N
+13,X.XandY,DOG,cat and dog,2017-06-01-15-26,1877,No! A dog!,D,N,0,N
+14,XY.Z,DOG-ELE,cat,2017-06-01-15-26,1877,Nope! It's a dog and an ELEPHENT!,D,N,0,N
+15,X.Z,ELE,cat,2017-06-01-15-26,1877,No. an elephant!,D,N,0,NA
+16,XY.Z,CAT-ELE,dog,2017-06-01-15-26,1877,No! elephant and a KITTEN!,D,N,0,NA

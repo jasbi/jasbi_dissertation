@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.X,DOG,dog,2017-05-26-8-58,1575,[nod] it is a dog!,D,Y,0,1
+2,X.Z,DOG,cat,2017-05-26-8-58,1575,No! Dog!,D,N,0,0
+3,X.XorY,CAT,cat or dog,2017-05-26-8-58,1575,A cat! Not a dog!,C,0,E,1
+4,X.Z,CAT,elephant,2017-05-26-8-58,1575,No! Cat!,D,N,0,NA
+5,XY.Z,DOG-ELE,cat,2017-05-26-8-58,1575,No! A dog and an elphant!,D,N,0,NA
+6,X.XandY,ELE,cat and elephant,2017-05-26-8-58,1575,Only an elephan!,C,0,E,NA
+7,X.XandY,ELE,dog and elephant,2017-05-26-8-58,1575,No! an elephant only.,C,N,E,NA
+8,XY.XorY,CAT-ELE,cat or elephant,2017-05-26-8-58,1575,A cat AND an elephant!,C,0,I,NA
+9,XY.XandY,CAT-ELE,cat and elephant,2017-05-26-8-58,1575,Yes!,J,Y,0,NA
+10,X.XorY,ELE,cat or elephant,2017-05-26-8-58,1575,CAT! I mean elephant!,D,0,0,1
+11,XY.XorY,CAT-DOG,cat or dog,2017-05-26-8-58,1575,Cat AND a dog!,C,0,I,1
+12,XY.X,CAT-DOG,dog,2017-05-26-8-58,1575,"Not only a dog, a dog AND a cat!",C,N,I,1
+13,XY.X,DOG-ELE,elephant,2017-05-26-8-58,1575,elephant and a dog!,D,0,0,1
+14,XY.XandY,DOG-ELE,dog and elephant,2017-05-26-8-58,1575,Yup!,J,Y,0,1
+15,X.X,CAT,cat,2017-05-26-8-58,1575,Cat only!,C,0,E,1
+16,XY.Z,CAT-DOG,elephant,2017-05-26-8-58,1575,No!,J,N,0,0

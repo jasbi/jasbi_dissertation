@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.X,ELE,elephant,2017-05-25-10-6,1898,Yes!,J,Y,0,NA
+2,X.Z,DOG,cat,2017-05-25-10-6,1898,No! Dog!,D,N,0,NA
+3,XY.XorY,CAT-DOG,cat or dog,2017-05-25-10-6,1898,Both!,C,0,I,NA
+4,XY.X,CAT-ELE,elephant,2017-05-25-10-6,1898,Yes! AND the other one? CAT!,C,Y,I,NA
+5,XY.XandY,CAT-DOG,cat and dog,2017-05-25-10-6,1898,Good Job! That's correct!,J,Y,0,NA
+6,X.XorY,CAT,cat or elephant,2017-05-25-10-6,1898,Cat!,D,0,0,NA
+7,X.XandY,ELE,dog and elephant,2017-05-25-10-6,1898,Just an elephant!,C,0,E,NA
+8,X.Z,CAT,elephant,2017-05-25-10-6,1898,NO! CAT!,D,N,0,NA
+9,XY.X,CAT-ELE,cat,2017-05-25-10-6,1898,Yes! Elephant!,D,Y,0,NA
+10,X.X,CAT,cat,2017-05-25-10-6,1898,Yes!,J,Y,0,NA
+11,X.XandY,DOG,dog and elephant,2017-05-25-10-6,1898,No! [] dog!,D,N,0,NA
+12,XY.XandY,CAT-ELE,cat and elephant,2017-05-25-10-6,1898,Good job!,J,Y,0,NA
+13,XY.XorY,DOG-ELE,dog or elephant,2017-05-25-10-6,1898,Both!,C,0,I,NA
+14,XY.Z,DOG-ELE,cat,2017-05-25-10-6,1898,[headshake] dog and an elephant!,D,N,0,NA
+15,X.XorY,DOG,cat or dog,2017-05-25-10-6,1898,dog!,D,0,0,NA
+16,XY.Z,CAT-DOG,elephant,2017-05-25-10-6,1898,[headshake] cat and dog!,D,N,0,NA

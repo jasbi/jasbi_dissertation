@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.X,ELE,elephant,2017-06-01-9-56,1812,Yes!,J,Y,0,Y
+2,X.Z,DOG,elephant,2017-06-01-9-56,1812,Dog!,D,0,0,N
+3,X.XandY,ELE,dog and elephant,2017-06-01-9-56,1812,Just an elephant!,C,0,E,N
+4,X.XorY,CAT,cat or elephant,2017-06-01-9-56,1812,Cat!,D,0,0,Y
+5,X.XandY,DOG,cat and dog,2017-06-01-9-56,1812,Dog!,D,0,0,Y
+6,XY.XorY,DOG-ELE,dog or elephant,2017-06-01-9-56,1812,Both!,C,0,I,Y
+7,XY.XorY,CAT-ELE,cat or elephant,2017-06-01-9-56,1812,Both!,C,0,I,Y
+8,X.Z,CAT,elephant,2017-06-01-9-56,1812,Kitty,D,0,0,N
+9,XY.Z,CAT-DOG,elephant,2017-06-01-9-56,1812,[headshake] cat and dog!,D,N,0,N
+10,X.XorY,ELE,dog or elephant,2017-06-01-9-56,1812,Elephant,D,0,0,Y
+11,XY.Z,DOG-ELE,cat,2017-06-01-9-56,1812,[headshake] dog and elephant!,D,N,0,N
+12,XY.X,CAT-ELE,elephant,2017-06-01-9-56,1812,cat and elephant,D,0,0,Y
+13,XY.XandY,CAT-DOG,cat and dog,2017-06-01-9-56,1812,[nod],J,Y,0,Y
+14,XY.X,DOG-ELE,dog,2017-06-01-9-56,1812,dog and elephant,D,0,0,Y
+15,X.X,DOG,dog,2017-06-01-9-56,1812,[nod],J,Y,0,Y
+16,XY.XandY,CAT-ELE,cat and elephant,2017-06-01-9-56,1812,Yes!,J,Y,0,Y

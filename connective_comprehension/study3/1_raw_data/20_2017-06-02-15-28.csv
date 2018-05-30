@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,DOG,cat,2017-06-02-15-28,1772,No!,J,N,0,N
+2,X.X,DOG,dog,2017-06-02-15-28,1772,yup!,J,Y,0,Y
+3,X.XandY,ELE,dog and elephant,2017-06-02-15-28,1772,nope!,J,N,0,N
+4,XY.XandY,CAT-ELE,cat and elephant,2017-06-02-15-28,1772,you're right!,J,Y,0,Y
+5,XY.Z,DOG-ELE,cat,2017-06-02-15-28,1772,two!,C,0,I,N
+6,XY.X,CAT-DOG,cat,2017-06-02-15-28,1772,nope! Two again!,C,N,I,N
+7,X.Z,ELE,dog,2017-06-02-15-28,1772,Nope. Elephant,D,N,0,N
+8,XY.XandY,DOG-ELE,dog and elephant,2017-06-02-15-28,1772,Yes,J,Y,0,Y
+9,XY.XorY,CAT-ELE,cat or elephant,2017-06-02-15-28,1772,Both!,C,0,I,Y
+10,X.XorY,DOG,cat or dog,2017-06-02-15-28,1772,dog!,D,0,0,Y
+11,X.XorY,ELE,dog or elephant,2017-06-02-15-28,1772,there is an elephant,D,0,0,Y
+12,X.XandY,CAT,cat and elephant,2017-06-02-15-28,1772,Cat,D,0,0,Y
+13,X.X,CAT,cat,2017-06-02-15-28,1772,Yes,J,Y,0,Y
+14,XY.Z,CAT-ELE,dog,2017-06-02-15-28,1772,Nope. Two things,C,N,I,N
+15,XY.X,CAT-ELE,cat,2017-06-02-15-28,1772,Nope. Both,C,N,I,YN
+16,XY.XorY,DOG-ELE,dog or elephant,2017-06-02-15-28,1772,Both,C,0,I,Y

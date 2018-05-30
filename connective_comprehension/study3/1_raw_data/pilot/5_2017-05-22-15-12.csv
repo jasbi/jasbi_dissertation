@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.X,ELE,elephant,2017-05-22-15-12,1740,Yes!,J,Y,0,NA
+2,X.Z,DOG,elephant,2017-05-22-15-12,1740,Dog! You are not right! It's a dog!,D,N,0,NA
+3,XY.XorY,CAT-ELE,cat or elephant,2017-05-22-15-12,1740,cat AND an elephant!,C,0,I,NA
+4,X.X,DOG,dog,2017-05-22-15-12,1740,Yeah!,J,Y,0,NA
+5,X.XandY,CAT,cat and dog,2017-05-22-15-12,1740,Cat! Just a cat!,C,0,E,NA
+6,X.XandY,DOG,cat and dog,2017-05-22-15-12,1740,Just a dog!,C,0,E,NA
+7,X.Z,ELE,dog,2017-05-22-15-12,1740,Jazzy you are not right! It's elephant!,D,N,0,NA
+8,XY.XorY,CAT-DOG,cat or dog,2017-05-22-15-12,1740,There is a cat AND a dog!,C,0,I,NA
+9,XY.XandY,CAT-ELE,cat and elephant,2017-05-22-15-12,1740,A cat and an elephant!,D,0,0,NA
+10,XY.Z,CAT-DOG,elephant,2017-05-22-15-12,1740,It's a dog and a cat! Jazzy you're not right!,D,N,0,NA
+11,X.XorY,DOG,dog or elephant,2017-05-22-15-12,1740,Just a dog!,C,0,E,NA
+12,XY.X,CAT-ELE,cat,2017-05-22-15-12,1740,A cat AND an elephant!,C,0,I,NA
+13,X.XorY,DOG,cat or dog,2017-05-22-15-12,1740,A dog! [was he right?]Yes!,D,0,0,1
+14,XY.X,CAT-DOG,dog,2017-05-22-15-12,1740,A dog AND a cat!,C,0,I,NA
+15,XY.XandY,DOG-ELE,dog and elephant,2017-05-22-15-12,1740,There is an elephant AND a dog.,C,0,I,NA
+16,XY.Z,DOG-ELE,cat,2017-05-22-15-12,1740,A cat and a dog.,D,0,0,NA

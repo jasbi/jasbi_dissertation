@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,DOG,cat,2017-06-06-14-31,1800,No. [was Jazzy right?] No. It's a dog,D,N,0,N
+2,X.X,DOG,dog,2017-06-06-14-31,1800,Yes,J,Y,0,Y
+3,XY.X,CAT-ELE,elephant,2017-06-06-14-31,1800,an elephant and a cat,D,0,0,YN
+4,XY.XandY,CAT-DOG,cat and dog,2017-06-06-14-31,1800,yes,J,Y,0,Y
+5,X.XandY,CAT,cat and dog,2017-06-06-14-31,1800,no only a cat,C,N,E,N
+6,X.XandY,ELE,dog and elephant,2017-06-06-14-31,1800,no only an elephant,C,N,E,N
+7,XY.XandY,CAT-ELE,cat and elephant,2017-06-06-14-31,1800,yes,J,Y,0,Y
+8,XY.X,CAT-DOG,cat,2017-06-06-14-31,1800,middle. Almost right. Just he needed a dog,J,YN,0,YN
+9,X.Z,DOG,elephant,2017-06-06-14-31,1800,no. it's a dog,D,N,0,N
+10,X.XorY,DOG,cat or dog,2017-06-06-14-31,1800,a dog,D,0,0,Y
+11,X.X,CAT,cat,2017-06-06-14-31,1800,Yes,J,Y,0,Y
+12,X.XorY,DOG,dog or elephant,2017-06-06-14-31,1800,a dog,D,0,0,Y
+13,XY.Z,CAT-DOG,elephant,2017-06-06-14-31,1800,No. It's a cat AND a dog,C,N,I,N
+14,XY.Z,DOG-ELE,cat,2017-06-06-14-31,1800,No! it's a dog and an elephant,D,N,0,N
+15,XY.XorY,DOG-ELE,dog or elephant,2017-06-06-14-31,1800,Both,C,0,I,Y
+16,XY.XorY,CAT-DOG,cat or dog,2017-06-06-14-31,1800,Both! You're right,C,0,I,Y

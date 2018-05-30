@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.X,CAT,cat,2017-05-24-13-47,1929,yes!,J,Y,0,NA
+2,X.Z,DOG,elephant,2017-05-24-13-47,1929,No! there is a dog!,D,N,0,NA
+3,XY.XandY,CAT-ELE,cat and elephant,2017-05-24-13-47,1929,Yes!,J,Y,0,NA
+4,XY.X,DOG-ELE,dog,2017-05-24-13-47,1929,A dog and an elephant!,D,0,0,NA
+5,XY.X,CAT-DOG,cat,2017-05-24-13-47,1929,AND a dog!,C,0,I,NA
+6,XY.Z,CAT-ELE,dog,2017-05-24-13-47,1929,No! there is a cat and an elephant!,D,N,0,NA
+7,XY.XorY,CAT-ELE,cat or elephant,2017-05-24-13-47,1929,It's a cat AND an elephant!,C,0,I,NA
+8,X.X,ELE,elephant,2017-05-24-13-47,1929,Yes!,J,Y,0,NA
+9,XY.Z,CAT-DOG,elephant,2017-05-24-13-47,1929,No! there is a dog and a cat!,D,N,0,NA
+10,X.XandY,ELE,dog and elephant,2017-05-24-13-47,1929,No! It's just an elephant,C,N,E,NA
+11,X.XorY,CAT,cat or elephant,2017-05-24-13-47,1929,No! Just a cat!,C,N,E,NA
+12,XY.XandY,CAT-DOG,cat and dog,2017-05-24-13-47,1929,Yes!,J,Y,0,NA
+13,X.XorY,ELE,cat or elephant,2017-05-24-13-47,1929,Just an elephant!,C,0,E,NA
+14,XY.XorY,CAT-DOG,cat or dog,2017-05-24-13-47,1929,A cat AND a dog!,C,0,I,NA
+15,X.Z,CAT,elephant,2017-05-24-13-47,1929,No there is a cat!,D,N,0,NA
+16,X.XandY,ELE,cat and elephant,2017-05-24-13-47,1929,No there is just an elephant!,C,N,E,NA

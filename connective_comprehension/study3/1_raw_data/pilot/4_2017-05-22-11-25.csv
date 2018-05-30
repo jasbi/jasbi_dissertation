@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.X,DOG,dog,2017-05-22-11-25,1886,Yes Jazzy you are right.,J,Y,0,NA
+2,X.Z,CAT,dog,2017-05-22-11-25,1886,You are not right Jazzy it's a cat.,D,N,0,NA
+3,XY.XandY,CAT-ELE,cat and elephant,2017-05-22-11-25,1886,Yes you are right Jazzy.,J,Y,0,NA
+4,X.XorY,ELE,cat or elephant,2017-05-22-11-25,1886,You are right. It's one animal. It's an elephant.,D,Y,0,NA
+5,XY.X,CAT-ELE,cat,2017-05-22-11-25,1886,A cat AND an elephant.,C,0,I,NA
+6,X.Z,DOG,cat,2017-05-22-11-25,1886,No you're not right. It's a DOG!,D,N,0,NA
+7,XY.Z,CAT-DOG,elephant,2017-05-22-11-25,1886,No. There is a cat and a dog.,D,N,0,NA
+8,XY.X,CAT-ELE,elephant,2017-05-22-11-25,1886,an elephant AND a cat.,C,0,I,NA
+9,X.X,ELE,elephant,2017-05-22-11-25,1886,Yes you are right.,J,Y,0,NA
+10,XY.XandY,CAT-DOG,cat and dog,2017-05-22-11-25,1886,Yes you are right Jazzy.,J,Y,0,NA
+11,X.XorY,DOG,cat or dog,2017-05-22-11-25,1886,Dog. ,D,0,0,NA
+12,X.XandY,ELE,cat and elephant,2017-05-22-11-25,1886,It's an elephant.,D,0,0,NA
+13,X.XandY,CAT,cat and elephant,2017-05-22-11-25,1886,cat,D,0,0,NA
+14,XY.Z,CAT-ELE,dog,2017-05-22-11-25,1886,dog and elephant,D,0,0,NA
+15,XY.XorY,DOG-ELE,dog or elephant,2017-05-22-11-25,1886,A dog AND an elephant,C,0,I,NA
+16,XY.XorY,CAT-DOG,cat or dog,2017-05-22-11-25,1886,It's a cat AND a dog.,C,0,I,NA

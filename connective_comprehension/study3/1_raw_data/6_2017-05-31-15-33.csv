@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,DOG,cat,2017-05-31-15-33,1693,No! ,J,N,0,N
+2,X.X,DOG,dog,2017-05-31-15-33,1693,Yeah you're right!,J,Y,0,Y
+3,XY.XandY,CAT-ELE,cat and elephant,2017-05-31-15-33,1693,Yeah you're right!,J,Y,0,Y
+4,XY.Z,CAT-ELE,dog,2017-05-31-15-33,1693,No! you're wrong!,J,N,0,N
+5,X.XandY,ELE,dog and elephant,2017-05-31-15-33,1693,No there's only an elephant!,C,N,E,Y
+6,XY.X,DOG-ELE,elephant,2017-05-31-15-33,1693,"Yeah, but there is also something else!",C,Y,I,Y
+7,X.XorY,DOG,dog or elephant,2017-05-31-15-33,1693,There is a dog,D,0,0,Y
+8,X.Z,DOG,elephant,2017-05-31-15-33,1693,No! ,J,N,0,N
+9,X.XorY,CAT,cat or dog,2017-05-31-15-33,1693,there is a cat,D,0,0,Y
+10,X.XandY,DOG,dog and elephant,2017-05-31-15-33,1693,there is only a dog!,C,0,E,Y
+11,XY.X,DOG-ELE,dog,2017-05-31-15-33,1693,yeah but there is also something else.,C,Y,I,Y
+12,XY.Z,CAT-DOG,elephant,2017-05-31-15-33,1693,No! there is a dog and a cat!,D,N,0,N
+13,XY.XorY,DOG-ELE,dog or elephant,2017-05-31-15-33,1693,there is a dog AND an elephant,C,0,I,Y
+14,XY.XorY,CAT-DOG,cat or dog,2017-05-31-15-33,1693,there is a cat AND a dog,C,0,I,Y
+15,X.X,ELE,elephant,2017-05-31-15-33,1693,yeah you're right!,J,Y,0,Y
+16,XY.XandY,DOG-ELE,dog and elephant,2017-05-31-15-33,1693,Yeah!,J,Y,0,Y

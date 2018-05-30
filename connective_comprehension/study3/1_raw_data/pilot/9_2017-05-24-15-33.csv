@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.Z,DOG,cat,2017-05-24-15-33,1419,No! [] a dog!,D,N,0,0
+2,X.X,CAT,cat,2017-05-24-15-33,1419,Yes!,J,Y,0,1
+3,XY.X,CAT-ELE,elephant,2017-05-24-15-33,1419,Yes! And there is another one! [] a cat!,C,Y,I,1
+4,X.XorY,ELE,dog or elephant,2017-05-24-15-33,1419,elephant!,D,0,0,1
+5,XY.X,DOG-ELE,elephant,2017-05-24-15-33,1419,No!,J,N,0,0
+6,X.Z,DOG,elephant,2017-05-24-15-33,1419,No! It's a dog!,D,N,0,0
+7,X.XandY,CAT,cat and elephant,2017-05-24-15-33,1419,No! Only a cat!,C,N,E,0
+8,XY.XandY,CAT-ELE,cat and elephant,2017-05-24-15-33,1419,Yes!,J,Y,0,1
+9,X.XorY,CAT,cat or elephant,2017-05-24-15-33,1419,cat!,D,0,0,1
+10,XY.XandY,CAT-DOG,cat and dog,2017-05-24-15-33,1419,Yes!,J,Y,0,1
+11,XY.Z,DOG-ELE,cat,2017-05-24-15-33,1419,No! there is a dog and an elephant!,D,N,0,0
+12,X.XandY,DOG,cat and dog,2017-05-24-15-33,1419,No! Only a dog!,C,N,E,0
+13,XY.Z,CAT-DOG,elephant,2017-05-24-15-33,1419,No! [] a dog and a cat!,J,N,0,0
+14,X.X,DOG,dog,2017-05-24-15-33,1419,Yes!,J,Y,0,1
+15,XY.XorY,DOG-ELE,dog or elephant,2017-05-24-15-33,1419,Dog AND an elephant!,C,0,I,1
+16,XY.XorY,CAT-DOG,cat or dog,2017-05-24-15-33,1419,A cat AND a dog!,C,0,I,1

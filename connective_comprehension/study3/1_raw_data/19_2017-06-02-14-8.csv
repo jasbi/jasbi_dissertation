@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,DOG,elephant,2017-06-02-14-8,1760,nope!,J,N,0,N
+2,X.X,DOG,dog,2017-06-02-14-8,1760,Yeah,J,Y,0,Y
+3,X.XorY,ELE,cat or elephant,2017-06-02-14-8,1760,elephant,D,0,0,Y
+4,XY.X,CAT-ELE,cat,2017-06-02-14-8,1760,Yeah É and an elephant,C,Y,I,Y
+5,X.XorY,CAT,cat or elephant,2017-06-02-14-8,1760,a cat,D,0,0,Y
+6,XY.XorY,DOG-ELE,dog or elephant,2017-06-02-14-8,1760,a dog AND an elephant,C,0,I,Y
+7,XY.XorY,CAT-DOG,cat or dog,2017-06-02-14-8,1760,a cat AND a dog,C,0,I,Y
+8,X.XandY,ELE,cat and elephant,2017-06-02-14-8,1760,it's only one elephant É only one elephant,C,0,E,Y
+9,XY.X,CAT-DOG,cat,2017-06-02-14-8,1760,[nod] and another thing É that eats a cat,C,Y,I,Y
+10,XY.XandY,CAT-DOG,cat and dog,2017-06-02-14-8,1760,Yeah,J,Y,0,Y
+11,XY.XandY,CAT-ELE,cat and elephant,2017-06-02-14-8,1760,[nod],J,Y,0,Y
+12,XY.Z,CAT-DOG,elephant,2017-06-02-14-8,1760,No!,J,N,0,N
+13,X.Z,ELE,dog,2017-06-02-14-8,1760,No!,J,N,0,N
+14,XY.Z,CAT-ELE,dog,2017-06-02-14-8,1760,No! it's an elephant and a cat,D,N,0,N
+15,X.XandY,ELE,dog and elephant,2017-06-02-14-8,1760,there is no dog! Only an elephant,C,0,E,NA
+16,X.X,ELE,elephant,2017-06-02-14-8,1760,Yeah,J,Y,0,Y

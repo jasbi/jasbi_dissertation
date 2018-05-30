@@ -1,0 +1,17 @@
+order,trial_type,cards,guess,id,age,response,feedback,judgement,correction,TVJT
+1,X.X,DOG,dog,2017-05-25-9-44,1863,Yes!,J,Y,0,1
+2,X.Z,ELE,dog,2017-05-25-9-44,1863,No! [] elephant!,J,N,0,0
+3,X.XorY,ELE,cat or elephant,2017-05-25-9-44,1863,you are right but it was an elephant!,D,Y,0,1
+4,XY.X,CAT-ELE,elephant,2017-05-25-9-44,1863,you are right Jazzy!,J,Y,0,1
+5,XY.Z,DOG-ELE,cat,2017-05-25-9-44,1863,No! [] elephant and a dog!,J,N,0,0
+6,X.XorY,ELE,dog or elephant,2017-05-25-9-44,1863,You are right Jazzy it's an elephant!,D,Y,0,1
+7,XY.X,CAT-ELE,cat,2017-05-25-9-44,1863,Yes! But AND there is an elephant!,C,Y,I,1
+8,XY.XandY,DOG-ELE,dog and elephant,2017-05-25-9-44,1863,Yes!,J,Y,0,1
+9,X.Z,CAT,dog,2017-05-25-9-44,1863,No! [] cat!,J,N,0,0
+10,XY.Z,CAT-ELE,dog,2017-05-25-9-44,1863,No! [] cat and an elephant!,J,N,0,0
+11,XY.XorY,CAT-DOG,cat or dog,2017-05-25-9-44,1863,You are rigth Jazzy! It's both of them!,C,Y,I,1
+12,X.XandY,ELE,dog and elephant,2017-05-25-9-44,1863,You are right Jazzy but only an elephant!,C,Y,E,1
+13,X.XandY,DOG,dog and elephant,2017-05-25-9-44,1863,No! It's just a dog!,C,N,E,1
+14,X.X,CAT,cat,2017-05-25-9-44,1863,Yes!,J,Y,0,1
+15,XY.XorY,DOG-ELE,dog or elephant,2017-05-25-9-44,1863,There are both of them! You are right!,C,Y,I,1
+16,XY.XandY,CAT-ELE,cat and elephant,2017-05-25-9-44,1863,Yes!,J,Y,0,1

@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,DOG,elephant,2017-06-07-8-59,1836,No,J,N,0,N
+2,X.X,DOG,dog,2017-06-07-8-59,1836,Yes. You're right,J,Y,0,Y
+3,X.XandY,CAT,cat and dog,2017-06-07-8-59,1836,nope. Just  a cat,C,N,E,N
+4,X.XorY,CAT,cat or dog,2017-06-07-8-59,1836,Just a cat,C,0,E,N
+5,X.XandY,ELE,cat and elephant,2017-06-07-8-59,1836,nope. You're wrong. It's just an elephant,C,N,E,N
+6,XY.Z,DOG-ELE,cat,2017-06-07-8-59,1836,nope. Elephant and a dog.,D,N,0,N
+7,XY.Z,CAT-DOG,elephant,2017-06-07-8-59,1836,nope. Dog and a cat,D,N,0,N
+8,XY.X,CAT-ELE,elephant,2017-06-07-8-59,1836,yup. But you're wrong. Elephant AND a cat.,C,Y,I,N
+9,XY.X,DOG-ELE,elephant,2017-06-07-8-59,1836,yup. But there is one more É a dog!,C,Y,I,N
+10,X.XorY,ELE,dog or elephant,2017-06-07-8-59,1836,an elephant!,D,0,0,Y
+11,X.Z,CAT,elephant,2017-06-07-8-59,1836,nope. A cat,D,N,0,N
+12,XY.XorY,DOG-ELE,dog or elephant,2017-06-07-8-59,1836,both!,C,0,I,Y
+13,XY.XandY,CAT-ELE,cat and elephant,2017-06-07-8-59,1836,yes,J,Y,0,Y
+14,X.X,CAT,cat,2017-06-07-8-59,1836,yup,J,Y,0,Y
+15,XY.XandY,CAT-DOG,cat and dog,2017-06-07-8-59,1836,yup,J,Y,0,Y
+16,XY.XorY,CAT-DOG,cat or dog,2017-06-07-8-59,1836,both!,C,0,I,Y

@@ -1,0 +1,801 @@
+"","order","Animal","Guess","card","guess","id","age","response","feedback","judgment","correction","tvjt","critical"
+"1",1,"X","X","DOG","dog","2017-05-31-13-36",1657,"Yes!","J","Y","0","Y",0
+"2",2,"X","Z","ELE","cat","2017-05-31-13-36",1657,"No!","J","N","0","N",0
+"3",3,"XY","X","CAT-DOG","cat","2017-05-31-13-36",1657,"Yes! Guess what else? [Jazzy just guesses once so if Jazzy is not right tell Jazzy how to say it right] a dog and a cat!","C","0","I",NA,0
+"4",4,"X","XandY","ELE","cat and elephant","2017-05-31-13-36",1657,"No! There's just an elephant!","C","N","E","N",1
+"5",5,"X","XandY","CAT","cat and elephant","2017-05-31-13-36",1657,"No! Just a cat!","C","N","E","N",1
+"6",6,"XY","X","CAT-ELE","cat","2017-05-31-13-36",1657,"Yes!","J","Y","0","Y",0
+"7",7,"X","X","ELE","elephant","2017-05-31-13-36",1657,"Yes!","J","Y","0","Y",0
+"8",8,"XY","XandY","CAT-ELE","cat and elephant","2017-05-31-13-36",1657,"Yes!","J","Y","0","Y",1
+"9",9,"X","XorY","CAT","cat or dog","2017-05-31-13-36",1657,"A cat.","D","0","0","Y",1
+"10",10,"XY","Z","CAT-DOG","elephant","2017-05-31-13-36",1657,"No! ","J","N","0","N",0
+"11",11,"XY","Z","DOG-ELE","cat","2017-05-31-13-36",1657,"No!","J","N","0","N",0
+"12",12,"XY","XorY","CAT-ELE","cat or elephant","2017-05-31-13-36",1657,"Both!","C","0","I","Y",1
+"13",13,"X","XorY","ELE","dog or elephant","2017-05-31-13-36",1657,"Ah you're right there is an elephant!","D","Y","0","Y",1
+"14",14,"XY","XandY","DOG-ELE","dog and elephant","2017-05-31-13-36",1657,"Yes!","J","Y","0","Y",1
+"15",15,"X","Z","ELE","dog","2017-05-31-13-36",1657,"No!","J","N","0","N",0
+"16",16,"XY","XorY","DOG-ELE","dog or elephant","2017-05-31-13-36",1657,"Both!","C","0","I","Y",1
+"17",1,"X","X","DOG","dog","2017-06-01-14-2",1945,"Yes","J","Y","0","Y",0
+"18",2,"X","Z","DOG","elephant","2017-06-01-14-2",1945,"No. A dog.","D","N","0","N",0
+"19",3,"XY","X","CAT-ELE","elephant","2017-06-01-14-2",1945,"Yes! There is two!","C","Y","I","Y",0
+"20",4,"X","XorY","CAT","cat or dog","2017-06-01-14-2",1945,"the first one is right.","D","0","0","YN",1
+"21",5,"X","XorY","DOG","dog or elephant","2017-06-01-14-2",1945,"Dog!","D","0","0","YN",1
+"22",6,"X","XandY","ELE","cat and elephant","2017-06-01-14-2",1945,"No! É no yes! Yes no!","J","N","0","N",1
+"23",7,"XY","XorY","CAT-ELE","cat or elephant","2017-06-01-14-2",1945,"Both","C","0","I","Y",1
+"24",8,"XY","XorY","CAT-DOG","cat or dog","2017-06-01-14-2",1945,"Both right.","C","0","I","Y",1
+"25",9,"XY","Z","CAT-ELE","dog","2017-06-01-14-2",1945,"No!","J","N","0","N",0
+"26",10,"XY","X","DOG-ELE","elephant","2017-06-01-14-2",1945,"Yes! And one more.","C","Y","I","Y",0
+"27",11,"XY","XandY","CAT-ELE","cat and elephant","2017-06-01-14-2",1945,"Yes!","J","Y","0","Y",1
+"28",12,"X","Z","DOG","cat","2017-06-01-14-2",1945,"No!","J","N","0","N",0
+"29",13,"X","XandY","DOG","dog and elephant","2017-06-01-14-2",1945,"dog!","D","0","0","YN",1
+"30",14,"X","X","CAT","cat","2017-06-01-14-2",1945,"yes!","J","Y","0","Y",0
+"31",15,"XY","Z","DOG-ELE","cat","2017-06-01-14-2",1945,"No!","J","N","0","N",0
+"32",16,"XY","XandY","DOG-ELE","dog and elephant","2017-06-01-14-2",1945,"Yes!","J","Y","0","Y",1
+"33",1,"X","X","DOG","dog","2017-06-01-14-21",1428,"Yeah!","J","Y","0","Y",0
+"34",2,"X","Z","CAT","elephant","2017-06-01-14-21",1428,"No silly goose!","J","N","0","N",0
+"35",3,"XY","Z","CAT-DOG","elephant","2017-06-01-14-21",1428,"No! Kitty dog!","D","N","0","N",0
+"36",4,"XY","XorY","DOG-ELE","dog or elephant","2017-06-01-14-21",1428,"Dog and elephant! She's É right!","D","Y","0","Y",1
+"37",5,"XY","XandY","CAT-ELE","cat and elephant","2017-06-01-14-21",1428,"Yes!","J","Y","0","Y",1
+"38",6,"X","XorY","ELE","dog or elephant","2017-06-01-14-21",1428,"Elephant!","D","0","0","Y",1
+"39",7,"X","X","ELE","elephant","2017-06-01-14-21",1428,"Yes!","J","Y","0","Y",0
+"40",8,"XY","X","CAT-DOG","cat","2017-06-01-14-21",1428,"And a DOG!","C","0","I","N",0
+"41",9,"X","XandY","CAT","cat and dog","2017-06-01-14-21",1428,"No! Cat!","D","N","0","N",1
+"42",10,"X","XorY","DOG","cat or dog","2017-06-01-14-21",1428,"Dog!","D","0","0","Y",1
+"43",11,"XY","Z","CAT-ELE","dog","2017-06-01-14-21",1428,"No!","J","N","0","N",0
+"44",12,"XY","XorY","CAT-DOG","cat or dog","2017-06-01-14-21",1428,"Dog and CAT!","D","0","0","Y",1
+"45",13,"XY","XandY","CAT-DOG","cat and dog","2017-06-01-14-21",1428,"Yes!","J","Y","0","Y",1
+"46",14,"X","XandY","ELE","dog and elephant","2017-06-01-14-21",1428,"... elephant! He said it right!","D","Y","0","Y",1
+"47",15,"XY","X","DOG-ELE","dog","2017-06-01-14-21",1428,"[headshake]","J","N","0","N",0
+"48",16,"X","Z","DOG","cat","2017-06-01-14-21",1428,"No!","J","N","0","N",0
+"49",1,"X","Z","ELE","dog","2017-06-01-14-49",1343,"No!","J","N","0","N",0
+"50",2,"X","X","DOG","dog","2017-06-01-14-49",1343,"Yeah!","J","Y","0","Y",0
+"51",3,"XY","Z","DOG-ELE","cat","2017-06-01-14-49",1343,"No! A dog and an elephant!","D","N","0","Y",0
+"52",4,"X","XorY","ELE","dog or elephant","2017-06-01-14-49",1343,"An elephant!","D","0","0","Y",1
+"53",5,"X","XandY","DOG","dog and elephant","2017-06-01-14-49",1343,"No!","J","N","0","N",1
+"54",6,"X","XorY","CAT","cat or dog","2017-06-01-14-49",1343,"A cat!","D","0","0","Y",1
+"55",7,"XY","X","CAT-ELE","elephant","2017-06-01-14-49",1343,"an elephant and a CAT!","D","0","0","Y",0
+"56",8,"XY","XandY","CAT-DOG","cat and dog","2017-06-01-14-49",1343,"Yeah!","J","Y","0","Y",1
+"57",9,"XY","X","CAT-ELE","cat","2017-06-01-14-49",1343,"elephant ... and a cat!","D","0","0","Y",0
+"58",10,"XY","XorY","DOG-ELE","dog or elephant","2017-06-01-14-49",1343,"A dog AND an elephant!","C","0","I","Y",1
+"59",11,"X","Z","CAT","elephant","2017-06-01-14-49",1343,"No a cat!","D","N","0","Y",0
+"60",12,"XY","Z","CAT-DOG","elephant","2017-06-01-14-49",1343,"No a dog and a cat!","D","N","0",NA,0
+"61",13,"X","XandY","ELE","cat and elephant","2017-06-01-14-49",1343,"No! elephant!","D","N","0","Y",1
+"62",14,"XY","XorY","CAT-DOG","cat or dog","2017-06-01-14-49",1343,"A cat AND a dog!","C","0","I","Y",1
+"63",15,"X","X","ELE","elephant","2017-06-01-14-49",1343,"Yeah!","J","Y","0","Y",0
+"64",16,"XY","XandY","CAT-ELE","cat and elephant","2017-06-01-14-49",1343,"[nod]","J","Y","0","Y",1
+"65",1,"X","X","CAT","cat","2017-06-01-15-26",1877,"Yes!","J","Y","0","Y",0
+"66",2,"X","Z","CAT","elephant","2017-06-01-15-26",1877,"No! A cat!","D","N","0","N",0
+"67",3,"XY","XandY","CAT-ELE","cat and elephant","2017-06-01-15-26",1877,"Yes!","J","Y","0","Y",1
+"68",4,"XY","X","CAT-DOG","dog","2017-06-01-15-26",1877,"No! A dog and a KITTEN!","D","N","0","N",0
+"69",5,"XY","XorY","CAT-DOG","cat or dog","2017-06-01-15-26",1877,"Yes!","J","Y","0","Y",1
+"70",6,"X","XorY","ELE","cat or elephant","2017-06-01-15-26",1877,"No! It's an elephant!","D","N","0","N",1
+"71",7,"XY","XandY","DOG-ELE","dog and elephant","2017-06-01-15-26",1877,"Yes!","J","Y","0","Y",1
+"72",8,"X","XandY","CAT","cat and elephant","2017-06-01-15-26",1877,"No!","J","N","0","N",1
+"73",9,"X","X","ELE","elephant","2017-06-01-15-26",1877,"Yes!","J","Y","0","Y",0
+"74",10,"XY","XorY","DOG-ELE","dog or elephant","2017-06-01-15-26",1877,"Yes!","J","Y","0","Y",1
+"75",11,"XY","X","CAT-ELE","elephant","2017-06-01-15-26",1877,"No! elephant and a KITTEN!","D","N","0","N",0
+"76",12,"X","XorY","CAT","cat or dog","2017-06-01-15-26",1877,"No! Only a cat!","C","N","E","N",1
+"77",13,"X","XandY","DOG","cat and dog","2017-06-01-15-26",1877,"No! A dog!","D","N","0","N",1
+"78",14,"XY","Z","DOG-ELE","cat","2017-06-01-15-26",1877,"Nope! It's a dog and an ELEPHENT!","D","N","0","N",0
+"79",15,"X","Z","ELE","cat","2017-06-01-15-26",1877,"No. an elephant!","D","N","0",NA,0
+"80",16,"XY","Z","CAT-ELE","dog","2017-06-01-15-26",1877,"No! elephant and a KITTEN!","D","N","0",NA,0
+"81",1,"X","Z","DOG","elephant","2017-06-02-9-8",1687,"No!","J","N","0","N",0
+"82",2,"X","X","ELE","elephant","2017-06-02-9-8",1687,"Yeah!","J","Y","0","Y",0
+"83",3,"XY","Z","CAT-ELE","dog","2017-06-02-9-8",1687,"No!","J","N","0","N",0
+"84",4,"X","XandY","CAT","cat and dog","2017-06-02-9-8",1687,"No!","J","N","0","N",1
+"85",5,"X","XorY","CAT","cat or dog","2017-06-02-9-8",1687,"A cat!","D","0","0","N",1
+"86",6,"XY","X","DOG-ELE","elephant","2017-06-02-9-8",1687,"No!","J","N","0","N",0
+"87",7,"XY","X","CAT-DOG","dog","2017-06-02-9-8",1687,"No!","J","N","0","N",0
+"88",8,"XY","XorY","CAT-DOG","cat or dog","2017-06-02-9-8",1687,"Both!","C","0","I","N",1
+"89",9,"X","Z","CAT","elephant","2017-06-02-9-8",1687,"No!","J","N","0","N",0
+"90",10,"XY","XandY","DOG-ELE","dog and elephant","2017-06-02-9-8",1687,"Yeah!","J","Y","0","Y",1
+"91",11,"X","XorY","CAT","cat or elephant","2017-06-02-9-8",1687,"A cat!","D","0","0","N",1
+"92",12,"X","XandY","DOG","dog and elephant","2017-06-02-9-8",1687,"No! She said AND an elephant and there's just a dog!","C","N","E","N",1
+"93",13,"XY","Z","CAT-DOG","elephant","2017-06-02-9-8",1687,"No!","J","N","0","N",0
+"94",14,"XY","XorY","CAT-ELE","cat or elephant","2017-06-02-9-8",1687,"No! She said ""or"" É it's not that because there is two and she said ""or"" so that was both!","C","N","I","N",1
+"95",15,"X","X","DOG","dog","2017-06-02-9-8",1687,"Yeah!","J","Y","0","Y",0
+"96",16,"XY","XandY","CAT-DOG","cat and dog","2017-06-02-9-8",1687,"Yeah!","J","Y","0","Y",1
+"97",1,"X","Z","CAT","dog","2017-06-02-9-36",1797,"No! A cat!","D","N","0","N",0
+"98",2,"X","X","CAT","cat","2017-06-02-9-36",1797,"Yes!","J","Y","0","Y",0
+"99",3,"XY","XandY","CAT-ELE","cat and elephant","2017-06-02-9-36",1797,"Yes!","J","Y","0","Y",1
+"100",4,"X","XandY","ELE","cat and elephant","2017-06-02-9-36",1797,"Yes! É he said cat first and then elephant. [repeat] No!","J","N","0","N",1
+"101",5,"XY","XandY","CAT-DOG","cat and dog","2017-06-02-9-36",1797,"Yes!","J","Y","0","Y",1
+"102",6,"XY","XorY","CAT-ELE","cat or elephant","2017-06-02-9-36",1797,"Yes!","J","Y","0","Y",1
+"103",7,"X","Z","CAT","elephant","2017-06-02-9-36",1797,"Nope!","J","N","0","N",0
+"104",8,"X","XandY","CAT","cat and dog","2017-06-02-9-36",1797,"Just a cat!","C","0","E","N",1
+"105",9,"X","XorY","CAT","cat or dog","2017-06-02-9-36",1797,"Nope!","J","N","0","N",1
+"106",10,"XY","X","CAT-DOG","dog","2017-06-02-9-36",1797,"Nope! Cat and a dog!","D","N","0","N",0
+"107",11,"X","X","DOG","dog","2017-06-02-9-36",1797,"Yes!","J","Y","0","Y",0
+"108",12,"XY","Z","CAT-ELE","dog","2017-06-02-9-36",1797,"Nope! Cat and an elephant!","D","N","0","N",0
+"109",13,"XY","X","DOG-ELE","dog","2017-06-02-9-36",1797,"Nope! There's a dog and an elephant!","D","N","0",NA,0
+"110",14,"XY","Z","DOG-ELE","cat","2017-06-02-9-36",1797,"Nope! A dog and an elephant!","D","N","0","N",0
+"111",15,"X","XorY","ELE","dog or elephant","2017-06-02-9-36",1797,"No there's just an elephant!","C","N","E","N",1
+"112",16,"XY","XorY","DOG-ELE","dog or elephant","2017-06-02-9-36",1797,"Yes!","J","Y","0","Y",1
+"113",1,"X","X","ELE","elephant","2017-06-02-9-58",1458,"Correct!","J","Y","0","Y",0
+"114",2,"X","Z","ELE","cat","2017-06-02-9-58",1458,"No! cat É an elephant!","D","N","0","N",0
+"115",3,"XY","XandY","CAT-DOG","cat and dog","2017-06-02-9-58",1458,"Yeah Jazzy!","J","Y","0","Y",1
+"116",4,"X","XandY","CAT","cat and elephant","2017-06-02-9-58",1458,"No! elephant could just like break the card right? They are so big they can take the whole card!","J","N","0","N",1
+"117",5,"X","XorY","DOG","dog or elephant","2017-06-02-9-58",1458,"No! there's no elephant on it! Just a dog!","C","N","E","Y",1
+"118",6,"X","XandY","ELE","dog and elephant","2017-06-02-9-58",1458,"No! there is not a dog on it! There is an elephant on it only!","C","N","E","Y",1
+"119",7,"X","XorY","CAT","cat or dog","2017-06-02-9-58",1458,"Cat!","D","0","0","Y",1
+"120",8,"XY","XorY","DOG-ELE","dog or elephant","2017-06-02-9-58",1458,"dog AND elephant!","C","0","I","Y",1
+"121",9,"XY","X","CAT-ELE","elephant","2017-06-02-9-58",1458,"No! There is a cat AND elephant","C","0","I","Y",0
+"122",10,"XY","Z","CAT-ELE","dog","2017-06-02-9-58",1458,"No! It's an elephant and a cat!","D","N","0","Y",0
+"123",11,"XY","XandY","DOG-ELE","dog and elephant","2017-06-02-9-58",1458,"Correct!","J","Y","0","Y",1
+"124",12,"X","X","CAT","cat","2017-06-02-9-58",1458,"[hands in the card]","J","Y","0","Y",0
+"125",13,"XY","X","CAT-DOG","dog","2017-06-02-9-58",1458,"AND a cat","C","0","I","Y",0
+"126",14,"X","Z","CAT","dog","2017-06-02-9-58",1458,"No a cat Jazzy!","D","N","0",NA,0
+"127",15,"XY","Z","DOG-ELE","cat","2017-06-02-9-58",1458,"No! É There is a dog AND an elephant!","C","N","I",NA,0
+"128",16,"XY","XorY","CAT-DOG","cat or dog","2017-06-02-9-58",1458,"cat and dog!","D","0","0","Y",1
+"129",1,"X","Z","CAT","elephant","2017-06-02-11-16",1421,"A cat!","D","0","0","N",0
+"130",2,"X","X","DOG","dog","2017-06-02-11-16",1421,"she is right!","J","Y","0","Y",0
+"131",3,"XY","XorY","DOG-ELE","dog or elephant","2017-06-02-11-16",1421,"A dog and an elephant! She is right!","D","Y","0","Y",1
+"132",4,"X","XandY","ELE","dog and elephant","2017-06-02-11-16",1421,"She is not right! Not a dog! Just an elephant!","C","N","E","Y",1
+"133",5,"X","Z","CAT","dog","2017-06-02-11-16",1421,"No! a kitty cat","D","N","0","N",0
+"134",6,"XY","X","CAT-DOG","dog","2017-06-02-11-16",1421,"Yeah É and there is a kitty cat on it","C","Y","I","Y",0
+"135",7,"XY","Z","CAT-ELE","dog","2017-06-02-11-16",1421,"Nope! An elephant and a kitty cat","D","N","0","Y",0
+"136",8,"X","XorY","DOG","dog or elephant","2017-06-02-11-16",1421,"A dog!","D","0","0","Y",1
+"137",9,"X","XandY","DOG","cat and dog","2017-06-02-11-16",1421,"there's just a dog","C","0","E","Y",1
+"138",10,"XY","Z","DOG-ELE","cat","2017-06-02-11-16",1421,"No! a dog and an elephant","D","N","0","N",0
+"139",11,"XY","X","CAT-ELE","cat","2017-06-02-11-16",1421,"Yeah","J","Y","0","Y",0
+"140",12,"XY","XorY","CAT-DOG","cat or dog","2017-06-02-11-16",1421,"A cat and a dog!","D","0","0","Y",1
+"141",13,"X","X","CAT","cat","2017-06-02-11-16",1421,"Yeah!","J","Y","0","Y",0
+"142",14,"X","XorY","DOG","cat or dog","2017-06-02-11-16",1421,"a dog","D","0","0","Y",1
+"143",15,"XY","XandY","CAT-DOG","cat and dog","2017-06-02-11-16",1421,"she was right","J","Y","0","Y",1
+"144",16,"XY","XandY","DOG-ELE","dog and elephant","2017-06-02-11-16",1421,"Yeah","J","Y","0","Y",1
+"145",1,"X","X","DOG","dog","2017-06-02-10-23",1417,"yeah","J","Y","0","Y",0
+"146",2,"X","Z","ELE","cat","2017-06-02-10-23",1417,"No É elephant","D","N","0","Y",0
+"147",3,"X","XorY","ELE","dog or elephant","2017-06-02-10-23",1417,"oh yeah! Right! Yeah it's an elephant!","D","Y","0","Y",1
+"148",4,"XY","Z","CAT-ELE","dog","2017-06-02-10-23",1417,"No! dog and a cat! I mean É I mean elephant and a cat!","D","N","0","N",0
+"149",5,"X","XorY","CAT","cat or elephant","2017-06-02-10-23",1417,"a cat","D","0","0","Y",1
+"150",6,"XY","XandY","CAT-DOG","cat and dog","2017-06-02-10-23",1417,"Yeah","J","Y","0","Y",1
+"151",7,"XY","X","CAT-DOG","dog","2017-06-02-10-23",1417,"No. there is a dog and a cat","D","N","0","N",0
+"152",8,"XY","X","CAT-ELE","cat","2017-06-02-10-23",1417,"No there is an elephant and a cat","D","N","0","N",0
+"153",9,"XY","XorY","CAT-DOG","cat or dog","2017-06-02-10-23",1417,"cat and a dog. He is right É Both. It's a cat and a dog","C","Y","I","Y",1
+"154",10,"X","Z","DOG","cat","2017-06-02-10-23",1417,"no! it's only a dog!","C","N","E","N",0
+"155",11,"X","X","CAT","cat","2017-06-02-10-23",1417,"Yeah","J","Y","0","Y",0
+"156",12,"X","XandY","ELE","dog and elephant","2017-06-02-10-23",1417,"Nope! It's an elephant","D","N","0","Y",1
+"157",13,"X","XandY","ELE","cat and elephant","2017-06-02-10-23",1417,"No. it's just an elephant","C","N","E","N",1
+"158",14,"XY","Z","DOG-ELE","cat","2017-06-02-10-23",1417,"No. it's a dog and an elephant","D","N","0","N",0
+"159",15,"XY","XorY","CAT-ELE","cat or elephant","2017-06-02-10-23",1417,"oh right! Elephant and a cat!","D","Y","0","Y",1
+"160",16,"XY","XandY","DOG-ELE","dog and elephant","2017-06-02-10-23",1417,"Yeah","J","Y","0","Y",1
+"161",1,"X","Z","DOG","elephant","2017-06-02-14-8",1760,"nope!","J","N","0","N",0
+"162",2,"X","X","DOG","dog","2017-06-02-14-8",1760,"Yeah","J","Y","0","Y",0
+"163",3,"X","XorY","ELE","cat or elephant","2017-06-02-14-8",1760,"elephant","D","0","0","Y",1
+"164",4,"XY","X","CAT-ELE","cat","2017-06-02-14-8",1760,"Yeah É and an elephant","C","Y","I","Y",0
+"165",5,"X","XorY","CAT","cat or elephant","2017-06-02-14-8",1760,"a cat","D","0","0","Y",1
+"166",6,"XY","XorY","DOG-ELE","dog or elephant","2017-06-02-14-8",1760,"a dog AND an elephant","C","0","I","Y",1
+"167",7,"XY","XorY","CAT-DOG","cat or dog","2017-06-02-14-8",1760,"a cat AND a dog","C","0","I","Y",1
+"168",8,"X","XandY","ELE","cat and elephant","2017-06-02-14-8",1760,"it's only one elephant É only one elephant","C","0","E","Y",1
+"169",9,"XY","X","CAT-DOG","cat","2017-06-02-14-8",1760,"[nod] and another thing É that eats a cat","C","Y","I","Y",0
+"170",10,"XY","XandY","CAT-DOG","cat and dog","2017-06-02-14-8",1760,"Yeah","J","Y","0","Y",1
+"171",11,"XY","XandY","CAT-ELE","cat and elephant","2017-06-02-14-8",1760,"[nod]","J","Y","0","Y",1
+"172",12,"XY","Z","CAT-DOG","elephant","2017-06-02-14-8",1760,"No!","J","N","0","N",0
+"173",13,"X","Z","ELE","dog","2017-06-02-14-8",1760,"No!","J","N","0","N",0
+"174",14,"XY","Z","CAT-ELE","dog","2017-06-02-14-8",1760,"No! it's an elephant and a cat","D","N","0","N",0
+"175",15,"X","XandY","ELE","dog and elephant","2017-06-02-14-8",1760,"there is no dog! Only an elephant","C","0","E",NA,1
+"176",16,"X","X","ELE","elephant","2017-06-02-14-8",1760,"Yeah","J","Y","0","Y",0
+"177",1,"X","Z","CAT","dog","2017-05-31-13-56",1730,"No!","J","N","0","N",0
+"178",2,"X","X","CAT","cat","2017-05-31-13-56",1730,"Yes!","J","Y","0","Y",0
+"179",3,"X","XandY","ELE","cat and elephant","2017-05-31-13-56",1730,"No! [do you wanna tell Jazzy how to say it right?] elephant!","J","N","0","YN",1
+"180",4,"XY","XorY","CAT-ELE","cat or elephant","2017-05-31-13-56",1730,"Right!","J","Y","0","Y",1
+"181",5,"XY","XandY","CAT-DOG","cat and dog","2017-05-31-13-56",1730,"Yes!","J","Y","0","Y",1
+"182",6,"X","XorY","CAT","cat or elephant","2017-05-31-13-56",1730,"Right and no!","J","YN","0","YN",1
+"183",7,"X","Z","CAT","elephant","2017-05-31-13-56",1730,"No!","J","N","0","N",0
+"184",8,"XY","Z","CAT-DOG","elephant","2017-05-31-13-56",1730,"No!","J","N","0","N",0
+"185",9,"XY","X","CAT-ELE","elephant","2017-05-31-13-56",1730,"Yes!","J","Y","0","N",0
+"186",10,"XY","X","DOG-ELE","dog","2017-05-31-13-56",1730,"Right and no!","J","YN","0","YN",0
+"187",11,"X","XandY","ELE","dog and elephant","2017-05-31-13-56",1730,"Wrong and yes! [Can you help Jazzy say it better?] Just an elephant.","J","YN","0","N",1
+"188",12,"X","XorY","DOG","dog or elephant","2017-05-31-13-56",1730,"Again! No and Yes! [can you help Jazzy say it better?] Dog!","J","YN","0","YN",1
+"189",13,"XY","Z","DOG-ELE","cat","2017-05-31-13-56",1730,"No! [can you help Jazzy say it better?] Dog and elephant!","J","N","0","N",0
+"190",14,"XY","XandY","CAT-ELE","cat and elephant","2017-05-31-13-56",1730,"Right!","J","Y","0","Y",1
+"191",15,"XY","XorY","CAT-DOG","cat or dog","2017-05-31-13-56",1730,"Right!","J","Y","0","Y",1
+"192",16,"X","X","DOG","dog","2017-05-31-13-56",1730,"Right!","J","Y","0","Y",0
+"193",1,"X","Z","DOG","cat","2017-06-02-15-28",1772,"No!","J","N","0","N",0
+"194",2,"X","X","DOG","dog","2017-06-02-15-28",1772,"yup!","J","Y","0","Y",0
+"195",3,"X","XandY","ELE","dog and elephant","2017-06-02-15-28",1772,"nope!","J","N","0","N",1
+"196",4,"XY","XandY","CAT-ELE","cat and elephant","2017-06-02-15-28",1772,"you're right!","J","Y","0","Y",1
+"197",5,"XY","Z","DOG-ELE","cat","2017-06-02-15-28",1772,"two!","C","0","I","N",0
+"198",6,"XY","X","CAT-DOG","cat","2017-06-02-15-28",1772,"nope! Two again!","C","N","I","N",0
+"199",7,"X","Z","ELE","dog","2017-06-02-15-28",1772,"Nope. Elephant","D","N","0","N",0
+"200",8,"XY","XandY","DOG-ELE","dog and elephant","2017-06-02-15-28",1772,"Yes","J","Y","0","Y",1
+"201",9,"XY","XorY","CAT-ELE","cat or elephant","2017-06-02-15-28",1772,"Both!","C","0","I","Y",1
+"202",10,"X","XorY","DOG","cat or dog","2017-06-02-15-28",1772,"dog!","D","0","0","Y",1
+"203",11,"X","XorY","ELE","dog or elephant","2017-06-02-15-28",1772,"there is an elephant","D","0","0","Y",1
+"204",12,"X","XandY","CAT","cat and elephant","2017-06-02-15-28",1772,"Cat","D","0","0","Y",1
+"205",13,"X","X","CAT","cat","2017-06-02-15-28",1772,"Yes","J","Y","0","Y",0
+"206",14,"XY","Z","CAT-ELE","dog","2017-06-02-15-28",1772,"Nope. Two things","C","N","I","N",0
+"207",15,"XY","X","CAT-ELE","cat","2017-06-02-15-28",1772,"Nope. Both","C","N","I","YN",0
+"208",16,"XY","XorY","DOG-ELE","dog or elephant","2017-06-02-15-28",1772,"Both","C","0","I","Y",1
+"209",1,"X","X","DOG","dog","2017-06-05-9-23",1946,"yes","J","Y","0","Y",0
+"210",2,"X","Z","DOG","cat","2017-06-05-9-23",1946,"dog!","D","0","0","N",0
+"211",3,"XY","X","CAT-DOG","dog","2017-06-05-9-23",1946,"AND a cat","C","0","I","Y",0
+"212",4,"X","XorY","DOG","cat or dog","2017-06-05-9-23",1946,"a dog","D","0","0","Y",1
+"213",5,"XY","Z","CAT-ELE","dog","2017-06-05-9-23",1946,"cat and elephant Jazzy!","D","0","0","N",0
+"214",6,"X","XandY","ELE","cat and elephant","2017-06-05-9-23",1946,"Just an elephant!","C","0","E","N",1
+"215",7,"XY","XorY","CAT-DOG","cat or dog","2017-06-05-9-23",1946,"Both!","C","0","I","Y",1
+"216",8,"X","XandY","CAT","cat and elephant","2017-06-05-9-23",1946,"Just a cat!","C","0","E","N",1
+"217",9,"XY","Z","DOG-ELE","cat","2017-06-05-9-23",1946,"a dog and a cat É a dog and an elephant","D","N","0","N",0
+"218",10,"X","XorY","DOG","dog or elephant","2017-06-05-9-23",1946,"A doggie","D","0","0","Y",1
+"219",11,"XY","X","DOG-ELE","dog","2017-06-05-9-23",1946,"and an elephant","C","0","I","N",0
+"220",12,"XY","XandY","CAT-ELE","cat and elephant","2017-06-05-9-23",1946,"yes he was right","J","Y","0","Y",1
+"221",13,"X","X","ELE","elephant","2017-06-05-9-23",1946,"yes","J","Y","0","Y",0
+"222",14,"XY","XandY","DOG-ELE","dog and elephant","2017-06-05-9-23",1946,"Yes","J","Y","0","Y",1
+"223",15,"X","Z","ELE","cat","2017-06-05-9-23",1946,"elephant. You were wrong Jazzy!","D","N","0","N",0
+"224",16,"XY","XorY","CAT-ELE","cat or elephant","2017-06-05-9-23",1946,"both! Was wrong!","C","N","I","N",1
+"225",1,"X","Z","CAT","elephant","2017-06-06-14-13",1987,"nope! It's a cat","D","N","0","N",0
+"226",2,"X","X","CAT","cat","2017-06-06-14-13",1987,"Yes","J","Y","0","Y",0
+"227",3,"X","XandY","DOG","cat and dog","2017-06-06-14-13",1987,"there is only a dog [was Jazzy right?] A little","C","0","E","YN",1
+"228",4,"XY","XorY","DOG-ELE","dog or elephant","2017-06-06-14-13",1987,"there is BOTH! [was Jazzy right?] Yes I think so. Really right","C","0","I","Y",1
+"229",5,"X","XorY","CAT","cat or elephant","2017-06-06-14-13",1987,"only a cat. You are right!","C","Y","E","YN",1
+"230",6,"XY","X","CAT-ELE","elephant","2017-06-06-14-13",1987,"and a cat! So you are a little right!","C","YN","I","YN",0
+"231",7,"XY","X","CAT-ELE","cat","2017-06-06-14-13",1987,"AND an elephant.","C","0","I","YN",0
+"232",8,"X","XorY","DOG","dog or elephant","2017-06-06-14-13",1987,"only a dog. You are right","C","Y","E","Y",1
+"233",9,"XY","Z","DOG-ELE","cat","2017-06-06-14-13",1987,"dog and elephant. You are completely wrong!","D","N","0","N",0
+"234",10,"XY","XandY","DOG-ELE","dog and elephant","2017-06-06-14-13",1987,"good. ","J","Y","0","Y",1
+"235",11,"X","Z","ELE","dog","2017-06-06-14-13",1987,"nope. Elephant. Completely wrong again.","D","N","0","N",0
+"236",12,"X","X","DOG","dog","2017-06-06-14-13",1987,"Yes","J","Y","0","Y",0
+"237",13,"X","XandY","CAT","cat and elephant","2017-06-06-14-13",1987,"only a cat. A little right.","C","YN","E","YN",1
+"238",14,"XY","XorY","CAT-ELE","cat or elephant","2017-06-06-14-13",1987,"Both!","C","0","I","Y",1
+"239",15,"XY","XandY","CAT-DOG","cat and dog","2017-06-06-14-13",1987,"you are right! There is a cat and a dog","D","Y","0","Y",1
+"240",16,"XY","Z","CAT-ELE","dog","2017-06-06-14-13",1987,"Nope. Cat and elephant. You are wrong.","D","N","0","N",0
+"241",1,"X","Z","DOG","cat","2017-06-06-14-31",1800,"No. [was Jazzy right?] No. It's a dog","D","N","0","N",0
+"242",2,"X","X","DOG","dog","2017-06-06-14-31",1800,"Yes","J","Y","0","Y",0
+"243",3,"XY","X","CAT-ELE","elephant","2017-06-06-14-31",1800,"an elephant and a cat","D","0","0","YN",0
+"244",4,"XY","XandY","CAT-DOG","cat and dog","2017-06-06-14-31",1800,"yes","J","Y","0","Y",1
+"245",5,"X","XandY","CAT","cat and dog","2017-06-06-14-31",1800,"no only a cat","C","N","E","N",1
+"246",6,"X","XandY","ELE","dog and elephant","2017-06-06-14-31",1800,"no only an elephant","C","N","E","N",1
+"247",7,"XY","XandY","CAT-ELE","cat and elephant","2017-06-06-14-31",1800,"yes","J","Y","0","Y",1
+"248",8,"XY","X","CAT-DOG","cat","2017-06-06-14-31",1800,"middle. Almost right. Just he needed a dog","J","YN","0","YN",0
+"249",9,"X","Z","DOG","elephant","2017-06-06-14-31",1800,"no. it's a dog","D","N","0","N",0
+"250",10,"X","XorY","DOG","cat or dog","2017-06-06-14-31",1800,"a dog","D","0","0","Y",1
+"251",11,"X","X","CAT","cat","2017-06-06-14-31",1800,"Yes","J","Y","0","Y",0
+"252",12,"X","XorY","DOG","dog or elephant","2017-06-06-14-31",1800,"a dog","D","0","0","Y",1
+"253",13,"XY","Z","CAT-DOG","elephant","2017-06-06-14-31",1800,"No. It's a cat AND a dog","C","N","I","N",0
+"254",14,"XY","Z","DOG-ELE","cat","2017-06-06-14-31",1800,"No! it's a dog and an elephant","D","N","0","N",0
+"255",15,"XY","XorY","DOG-ELE","dog or elephant","2017-06-06-14-31",1800,"Both","C","0","I","Y",1
+"256",16,"XY","XorY","CAT-DOG","cat or dog","2017-06-06-14-31",1800,"Both! You're right","C","0","I","Y",1
+"257",1,"X","X","DOG","dog","2017-06-06-15-28",2052,"Yes","J","Y","0","Y",0
+"258",2,"X","Z","CAT","dog","2017-06-06-15-28",2052,"No. it's a CAT","D","N","0","N",0
+"259",3,"XY","X","CAT-ELE","elephant","2017-06-06-15-28",2052,"not just an elephant ƒ not just an elephant there is something else too.","C","0","I","N",0
+"260",4,"X","XorY","ELE","cat or elephant","2017-06-06-15-28",2052,"An elephant ƒ but there was just an elephant","D","0","0","Y",1
+"261",5,"X","XandY","ELE","dog and elephant","2017-06-06-15-28",2052,"nope. Just an elephant","C","N","E","N",1
+"262",6,"X","XandY","DOG","cat and dog","2017-06-06-15-28",2052,"nope. Just a dog","C","N","E","N",1
+"263",7,"X","XorY","CAT","cat or elephant","2017-06-06-15-28",2052,"a cat!","D","0","0","Y",1
+"264",8,"XY","X","CAT-DOG","cat","2017-06-06-15-28",2052,"not just a cat. Guess another one which is with the cat. I'll give him a little clue . So he knows. So it's something which chases cats.","C","0","I","N",0
+"265",9,"XY","Z","CAT-DOG","elephant","2017-06-06-15-28",2052,"no I'll give you a little clue. It's something which chases a cat and... ","J","N","0","N",0
+"266",10,"X","Z","DOG","cat","2017-06-06-15-28",2052,"Nope. A dog","D","N","0","N",0
+"267",11,"XY","XandY","CAT-ELE","cat and elephant","2017-06-06-15-28",2052,"Yes","J","Y","0","Y",1
+"268",12,"XY","XorY","DOG-ELE","dog or elephant","2017-06-06-15-28",2052,"Both","C","0","I","Y",1
+"269",13,"XY","Z","CAT-ELE","dog","2017-06-06-15-28",2052,"not a dog. I'll give you a little clue. Something big and something that a dog chases","J","N","0","N",0
+"270",14,"X","X","ELE","elephant","2017-06-06-15-28",2052,"Yup","J","Y","0","Y",0
+"271",15,"XY","XandY","DOG-ELE","dog and elephant","2017-06-06-15-28",2052,"Yes","J","Y","0","Y",1
+"272",16,"XY","XorY","CAT-DOG","cat or dog","2017-06-06-15-28",2052,"Both","C","0","I","Y",1
+"273",1,"X","Z","DOG","elephant","2017-06-07-8-59",1836,"No","J","N","0","N",0
+"274",2,"X","X","DOG","dog","2017-06-07-8-59",1836,"Yes. You're right","J","Y","0","Y",0
+"275",3,"X","XandY","CAT","cat and dog","2017-06-07-8-59",1836,"nope. Just  a cat","C","N","E","N",1
+"276",4,"X","XorY","CAT","cat or dog","2017-06-07-8-59",1836,"Just a cat","C","0","E","N",1
+"277",5,"X","XandY","ELE","cat and elephant","2017-06-07-8-59",1836,"nope. You're wrong. It's just an elephant","C","N","E","N",1
+"278",6,"XY","Z","DOG-ELE","cat","2017-06-07-8-59",1836,"nope. Elephant and a dog.","D","N","0","N",0
+"279",7,"XY","Z","CAT-DOG","elephant","2017-06-07-8-59",1836,"nope. Dog and a cat","D","N","0","N",0
+"280",8,"XY","X","CAT-ELE","elephant","2017-06-07-8-59",1836,"yup. But you're wrong. Elephant AND a cat.","C","Y","I","N",0
+"281",9,"XY","X","DOG-ELE","elephant","2017-06-07-8-59",1836,"yup. But there is one more É a dog!","C","Y","I","N",0
+"282",10,"X","XorY","ELE","dog or elephant","2017-06-07-8-59",1836,"an elephant!","D","0","0","Y",1
+"283",11,"X","Z","CAT","elephant","2017-06-07-8-59",1836,"nope. A cat","D","N","0","N",0
+"284",12,"XY","XorY","DOG-ELE","dog or elephant","2017-06-07-8-59",1836,"both!","C","0","I","Y",1
+"285",13,"XY","XandY","CAT-ELE","cat and elephant","2017-06-07-8-59",1836,"yes","J","Y","0","Y",1
+"286",14,"X","X","CAT","cat","2017-06-07-8-59",1836,"yup","J","Y","0","Y",0
+"287",15,"XY","XandY","CAT-DOG","cat and dog","2017-06-07-8-59",1836,"yup","J","Y","0","Y",1
+"288",16,"XY","XorY","CAT-DOG","cat or dog","2017-06-07-8-59",1836,"both!","C","0","I","Y",1
+"289",1,"X","Z","CAT","dog","2017-06-07-9-16",1755,"No. you are wrong!","J","N","0","N",0
+"290",2,"X","X","DOG","dog","2017-06-07-9-16",1755,"yes you're right","J","Y","0","Y",0
+"291",3,"X","XorY","CAT","cat or dog","2017-06-07-9-16",1755,"it's a cat","D","0","0","Y",1
+"292",4,"XY","X","CAT-ELE","cat","2017-06-07-9-16",1755,"cat É cat right there","J","Y","0","Y",0
+"293",5,"X","Z","ELE","dog","2017-06-07-9-16",1755,"Jazzy's not right. ","J","N","0","N",0
+"294",6,"XY","X","DOG-ELE","elephant","2017-06-07-9-16",1755,"yup. You were right!","J","Y","0","Y",0
+"295",7,"XY","XandY","CAT-ELE","cat and elephant","2017-06-07-9-16",1755,"you're right","J","Y","0","Y",1
+"296",8,"X","XorY","DOG","cat or dog","2017-06-07-9-16",1755,"dog","D","0","0","Y",1
+"297",9,"X","XandY","DOG","dog and elephant","2017-06-07-9-16",1755,"no. you were wrong.","J","N","0","N",1
+"298",10,"XY","XandY","CAT-DOG","cat and dog","2017-06-07-9-16",1755,"you are right","J","Y","0","Y",1
+"299",11,"XY","XorY","CAT-DOG","cat or dog","2017-06-07-9-16",1755,"a cat and a dog","D","0","0","Y",1
+"300",12,"XY","Z","DOG-ELE","cat","2017-06-07-9-16",1755,"no. that's wrong","J","N","0","N",0
+"301",13,"X","X","ELE","elephant","2017-06-07-9-16",1755,"yeah. That is right","J","Y","0","Y",0
+"302",14,"X","XandY","ELE","cat and elephant","2017-06-07-9-16",1755,"you guessed wrong","J","N","0","N",1
+"303",15,"XY","XorY","CAT-ELE","cat or elephant","2017-06-07-9-16",1755,"that is right","J","Y","0","Y",1
+"304",16,"XY","Z","CAT-DOG","elephant","2017-06-07-9-16",1755,"no. that is wrong","J","N","0","N",0
+"305",1,"X","Z","ELE","dog","2017-06-07-9-31",1778,"no!","J","N","0","N",0
+"306",2,"X","X","CAT","cat","2017-06-07-9-31",1778,"you were right Jazzy","J","Y","0","Y",0
+"307",3,"X","XorY","ELE","cat or elephant","2017-06-07-9-31",1778,"elephant Jazzy","D","0","0","Y",1
+"308",4,"XY","XorY","CAT-DOG","cat or dog","2017-06-07-9-31",1778,"Jazzy you are right. Cat and a dog","D","Y","0","Y",1
+"309",5,"XY","X","CAT-DOG","dog","2017-06-07-9-31",1778,"no. you have the same É [was Jazzy right?] No! You have a dog and a cat.","D","N","0","N",0
+"310",6,"X","XandY","DOG","cat and dog","2017-06-07-9-31",1778,"you are right. Just a dog","C","Y","E","Y",1
+"311",7,"X","XorY","DOG","cat or dog","2017-06-07-9-31",1778,"another just a dog","C","0","E","Y",1
+"312",8,"XY","XandY","CAT-ELE","cat and elephant","2017-06-07-9-31",1778,"did you see it?! [throws the cart] he can't see it. [was he right?] yeah.","0","0","0","Y",1
+"313",9,"X","Z","CAT","elephant","2017-06-07-9-31",1778,"nope. It's a cat","D","N","0","Y",0
+"314",10,"XY","X","CAT-ELE","elephant","2017-06-07-9-31",1778,"[pig noise]","0","0","0","Y",0
+"315",11,"X","X","ELE","elephant","2017-06-07-9-31",1778,"ah you saw it! É ","0","0","0","Y",0
+"316",12,"XY","XandY","DOG-ELE","dog and elephant","2017-06-07-9-31",1778,"why did you guess that because I showed you? É I showed him and it was right","0","0","0","Y",1
+"317",13,"XY","Z","DOG-ELE","cat","2017-06-07-9-31",1778,"there is a dog and an elephant","D","0","0","N",0
+"318",14,"X","XandY","DOG","dog and elephant","2017-06-07-9-31",1778,"no. Jazzy it was a dog","D","N","0","Y",1
+"319",15,"XY","Z","CAT-ELE","dog","2017-06-07-9-31",1778,"nope.","J","N","0","N",0
+"320",16,"XY","XorY","DOG-ELE","dog or elephant","2017-06-07-9-31",1778,"dog and elephant","D","0","0","Y",1
+"321",1,"X","X","ELE","elephant","2017-06-07-10-12",1436,"[hands the card to the experimenter]","0","0","0","Y",0
+"322",2,"X","Z","CAT","dog","2017-06-07-10-12",1436,"[headshake] ","J","N","0","N",0
+"323",3,"XY","X","CAT-ELE","elephant","2017-06-07-10-12",1436,"yes","J","Y","0","Y",0
+"324",4,"XY","XandY","CAT-DOG","cat and dog","2017-06-07-10-12",1436,"Yes","J","Y","0","Y",1
+"325",5,"X","XandY","CAT","cat and elephant","2017-06-07-10-12",1436,"only cat silly bean","C","0","E","N",1
+"326",6,"XY","XorY","CAT-DOG","cat or dog","2017-06-07-10-12",1436,"right","J","Y","0","Y",1
+"327",7,"XY","Z","DOG-ELE","cat","2017-06-07-10-12",1436,"no","J","N","0","N",0
+"328",8,"XY","XandY","DOG-ELE","dog and elephant","2017-06-07-10-12",1436,"gotcha. Yes","J","Y","0","Y",1
+"329",9,"XY","X","DOG-ELE","dog","2017-06-07-10-12",1436,"yes sillies","J","Y","0","Y",0
+"330",10,"X","Z","DOG","elephant","2017-06-07-10-12",1436,"um'um [headshake] dog","D","N","0","N",0
+"331",11,"X","XorY","CAT","cat or dog","2017-06-07-10-12",1436,"cat","D","0","0","Y",1
+"332",12,"X","XorY","DOG","dog or elephant","2017-06-07-10-12",1436,"dog","D","0","0","N",1
+"333",13,"XY","XorY","CAT-ELE","cat or elephant","2017-06-07-10-12",1436,"cat and elephant","D","0","0","Y",1
+"334",14,"XY","Z","CAT-DOG","elephant","2017-06-07-10-12",1436,"um'um [headshake]","J","N","0","N",0
+"335",15,"X","XandY","DOG","dog and elephant","2017-06-07-10-12",1436,"dog. You were right","D","Y","0","N",1
+"336",16,"X","X","CAT","cat","2017-06-07-10-12",1436,"yeah","J","Y","0","Y",0
+"337",1,"X","Z","DOG","cat","2017-06-07-10-58",1586,"no","J","N","0","N",0
+"338",2,"X","X","CAT","cat","2017-06-07-10-58",1586,"yes","J","Y","0","Y",0
+"339",3,"XY","X","CAT-ELE","cat","2017-06-07-10-58",1586,"yes","J","Y","0","Y",0
+"340",4,"XY","XandY","CAT-ELE","cat and elephant","2017-06-07-10-58",1586,"yes [was Jazzy right?] really really really right","J","Y","0","Y",1
+"341",5,"X","XandY","DOG","cat and dog","2017-06-07-10-58",1586,"no. there is a dog","D","N","0","N",1
+"342",6,"XY","Z","CAT-DOG","elephant","2017-06-07-10-58",1586,"no.","J","N","0","N",0
+"343",7,"X","XandY","ELE","cat and elephant","2017-06-07-10-58",1586,"[headshake]","J","N","0","N",1
+"344",8,"X","XorY","DOG","dog or elephant","2017-06-07-10-58",1586,"dog","D","0","0","Y",1
+"345",9,"XY","Z","CAT-ELE","dog","2017-06-07-10-58",1586,"no","J","N","0","N",0
+"346",10,"XY","X","CAT-ELE","elephant","2017-06-07-10-58",1586,"[nod]","J","Y","0","Y",0
+"347",11,"X","XorY","ELE","cat or elephant","2017-06-07-10-58",1586,"elephant","D","0","0","Y",1
+"348",12,"XY","XorY","CAT-ELE","cat or elephant","2017-06-07-10-58",1586,"a cat AND an elephant","C","0","I","Y",1
+"349",13,"X","Z","CAT","elephant","2017-06-07-10-58",1586,"[headshake] no","J","N","0","N",0
+"350",14,"X","X","ELE","elephant","2017-06-07-10-58",1586,"[nod]","J","Y","0","Y",0
+"351",15,"XY","XandY","CAT-DOG","cat and dog","2017-06-07-10-58",1586,"yes","J","Y","0","Y",1
+"352",16,"XY","XorY","DOG-ELE","dog or elephant","2017-06-07-10-58",1586,"dog AND an elephant","C","0","I","Y",1
+"353",1,"X","Z","ELE","dog","2017-05-31-14-11",1614,"Wrong!","J","N","0","N",0
+"354",2,"X","X","CAT","cat","2017-05-31-14-11",1614,"that's right!","J","Y","0","Y",0
+"355",3,"X","XandY","ELE","cat and elephant","2017-05-31-14-11",1614,"Wrong! Elephant!","D","N","0","N",1
+"356",4,"XY","X","DOG-ELE","dog","2017-05-31-14-11",1614,"Wrong!","J","N","0","N",0
+"357",5,"XY","X","CAT-ELE","elephant","2017-05-31-14-11",1614,"An elephant ƒ ","D","0","0","N",0
+"358",6,"X","Z","DOG","cat","2017-05-31-14-11",1614,"No! A dog!","D","N","0","N",0
+"359",7,"XY","XandY","DOG-ELE","dog and elephant","2017-05-31-14-11",1614,"Yes right!","J","Y","0","Y",1
+"360",8,"X","XorY","DOG","dog or elephant","2017-05-31-14-11",1614,"A dog.","D","0","0","N",1
+"361",9,"X","XandY","CAT","cat and dog","2017-05-31-14-11",1614,"there is a cat","D","0","0","N",1
+"362",10,"X","X","ELE","elephant","2017-05-31-14-11",1614,"yes!","J","Y","0","Y",0
+"363",11,"X","XorY","CAT","cat or dog","2017-05-31-14-11",1614,"there is a cat","D","0","0","N",1
+"364",12,"XY","XorY","CAT-ELE","cat or elephant","2017-05-31-14-11",1614,"there is a cat AND an elephant!","C","0","I","Y",1
+"365",13,"XY","XandY","CAT-ELE","cat and elephant","2017-05-31-14-11",1614,"Yes!","J","Y","0","Y",1
+"366",14,"XY","Z","CAT-ELE","dog","2017-05-31-14-11",1614,"there is a cat and an elephant!","D","0","0","N",0
+"367",15,"XY","XorY","DOG-ELE","dog or elephant","2017-05-31-14-11",1614,"there is both","C","0","I","Y",1
+"368",16,"XY","Z","DOG-ELE","cat","2017-05-31-14-11",1614,"an elephant and a dog","D","0","0","N",0
+"369",1,"X","X","DOG","dog","2017-06-07-11-15",1719,"right","J","Y","0","Y",0
+"370",2,"X","Z","CAT","dog","2017-06-07-11-15",1719,"no","J","N","0","N",0
+"371",3,"X","XorY","DOG","dog or elephant","2017-06-07-11-15",1719,"a dog","D","0","0","Y",1
+"372",4,"XY","X","DOG-ELE","elephant","2017-06-07-11-15",1719,"AND a dog","C","0","I","Y",0
+"373",5,"XY","Z","CAT-ELE","dog","2017-06-07-11-15",1719,"a dog É no É a cat and elephant","D","0","0","N",0
+"374",6,"XY","XorY","CAT-DOG","cat or dog","2017-06-07-11-15",1719,"a cat AND a dog","C","0","I","Y",1
+"375",7,"X","XorY","ELE","dog or elephant","2017-06-07-11-15",1719,"elephant","D","0","0","Y",1
+"376",8,"X","Z","DOG","cat","2017-06-07-11-15",1719,"it's a dog","D","0","0","N",0
+"377",9,"XY","Z","DOG-ELE","cat","2017-06-07-11-15",1719,"a dog É an elephant AND a dog","C","0","I","N",0
+"378",10,"XY","X","DOG-ELE","dog","2017-06-07-11-15",1719,"a dog AND an elephant","C","0","I","Y",0
+"379",11,"X","XandY","DOG","dog and elephant","2017-06-07-11-15",1719,"no É only a dog","C","N","E","N",1
+"380",12,"X","XandY","ELE","cat and elephant","2017-06-07-11-15",1719,"no É it's an elephant","D","N","0","N",1
+"381",13,"XY","XandY","DOG-ELE","dog and elephant","2017-06-07-11-15",1719,"yeah","J","Y","0","Y",1
+"382",14,"XY","XandY","CAT-ELE","cat and elephant","2017-06-07-11-15",1719,"yeah","J","Y","0","Y",1
+"383",15,"X","X","CAT","cat","2017-06-07-11-15",1719,"yeah","J","Y","0","Y",0
+"384",16,"XY","XorY","CAT-ELE","cat or elephant","2017-06-07-11-15",1719,"cat AND an elephant","C","0","I","Y",1
+"385",1,"X","X","CAT","cat","2017-06-07-13-48",1778,"yes","J","Y","0","Y",0
+"386",2,"X","Z","DOG","cat","2017-06-07-13-48",1778,"no","J","N","0","N",0
+"387",3,"XY","X","DOG-ELE","dog","2017-06-07-13-48",1778,"yes","J","Y","0","Y",0
+"388",4,"X","XandY","ELE","cat and elephant","2017-06-07-13-48",1778,"no","J","N","0","N",1
+"389",5,"XY","XandY","CAT-ELE","cat and elephant","2017-06-07-13-48",1778,"yes","J","Y","0","Y",1
+"390",6,"X","XorY","CAT","cat or dog","2017-06-07-13-48",1778,"a cat","D","0","0","Y",1
+"391",7,"XY","Z","CAT-ELE","dog","2017-06-07-13-48",1778,"no","J","N","0","N",0
+"392",8,"X","X","DOG","dog","2017-06-07-13-48",1778,"yes","J","Y","0","Y",0
+"393",9,"XY","XandY","DOG-ELE","dog and elephant","2017-06-07-13-48",1778,"yes","J","Y","0","Y",1
+"394",10,"X","Z","CAT","elephant","2017-06-07-13-48",1778,"No","J","N","0","N",0
+"395",11,"XY","XorY","DOG-ELE","dog or elephant","2017-06-07-13-48",1778,"it's a dog AND an elephant É both of them","C","0","I","Y",1
+"396",12,"X","XorY","DOG","cat or dog","2017-06-07-13-48",1778,"a dog","D","0","0","Y",1
+"397",13,"XY","X","CAT-DOG","dog","2017-06-07-13-48",1778,"no É it's a dog AND a cat","C","N","I","N",0
+"398",14,"X","XandY","CAT","cat and dog","2017-06-07-13-48",1778,"Just a cat É only a cat","C","0","E","N",1
+"399",15,"XY","Z","CAT-DOG","elephant","2017-06-07-13-48",1778,"nope","J","N","0","N",0
+"400",16,"XY","XorY","CAT-ELE","cat or elephant","2017-06-07-13-48",1778,"both of them","C","0","I","Y",1
+"401",1,"X","X","CAT","cat","2017-06-07-14-3",1787,"yeah","J","Y","0","Y",0
+"402",2,"X","Z","CAT","elephant","2017-06-07-14-3",1787,"no É it's a cat","D","N","0","N",0
+"403",3,"X","XandY","ELE","cat and elephant","2017-06-07-14-3",1787,"it's a elephant","D","0","0","N",1
+"404",4,"XY","Z","CAT-ELE","dog","2017-06-07-14-3",1787,"no there is a elephant and a cat","D","N","0","N",0
+"405",5,"X","XandY","CAT","cat and dog","2017-06-07-14-3",1787,"no, there is just a cat","C","N","E","N",1
+"406",6,"XY","XandY","DOG-ELE","dog and elephant","2017-06-07-14-3",1787,"yeah","J","Y","0","Y",1
+"407",7,"XY","XandY","CAT-ELE","cat and elephant","2017-06-07-14-3",1787,"Yeah","J","Y","0","Y",1
+"408",8,"X","XorY","ELE","dog or elephant","2017-06-07-14-3",1787,"There is only an elephant","C","0","E","N",1
+"409",9,"XY","XorY","CAT-ELE","cat or elephant","2017-06-07-14-3",1787,"a cat AND an elephant","C","0","I","Y",1
+"410",10,"XY","X","DOG-ELE","elephant","2017-06-07-14-3",1787,"there is a dog and an elephant","D","0","0","N",0
+"411",11,"X","XorY","CAT","cat or elephant","2017-06-07-14-3",1787,"only a cat É he is not right","C","N","E","N",1
+"412",12,"X","Z","CAT","dog","2017-06-07-14-3",1787,"there is only a cat","C","0","E","N",0
+"413",13,"XY","X","CAT-ELE","cat","2017-06-07-14-3",1787,"no there is a cat AND an elephant","C","N","I","N",0
+"414",14,"XY","XorY","CAT-DOG","cat or dog","2017-06-07-14-3",1787,"there is a cat AND a dog","C","0","I","N",1
+"415",15,"X","X","ELE","elephant","2017-06-07-14-3",1787,"Yes","J","Y","0","Y",0
+"416",16,"XY","Z","CAT-DOG","elephant","2017-06-07-14-3",1787,"there is a dog and a cat. He is not right","D","N","0","N",0
+"417",1,"X","Z","CAT","dog","2017-06-07-14-21",1625,"no","J","N","0","N",0
+"418",2,"X","X","ELE","elephant","2017-06-07-14-21",1625,"Yes","J","Y","0","Y",0
+"419",3,"XY","Z","DOG-ELE","cat","2017-06-07-14-21",1625,"[headshake] no É. Elephant and dog","D","N","0","N",0
+"420",4,"XY","XandY","CAT-ELE","cat and elephant","2017-06-07-14-21",1625,"yes","J","Y","0","Y",1
+"421",5,"XY","XandY","CAT-DOG","cat and dog","2017-06-07-14-21",1625,"yes","J","Y","0","Y",1
+"422",6,"X","Z","ELE","cat","2017-06-07-14-21",1625,"no É it's an elephant","D","N","0","N",0
+"423",7,"X","XandY","DOG","cat and dog","2017-06-07-14-21",1625,"no É  a dog","D","N","0","N",1
+"424",8,"XY","X","CAT-ELE","cat","2017-06-07-14-21",1625,"and an elephant","C","0","I","N",0
+"425",9,"XY","X","CAT-DOG","dog","2017-06-07-14-21",1625,"[headshake] a cat AND a dog","C","N","I","N",0
+"426",10,"X","XorY","DOG","dog or elephant","2017-06-07-14-21",1625,"a dog","D","0","0","N",1
+"427",11,"XY","XorY","DOG-ELE","dog or elephant","2017-06-07-14-21",1625,"a dog AND an elephant","C","0","I","N",1
+"428",12,"XY","XorY","CAT-DOG","cat or dog","2017-06-07-14-21",1625,"a cat and a dog","D","0","0","N",1
+"429",13,"XY","Z","CAT-DOG","elephant","2017-06-07-14-21",1625,"no","J","N","0","N",0
+"430",14,"X","XorY","CAT","cat or elephant","2017-06-07-14-21",1625,"a cat","D","0","0","Y",1
+"431",15,"X","XandY","CAT","cat and elephant","2017-06-07-14-21",1625,"only a cat","C","0","E","N",1
+"432",16,"X","X","DOG","dog","2017-06-07-14-21",1625,"yes","J","Y","0","Y",0
+"433",1,"X","Z","ELE","cat","2017-06-07-15-37",1800,"nope","J","N","0","N",0
+"434",2,"X","X","CAT","cat","2017-06-07-15-37",1800,"how did he know that?!","J","Y","0","Y",0
+"435",3,"X","XandY","ELE","cat and elephant","2017-06-07-15-37",1800,"nope. ","J","N","0","N",1
+"436",4,"XY","XandY","DOG-ELE","dog and elephant","2017-06-07-15-37",1800,"He was right","J","Y","0","Y",1
+"437",5,"X","XandY","ELE","dog and elephant","2017-06-07-15-37",1800,"no.","J","N","0","N",1
+"438",6,"X","XorY","CAT","cat or elephant","2017-06-07-15-37",1800,"it's a cat","D","0","0","N",1
+"439",7,"X","XorY","DOG","dog or elephant","2017-06-07-15-37",1800,"no","J","N","0","N",1
+"440",8,"X","Z","DOG","cat","2017-06-07-15-37",1800,"no","J","N","0","N",0
+"441",9,"XY","X","CAT-ELE","cat","2017-06-07-15-37",1800,"again? No","J","N","0","N",0
+"442",10,"XY","XorY","DOG-ELE","dog or elephant","2017-06-07-15-37",1800,"yes","J","Y","0","Y",1
+"443",11,"XY","X","CAT-ELE","elephant","2017-06-07-15-37",1800,"no","J","N","0","N",0
+"444",12,"XY","XorY","CAT-ELE","cat or elephant","2017-06-07-15-37",1800,"that was right","J","Y","0","Y",1
+"445",13,"XY","XandY","CAT-ELE","cat and elephant","2017-06-07-15-37",1800,"again. Right","J","Y","0","Y",1
+"446",14,"XY","Z","CAT-ELE","dog","2017-06-07-15-37",1800,"no","J","N","0","N",0
+"447",15,"X","X","ELE","elephant","2017-06-07-15-37",1800,"yes","J","Y","0","Y",0
+"448",16,"XY","Z","DOG-ELE","cat","2017-06-07-15-37",1800,"no","J","N","0","N",0
+"449",1,"X","Z","ELE","dog","2017-06-08-9-39",1895,"no you are not right","J","N","0","N",0
+"450",2,"X","X","DOG","dog","2017-06-08-9-39",1895,"yes you are right","J","Y","0","Y",0
+"451",3,"XY","XandY","CAT-DOG","cat and dog","2017-06-08-9-39",1895,"you are right","J","Y","0","Y",1
+"452",4,"X","XorY","CAT","cat or dog","2017-06-08-9-39",1895,"a cat","D","0","0","Y",1
+"453",5,"X","XandY","DOG","dog and elephant","2017-06-08-9-39",1895,"no you are not right","J","N","0","N",1
+"454",6,"XY","X","DOG-ELE","elephant","2017-06-08-9-39",1895,"no you are not right","J","N","0","N",0
+"455",7,"XY","Z","DOG-ELE","cat","2017-06-08-9-39",1895,"no","J","N","0","N",0
+"456",8,"X","XandY","ELE","cat and elephant","2017-06-08-9-39",1895,"no you are not right","J","N","0","N",1
+"457",9,"XY","X","CAT-ELE","cat","2017-06-08-9-39",1895,"no you are not right","J","N","0","N",0
+"458",10,"XY","Z","CAT-DOG","elephant","2017-06-08-9-39",1895,"no","J","N","0","N",0
+"459",11,"X","Z","DOG","cat","2017-06-08-9-39",1895,"no","J","N","0","N",0
+"460",12,"XY","XorY","CAT-ELE","cat or elephant","2017-06-08-9-39",1895,"a cat AND an elephant","C","0","I","Y",1
+"461",13,"X","XorY","ELE","cat or elephant","2017-06-08-9-39",1895,"an elephant","D","0","0","Y",1
+"462",14,"X","X","CAT","cat","2017-06-08-9-39",1895,"yes he is right","J","Y","0","Y",0
+"463",15,"XY","XorY","DOG-ELE","dog or elephant","2017-06-08-9-39",1895,"a dog and an elephant","D","0","0","Y",1
+"464",16,"XY","XandY","CAT-ELE","cat and elephant","2017-06-08-9-39",1895,"Yeah","J","Y","0","Y",1
+"465",1,"X","Z","CAT","dog","2017-06-08-9-55",1871,"no a cat!","D","N","0","N",0
+"466",2,"X","X","ELE","elephant","2017-06-08-9-55",1871,"yup","J","Y","0","Y",0
+"467",3,"X","XandY","DOG","dog and elephant","2017-06-08-9-55",1871,"no there's just a dog","C","N","E","N",1
+"468",4,"X","XorY","DOG","cat or dog","2017-06-08-9-55",1871,"a dog again","D","0","0","N",1
+"469",5,"XY","XandY","CAT-ELE","cat and elephant","2017-06-08-9-55",1871,"yep","J","Y","0","Y",1
+"470",6,"X","XorY","CAT","cat or dog","2017-06-08-9-55",1871,"a cat","D","0","0","Y",1
+"471",7,"X","Z","ELE","cat","2017-06-08-9-55",1871,"no an elephant","D","N","0","N",0
+"472",8,"XY","XorY","CAT-DOG","cat or dog","2017-06-08-9-55",1871,"there's a cat and a dog","D","0","0","N",1
+"473",9,"XY","X","CAT-DOG","cat","2017-06-08-9-55",1871,"and a dog","C","0","I","N",0
+"474",10,"X","XandY","ELE","dog and elephant","2017-06-08-9-55",1871,"no there's just an elephant Jazzy","C","N","E","N",1
+"475",11,"XY","XorY","CAT-ELE","cat or elephant","2017-06-08-9-55",1871,"cat and elephant","D","0","0","Y",1
+"476",12,"XY","X","CAT-ELE","cat","2017-06-08-9-55",1871,"and elephant","C","0","I","N",0
+"477",13,"XY","Z","CAT-ELE","dog","2017-06-08-9-55",1871,"no, elephant and cat","D","N","0","N",0
+"478",14,"XY","Z","DOG-ELE","cat","2017-06-08-9-55",1871,"No, elephant and dog","D","N","0","N",0
+"479",15,"X","X","DOG","dog","2017-06-08-9-55",1871,"Yes","J","Y","0","Y",0
+"480",16,"XY","XandY","DOG-ELE","dog and elephant","2017-06-08-9-55",1871,"Yes","J","Y","0","Y",1
+"481",1,"X","Z","DOG","elephant","2017-06-08-10-18",1365,"it's a dog","D","0","0","N",0
+"482",2,"X","X","CAT","cat","2017-06-08-10-18",1365,"right","J","Y","0","Y",0
+"483",3,"XY","X","DOG-ELE","dog","2017-06-08-10-18",1365,"dog and elephant [was Jazzy right?] he was right with one animal","D","0","0","YN",0
+"484",4,"X","XorY","CAT","cat or dog","2017-06-08-10-18",1365,"it's a cat","D","0","0","N",1
+"485",5,"X","XorY","CAT","cat or elephant","2017-06-08-10-18",1365,"there's just cat","C","0","E","N",1
+"486",6,"XY","X","CAT-DOG","dog","2017-06-08-10-18",1365,"dog and a cat ƒ there is a dog and a CAT","D","0","0","N",0
+"487",7,"XY","Z","CAT-ELE","dog","2017-06-08-10-18",1365,"no","J","N","0","N",0
+"488",8,"X","Z","CAT","dog","2017-06-08-10-18",1365,"a cat","D","0","0","N",0
+"489",9,"XY","Z","DOG-ELE","cat","2017-06-08-10-18",1365,"there's not a cat","J","N","0","N",0
+"490",10,"XY","XandY","CAT-ELE","cat and elephant","2017-06-08-10-18",1365,"he was right","J","Y","0","Y",1
+"491",11,"XY","XandY","DOG-ELE","dog and elephant","2017-06-08-10-18",1365,"he was right","J","Y","0","Y",1
+"492",12,"X","XandY","CAT","cat and dog","2017-06-08-10-18",1365,"a cat","D","0","0","N",1
+"493",13,"XY","XorY","CAT-DOG","cat or dog","2017-06-08-10-18",1365,"a cat and dog","D","0","0","N",1
+"494",14,"X","XandY","ELE","dog and elephant","2017-06-08-10-18",1365,"no","J","N","0","N",1
+"495",15,"X","X","ELE","elephant","2017-06-08-10-18",1365,"elephant","D","0","0","Y",0
+"496",16,"XY","XorY","DOG-ELE","dog or elephant","2017-06-08-10-18",1365,"both","C","0","I","Y",1
+"497",1,"X","Z","DOG","cat","2017-06-08-11-15",1725,"no. wrong","J","N","0","N",0
+"498",2,"X","X","CAT","cat","2017-06-08-11-15",1725,"yeah. A cat","D","Y","0","Y",0
+"499",3,"X","XorY","DOG","dog or elephant","2017-06-08-11-15",1725,"only a dog","C","0","E","Y",1
+"500",4,"X","XorY","ELE","cat or elephant","2017-06-08-11-15",1725,"it's only an elephant","C","0","E","Y",1
+"501",5,"XY","XorY","CAT-DOG","cat or dog","2017-06-08-11-15",1725,"yeah. Cat and dog","D","0","0","Y",1
+"502",6,"XY","Z","CAT-DOG","elephant","2017-06-08-11-15",1725,"no. there is a cat and a dog","D","N","0","N",0
+"503",7,"XY","X","CAT-ELE","cat","2017-06-08-11-15",1725,"yeah. There's a cat AND an elephant","C","Y","I","Y",0
+"504",8,"XY","X","CAT-DOG","dog","2017-06-08-11-15",1725,"it's a dog and a cat","D","0","0","Y",0
+"505",9,"X","X","ELE","elephant","2017-06-08-11-15",1725,"yeah","J","Y","0","Y",0
+"506",10,"X","Z","CAT","dog","2017-06-08-11-15",1725,"no. a cat","D","N","0","N",0
+"507",11,"XY","Z","DOG-ELE","cat","2017-06-08-11-15",1725,"no. dog elephant","D","N","0","N",0
+"508",12,"X","XandY","ELE","cat and elephant","2017-06-08-11-15",1725,"only an elephant","C","0","E","Y",1
+"509",13,"XY","XorY","DOG-ELE","dog or elephant","2017-06-08-11-15",1725,"yeah","J","Y","0","Y",1
+"510",14,"XY","XandY","DOG-ELE","dog and elephant","2017-06-08-11-15",1725,"yeah","J","Y","0","Y",1
+"511",15,"X","XandY","DOG","cat and dog","2017-06-08-11-15",1725,"yes. Dog","J","Y","0","Y",1
+"512",16,"XY","XandY","CAT-ELE","cat and elephant","2017-06-08-11-15",1725,"yeah","J","Y","0","Y",1
+"513",1,"X","Z","ELE","dog","2017-06-08-13-23",1453,"no","J","N","0","N",0
+"514",2,"X","X","CAT","cat","2017-06-08-13-23",1453,"yes","J","Y","0","Y",0
+"515",3,"X","XorY","DOG","cat or dog","2017-06-08-13-23",1453,"a dog","D","0","0","Y",1
+"516",4,"XY","X","DOG-ELE","elephant","2017-06-08-13-23",1453,"yes and a dog","C","Y","I","Y",0
+"517",5,"XY","X","CAT-DOG","cat","2017-06-08-13-23",1453,"yes and a dog","C","Y","I","Y",0
+"518",6,"X","XandY","CAT","cat and elephant","2017-06-08-13-23",1453,"no there is just a cat","C","N","E","N",1
+"519",7,"X","XorY","ELE","dog or elephant","2017-06-08-13-23",1453,"an elephant","D","0","0","N",1
+"520",8,"X","XandY","DOG","cat and dog","2017-06-08-13-23",1453,"no there's a cat É sorry there's a dog","D","N","0","N",1
+"521",9,"XY","XandY","CAT-ELE","cat and elephant","2017-06-08-13-23",1453,"yes","J","Y","0","Y",1
+"522",10,"XY","XorY","DOG-ELE","dog or elephant","2017-06-08-13-23",1453,"a dog AND an elephant","C","0","I","Y",1
+"523",11,"X","Z","CAT","elephant","2017-06-08-13-23",1453,"no there's a cat","D","N","0","N",0
+"524",12,"XY","XandY","DOG-ELE","dog and elephant","2017-06-08-13-23",1453,"no there's É Yeah","J","Y","0","Y",1
+"525",13,"XY","XorY","CAT-DOG","cat or dog","2017-06-08-13-23",1453,"a cat AND a dog","C","0","I","N",1
+"526",14,"X","X","ELE","elephant","2017-06-08-13-23",1453,"yes","J","Y","0","Y",0
+"527",15,"XY","Z","CAT-DOG","elephant","2017-06-08-13-23",1453,"no, there's a cat and a dog","D","N","0","N",0
+"528",16,"XY","Z","DOG-ELE","cat","2017-06-08-13-23",1453,"no, there's a dog and an elephant","D","N","0","N",0
+"529",1,"X","X","ELE","elephant","2017-05-31-14-26",1761,"Yes!","J","Y","0","Y",0
+"530",2,"X","Z","ELE","dog","2017-05-31-14-26",1761,"No! It's elephant!","D","N","0","N",0
+"531",3,"XY","X","CAT-DOG","dog","2017-05-31-14-26",1761,"No! CAT and dog!","D","N","0","N",0
+"532",4,"XY","XandY","CAT-ELE","cat and elephant","2017-05-31-14-26",1761,"Yes!","J","Y","0","Y",1
+"533",5,"XY","XandY","CAT-DOG","cat and dog","2017-05-31-14-26",1761,"Yes!","J","Y","0","Y",1
+"534",6,"X","Z","DOG","cat","2017-05-31-14-26",1761,"No! It's a dog!","D","N","0","N",0
+"535",7,"X","XandY","ELE","dog and elephant","2017-05-31-14-26",1761,"No! It's only an elephant!","C","N","E","N",1
+"536",8,"X","XandY","CAT","cat and dog","2017-05-31-14-26",1761,"No! Only a cat!","C","N","E","N",1
+"537",9,"X","XorY","CAT","cat or elephant","2017-05-31-14-26",1761,"No! It's only cat!","C","N","E","N",1
+"538",10,"X","X","DOG","dog","2017-05-31-14-26",1761,"Yes!","J","Y","0","Y",0
+"539",11,"X","XorY","ELE","cat or elephant","2017-05-31-14-26",1761,"Elephant!","D","0","0","N",1
+"540",12,"XY","X","CAT-DOG","cat","2017-05-31-14-26",1761,"No! It's only cat and dog!","C","N","E","N",0
+"541",13,"XY","Z","CAT-DOG","elephant","2017-05-31-14-26",1761,"No! It's only cat and dog again!","C","N","E","N",0
+"542",14,"XY","Z","CAT-ELE","dog","2017-05-31-14-26",1761,"No! It's only elephant and cat!","C","N","E","N",0
+"543",15,"XY","XorY","CAT-ELE","cat or elephant","2017-05-31-14-26",1761,"Yes!","J","Y","0","Y",1
+"544",16,"XY","XorY","DOG-ELE","dog or elephant","2017-05-31-14-26",1761,"Yes!","J","Y","0","Y",1
+"545",1,"X","X","DOG","dog","2017-06-08-13-46",1363,"yes you're right","J","Y","0","Y",0
+"546",2,"X","Z","DOG","cat","2017-06-08-13-46",1363,"No, you're not right","J","N","0","N",0
+"547",3,"X","XandY","ELE","cat and elephant","2017-06-08-13-46",1363,"No, there's no cat just an elephant","C","N","E","N",1
+"548",4,"XY","XandY","CAT-ELE","cat and elephant","2017-06-08-13-46",1363,"that is right","J","Y","0","Y",1
+"549",5,"XY","X","CAT-DOG","dog","2017-06-08-13-46",1363,"and a cat!","C","0","I","N",0
+"550",6,"X","XorY","ELE","cat or elephant","2017-06-08-13-46",1363,"elephant","D","0","0","Y",1
+"551",7,"XY","Z","CAT-DOG","elephant","2017-06-08-13-46",1363,"no","J","N","0","N",0
+"552",8,"XY","X","CAT-ELE","cat","2017-06-08-13-46",1363,"yes","J","Y","0","Y",0
+"553",9,"X","XandY","CAT","cat and elephant","2017-06-08-13-46",1363,"no","J","N","0","Y",1
+"554",10,"X","XorY","CAT","cat or dog","2017-06-08-13-46",1363,"a cat","D","0","0","Y",1
+"555",11,"X","Z","DOG","elephant","2017-06-08-13-46",1363,"no","J","N","0","N",0
+"556",12,"XY","XandY","DOG-ELE","dog and elephant","2017-06-08-13-46",1363,"yes","J","Y","0","Y",1
+"557",13,"XY","Z","CAT-ELE","dog","2017-06-08-13-46",1363,"No","J","N","0",NA,0
+"558",14,"XY","XorY","CAT-DOG","cat or dog","2017-06-08-13-46",1363,"cat and a dog","D","0","0","Y",1
+"559",15,"X","X","ELE","elephant","2017-06-08-13-46",1363,"Yes","J","Y","0","Y",0
+"560",16,"XY","XorY","CAT-ELE","cat or elephant","2017-06-08-13-46",1363,"cat and elephant","D","0","0","Y",1
+"561",1,"X","Z","ELE","dog","2017-06-08-14-2",1632,"no","J","N","0","N",0
+"562",2,"X","X","CAT","cat","2017-06-08-14-2",1632,"yeah","J","Y","0","Y",0
+"563",3,"X","XorY","ELE","cat or elephant","2017-06-08-14-2",1632,"there's a elephant","D","0","0","Y",1
+"564",4,"X","XandY","CAT","cat and dog","2017-06-08-14-2",1632,"there's a cat","D","0","0","N",1
+"565",5,"X","XorY","DOG","cat or dog","2017-06-08-14-2",1632,"a dog","D","0","0","Y",1
+"566",6,"X","XandY","DOG","dog and elephant","2017-06-08-14-2",1632,"no","J","N","0","N",1
+"567",7,"XY","X","CAT-ELE","elephant","2017-06-08-14-2",1632,"not only an elephant","C","0","I","N",0
+"568",8,"XY","Z","DOG-ELE","cat","2017-06-08-14-2",1632,"no","J","N","0","N",0
+"569",9,"X","Z","DOG","elephant","2017-06-08-14-2",1632,"no","J","N","0","N",0
+"570",10,"XY","XandY","CAT-DOG","cat and dog","2017-06-08-14-2",1632,"[throws it on the table]","0","0","0","Y",1
+"571",11,"XY","Z","CAT-ELE","dog","2017-06-08-14-2",1632,"no É there's an elephant and a cat","D","N","0","N",0
+"572",12,"X","X","ELE","elephant","2017-06-08-14-2",1632,"nope","J","N","0","N",0
+"573",13,"XY","X","CAT-DOG","dog","2017-06-08-14-2",1632,"no, there's a dog and a cat","D","N","0","N",0
+"574",14,"XY","XandY","CAT-ELE","cat and elephant","2017-06-08-14-2",1632,"nope","J","N","0","N",1
+"575",15,"XY","XorY","CAT-ELE","cat or elephant","2017-06-08-14-2",1632,"nope. There's not. There's cat and an elephatn","D","N","0","N",1
+"576",16,"XY","XorY","DOG-ELE","dog or elephant","2017-06-08-14-2",1632,"there's a dog and elephant","D","0","0","Y",1
+"577",1,"X","Z","CAT","dog","2017-06-08-14-29",1598,"no","J","N","0","N",0
+"578",2,"X","X","ELE","elephant","2017-06-08-14-29",1598,"yes","J","Y","0","Y",0
+"579",3,"X","XorY","DOG","dog or elephant","2017-06-08-14-29",1598,"a dog","D","0","0","Y",1
+"580",4,"XY","X","CAT-DOG","dog","2017-06-08-14-29",1598,"[nod] and what's the next one Jazzy?","C","Y","I","Y",0
+"581",5,"X","XandY","CAT","cat and dog","2017-06-08-14-29",1598,"yes she was right","J","Y","0","Y",1
+"582",6,"XY","XorY","DOG-ELE","dog or elephant","2017-06-08-14-29",1598,"a dog and an elephant","D","0","0","Y",1
+"583",7,"XY","XandY","DOG-ELE","dog and elephant","2017-06-08-14-29",1598,"a dog and an elephant","D","0","0","Y",1
+"584",8,"XY","Z","DOG-ELE","cat","2017-06-08-14-29",1598,"no","J","N","0","N",0
+"585",9,"X","Z","DOG","cat","2017-06-08-14-29",1598,"no","J","N","0","N",0
+"586",10,"XY","X","DOG-ELE","elephant","2017-06-08-14-29",1598,"yeah","J","Y","0","Y",0
+"587",11,"XY","Z","CAT-DOG","elephant","2017-06-08-14-29",1598,"No","J","N","0","N",0
+"588",12,"XY","XandY","CAT-DOG","cat and dog","2017-06-08-14-29",1598,"Yes","J","Y","0","Y",1
+"589",13,"XY","XorY","CAT-ELE","cat or elephant","2017-06-08-14-29",1598,"a cat and an elephant and he is right","J","Y","0","Y",1
+"590",14,"X","XandY","DOG","dog and elephant","2017-06-08-14-29",1598,"no É he was just right about the dog","C","N","E","N",1
+"591",15,"X","XorY","ELE","cat or elephant","2017-06-08-14-29",1598,"an elephant É Jazzy","D","0","0","Y",1
+"592",16,"X","X","CAT","cat","2017-06-08-14-29",1598,"yeah","J","Y","0","Y",0
+"593",1,"X","X","DOG","dog","2017-06-08-14-46",1420,"yes you're right","J","Y","0","Y",0
+"594",2,"X","Z","CAT","elephant","2017-06-08-14-46",1420,"no you're not right","J","N","0","N",0
+"595",3,"XY","Z","DOG-ELE","cat","2017-06-08-14-46",1420,"no there's a dog and an elephant","D","N","0","Y",0
+"596",4,"XY","XandY","CAT-DOG","cat and dog","2017-06-08-14-46",1420,"yes you're right","J","Y","0","Y",1
+"597",5,"X","XandY","CAT","cat and elephant","2017-06-08-14-46",1420,"no there's only a cat","C","N","E","Y",1
+"598",6,"XY","X","DOG-ELE","dog","2017-06-08-14-46",1420,"an elephant and a dog","D","0","0","Y",0
+"599",7,"X","X","ELE","elephant","2017-06-08-14-46",1420,"Yes","J","Y","0","Y",0
+"600",8,"XY","X","CAT-ELE","elephant","2017-06-08-14-46",1420,"No there's an elephant and a cat","D","N","0","Y",0
+"601",9,"X","XorY","DOG","dog or elephant","2017-06-08-14-46",1420,"a dog","D","0","0","Y",1
+"602",10,"X","XandY","CAT","cat and dog","2017-06-08-14-46",1420,"no there's only a cat","C","N","E","Y",1
+"603",11,"XY","Z","CAT-ELE","dog","2017-06-08-14-46",1420,"No there's an elephant and a dog É ","D","N","0","Y",0
+"604",12,"X","XorY","CAT","cat or elephant","2017-06-08-14-46",1420,"a cat","D","0","0","Y",1
+"605",13,"XY","XandY","CAT-ELE","cat and elephant","2017-06-08-14-46",1420,"Yes","J","Y","0","Y",1
+"606",14,"XY","XorY","CAT-ELE","cat or elephant","2017-06-08-14-46",1420,"a cat AND an elephant","C","0","I","Y",1
+"607",15,"XY","XorY","DOG-ELE","dog or elephant","2017-06-08-14-46",1420,"a dog AND an elephant","C","0","I","Y",1
+"608",16,"X","Z","ELE","dog","2017-06-08-14-46",1420,"an elephant","D","0","0","Y",0
+"609",1,"X","Z","ELE","dog","2017-06-08-15-26",1844,"nope","J","N","0","N",0
+"610",2,"X","X","ELE","elephant","2017-06-08-15-26",1844,"yes","J","Y","0","Y",0
+"611",3,"XY","Z","CAT-ELE","dog","2017-06-08-15-26",1844,"no ","J","N","0","N",0
+"612",4,"X","XorY","ELE","dog or elephant","2017-06-08-15-26",1844,"an elephant","J","Y","0","Y",1
+"613",5,"XY","Z","DOG-ELE","cat","2017-06-08-15-26",1844,"no.","J","N","0","N",0
+"614",6,"XY","XandY","DOG-ELE","dog and elephant","2017-06-08-15-26",1844,"Yes","J","Y","0","Y",1
+"615",7,"XY","XandY","CAT-ELE","cat and elephant","2017-06-08-15-26",1844,"yes","J","Y","0","Y",1
+"616",8,"XY","X","DOG-ELE","elephant","2017-06-08-15-26",1844,"nope , there was an elephant and a dog","D","N","0","Y",0
+"617",9,"XY","XorY","CAT-ELE","cat or elephant","2017-06-08-15-26",1844,"a cat AND an elephant","C","0","I","Y",1
+"618",10,"XY","X","CAT-DOG","dog","2017-06-08-15-26",1844,"yes","J","Y","0","Y",0
+"619",11,"X","XorY","CAT","cat or dog","2017-06-08-15-26",1844,"a cat","D","0","0","Y",1
+"620",12,"X","XandY","CAT","cat and elephant","2017-06-08-15-26",1844,"a cat","D","0","0","Y",1
+"621",13,"X","XandY","CAT","cat and dog","2017-06-08-15-26",1844,"there's a cat [was Jazzy right?] he guessed cat and the dog","D","0","0","Y",1
+"622",14,"XY","XorY","DOG-ELE","dog or elephant","2017-06-08-15-26",1844,"a dog AND an elephant","C","0","I","Y",1
+"623",15,"X","Z","ELE","cat","2017-06-08-15-26",1844,"nope","J","N","0","N",0
+"624",16,"X","X","DOG","dog","2017-06-08-15-26",1844,"yes","J","Y","0","Y",0
+"625",1,"X","X","CAT","cat","2017-06-07-14-48",1380,"yes","J","Y","0","Y",0
+"626",2,"X","Z","ELE","cat","2017-06-07-14-48",1380,"no [was Jazzy right?] there's an elephant","D","N","0","N",0
+"627",3,"X","X","DOG","dog","2017-06-07-14-48",1380,"yes","J","Y","0","Y",0
+"628",4,"XY","XorY","DOG-ELE","dog or elephant","2017-06-07-14-48",1380,"both","C","0","I","Y",1
+"629",5,"X","Z","DOG","cat","2017-06-07-14-48",1380,"[headshake] no [was Jazzy right?] no. dog","D","N","0","N",0
+"630",6,"XY","Z","CAT-DOG","elephant","2017-06-07-14-48",1380,"[headshake] just a cat and a dog","C","N","E","N",0
+"631",7,"XY","X","CAT-DOG","cat","2017-06-07-14-48",1380,"cat AND dog","C","0","I","Y",0
+"632",8,"X","XorY","CAT","cat or dog","2017-06-07-14-48",1380,"just cat","C","0","E","N",1
+"633",9,"XY","X","DOG-ELE","dog","2017-06-07-14-48",1380,"dog or an elephant É [dog or an elephant] É dog AND an elephant","C","0","I","N",0
+"634",10,"X","XorY","ELE","dog or elephant","2017-06-07-14-48",1380,"just elephant","C","0","E","N",1
+"635",11,"X","XandY","CAT","cat and elephant","2017-06-07-14-48",1380,"just cat","C","0","E","N",1
+"636",12,"XY","Z","CAT-ELE","dog","2017-06-07-14-48",1380,"[headshake] elephant or É and cat","D","N","0","N",0
+"637",13,"X","XandY","ELE","dog and elephant","2017-06-07-14-48",1380,"just elephant","C","0","E","N",1
+"638",14,"XY","XorY","CAT-DOG","cat or dog","2017-06-07-14-48",1380,"yes","J","Y","0","Y",1
+"639",15,"XY","XandY","CAT-DOG","cat and dog","2017-06-07-14-48",1380,"yes","J","Y","0","Y",1
+"640",16,"XY","XandY","DOG-ELE","dog and elephant","2017-06-07-14-48",1380,"yes","J","Y","0","Y",1
+"641",1,"X","X","DOG","dog","2017-06-09-9-47",1668,"yes","J","Y","0","Y",0
+"642",2,"X","Z","CAT","elephant","2017-06-09-9-47",1668,"no É sorry .. No É it's a cat","D","N","0","N",0
+"643",3,"XY","XandY","DOG-ELE","dog and elephant","2017-06-09-9-47",1668,"yes","J","Y","0","Y",1
+"644",4,"XY","X","DOG-ELE","dog","2017-06-09-9-47",1668,"no É it's the same thing","J","N","0","N",0
+"645",5,"X","XandY","CAT","cat and elephant","2017-06-09-9-47",1668,"no just a cat","C","N","E","N",1
+"646",6,"XY","Z","CAT-ELE","dog","2017-06-09-9-47",1668,"no É it's a cat and an elephant","D","N","0","N",0
+"647",7,"X","Z","ELE","dog","2017-06-09-9-47",1668,"no É it's an elephant","D","N","0","N",0
+"648",8,"XY","XandY","CAT-DOG","cat and dog","2017-06-09-9-47",1668,"yes É cat and a dog","D","Y","0","Y",1
+"649",9,"X","X","CAT","cat","2017-06-09-9-47",1668,"yes","J","Y","0","Y",0
+"650",10,"X","XandY","DOG","cat and dog","2017-06-09-9-47",1668,"no just a dog","C","N","E","N",1
+"651",11,"X","XorY","ELE","dog or elephant","2017-06-09-9-47",1668,"just a elephant É [was Jazzy right?] her picked elephant or dog É [was that right?] yeah elephant","C","0","E","Y",1
+"652",12,"X","XorY","DOG","dog or elephant","2017-06-09-9-47",1668,"just a dog É it's a dog","C","0","E",NA,1
+"653",13,"XY","X","CAT-ELE","elephant","2017-06-09-9-47",1668,"no, it's a cat and a dog É Jazzy was wrong","D","N","0","N",0
+"654",14,"XY","XorY","CAT-DOG","cat or dog","2017-06-09-9-47",1668,"cat AND a dog","C","0","I","Y",1
+"655",15,"XY","XorY","DOG-ELE","dog or elephant","2017-06-09-9-47",1668,"dog and a cat É dog and an elephant","D","0","0","Y",1
+"656",16,"XY","Z","DOG-ELE","cat","2017-06-09-9-47",1668,"no É it's a dog and an elephant","D","N","0","N",0
+"657",1,"X","X","DOG","dog","2017-06-09-9-59",1507,"yeah É it's this dog","D","Y","0","Y",0
+"658",2,"X","Z","DOG","elephant","2017-06-09-9-59",1507,"nope dog É it's a dog","D","N","0","N",0
+"659",3,"XY","XorY","DOG-ELE","dog or elephant","2017-06-09-9-59",1507,"dog and elephant","D","0","0","Y",1
+"660",4,"X","Z","CAT","elephant","2017-06-09-9-59",1507,"nope, there's cat","D","N","0","N",0
+"661",5,"XY","X","CAT-ELE","elephant","2017-06-09-9-59",1507,"elephant and cat [was Jazzy right] no É yeah he is","D","0","0","Y",0
+"662",6,"X","XorY","CAT","cat or elephant","2017-06-09-9-59",1507,"a cat","D","0","0","Y",1
+"663",7,"XY","Z","CAT-DOG","elephant","2017-06-09-9-59",1507,"no a dog and a cat","D","N","0","N",0
+"664",8,"XY","X","CAT-DOG","cat","2017-06-09-9-59",1507,"cat and dog","D","0","0","Y",0
+"665",9,"XY","XandY","CAT-DOG","cat and dog","2017-06-09-9-59",1507,"cat and dog yeah","D","Y","0","Y",1
+"666",10,"X","XandY","DOG","cat and dog","2017-06-09-9-59",1507,"dog É this is a dog","D","0","0","N",1
+"667",11,"X","X","ELE","elephant","2017-06-09-9-59",1507,"yup É true","J","Y","0","Y",0
+"668",12,"X","XorY","CAT","cat or dog","2017-06-09-9-59",1507,"cat","D","0","0","Y",1
+"669",13,"XY","Z","CAT-ELE","dog","2017-06-09-9-59",1507,"cat and dog É nope it's not dog and cat it's just elephant and dog É elephant and cat","D","0","0","N",0
+"670",14,"XY","XandY","DOG-ELE","dog and elephant","2017-06-09-9-59",1507,"right","J","Y","0","Y",1
+"671",15,"X","XandY","DOG","dog and elephant","2017-06-09-9-59",1507,"[laughter]","0","0","0","N",1
+"672",16,"XY","XorY","CAT-ELE","cat or elephant","2017-06-09-9-59",1507,"cat I guess and an elephant","D","0","0","Y",1
+"673",1,"X","Z","DOG","elephant","2017-06-09-10-56",2084,"no ƒ it's a dog","D","N","0","N",0
+"674",2,"X","X","ELE","elephant","2017-06-09-10-56",2084,"yes","J","Y","0","Y",0
+"675",3,"XY","X","CAT-DOG","dog","2017-06-09-10-56",2084,"no ƒ it's a dog AND a cat","C","N","I","N",0
+"676",4,"X","XandY","ELE","dog and elephant","2017-06-09-10-56",2084,"no just an elephant","C","N","E","N",1
+"677",5,"XY","X","DOG-ELE","elephant","2017-06-09-10-56",2084,"[laughter] hey  before she said there's a dog and an elephant and there was an elephant and now she says elephant and there is a dog and an elephant [drops card]","0","0","0","N",0
+"678",6,"X","XandY","DOG","cat and dog","2017-06-09-10-56",2084,"no it's just a dog","C","N","E","N",1
+"679",7,"X","XorY","DOG","dog or elephant","2017-06-09-10-56",2084,"a dog","D","0","0","N",1
+"680",8,"X","Z","ELE","cat","2017-06-09-10-56",2084,"no an elephant","D","N","0","N",0
+"681",9,"XY","Z","CAT-DOG","elephant","2017-06-09-10-56",2084,"no it's a cat and a dog","D","N","0","N",0
+"682",10,"X","XorY","CAT","cat or dog","2017-06-09-10-56",2084,"a cat","D","0","0","N",1
+"683",11,"XY","XandY","DOG-ELE","dog and elephant","2017-06-09-10-56",2084,"yes","J","Y","0","Y",1
+"684",12,"XY","XorY","DOG-ELE","dog or elephant","2017-06-09-10-56",2084,"both","C","0","I","N",1
+"685",13,"XY","Z","CAT-ELE","dog","2017-06-09-10-56",2084,"no, a cat and elephant","D","N","0","N",0
+"686",14,"XY","XorY","CAT-ELE","cat or elephant","2017-06-09-10-56",2084,"yes, there's a cat and elephant","D","Y","0","N",1
+"687",15,"XY","XandY","CAT-ELE","cat and elephant","2017-06-09-10-56",2084,"yes","J","Y","0","Y",1
+"688",16,"X","X","DOG","dog","2017-06-09-10-56",2084,"yes","J","Y","0","Y",0
+"689",1,"X","X","ELE","elephant","2017-06-09-13-38",1354,"good right","J","Y","0","Y",0
+"690",2,"X","Z","CAT","elephant","2017-06-09-13-38",1354,"no Ä it's a cat","D","N","0","N",0
+"691",3,"XY","XandY","CAT-ELE","cat and elephant","2017-06-09-13-38",1354,"good right","J","Y","0","Y",1
+"692",4,"X","XorY","ELE","cat or elephant","2017-06-09-13-38",1354,"an elephant","D","0","0","Y",1
+"693",5,"X","XorY","DOG","cat or dog","2017-06-09-13-38",1354,"dog","D","0","0","Y",1
+"694",6,"X","XandY","CAT","cat and dog","2017-06-09-13-38",1354,"cat","D","0","0","Y",1
+"695",7,"X","XandY","CAT","cat and elephant","2017-06-09-13-38",1354,"cat","D","0","0","Y",1
+"696",8,"XY","XandY","DOG-ELE","dog and elephant","2017-06-09-13-38",1354,"right","J","Y","0","Y",1
+"697",9,"XY","XorY","CAT-DOG","cat or dog","2017-06-09-13-38",1354,"cat AND a dog","C","0","I","Y",1
+"698",10,"XY","XorY","DOG-ELE","dog or elephant","2017-06-09-13-38",1354,"dog and elephant","D","0","0","Y",1
+"699",11,"X","X","CAT","cat","2017-06-09-13-38",1354,"cat","D","0","0","Y",0
+"700",12,"XY","X","CAT-ELE","cat","2017-06-09-13-38",1354,"cat and an elephant","D","0","0","N",0
+"701",13,"XY","Z","DOG-ELE","cat","2017-06-09-13-38",1354,"nope","J","N","0","N",0
+"702",14,"X","Z","ELE","dog","2017-06-09-13-38",1354,"nope","J","N","0","N",0
+"703",15,"XY","X","CAT-DOG","cat","2017-06-09-13-38",1354,"nope, yes","J","YN","0","Y",0
+"704",16,"XY","Z","CAT-DOG","elephant","2017-06-09-13-38",1354,"nope he was not right","J","N","0","N",0
+"705",1,"X","X","ELE","elephant","2017-05-31-14-42",1895,"Yes!","J","Y","0","Y",0
+"706",2,"X","Z","CAT","dog","2017-05-31-14-42",1895,"No! It's a cat!","D","N","0","N",0
+"707",3,"XY","XandY","CAT-ELE","cat and elephant","2017-05-31-14-42",1895,"Yes!","J","Y","0","Y",1
+"708",4,"X","XandY","CAT","cat and dog","2017-05-31-14-42",1895,"No! Just a cat!","C","N","E","Y",1
+"709",5,"XY","XandY","CAT-DOG","cat and dog","2017-05-31-14-42",1895,"Yes!","J","Y","0","Y",1
+"710",6,"X","XorY","ELE","cat or elephant","2017-05-31-14-42",1895,"An elephant","D","0","0","Y",1
+"711",7,"XY","XorY","CAT-DOG","cat or dog","2017-05-31-14-42",1895,"A cat AND dog!","C","0","I","N",1
+"712",8,"X","Z","DOG","elephant","2017-05-31-14-42",1895,"No! A doggie!","D","N","0","N",0
+"713",9,"X","XandY","DOG","cat and dog","2017-05-31-14-42",1895,"Just a dog!","C","0","E","N",1
+"714",10,"X","XorY","ELE","dog or elephant","2017-05-31-14-42",1895,"An elephant","D","0","0","Y",1
+"715",11,"X","X","DOG","dog","2017-05-31-14-42",1895,"Yes!","J","Y","0","Y",0
+"716",12,"XY","Z","DOG-ELE","cat","2017-05-31-14-42",1895,"No! Dog and elephant!","D","N","0","N",0
+"717",13,"XY","Z","CAT-DOG","elephant","2017-05-31-14-42",1895,"No! A dog and cat!","D","N","0","N",0
+"718",14,"XY","X","CAT-DOG","cat","2017-05-31-14-42",1895,"No! A cat and a dog!","D","N","0","Y",0
+"719",15,"XY","XorY","DOG-ELE","dog or elephant","2017-05-31-14-42",1895,"A dog AND an elephant!","C","0","I","Y",1
+"720",16,"XY","X","CAT-ELE","elephant","2017-05-31-14-42",1895,"An elephant and a cat.","D","0","0","Y",0
+"721",1,"X","Z","ELE","cat","2017-06-09-13-53",1568,"no","J","N","0","N",0
+"722",2,"X","X","CAT","cat","2017-06-09-13-53",1568,"yeah","J","Y","0","Y",0
+"723",3,"X","XandY","ELE","cat and elephant","2017-06-09-13-53",1568,"no there is an elephant","D","N","0","N",1
+"724",4,"X","XorY","DOG","dog or elephant","2017-06-09-13-53",1568,"dog","D","0","0","N",1
+"725",5,"XY","XandY","DOG-ELE","dog and elephant","2017-06-09-13-53",1568,"[nod]","J","Y","0","Y",1
+"726",6,"X","XandY","DOG","cat and dog","2017-06-09-13-53",1568,"no there is a dog","D","N","0","N",1
+"727",7,"X","Z","DOG","cat","2017-06-09-13-53",1568,"no there is a dog","D","N","0","N",0
+"728",8,"XY","XandY","CAT-ELE","cat and elephant","2017-06-09-13-53",1568,"yeah","J","Y","0","Y",1
+"729",9,"XY","X","CAT-ELE","elephant","2017-06-09-13-53",1568,"[headshake] cat and an elephant","D","N","0","N",0
+"730",10,"X","XorY","CAT","cat or elephant","2017-06-09-13-53",1568,"no it's a cat","D","N","0","N",1
+"731",11,"XY","XorY","DOG-ELE","dog or elephant","2017-06-09-13-53",1568,"yeah","J","Y","0","Y",1
+"732",12,"XY","X","CAT-ELE","cat","2017-06-09-13-53",1568,"no it's a cat and an elephant","D","N","0","N",0
+"733",13,"XY","Z","CAT-DOG","elephant","2017-06-09-13-53",1568,"no dog and a cat","D","N","0","N",0
+"734",14,"XY","XorY","CAT-DOG","cat or dog","2017-06-09-13-53",1568,"yeah","J","Y","0","Y",1
+"735",15,"X","X","DOG","dog","2017-06-09-13-53",1568,"yeah","J","Y","0","Y",0
+"736",16,"XY","Z","DOG-ELE","cat","2017-06-09-13-53",1568,"no","J","N","0","N",0
+"737",1,"X","Z","DOG","cat","2017-05-31-15-33",1693,"No! ","J","N","0","N",0
+"738",2,"X","X","DOG","dog","2017-05-31-15-33",1693,"Yeah you're right!","J","Y","0","Y",0
+"739",3,"XY","XandY","CAT-ELE","cat and elephant","2017-05-31-15-33",1693,"Yeah you're right!","J","Y","0","Y",1
+"740",4,"XY","Z","CAT-ELE","dog","2017-05-31-15-33",1693,"No! you're wrong!","J","N","0","N",0
+"741",5,"X","XandY","ELE","dog and elephant","2017-05-31-15-33",1693,"No there's only an elephant!","C","N","E","Y",1
+"742",6,"XY","X","DOG-ELE","elephant","2017-05-31-15-33",1693,"Yeah, but there is also something else!","C","Y","I","Y",0
+"743",7,"X","XorY","DOG","dog or elephant","2017-05-31-15-33",1693,"There is a dog","D","0","0","Y",1
+"744",8,"X","Z","DOG","elephant","2017-05-31-15-33",1693,"No! ","J","N","0","N",0
+"745",9,"X","XorY","CAT","cat or dog","2017-05-31-15-33",1693,"there is a cat","D","0","0","Y",1
+"746",10,"X","XandY","DOG","dog and elephant","2017-05-31-15-33",1693,"there is only a dog!","C","0","E","Y",1
+"747",11,"XY","X","DOG-ELE","dog","2017-05-31-15-33",1693,"yeah but there is also something else.","C","Y","I","Y",0
+"748",12,"XY","Z","CAT-DOG","elephant","2017-05-31-15-33",1693,"No! there is a dog and a cat!","D","N","0","N",0
+"749",13,"XY","XorY","DOG-ELE","dog or elephant","2017-05-31-15-33",1693,"there is a dog AND an elephant","C","0","I","Y",1
+"750",14,"XY","XorY","CAT-DOG","cat or dog","2017-05-31-15-33",1693,"there is a cat AND a dog","C","0","I","Y",1
+"751",15,"X","X","ELE","elephant","2017-05-31-15-33",1693,"yeah you're right!","J","Y","0","Y",0
+"752",16,"XY","XandY","DOG-ELE","dog and elephant","2017-05-31-15-33",1693,"Yeah!","J","Y","0","Y",1
+"753",1,"X","X","DOG","dog","2017-06-01-9-41",1373,"yes!","J","Y","0","Y",0
+"754",2,"X","Z","ELE","dog","2017-06-01-9-41",1373,"No! ","J","N","0","N",0
+"755",3,"X","XorY","DOG","dog or elephant","2017-06-01-9-41",1373,"No! it is a dog!","D","N","0","Y",1
+"756",4,"XY","X","DOG-ELE","elephant","2017-06-01-9-41",1373,"Jazzy is NOT right","J","N","0","N",0
+"757",5,"XY","XorY","CAT-DOG","cat or dog","2017-06-01-9-41",1373,"Cat AND a dog!","C","0","I","Y",1
+"758",6,"XY","Z","CAT-ELE","dog","2017-06-01-9-41",1373,"No! A cat and an elephant!","D","N","0","N",0
+"759",7,"X","XorY","ELE","cat or elephant","2017-06-01-9-41",1373,"An elephant","D","0","0","Y",1
+"760",8,"XY","Z","CAT-DOG","elephant","2017-06-01-9-41",1373,"No! A dog AND a cat!","C","N","I","Y",0
+"761",9,"XY","XorY","DOG-ELE","dog or elephant","2017-06-01-9-41",1373,"No! A dog AND an elephant!","C","N","I","Y",1
+"762",10,"X","X","CAT","cat","2017-06-01-9-41",1373,"Yes!","J","Y","0","Y",0
+"763",11,"X","XandY","ELE","dog and elephant","2017-06-01-9-41",1373,"No! Only an elephant","C","N","E","Y",1
+"764",12,"XY","X","DOG-ELE","dog","2017-06-01-9-41",1373,"No! A dog and an elephant!","D","N","0","Y",0
+"765",13,"XY","XandY","CAT-ELE","cat and elephant","2017-06-01-9-41",1373,"Yes!","J","Y","0","Y",1
+"766",14,"X","XandY","CAT","cat and elephant","2017-06-01-9-41",1373,"No! cat!","D","N","0","Y",1
+"767",15,"X","Z","DOG","elephant","2017-06-01-9-41",1373,"No! A dog!","D","N","0","Y",0
+"768",16,"XY","XandY","CAT-DOG","cat and dog","2017-06-01-9-41",1373,"Yes!","J","Y","0","Y",1
+"769",1,"X","X","ELE","elephant","2017-06-01-9-56",1812,"Yes!","J","Y","0","Y",0
+"770",2,"X","Z","DOG","elephant","2017-06-01-9-56",1812,"Dog!","D","0","0","N",0
+"771",3,"X","XandY","ELE","dog and elephant","2017-06-01-9-56",1812,"Just an elephant!","C","0","E","N",1
+"772",4,"X","XorY","CAT","cat or elephant","2017-06-01-9-56",1812,"Cat!","D","0","0","Y",1
+"773",5,"X","XandY","DOG","cat and dog","2017-06-01-9-56",1812,"Dog!","D","0","0","Y",1
+"774",6,"XY","XorY","DOG-ELE","dog or elephant","2017-06-01-9-56",1812,"Both!","C","0","I","Y",1
+"775",7,"XY","XorY","CAT-ELE","cat or elephant","2017-06-01-9-56",1812,"Both!","C","0","I","Y",1
+"776",8,"X","Z","CAT","elephant","2017-06-01-9-56",1812,"Kitty","D","0","0","N",0
+"777",9,"XY","Z","CAT-DOG","elephant","2017-06-01-9-56",1812,"[headshake] cat and dog!","D","N","0","N",0
+"778",10,"X","XorY","ELE","dog or elephant","2017-06-01-9-56",1812,"Elephant","D","0","0","Y",1
+"779",11,"XY","Z","DOG-ELE","cat","2017-06-01-9-56",1812,"[headshake] dog and elephant!","D","N","0","N",0
+"780",12,"XY","X","CAT-ELE","elephant","2017-06-01-9-56",1812,"cat and elephant","D","0","0","Y",0
+"781",13,"XY","XandY","CAT-DOG","cat and dog","2017-06-01-9-56",1812,"[nod]","J","Y","0","Y",1
+"782",14,"XY","X","DOG-ELE","dog","2017-06-01-9-56",1812,"dog and elephant","D","0","0","Y",0
+"783",15,"X","X","DOG","dog","2017-06-01-9-56",1812,"[nod]","J","Y","0","Y",0
+"784",16,"XY","XandY","CAT-ELE","cat and elephant","2017-06-01-9-56",1812,"Yes!","J","Y","0","Y",1
+"785",1,"X","Z","DOG","elephant","2017-06-01-10-18",1291,"not an elehpant. A dog!","D","N","0","N",0
+"786",2,"X","X","DOG","dog","2017-06-01-10-18",1291,"that's a dog","D","0","0","Y",0
+"787",3,"XY","XandY","CAT-ELE","cat and elephant","2017-06-01-10-18",1291,"there is an elephant and a cat. That's true.","D","Y","0","Y",1
+"788",4,"X","XorY","CAT","cat or elephant","2017-06-01-10-18",1291,"that's not an elephant!","J","N","0","N",1
+"789",5,"X","Z","CAT","dog","2017-06-01-10-18",1291,"that's not a dog. It's a cat","D","N","0","N",0
+"790",6,"XY","X","CAT-DOG","cat","2017-06-01-10-18",1291,"there is a cat","J","Y","0","Y",0
+"791",7,"XY","Z","DOG-ELE","cat","2017-06-01-10-18",1291,"there is not a cat","J","N","0","N",0
+"792",8,"X","XorY","ELE","cat or elephant","2017-06-01-10-18",1291,"that's not a cat. He's not right","J","N","0","N",1
+"793",9,"XY","XandY","CAT-DOG","cat and dog","2017-06-01-10-18",1291,"that's a dog and that's a cat","D","0","0","Y",1
+"794",10,"XY","X","DOG-ELE","dog","2017-06-01-10-18",1291,"And an elephant.","C","0","I","Y",0
+"795",11,"X","XandY","DOG","dog and elephant","2017-06-01-10-18",1291,"that's not an elephant!","J","N","0","N",1
+"796",12,"X","XandY","CAT","cat and elephant","2017-06-01-10-18",1291,"that's not an elephant. That's a cat","D","N","0","N",1
+"797",13,"XY","XorY","CAT-ELE","cat or elephant","2017-06-01-10-18",1291,"it's elephant and a cat.","D","0","0","Y",1
+"798",14,"X","X","ELE","elephant","2017-06-01-10-18",1291,"Yeah!","J","Y","0","Y",0
+"799",15,"XY","XorY","CAT-DOG","cat or dog","2017-06-01-10-18",1291,"that's a cat and a dog","D","0","0","Y",1
+"800",16,"XY","Z","CAT-ELE","dog","2017-06-01-10-18",1291,"that's not a dog! Was not right!","J","N","0","N",0

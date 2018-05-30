@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.X,DOG,dog,2017-06-09-9-47,1668,yes,J,Y,0,Y
+2,X.Z,CAT,elephant,2017-06-09-9-47,1668,no É sorry .. No É it's a cat,D,N,0,N
+3,XY.XandY,DOG-ELE,dog and elephant,2017-06-09-9-47,1668,yes,J,Y,0,Y
+4,XY.X,DOG-ELE,dog,2017-06-09-9-47,1668,no É it's the same thing,J,N,0,N
+5,X.XandY,CAT,cat and elephant,2017-06-09-9-47,1668,no just a cat,C,N,E,N
+6,XY.Z,CAT-ELE,dog,2017-06-09-9-47,1668,no É it's a cat and an elephant,D,N,0,N
+7,X.Z,ELE,dog,2017-06-09-9-47,1668,no É it's an elephant,D,N,0,N
+8,XY.XandY,CAT-DOG,cat and dog,2017-06-09-9-47,1668,yes É cat and a dog,D,Y,0,Y
+9,X.X,CAT,cat,2017-06-09-9-47,1668,yes,J,Y,0,Y
+10,X.XandY,DOG,cat and dog,2017-06-09-9-47,1668,no just a dog,C,N,E,N
+11,X.XorY,ELE,dog or elephant,2017-06-09-9-47,1668,just a elephant É [was Jazzy right?] her picked elephant or dog É [was that right?] yeah elephant,C,0,E,Y
+12,X.XorY,DOG,dog or elephant,2017-06-09-9-47,1668,just a dog É it's a dog,C,0,E,NA
+13,XY.X,CAT-ELE,elephant,2017-06-09-9-47,1668,"no, it's a cat and a dog É Jazzy was wrong",D,N,0,N
+14,XY.XorY,CAT-DOG,cat or dog,2017-06-09-9-47,1668,cat AND a dog,C,0,I,Y
+15,XY.XorY,DOG-ELE,dog or elephant,2017-06-09-9-47,1668,dog and a cat É dog and an elephant,D,0,0,Y
+16,XY.Z,DOG-ELE,cat,2017-06-09-9-47,1668,no É it's a dog and an elephant,D,N,0,N

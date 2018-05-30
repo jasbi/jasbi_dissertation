@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,CAT,dog,2017-06-08-14-29,1598,no,J,N,0,N
+2,X.X,ELE,elephant,2017-06-08-14-29,1598,yes,J,Y,0,Y
+3,X.XorY,DOG,dog or elephant,2017-06-08-14-29,1598,a dog,D,0,0,Y
+4,XY.X,CAT-DOG,dog,2017-06-08-14-29,1598,[nod] and what's the next one Jazzy?,C,Y,I,Y
+5,X.XandY,CAT,cat and dog,2017-06-08-14-29,1598,yes she was right,J,Y,0,Y
+6,XY.XorY,DOG-ELE,dog or elephant,2017-06-08-14-29,1598,a dog and an elephant,D,0,0,Y
+7,XY.XandY,DOG-ELE,dog and elephant,2017-06-08-14-29,1598,a dog and an elephant,D,0,0,Y
+8,XY.Z,DOG-ELE,cat,2017-06-08-14-29,1598,no,J,N,0,N
+9,X.Z,DOG,cat,2017-06-08-14-29,1598,no,J,N,0,N
+10,XY.X,DOG-ELE,elephant,2017-06-08-14-29,1598,yeah,J,Y,0,Y
+11,XY.Z,CAT-DOG,elephant,2017-06-08-14-29,1598,No,J,N,0,N
+12,XY.XandY,CAT-DOG,cat and dog,2017-06-08-14-29,1598,Yes,J,Y,0,Y
+13,XY.XorY,CAT-ELE,cat or elephant,2017-06-08-14-29,1598,a cat and an elephant and he is right,J,Y,0,Y
+14,X.XandY,DOG,dog and elephant,2017-06-08-14-29,1598,no É he was just right about the dog,C,N,E,N
+15,X.XorY,ELE,cat or elephant,2017-06-08-14-29,1598,an elephant É Jazzy,D,0,0,Y
+16,X.X,CAT,cat,2017-06-08-14-29,1598,yeah,J,Y,0,Y

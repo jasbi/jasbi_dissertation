@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.X,ELE,elephant,2017-05-31-14-26,1761,Yes!,J,Y,0,Y
+2,X.Z,ELE,dog,2017-05-31-14-26,1761,No! It's elephant!,D,N,0,N
+3,XY.X,CAT-DOG,dog,2017-05-31-14-26,1761,No! CAT and dog!,D,N,0,N
+4,XY.XandY,CAT-ELE,cat and elephant,2017-05-31-14-26,1761,Yes!,J,Y,0,Y
+5,XY.XandY,CAT-DOG,cat and dog,2017-05-31-14-26,1761,Yes!,J,Y,0,Y
+6,X.Z,DOG,cat,2017-05-31-14-26,1761,No! It's a dog!,D,N,0,N
+7,X.XandY,ELE,dog and elephant,2017-05-31-14-26,1761,No! It's only an elephant!,C,N,E,N
+8,X.XandY,CAT,cat and dog,2017-05-31-14-26,1761,No! Only a cat!,C,N,E,N
+9,X.XorY,CAT,cat or elephant,2017-05-31-14-26,1761,No! It's only cat!,C,N,E,N
+10,X.X,DOG,dog,2017-05-31-14-26,1761,Yes!,J,Y,0,Y
+11,X.XorY,ELE,cat or elephant,2017-05-31-14-26,1761,Elephant!,D,0,0,N
+12,XY.X,CAT-DOG,cat,2017-05-31-14-26,1761,No! It's only cat and dog!,C,N,E,N
+13,XY.Z,CAT-DOG,elephant,2017-05-31-14-26,1761,No! It's only cat and dog again!,C,N,E,N
+14,XY.Z,CAT-ELE,dog,2017-05-31-14-26,1761,No! It's only elephant and cat!,C,N,E,N
+15,XY.XorY,CAT-ELE,cat or elephant,2017-05-31-14-26,1761,Yes!,J,Y,0,Y
+16,XY.XorY,DOG-ELE,dog or elephant,2017-05-31-14-26,1761,Yes!,J,Y,0,Y

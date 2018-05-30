@@ -1,0 +1,17 @@
+order,trial_type,card,guess,id,age,response,feedback,judgment,correction,tvjt
+1,X.Z,CAT,dog,2017-06-07-9-16,1755,No. you are wrong!,J,N,0,N
+2,X.X,DOG,dog,2017-06-07-9-16,1755,yes you're right,J,Y,0,Y
+3,X.XorY,CAT,cat or dog,2017-06-07-9-16,1755,it's a cat,D,0,0,Y
+4,XY.X,CAT-ELE,cat,2017-06-07-9-16,1755,cat É cat right there,J,Y,0,Y
+5,X.Z,ELE,dog,2017-06-07-9-16,1755,Jazzy's not right. ,J,N,0,N
+6,XY.X,DOG-ELE,elephant,2017-06-07-9-16,1755,yup. You were right!,J,Y,0,Y
+7,XY.XandY,CAT-ELE,cat and elephant,2017-06-07-9-16,1755,you're right,J,Y,0,Y
+8,X.XorY,DOG,cat or dog,2017-06-07-9-16,1755,dog,D,0,0,Y
+9,X.XandY,DOG,dog and elephant,2017-06-07-9-16,1755,no. you were wrong.,J,N,0,N
+10,XY.XandY,CAT-DOG,cat and dog,2017-06-07-9-16,1755,you are right,J,Y,0,Y
+11,XY.XorY,CAT-DOG,cat or dog,2017-06-07-9-16,1755,a cat and a dog,D,0,0,Y
+12,XY.Z,DOG-ELE,cat,2017-06-07-9-16,1755,no. that's wrong,J,N,0,N
+13,X.X,ELE,elephant,2017-06-07-9-16,1755,yeah. That is right,J,Y,0,Y
+14,X.XandY,ELE,cat and elephant,2017-06-07-9-16,1755,you guessed wrong,J,N,0,N
+15,XY.XorY,CAT-ELE,cat or elephant,2017-06-07-9-16,1755,that is right,J,Y,0,Y
+16,XY.Z,CAT-DOG,elephant,2017-06-07-9-16,1755,no. that is wrong,J,N,0,N
