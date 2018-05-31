@@ -9,11 +9,9 @@ knitr::opts_chunk$set(fig.width=3, fig.height=3,
 
 ## Introduction
 
-In Chapter \@ref(sempragLit), I reviewed the complexities involved in interpreting a disjunction word such as *or* in English. I showed that a disjunction can be interpreted as inclusive, exclusive, and even conjunctive. In adition to these truth-conditional interpretations, a disjunction is sometimes associated with speaker ignorance/indifference as well. Given the wide range of interpretations that *or* can have, how can children learn to interpret it correctly? In Chapter \@ref(devoLit), I presented the results of a previous corpus study that suggested children rarely hear the word *or*; and when they do, they largely hear the exclusive interpretation (75-80\% of the time) [@morris2008logically]. The annotation study of Chapter \@ref(corpus) replicated this finding. In Chapter \@ref(devoLit), I also reported the results of recent comprehension studies that show children between the ages of three and five interpret *or* as inclusive disjunction [@crain2012emergence]. Chapter \@ref(comprehension) confirmed that children between three and can interpret *or* as inclusive in simple existential sentences. The findings of corpus studies and comprehension studies present a learning puzzle. How can children learn to interpret *or* as inclusive if they mostly hear it as exclusive? This chapter provides a solution by developing a cue-based account for children's acquisition of connectives.
+In Chapter \@ref(sempragLit), I reviewed the complexities involved in interpreting a disjunction word such as *or* in English. I showed that a disjunction can be interpreted as inclusive, exclusive, and even conjunctive. In adition to these truth-conditional interpretations, a disjunction is sometimes associated with speaker ignorance/indifference as well. Given the wide range of interpretations that *or* can have, how can children learn to interpret it correctly? In Chapter \@ref(devoLit), I presented the results of @morris2008logically that suggested children rarely hear the word *or*; and when they do, they largely hear the exclusive interpretation (75-80\% of the time). The annotation study of Chapter \@ref(corpus) replicated @morris2008logically's finding. In Chapter \@ref(devoLit), I also reported the results of recent comprehension studies that show children between the ages of three and five interpret *or* as inclusive disjunction [@crain2012emergence]. Chapter \@ref(comprehension) confirmed that children between three and five can interpret *or* as inclusive in simple existential sentences. The finding of the comprehension studies and the corpus studies taken together present a learning puzzle: how can children learn to interpret *or* as inclusive if they mostly hear exclusive examples? This chapter provides a solution by developing a cue-based account for children's acquisition of connectives. More generally, the account proposed in this chapter is helpful for learning words with multiple interpretations when one interpretation dominates the learner's input. 
 
-A similar approach to what I advocate in this chapter has been proposed by @wynn1992children in the domain of number words. In the next section, I briefly review their proposal and report their findings. Section 
-
-Then I extend previous research with the findings on disjunction and present a cue-based account of *and*/*or*. I present the results of three modeling experiments that use the proposed cues to learn the interpretation of a disjunction or a conjunction using random decision forests [@ho1995random]. I end with a discussion of how this account can be generalized to  
+Learning from multiple cues is a common approach in language acquisition [See @monaghan2014multiple for an overview]. In the domain of function word semantics, @wynn1992children proposed a cue-based account for the acquisition of number words. In the next section, I briefly review their proposal and report their findings. The annotation study in Chapter @\ref(corpus) used a methodology similar to that of @wynn1992children and reported several cues that can help children's acquisition of the connectives *and*/*or*. In this section, I use the data in my annotation study to present a cue-based account of connective acquisition. This account provides a straightforward solution to the learning puzzle of disjunction. I support this claim using three modeling experiments that incorporate the proposed cues to learn decision trees that predict the interpretation of a disjunciton/conjunction with high accuracy. I end the chapter with a discussion of the assumptions and limitations of the proposed account.
 
 ## The Cue-based Account for Number Words 
 
@@ -47,11 +45,11 @@ In this account, it is not a single word that gets mapped to an interpretation b
 
 ## Modeling {#modeling}
 
+Introduction to decision trees
 
+In the following subsections, we present three different stages of our modeling. First we used decision trees to predict whether a disjunction is exclusive or not. The second model incorporates both conjunction and disjunction and distinguishes between inclusive, exclusive, and conjunctive interpretations. The third model includes all interpretations in the annotation study as well as all the features the examples were annotated for.
 
-### Methods
-
-### Results
+### Learning Exclusivity
 
 ```{r data_prep, echo=FALSE, warning=FALSE, message=FALSE}
 alex_data <- read.csv("decision_trees/annotation_data/ProvidenceData-alex.csv", nrows=100)
@@ -123,6 +121,18 @@ exclusivity_overall <-
 cds_disjunction_model <- summary(glmer(exclusivity ~ intonation + exclusion + (1|id), family="binomial", data=all_data))
 ```
 
+#### Methods
+
+To understand the acquisition and interpretation of exclusive inferences, we grouped our interpretation annotations into two categories: Exclusive and Inclusive. Exclusive interpretations consisted of the EX category (exclusive) and NAB (the first disjunct is false and the second true/intended). We counted other categories as inclusive (IN). First, similar to Morris (2008), we found that the majority of *or* examples in CDS receive an exclusive interpretation ($\sim$%`r 100 * round(exclusivity_overall$prop[1],2)`). Figure \ref{fig:interpretation} shows this difference in distribution. As shown in Study 2 of Chapter \@ref(corpus), the rate of exclusive interpretations change systematically when we break the data down by intonation and consistency (Figure \ref{fig:interpretationByIntonationAndConsistency}). Given a rise-fall intonation contour, a disjunction is almost always interpreted as exclusive. Similarly, if the propositions are inconsistent, the disjunction is most likely interpreted as exclusive. When either of these two features are absent, a disjunction is more likely to receive an inclusive interpretation.
+
+We fit a mixed-effects binomial logistic regression using the package \{lme4\} [@bates2014lme4] in R with fixed effects of intonation and consistency as well as random intercepts for children. Both intonation and consistency were significant predictors of exclusivity. Disjunctions were more likely to be interpreted as exclusive if they received a rise-fall intonation ($\beta$=`r round(cds_disjunction_model$coefficients[3],2)`, $z$=`r round(cds_disjunction_model$coefficients[11],2)`, $p < 0.001$) or if they were inconsistent ($\beta$=`r round(cds_disjunction_model$coefficients[4],2)`, $z$=`r round(cds_disjunction_model$coefficients[12],2)`, $p < 0.001$). Disjunctions were more likely to be interpreted as inclusive if they were consistent and received a rising ($\beta$=`r round(cds_disjunction_model$coefficients[2],2)`, $z$=`r round(cds_disjunction_model$coefficients[10],2)`, $p < 0.001$) or flat intonation ($\beta$=`r round(cds_disjunction_model$coefficients[1],2)`, $z$=`r round(cds_disjunction_model$coefficients[9],2)`, $p < 0.001$).
+
+The analysis above suggested that intonation and consistency are helpful in discerning exclusive and inclusive (non-exclusive) interpretations of disjunction. To investigate how informative these patterns were more quantitatively, we built a model to predict the interpretation of a disjunction after training on examples annotated for intonation and consistency. To more easily understand the rules governing exclusivity, we fit a decision tree model using Sci-kit Learn's Decision Tree Module [@pedregosa2011scikit]. We randomly sampled 100 examples for training and 300 examples for testing.
+
+* AKSHAY: more explanation on the model assumptions and parameters
+
+#### Results
+
 ```{r interpretation, fig.env='figure',fig.width=1.8, fig.height=1.8, fig.show='hold', fig.pos="b", set.cap.width=T, num.cols.cap=2, fig.align="center",fig.cap = "Proportion of exclusive and inclusive interpretations of disjunction in child-directed speech. Error bars represent bootstrapped 95\\% confidence intervals."}
 ggplot(raw_data, aes(x= EXIN, y=prop, fill=EXIN)) + 
   theme_few(base_size = 10) + 
@@ -134,7 +144,6 @@ ggplot(raw_data, aes(x= EXIN, y=prop, fill=EXIN)) +
   scale_colour_solarized()
 ```
 
-
 ```{r interpretationByIntonationAndConsistency, fig.env='figure',fig.pos='t',fig.width=3.5, fig.height=2.5, fig.align="center",fig.show='hold',set.cap.width=T, num.cols.cap=2, fig.cap = "Exclusive and inclusive interpretations broken down by intonation (flat, rise, rise-fall) and consistency. Error bars represent bootstrapped 95\\% confidence intervals."}
 ggplot(graph_data, aes(x= exclusivity, y=prop, fill=exclusivity)) + 
   geom_col(width=0.7) +
@@ -145,11 +154,7 @@ ggplot(graph_data, aes(x= exclusivity, y=prop, fill=exclusivity)) +
   scale_colour_solarized() + facet_grid(exclusion~intonation) + theme(text = element_text(family = "Times"))
 ```
 
-## Results 
 
-First, similar to Morris (2008), we found that the majority of *or* examples in CDS receive an exclusive interpretation ($\sim$%`r 100 * round(exclusivity_overall$prop[1],2)`). Figure \ref{fig:interpretation} shows this difference in distribution. However, the rate of exclusive interpretations change systematically when we break the data down by intonation and consistency (Figure \ref{fig:interpretationByIntonationAndConsistency}). Given a rise-fall intonation contour, a disjunction is almost always interpreted as exclusive. Similarly, if the propositions are inconsistent, the disjunction is most likely interpreted as exclusive. When either of these two features are absent, a disjunction is more likely to receive an inclusive interpretation.
-
-We fit a mixed-effects binomial logistic regression using the package \{lme4\} [@bates2014lme4] in R with fixed effects of intonation and consistency as well as random intercepts for children. Both intonation and consistency were significant predictors of exclusivity. Disjunctions were more likely to be interpreted as exclusive if they received a rise-fall intonation ($\beta$=`r round(cds_disjunction_model$coefficients[3],2)`, $z$=`r round(cds_disjunction_model$coefficients[11],2)`, $p < 0.001$) or if they were inconsistent ($\beta$=`r round(cds_disjunction_model$coefficients[4],2)`, $z$=`r round(cds_disjunction_model$coefficients[12],2)`, $p < 0.001$). Disjunctions were more likely to be interpreted as inclusive if they were consistent and received a rising ($\beta$=`r round(cds_disjunction_model$coefficients[2],2)`, $z$=`r round(cds_disjunction_model$coefficients[10],2)`, $p < 0.001$) or flat intonation ($\beta$=`r round(cds_disjunction_model$coefficients[1],2)`, $z$=`r round(cds_disjunction_model$coefficients[9],2)`, $p < 0.001$).
 
 ```{r treeDiagram, fig.env = "figure", fig.align='center', fig.width=3, fig.height=2,fig.cap="Optimal decision tree training on 100 datapoints. Provides series of two binary decisions to decide exlcusivity interpretation. Intonation $>$ 1.5 are rise-fall while intonation $<$ 1.5 are flat or rising. Consistency $>$ 0.5 are consistent while consistency $<$ 0.5 are  inconsistent."}
 
@@ -157,18 +162,7 @@ treeDiagram <- png::readPNG('decision_trees/plots/treeDiagram.png')
 grid::grid.raster(treeDiagram)
 ```
 
-###Classification Model 
-The preceding analysis suggests that intonation and consistency are related to the interpretation of disjunction. To investigate how informative these patterns were more quantitatively, we built a model to predict the interpretation of a disjunction after training on examples annotated for intonation and consistency. To more easily understand the rules governing exclusivity, we fit a decision tree model using Sci-kit Learn's Decision Tree Module [@pedregosa2011scikit]. We randomly sampled 100 examples for training and 300 examples for testing. Averaged over 100 trials, the average accuracy of a binary tree was 83%. More remarkably, the tree achieved an average of 80% accuracy after training on only 20 examples (Figure \ref{fig:learningCurve}). The control flow of the average decision tree on a single example is as follows. If *or* has neither rise-fall nor inconsistent disjuncts, it is marked inclusive. Otherwise, exclusive (Figure \ref{fig:treeDiagram}). The success of such a simple decision-tree indicates that children could use a simple model to rapidly learn the exclusive interpretation of *or* from infrequent data. 
-
-To demonstrate a potential methodology for discerning the use of connectives in context, we modeled connective learning using decision trees. Random forests are ensemble models that aggregate many decision trees. A decision tree is a series of binary decisions that classifies data into two or more classes. The order and structure of these decisions can be learned from data. Here, the model randomly samples subsets of the annotated CHILDES corpus as training data and then test on the remaining data. 
-
-The first model uses intonation and consistency of the disjuncts to interpret a disjunction as exclusive or inclusive. 
-
-From 300 annotated examples labeled as either IOR or XOR, we use intonation and consistency to separate the two categories. \newline
-
-If intonation is rise-fall, XOR. \newline
-If inconsistent, XOR. \newline
-Otherwise, IOR \newline
+Averaged over 100 trials, the average accuracy of a binary tree was 83%. More remarkably, the tree achieved an average of 80% accuracy after training on only 20 examples (Figure \ref{fig:learningCurve}). The control flow of the average decision tree on a single example is as follows. If *or* has neither rise-fall nor inconsistent disjuncts, it is marked inclusive. Otherwise, exclusive (Figure \ref{fig:treeDiagram}). The success of such a simple decision-tree indicates that children could use a simple model to rapidly learn the exclusive interpretation of *or* from infrequent data. 
 
 ```{r exorTree, fig.cap="A caption", out.width = '60%'}
 knitr::include_graphics("decision_trees/plots/exin.pdf")
@@ -179,7 +173,14 @@ exorLearning<- png::readPNG("decision_trees/plots/learning_curve1.png")
 grid::grid.raster(exorLearning)
 ```
 
-## Learning Exclusive and Conjunctive Interpretations
+### Learning Exclusive, Inclusive and Conjunctive Interpretations
+
+This section includes the annotation data on *and* as well as *or* and uses decision trees to predict three different interpretations: inclusive, exclusive, and conjunctive. 
+
+#### Methods
+
+#### Results
+
 From 300 annotated examples labeled IOR, XOR, or AND, we use intonation, speech act, consistency, and annotation to separate them. \newline
 
 If Annotation is AND, AND \newline
@@ -198,7 +199,12 @@ exorLearning<- png::readPNG("decision_trees/plots/learning_curve2.png")
 grid::grid.raster(exorLearning)
 ```
 
-## Discerning Everything 
+## Learning All Annotated Interpretations
+
+### Methods
+
+### Results
+
 From 300 annotated examples labeled IOR, XOR, AND, NPQ, XNOR, or NOR, we use intonation, speech act, consistency, utterance type, and annotation to separate them. \newline
 
 If Annotation is AND, AND \newline
@@ -224,46 +230,22 @@ grid::grid.raster(exorLearning)
 
 * Summary
 
+* The solution proposed in this chapter can be more generally applied to learn relatively infrequent interpretations or usages of words. However, the account fails if there are no interpretive cues for the intended interpretation or usage.
+
 * The proposed account allows for both Gricean and ambguity approaches to semantics to have a developmental story. 
 
 It is important to be explicit about the assumptions and the limitations of the account described in this chapter. First the account assumes that the learner limits the hypothesis space to a small set of binary logical connectives. This is no simple task and it is important to investigate what constraints or cues can help it. A viable option is to rely on the peculiar syntactic properties of coordination. The literature on syntactic bootstrapping suggests that children can use syntactic bootstrapping to limit their word meaning hypotheses to the relevant domain. A coordinator such as *and*/*or* conjoins similar syntactic categories: two sentences, two verbs, or two nominals. This is not a common pattern for other functional elements and syntactic theories posit specific rules for coordination. It is possible that the special syntactic status of coordinators can cue their meaning and help the learner distinguish them from other types of function words.
 
 Within binary logical meanings , it is reasonable to assume that not all binary meanings are as likely for mapping.
 
+* ruling out conjunction for the meaning of *or* using consistency of the disjuncts
 
-A major limitation of the model is that it only from about 500 data points. This is substantially fewer number of examples than what children hear until they reach the age of 3. It is reasonable to expect that the model's performance, especially for inclusive and conjunctive interpretations improves with more example data that allows the model to learn the features that correlate systematically with uncommon interpretations. 
-
-
-* next step is ruling out conjunction for the meaning of *or* using consistency of the disjuncts
 Semantic properties of the coordinands can help children distinguish the meaning of *and* and *or*. While *or* appears with both consistent and inconsistent coordinands, *and* only appears with consistent coordinands. Therefore, conjunction is not a viable hypothesis for the meaning of *or*.
 
-
-
-Children can also use the semantics of the words a function word combines with to bias their hypotheses. Example: Syrett et al's slowly but surely. Call this something: semantic bootstraping of semantics. 
-
-You also consider cross-situational learnig to be present in the acqusition of function words.
-
-
-1. Syntactic/compositional Bootstrapping: use syntactic and compositional information to limit the hypothesis space to the relevant set of functional meanings. For binary connectives, this amounts to the space of 16 possible binary meanings.
-
-2. It is reasonable to assume that the learner has different prior expectationas on which functional meanings are the most likely candidate for a function word. For example, the tautology or contradiction connectives are very uniformative and a pragmatic learner can assign them low probability as a connective meaning.
-
-3. The learner can track the co-occurance of funcitonal meanings with the formal properties of the utterance such as intonation and other function words such as negation and modals.
-
-The case of *or* shows that a bottom-up approach to mapping may face serious hurdles. It is likely that as Siskind suggests in a computational implimentation as well as usage based accounts, form-meaning mapping occurs at the utterance and speech act level and candidate semantics for a word is extracted after early mappings to cosntructions are performed.
-
-From the perspective of learning, learners never have direct access to the underlying semantics posited by semanticists. The learner only observes enriched meanings in context. Therefore, the problem of lexical semantic acquisition is the problem of discovering the underlying semantics of a word from the pragmatically enriched interpretations observed in the contexts of learning.
-
+A major limitation of the model is that it only from about 500 data points. This is substantially fewer number of examples than what children hear until they reach the age of 3. It is reasonable to expect that the model's performance, especially for conjunctive and negative (NOR) interpretations improves with more example data that allows the model to learn the features that correlate systematically with uncommon interpretations. 
 
 Explain how much you expect these to generalize to other connective words or more generally function words.
 
-## How do children learn the scope of conjunction and disjunciton with negation?
-
-In the amount of data that we annotated, we found only a few examples of conjunction and disjunction interacting with negation. How can children learn this?
-
-One possibility is Crain's proposal
-
-Another is the possibility that children consider a larger body of evidence than what was annotated in the annotation study.
 
 It is also important to think about the role of attention in learning. Currently models assume that each example has equal siginficance to learning and the learner pays equal attention to them. This does not match the intuitive understanding of learning. We dedicate more resources and attention to tasks we have not yet mastered while skills or knowledge we already possess becomes part of the daily routine and we do not need to assign learning resources to them.
 
