@@ -1,0 +1,108 @@
+\contentsline {chapter}{Abstract}{iv}{chapter*.1}
+\contentsline {chapter}{Dedication}{vi}{chapter*.2}
+\contentsline {chapter}{Acknowledgments}{vii}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Word Learning}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Defining the Scope}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Why Disjunction?}{4}{section.1.3}
+\contentsline {section}{\numberline {1.4}The Puzzle of Learning Disjunction}{5}{section.1.4}
+\contentsline {section}{\numberline {1.5}The Structure of the Dissertation}{6}{section.1.5}
+\contentsline {chapter}{\numberline {2}Interpretations of Disjunction}{10}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{10}{section.2.1}
+\contentsline {section}{\numberline {2.2}Disjunction in Logic}{11}{section.2.2}
+\contentsline {section}{\numberline {2.3}Disjunction in Language}{16}{section.2.3}
+\contentsline {section}{\numberline {2.4}Disjunction in English}{18}{section.2.4}
+\contentsline {section}{\numberline {2.5}Factors Involved in the Interpretation of Disjunction}{23}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Conversational Principles}{23}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Entailment Environment}{27}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Modals}{29}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Disjunct Semantics}{33}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Metalinguistic Communication}{34}{subsection.2.5.5}
+\contentsline {subsubsection}{Definitions}{34}{section*.9}
+\contentsline {subsubsection}{Repairs}{35}{section*.10}
+\contentsline {subsection}{\numberline {2.5.6}Syntactic Units}{37}{subsection.2.5.6}
+\contentsline {subsection}{\numberline {2.5.7}Question Intonation}{37}{subsection.2.5.7}
+\contentsline {subsection}{\numberline {2.5.8}Embedded Imperatives}{39}{subsection.2.5.8}
+\contentsline {subsection}{\numberline {2.5.9}Alternative Unconditionals}{39}{subsection.2.5.9}
+\contentsline {section}{\numberline {2.6}Discussion}{40}{section.2.6}
+\contentsline {chapter}{\numberline {3}Parents' and Children's Production of Disjunction}{43}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{43}{section.3.1}
+\contentsline {section}{\numberline {3.2}Study 1: \emph {and} and \emph {or} in parents' and children's speech}{43}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Methods}{44}{subsection.3.2.1}
+\contentsline {subsubsection}{Exclusion Criteria}{44}{section*.13}
+\contentsline {subsubsection}{Procedure}{45}{section*.14}
+\contentsline {subsection}{\numberline {3.2.2}Properties of the CHILDES Corpora}{46}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Results}{50}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Discussion}{53}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Study 2: Interpretations of \emph {and} and \emph {or} in child-directed speech}{56}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Methods}{56}{subsection.3.3.1}
+\contentsline {subsubsection}{Exclusion Criteria}{57}{section*.25}
+\contentsline {subsubsection}{Procedure}{57}{section*.26}
+\contentsline {subsection}{\numberline {3.3.2}Annotation Categories}{58}{subsection.3.3.2}
+\contentsline {subsubsection}{Connective Interpretation}{58}{section*.27}
+\contentsline {subsubsection}{Intonation Type}{60}{section*.29}
+\contentsline {subsubsection}{Utterance Type}{61}{section*.30}
+\contentsline {subsubsection}{Syntactic Level}{61}{section*.31}
+\contentsline {subsubsection}{Conceptual Consistency}{62}{section*.32}
+\contentsline {subsubsection}{Communicative Functions}{63}{section*.33}
+\contentsline {subsubsection}{Answer Type}{66}{section*.34}
+\contentsline {subsection}{\numberline {3.3.3}Inter-annotator Reliability}{67}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Results}{69}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Discussion}{77}{subsection.3.3.5}
+\contentsline {section}{\numberline {3.4}Conclusion}{79}{section.3.4}
+\contentsline {chapter}{\numberline {4}Cue-based Acquisition of Disjunction}{81}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{81}{section.4.1}
+\contentsline {section}{\numberline {4.2}The Cue-based Account for Number Words}{82}{section.4.2}
+\contentsline {section}{\numberline {4.3}Cues to coordinator meanings}{84}{section.4.3}
+\contentsline {section}{\numberline {4.4}Learning to interpret \emph {and}/\emph {or}: A cue-based account}{85}{section.4.4}
+\contentsline {section}{\numberline {4.5}Modeling Using Decision Tree Learning}{88}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Methods}{89}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Results}{89}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Discussion}{95}{section.4.6}
+\contentsline {chapter}{\numberline {5}Children's Comprehension of Disjunction}{97}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{97}{section.5.1}
+\contentsline {section}{\numberline {5.2}The Development of Logical Reasoning}{99}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Theoretical Landscape}{99}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Empirical Landscape}{100}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}The Usage Based Approach}{106}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Theoertical Landscape}{107}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Empirical Landscape}{108}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}The Gricean Approach and Logical Nativism}{110}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}The Theoretical Landscape}{110}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}The Empirical Landscape}{113}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Conclusion}{120}{section.5.5}
+\contentsline {chapter}{\numberline {6}Adults' and Children's Comprehension of Disjunction}{122}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{122}{section.6.1}
+\contentsline {section}{\numberline {6.2}Study 1: Adult Judgments}{124}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Methods}{124}{subsection.6.2.1}
+\contentsline {subsubsection}{Materials and Design}{124}{section*.59}
+\contentsline {subsubsection}{Participants and Procedure}{125}{section*.62}
+\contentsline {subsection}{\numberline {6.2.2}Results}{127}{subsection.6.2.2}
+\contentsline {subsubsection}{Judgments with Two Alternative (2AFC)}{127}{section*.64}
+\contentsline {subsubsection}{Judgments with Three Alternatives (3AFC)}{128}{section*.66}
+\contentsline {subsection}{\numberline {6.2.3}Discussion}{129}{subsection.6.2.3}
+\contentsline {subsubsection}{The Semantics of AND and OR}{130}{section*.68}
+\contentsline {subsubsection}{The Pragmatics of AND and OR}{130}{section*.69}
+\contentsline {section}{\numberline {6.3}Study 2: Children's three-alternative judgments and open-ended feedback}{134}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Methods}{135}{subsection.6.3.1}
+\contentsline {subsubsection}{Materials and Design}{135}{section*.72}
+\contentsline {subsubsection}{Participants and Procedure}{135}{section*.74}
+\contentsline {subsubsection}{Offline Annotations}{137}{section*.75}
+\contentsline {subsection}{\numberline {6.3.2}Results}{137}{subsection.6.3.2}
+\contentsline {subsubsection}{Analysis and Statistical Modeling}{139}{section*.78}
+\contentsline {subsubsection}{Children's open-ended feedback}{141}{section*.80}
+\contentsline {subsection}{\numberline {6.3.3}Discussion}{143}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Study 3: Children's 2AFC judgments and open-ended feedback}{144}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Methods}{145}{subsection.6.4.1}
+\contentsline {subsubsection}{Materials and Design}{145}{section*.82}
+\contentsline {subsubsection}{Participants and Procedure}{145}{section*.83}
+\contentsline {subsection}{\numberline {6.4.2}Results}{146}{subsection.6.4.2}
+\contentsline {subsubsection}{Two-Alternative Forced Choice Judgments}{147}{section*.84}
+\contentsline {subsubsection}{Open-ended Feedback}{148}{section*.87}
+\contentsline {subsection}{\numberline {6.4.3}Discussion}{153}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}General Discussion}{154}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Preference for True Disjuncts}{155}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Lack of Infelicity with True Disjuncts}{156}{subsection.6.5.2}
+\contentsline {section}{\numberline {6.6}Conclusion}{161}{section.6.6}
+\contentsline {chapter}{\numberline {7}Conclusion}{162}{chapter.7}
+\contentsline {chapter}{References}{168}{chapter*.93}
