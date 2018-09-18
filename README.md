@@ -6,6 +6,8 @@ A Dissertation Submitted To The Department of Linguistics and the Committee on G
 
 **Citation**: Jasbi, Masoud. (2018). Learning Disjunction (Doctoral Dissertation). Stanford University. Retrieved from https://purl.stanford.edu/qz846xz9663.
 
+**[Click here for the PDF of the dissertation.](Jasbi-2018-Learning-Disjunction.pdf)**
+
 **License**: Creative Commons Attribution-Noncommercial 3.0 United States.
 
 **Abstract**:
@@ -28,7 +30,7 @@ There are three main folders in this repository that contain the data and code u
 
 The folder [bib](https://github.com/jasbi/jasbi_dissertation/tree/master/bib) contains the bibTex file that has all the references used in the dissertation. The folder [figs](https://github.com/jasbi/jasbi_dissertation/tree/master/figs) contains the figures in the dissertation.
 
-
+The different .Rmd files contain different chapters and sections of the dissertation such as the abstract or the references. The main file to Knit is the [index.Rmd](https://github.com/jasbi/jasbi_dissertation/blob/master/index.Rmd). When you knit it, it puts together all the other Rmd files together.
 
 ## Reproducibility
 
@@ -48,7 +50,7 @@ To reproduce this project, please follow these steps:
 
 5. Open the main Rmarkdown file "index.Rmd" and press Knit. 
 
-When the Rmd file renders with no error, you will see a folder created as "_book/". Inside the folder you will find the dissertation pdf file as "thesis.pdf". If you see any errors/problems while reproducing our work or if you have any questions please do not hesitate to contact me. My email is available on my website: [masoudjasbi.com](masoudjasbi.com)
+When the Rmd file renders with no error, you will see a folder created as "_book/". Inside the folder you will find the dissertation pdf file as "thesis.pdf". If you see any errors/problems while reproducing this work or if you have any questions please do not hesitate to contact me. My email is available on my website: [masoudjasbi.com](masoudjasbi.com)
 
 ## Session Info
 
