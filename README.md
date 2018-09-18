@@ -36,8 +36,8 @@ When the Rmd file renders with no error, you will see a folder created as "_book
 
 ## Session Info
 
-|-------|-----------------|
 |setting|value|
+|-------|-----------------|
 |version| R version 3.4.3 (2017-11-30)|
 |os | macOS Sierra 10.12.6|
 |system|x86_64, darwin15.6.0|
