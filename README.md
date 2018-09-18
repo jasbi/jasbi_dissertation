@@ -8,29 +8,29 @@ Citation: Jasbi, Masoud. (2018). Learning Disjunction (Doctoral Dissertation). S
 
 License: Creative Commons Attribution-Noncommercial 3.0 United States.
 
-## Introduction
-
-I wrote my dissertation using RStudio and `knitr`. Each chapter is in a separate Rmarkdown file (`01-chap1.Rmd` is Chapter 1, `02-chap2.Rmd` is Chapter 2, etc.). The `index.Rmd` file 
-
 ## Structure of the Repository
+
+This repository has the following folders:
+
+
 
 ## Reproducibility
 
 To reproduce this project, please follow these steps:
 
-1. Make sure you have [the R programming language](https://www.r-project.org/) and [R Studio](https://www.rstudio.com/) installed. This project used R Version 3.4.3 and R Studio Version 1.1.423.
+1. Make sure you have [the R programming language](https://www.r-project.org/) and [R Studio](https://www.rstudio.com/) installed. You can find the versions I used in the "Session Info" section below.
 
-2. Also have the R packages `rmarkdown` (1.10), `bookdown` (0.7), and `thesisdown` (0.0.2) installed.
+2. Make sure the R packages listed in the "R packages" section below are installed.
 
-3. Install the `childesr` package. [The github repo and instructions are here.](https://github.com/langcog/childesr)
+    * Also have the R packages `rmarkdown` (1.10), `bookdown` (0.7), and `thesisdown` (0.0.2) installed.
 
-4. Make sure the R packages listed in the "R packages" section below are installed.
+    * Install the `childesr` package using [the github repo and instructions here.](https://github.com/langcog/childesr)
 
-5. Make sure you have an updated verison of LaTeX. You can install TeX by visiting the [LaTeX Project website](https://www.latex-project.org/get/).
+3. Make sure you have an updated verison of LaTeX. You can install TeX by visiting the [LaTeX Project website](https://www.latex-project.org/get/).
 
-6. Clone/download the repo here by clicking on the green button "Clone or download" on the right top of this page.
+4. Clone/download the repo here by clicking on the green button "Clone or download" on the right top of this page.
 
-7. On your computer, open the main Rmarkdown file (index.Rmd) and press Knit. 
+5. Open the main Rmarkdown file "index.Rmd" and press Knit. 
 
 When the Rmd file renders with no error, you will see a folder created as "_book/". Inside the folder you will find the dissertation pdf file as "thesis.pdf". If you see any errors/problems while reproducing our work or if you have any questions please do not hesitate to contact me. My email is available on my website: [masoudjasbi.com](masoudjasbi.com)
 
