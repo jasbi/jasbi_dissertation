@@ -1,12 +1,22 @@
 # Learning Disjunction
 
-Author: Masoud Jasbi
+**Author: Masoud Jasbi**
 
 A Dissertation Submitted To The Department of Linguistics and the Committee on Graduate Studies of Stanford University.
 
-Citation: Jasbi, Masoud. (2018). Learning Disjunction (Doctoral Dissertation). Stanford University. Retrieved from https://purl.stanford.edu/qz846xz9663.
+**Citation**: Jasbi, Masoud. (2018). Learning Disjunction (Doctoral Dissertation). Stanford University. Retrieved from https://purl.stanford.edu/qz846xz9663.
 
-License: Creative Commons Attribution-Noncommercial 3.0 United States.
+**License**: Creative Commons Attribution-Noncommercial 3.0 United States.
+
+**Abstract**:
+
+To understand language, we rely on mental representations of what words mean. What constitutes these representations and how are they learned? To address this question, I investigate how children learn and interpret the disjunction word *or*. The highly abstract and context-dependent interpretation of *or* challenges word learning theories and provides an exceptional opportunity to better understand how words are associated with their meanings. 
+
+*Or* has several interpretations, including exclusive and inclusive disjunction. Inclusive disjunction holds when A is true, B is true, or both. For example, a waiter may ask if you would like something to eat or drink, not excluding the possibility that you would like both. Exclusive disjunction is true when only A is true, or only B is true, but not both. If the waiter later asks whether you would like to see the dessert menu or have the check, his or is most likely interpreted as exclusive. He is suggesting that you should choose one or the other. Given these complexities in the interpretation of *or*, how do children interpret it and how do they learn its interpretations?
+
+I present the results of an experimental study which shows that children between the ages of three and five can interpret or as inclusive disjunction in positive declarative sentences, confirming previous findings. I also present the results of a study on parents' speech to children that shows that the exclusive interpretation is much more common in the examples children hear, again supporting previous results. These two findings fall into a current puzzle in the literature: How can children learn the inclusive interpretation of *or* if they rarely hear it? 
+
+I argue that this puzzle arises in models of word learning which directly map words to their meanings, thereby ignoring accompanying linguistic and conceptual cues. I present an in-depth annotation study demonstrating that exclusive interpretations correlate with interpretive cues in children's input, such as intonation and the meaning of other words *or* combines with. Applying supervised learning techniques to the annotated data, I find that a learner who makes use of these interpretive cues can learn the inclusive as well as exclusive interpretation of disjunction from the language heard. These findings indicate that the representation of a word like *or* cannot be isolated from the linguistic and conceptual environment in which it appears. The linguistic and conceptual aspects of *or*'s environment can act as cues that aid its acquisition and interpretation. Together, these studies show that learning a function word requires richer lexical representations than currently assumed by our theories of word learning.
 
 ## Structure of the Repository
 
