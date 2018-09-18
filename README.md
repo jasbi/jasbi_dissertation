@@ -10,7 +10,13 @@ License: Creative Commons Attribution-Noncommercial 3.0 United States.
 
 ## Structure of the Repository
 
-This repository has the following folders:
+There are three main folders in this repository that contain the data and code used in three chapters:
+
+* [connective_comprehension](https://github.com/jasbi/jasbi_dissertation/tree/master/connective_comprehension): Chapter 5, the experimental studies on children's comprehension of *or*.
+* [connective_learning](https://github.com/jasbi/jasbi_dissertation/tree/master/connective_learning): Chapter 2, the corpus study on *and*/*or* in child-directed speech.
+* [connective_modeling](https://github.com/jasbi/jasbi_dissertation/tree/master/connective_modeling): Chapter 3, the code and figures for the random forests trained on the annotation data.
+
+The folder [bib](https://github.com/jasbi/jasbi_dissertation/tree/master/bib) contains the bibTex file that has all the references used in the dissertation. The folder [figs](https://github.com/jasbi/jasbi_dissertation/tree/master/figs) contains the figures in the dissertation.
 
 
 
