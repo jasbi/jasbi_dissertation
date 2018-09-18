@@ -48,8 +48,9 @@ When the Rmd file renders with no error, you will see a folder created as "_book
 |date|2018-09-18|
 
 ## R Packages
-|------------|-----------|-----------|
+
 |Package|Version|Date|Source|
+|------------|-----------|-----------|
 |abind|1.4-5|2016-07-21|CRAN (R 3.4.0)|
 |assertthat|0.2.0|2017-04-11|
 |backports|1.1.2|2017-12-13|
