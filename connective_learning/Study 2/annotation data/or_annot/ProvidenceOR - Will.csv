@@ -1,0 +1,316 @@
+id,address,speaker,age,DoB,DoR,Context,New Context,turn-2,turn-1,utterance,turn+1,turn+2,propositions,speech_act,Communicative Function,disjunct,exclusion,utterance_type,answer,intonation,syncat,syn_level,connective,exclusivity,COMMENTS
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil01.cha"": line 1949",MOT,1;4.12,02/08/2001,06/20/2002,Reading Book,Reading Book,MOT: two is right for a quiet talk,MOT: three is nice for having tea .,"or for counting , one , two , three .","MOT: and when you want to go explore , the number you should have is four .",MOT: one two three four .,,DefEx,Providing examples,COM,ELS,Declarative,NA,0,PP,NOM,AND,IN,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil02.cha"": line 2248",MOT,1;4.27,02/08/2001,07/03/2002,Mom suspecting the child is hungry and trying to figure out what he may want,Eating,CHI: <cheese [?]>,MOT: cheese?,"would you like a piece of a banana cupcake , or a muffin ?",MOT: wouldja [: would you] like some banana muffin ?,MOT: or cheese?,,Repair,Uncertainty/Indifference,COM,ELS,Interrogative,0,1,DP,NOM,IOR,IN,"cupcake and muffin are used synonymously here since she says later ""banana muffin"""
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil02.cha"": line 2255",MOT,1;4.27,02/08/2001,07/03/2002,Mom suspecting the child is hungry and trying to figure out what he may want,Eating,"would you like a piece of a banana cupcake , or a muffin ?",would you like some banana muffin?,or cheese ?,MOT: how (a)bout some watermelon or some cantaloupe ,MOT: cheese ?,,Preference,Preference option,COM,ELS,Interrogative,0,1,N,NOM,IOR,IN,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil02.cha"": line 2260",MOT,1;4.27,02/08/2001,07/03/2002,Mom suspecting the child is hungry and trying to figure out what he may want,Eating,would you like some banana muffin ?,or cheese ?,how (a)bout some watermelon or some cantaloupe?,MOT: cheese ?,MOT: can I have your nose ?,,Preference,Preference option,COM,ELS,Interrogative,0,0,DP,NOM,IOR,IN,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil02.cha"": line 2519",MOT,1;4.27,02/08/2001,07/03/2002,Mom suspecting the child is hungry and trying to figure out what he may want,Eating,"MOT: he:y , hey hey hey gentle .",MOT: nice .,do you want some juice or some water ?,MOT: you want some cheese ?,MOT: here. here's some water.,,Preference,Preference option,COM,ELS,Interrogative,0,1,DP,NOM,IOR,IN,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil02.cha"": line 2732",MOT,1;4.27,02/08/2001,07/03/2002,The child spilled the juice and the mother trying to explain where she can try pouring it herself.,Eating,"MOT: I'm glad that you were able to do that yourself , but you know what , Mommy doesn't want you spilling the juice all over the place like that .","MOT: okay , not in here .",when we're outside or in the kitchen then you can do that .,MOT: you want some juice ?,MOT: ok. here.,,Options,Listing options,EXC,EXC,Declarative,NA,0,PP,NOM,AND,IN,when
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil03.cha"": line 51",MOT,1;6.5,02/08/2001,08/13/2002,The child is flipping through the pages. Mom wants to read the book to her.,Reading Book,MOT: the night Max wore his wolf suit and made mischief one of a // of one kind +...,MOT: and grew .,would you like me to read it to you or do you wanna just flip through the pages ?,"MOT: okay , you can flip through the pages .",MOT: here.,,Preference,Preference choice,EXC,EXC,Interrogative,0,2,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil03.cha"": line 713",MOT,1;6.5,02/08/2001,08/13/2002,Choosing Book,Choosing Book,"MOT: This one is fun, William. We can sing it.",MOT: how (a)bout five little ducks ?,"or the rainbow fish, I know you like that one .",MOT: excuse me.,MOT: how (a)bout five little ducks?,,Preference,Suggesting an alternative,EXC,EXC,Interrogative,NA,0,DP,NOM,IOR,IN,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil03.cha"": line 1753",MOT,1;6.5,02/08/2001,08/13/2002,playing with a ball. The child throws it far away.,Playing,"MOT: ball , that's right .","MOT: oh , you gonna get the ball ?",or should Mommy get the ball ?,"MOT: oh here , let's push the car back an(d) forth .","MOT: red and yellow , green and blue .",,Preference,Preference choice,EXC,EXC,Interrogative,0,2,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil03.cha"": line 2663",MOT,1;6.5,02/08/2001,08/13/2002,the child is playing with a phone,Playing,MOT: xxx wanna do tick tock ?,MOT: you wanna do it on the phone ?,or can we just do it me an(d) you ?,CHI: No,MOT: no?,,Preference,Preference choice,EXC,EXC,Interrogative,YN,2,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil04.cha"": line 3410",MOT,1;6.19,02/08/2001,08/27/2002,the child is standing on a wagon.,Playing,MOT: this wagon is not meant for you to ride in it .,"MOT: you're supposed to put toys in there , an(d) pull the toys .",or maybe books,MOT: but not William,MOT: It's too small ...,,Options,Listing options,COM,ELS,Declarative,NA,0,NP,NOM,IOR,IN,supposed to
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil04.cha"": line 3483",MOT,1;6.19,02/08/2001,08/27/2002,a doll is on the wagon. Mom is showing what the child can do with the wagon,Playing,MOT: you can pull your dolly around,MOT: you wanna pull your dolly?,could push or pull your dolly if you'd like .,MOT: yeah .,"MOT: oh , there you go!",,Options,Listing options,EXC,EXC,Declarative,NA,0,V,SEN,AND,IN,could
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil06.cha"": line 1934",MOT,1;7.18,02/08/2001,09/26/2002,the child wants to go out but the mom explains that he has a cold and can't go out,Playing,MOT: that's right .,"MOT: and when it's raining we don't go out , well , I mean if we're dressed appropriately and we don't have a cold sometime we can go out and play (.) in the rain .","but you have a cold or you're getting over one , right ?",CHI: <cold [?]>,"MOT: yes , that's right .",,Repair,Uncertainty/Indifference,COM,ELS,Interrogative,NA,0,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil06.cha"": line 2059",MOT,1;7.18,02/08/2001,09/26/2002,the child is playing with the blocks and throwing them on the floor.,Playing,CHI: one two .,"MOT: how (a)bout , hmm .",would you like to sing a song or would you like to play with the blocks ?,CHI: no .,MOT: what's that ?,,Preference,Preference choice,COM,ELS,Interrogative,YN,2,VP,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil07.cha"": line 1629",MOT,1;8.2,02/08/2001,10/10/2002,there is a rocking horse the child is trying to get on.,Playing,"MOT: maybe , maybe hold on to the handle with one hand +..",MOT: while you're trying to get on .,or both,MOT: do you think that would help ?,MOT: no.,,Directive,Listing options,ENT,ELS,Declarative,NA,0,DP,NOM,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil08.cha"": line 1646",MOT,1;8.14,02/08/2001,10/22/2002,the child is eating somethign and spitting it out everywhere,Eating,MOT: I don't want you spitting it out . ok?,MOT: on the floor .,or anywhere else. for that matter.,MOT: okay ?,MOT: thank you .,,Options,Uncertainty/Indifference,EXC,EXC,Declarative,NA,0,DP,NOM,NOR,IN,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil08.cha"": line 1905",MOT,1;8.14,02/08/2001,10/22/2002,Reading Book,Reading Book,MOT: I do not like them Sam I am .,MOT: I do not like green eggs and ham .,would you like them here or there ?,MOT: I would not like them here or there .,MOT: I would not like them anywhere .,,Preference,Preference option,EXC,EXC,Interrogative,0,1,ADV,NOM,IOR,IN,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil08.cha"": line 1908",MOT,1;8.14,02/08/2001,10/22/2002,Reading Book,Reading Book,MOT: I do not like green eggs and ham .,MOT: would you like them here or there ?,I would not like them here or there .,MOT: I do not like green eggs and ham .,MOT: I do not like them Sam I am .,,Preference,Preference option,EXC,EXC,Declarative,NA,0,ADV,NOM,NOR,IN,"This sentence gets repeated as part of the story for 6 more times under different modal verbs like ""do"" and ""will"" and ""would"""
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil09.cha"": line 3081",MOT,1;8.29,02/08/2001,11/05/2002,Serving the child cereal,Eating,MOT: sit for a few minutes .,MOT: so it gets soft (.) for you .,"or not , maybe you like it crunchy .","MOT: I don't know , this is a new experience for you .",MOT: you okay ?,,Options,Uncertainty/Indifference,CON,EXC,Declarative,NA,0,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil10.cha"": line 725",MOT,1;9.12,02/08/2001,11/20/2002,the child gets off the chair and runs around,Playing,MOT: would we like +,MOT: to play Pattycake with Mommy ?,are you gonna follow Manuela or are you gonna stay there ?,"OPE: oh , you're comin(g) this way ?",MOT: he wants to be wherever you are .,,Description,Query choice,EXC,EXC,Interrogative,0,2,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil10.cha"": line 3885",MOT,1;9.12,02/08/2001,11/20/2002,The chlid holding a book sitting on his mom's lap,Choosing Book,"MOT: that's right , are you +...",CHI: yyy .,would you like me to read it or are you going to read it to Mommy ?,MOT: okay .,MOT: oh you want me to read it ?,,Preference,Preference choice,EXC,EXC,Interrogative,0,2,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil11.cha"": line 2849",MOT,1;9.27,02/08/2001,12/03/2002,The child wearing glasses on his neck,Playing,"MOT: I'll get you your glasses , those are not yours , they're not Mommy's either .",CHI: yyy .,do they go around your neck or do the glasses go on your eyes ?,MOT: yeah .,CHI: yyy.,,Repair,Correction,EXC,EXC,Interrogative,0,2,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil12.cha"": line 540",MOT,1;10.12,02/08/2001,12/20/2002,"The child is sitting on a chair. Mom next to him and he says something like ""hold you"". The mom is trying to figure out what that means really",Choosing Activity,"MOT: I don't think you're strong enough , what do you mean ... do you wanna",MOT: you mean you wanna hug me ?,or you wanna hold me ?,MOT: or do you want me to hold you ?,CHI: yyy ‹hold [?]› yyy .,,Clarification,Clarification,COM,ELS,Interrogative,0,2,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil12.cha"": line 542",MOT,1;10.12,02/08/2001,12/20/2002,"The child is sitting on a chair. Mom next to him and he says something like ""hold you"". The mom is trying to figure out what that means really",Choosing Activity,MOT: you mean you wanna hug me ?,MOT: or you wanna hold me ?,or do you want ME to hold YOU?,CHI: yyy ‹hold [?]› yyy .,MOT: you want me to hold William ?,,Clarification,Clarification,EXC,EXC,Interrogative,0,2,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil12.cha"": line 2651",MOT,1;10.12,02/08/2001,12/20/2002,Reading Book,Reading Book,CHI: yyy ugly .,"MOT: yeah , that's a matter of opinion , William .",they might be stripy or polka dot .,"MOT: but we can all pajamee@wp in whatever we got , it's pajama time.",CHI: stars stars,,Description,Listing options,COM,ELS,Declarative,NA,0,ADJ,NOM,AND,IN,"Under modal ""might"""
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil13.cha"": line 1891",MOT,1;11.0,02/08/2001,01/08/2003,Child playing with an alphabet puzzle,Playing,MOT: my blankie.,MOT: would you like to play with your train ?,or you wanna work with that puzzle .,CHI: puzzle!,"MOT: puzzle , okay !",,Preference,Preference choice,EXC,EXC,Interrogative,AB,2,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil14.cha"": line 1071",MOT,1;11.15,02/08/2001,01/23/2003,Child playing with an alphabet puzzle,Playing,MOT: that's a u,MOT: unicorn,"or &uh , umbrella",CHI: W!,MOT: where is the W?,,Options,Providing examples,COM,ELS,Declarative,NA,0,N,NOM,IOR,IN,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil14.cha"": line 2308",MOT,1;11.15,02/08/2001,01/23/2003,Mom went away to check and see if the door is open.,Getting door,MOT: (be)cause it's awfully cold ,CHI: mama ?,I'm comin. I just think the door's open or somethin,MOT: it's not .,MOT: and my husband put the the heat up to seventy two.,,Description,Uncertainty/Indifference,HEG,ELS,Declarative,NA,0,ADJ,NOM,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil14.cha"": line 2469",MOT,1;11.15,02/08/2001,01/23/2003,Mother and child buildign a toy car track,Playing,"MOT: here , let me put it right here for you , okay ?",MOT: this might work .,"or it might not , I don't know ","MOT: oh , hold on .","MOT: I'll add another little piece , which we: should ha:ve , righ",,Options,Uncertainty/Indifference,EXC,EXC,Declarative,NA,0,VP,SEN,XOR,EX,"Over ""might"" and ""not"""
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil15.cha"": line 3130",MOT,2;0.12,02/08/2001,02/20/2003,Mom trying to see what song and dance the child wants to do,Playing,MOT: you wanna do,MOT: ring around the rosy ?,or loo loo?,"MOT: loo , loo , skip to my loo .",MOT: xxx loo loo .,,Preference,Preference choice,EXC,EXC,Interrogative,0,2,N,NOM,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil16.cha"": line 617",MOT,2;0.28,02/08/2001,03/04/2003,Mom and child playing. Mom looking for the toy tractor.,Playing,MOT: should we get your tractor from upstairs ?,CHI: yeah .,"do you want Mommy to go upstairs an(d) get it , or do you wanna go upstairs an(d) get it ?",MOT: tell me .,"MOT: okay , do you wanna try the backpack ?",,Preference,Preference choice,COM,ELS,Interrogative,0,2,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil16.cha"": line 734",MOT,2;0.28,02/08/2001,03/04/2003,Free play. The child is running away,Playing,MOT: are you going to school?,"CHI: go, go.",would you like some banana or some apple ?,MOT: xxx.,CHI: xxx,,Preference,Preference option,COM,ELS,Interrogative,NA,1,DP,NOM,IOR,IN,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil16.cha"": line 1209",MOT,2;0.28,02/08/2001,03/04/2003,Breakfast table. The child is eating bagels. He sneezes.,Eating,MOT: god bless you.,MOT: William would you like me to toast some of that bagel for you ?,or you like it ... you just want it like that .,MOT: would you like some apple?,CHI: Mommy's gonna have some bagel too .,,Preference,Preference choice,EXC,EXC,Interrogative,NA,2,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil16.cha"": line 2500",MOT,2;0.28,02/08/2001,03/04/2003,Breakfast table,Eating,CHI: yeah .,MOT: would you like some more juice ?,or some more bagel ?,CHI: no,CHI: all done. down.,,Preference,Preference option,COM,ELS,Interrogative,YN,1,DP,NOM,IOR,IN,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil18.cha"": line 176",MOT,2;1.27,02/08/2001,04/03/2003,Opening a present,Opening Box,"MOT: wait a minute , William , honey , I need to",MOT: you need to either ... either,need to let me take the tape off or I have_to get scissors an(d) cut it,CHI: yyy .,MOT: oh! is it a chair?,,Conditional,Listing options,EXC,EXC,Declarative,NA,0,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil18.cha"": line 656",MOT,2;1.27,02/08/2001,04/03/2003,Opening a present,Opening Box,MOT: would you like to take that off ?,CHI: yeah.,would you like to try to do it or would you like me to help?,MOT: go ahead!,MOT: oh good job!,,Preference,Preference choice,EXC,EXC,Interrogative,0,0,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil18.cha"": line 2595",MOT,2;1.27,02/08/2001,04/03/2003,Playing with toys (legos maybe) the child puts one in his mouth.,Playing,MOT: out of the container an(d) put it in there .,MOT: go ahead .,"hey , put that out of your mouth William , or I'm gonna put it ... I'm gonna put it away .","MOT: if you keep putting it in your mouth , okay ?",MOT: wanna color ?,,Conditional,Undesirable consequence,COM,ELS,Imperative-Declarative,NA,0,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil18.cha"": line 3719",MOT,2;1.27,02/08/2001,04/03/2003,Practicing writing the alphabet,Writing,CHI: O!,"MOT: no , this one right here .",or it can go like this .,MOT: xxx that letter ?,yyy O!,,Description,Listing options,COM,ELS,Declarative,NA,0,S,SEN,AND,IN,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil18.cha"": line 4141",MOT,2;1.27,02/08/2001,04/03/2003,"Practicing writing the alphabet. The child asks the mom to write some letter but it's hard to know if it's Z, C, or D given his pronunciation",Writing,CHI: make a Z.,MOT: right here. a Z?,or a C?,CHI: xxx. C!,MOT: C as in cat?,,Clarification,Clarification,EXC,EXC,Interrogative,AB,2,DP,NOM,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil19.cha"": line 2659",MOT,2;2.9,02/08/2001,04/17/2003,Chil running around. Mom trying to start an activity with him ,Playing,"MOT: yes , you'd like to color ?",CHI: yeah !,or you wanna sit at the table and color ?,CHI: xxx.,MOT: you'll have_to sit at the table if you wanna color .,,Repair,Repair,ENT,ELS,Interrogative,NA,1,S,SEN,IOR,IN,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil19.cha"": line 2713",MOT,2;2.9,02/08/2001,04/17/2003,The child is coloring ,Coloring,"MOT: it's a good job , William , you're doing a very good job .","MOT: and I'll get your crayons , and","do you wanna color on the big paper , or do you wanna color in the coloring book ?","CHI: ‹yyy ,› yes .",MOT: yes ?,,Preference,Preference choice,EXC,EXC,Interrogative,YN,2,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil20.cha"": line 719",MOT,2;2.21,02/08/2001,04/29/2003,The child seems cranky and whiny,Eating,"MOT: alright , well listen , you let me know , when there's something I can do for you .","MOT: I xxx you , you xxx me xxx again .",want something to drink or eat ?,CHI: No,MOT: ok what would you like?,,Preference,Preference option,COM,ELS,Interrogative,YN,1,V,SEN,IOR,IN,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil20.cha"": line 2201",MOT,2;2.21,02/08/2001,04/29/2003,The child is coloring. He colors the bottom of a bowl that his mom had set aside for his yogurt with a blue crayon. ,Coloring,CHI: why .,"MOT: honey , we don't want to color in this we're gonna",did you wanna have yogurt or did you wanna want to color ?,CHI: yogurt.,MOT: okay.,,Preference,Preference choice,COM,ELS,Interrogative,AB,2,S,SEN,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil20.cha"": line 2716",MOT,2;2.21,02/08/2001,04/29/2003,Practicing the alphabet,Writing,MOT: would you like mommy to make a C and so you could practice?,CHI: yeah xxx.,you wanna make a D or a C?,CHI: C!,MOT: a C?,,Clarification,Clarification,COM,ELS,Interrogative,AB,2,DP,NOM,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil20.cha"": line 2841",MOT,2;2.21,02/08/2001,04/29/2003,Practicing the alphabet and writing it with colored crayons.,Writing,MOT: you wanna make a D?,CHI: xxx.,"okay. red , or the blue ?",CHI: blue!,MOT: you wanna make T with the blue ?,,Preference,Preference choice,COM,ELS,Interrogative,AB,2,DP,NOM,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil20.cha"": line 2932",MOT,2;2.21,02/08/2001,04/29/2003,Practicing the alphabet. The child writing down letters with crayons. ,Writing,MOT: xxx .,CHI: ‹j@l [?]›,you wanna make a big J or a little J?,CHI: little J!,MOT: little J?,,Preference,Preference choice,COM,ELS,Interrogative,AB,2,DP,NOM,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil20.cha"": line 2932",MOT,2;2.21,02/08/2001,04/29/2003,Practicing the alphabet. The child writing down letters with crayons. ,Writing,CHI: little J.,MOT: a little J?,a little J or a big J?,CHI: J,"MOT: okay , I'll do a big j@l and a little j@l , here's a big j@l , here's a big j@l and here's a little j@l . ",,Clarification,Clarification,COM,ELS,Interrogative,0,2,DP,NOM,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil21.cha"": line 2174",MOT,2;3.7,02/08/2001,05/15/2003,The child is on the swing and suddenly asks about school.,Playing,MOT: cool?,CHI: school ... yes school. school.,cool or school ?,CHI: school .,MOT: school ?,,Clarification,Clarification,EXC,EXC,Interrogative,AB,2,N-ADJ,NOM,XOR,EX,
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil21.cha"": line 3267",MOT,2;3.7,02/08/2001,05/15/2003,The child swining by himself and the mother is further away. He tries to stand on the swing.,Playing,CHI: mom.,MOT: I'm making faces .,"no , stay in the seat , or you're gonna get out .","MOT: okay , you wanna get out ?",CHI: no (MOT: then stay seated!),,Conditional,Undesirable consequence,COM,ELS,Imperative-Declarative,NA,0,S,SEN,XOR,EX,A great example of explaining what the consequence or means.
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil21.cha"": line 3286",MOT,2;3.7,02/08/2001,05/15/2003,The child swining by himself and the mother is further away. He tries to stand on the swing.,Playing,MOT: then stay seated. don't do that .,MOT: that's not safe .,"you have_to stay in your seat , or I'm gonna take you out of the swing okay ?",CHI: Mommy don't ‹sit [?]›,"MOT: I'm not sitting , William .",,Conditional,Undesirable consequence,COM,ELS,Declarative,NA,0,S,SEN,XOR,EX,Continued the same structure after explaining what it means.
+providence_william,"CHILDES/Eng-NA-MOR/Providence/William/wil22.cha"": line 2107",MOT,2;3.19,02/08/2001,05/27/2003,Mom and the child building a grain track together.,Playing,MOT: I didn't even want this here .,"MOT: I think I might , take it off .","now would you like to build a fancy , train track or do you wanna just have a simple , circle ? ",MOT: what would ya [: you] like to do ?,MOT: dya [: do you] wanna have eight ? wanna figure eight? (CHI: eights yes!),,Preference,Preference choice,EXC,EXC,Interrogative,0,2,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil23.cha,MOT,2;4.3,02/08/2001,06/11/2003,Setting up the camera for the research,Setting Camera,CHI: want rest ?,MOT: yeah .,"you know what William you either have_to be on that microphone, or we have_to stay close to the camera .","MOT: what would you , what would you like to do ?",CHI: xxx.,,Options,Listing options,COM,ELS,Declarative,NA,0,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil23.cha,MOT,2;4.3,02/08/2001,06/11/2003,The child is swinging a broom trying to hit a ball on the grass.,Playing,"CHI: gonna ‹sweep ,› gonna sweep yyy sweep .",CHI: yyy .,"is that sweeping, (1)or is that swinging like the bat ?",CHI: swing like bat.,MOT: xxx .,,Repair,Correction,COM,ELS,Interrogative,AB,2,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil23.cha,MOT,2;4.3,02/08/2001,06/11/2003,Playing hide and seek.,Playing,"MOT: come on , you go hide in the other room. go on .","MOT: three , four , five , six , seven , eight , nine , ten .","ready or not , here I come !",MOT: where could he be ?,MOT: he's not on the stairs .,,Unconditional,Unconditional,CON,EXC,Declarative,NA,0,ADJ,NOM,AND,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil23.cha,MOT,2;4.3,02/08/2001,06/11/2003,Playing hide and seek.,Playing,MOT: okay . who ... ?,CHI: wanna hiding ?,ya [: you] want mommy to hide or William to hide ?,CHI: hide .,"MOT: who , mommy or William ? // Mommy.",,Preference,Preference choice,COM,ELS,Interrogative,AB,2,N,NOM,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil23.cha,MOT,2;4.3,02/08/2001,06/11/2003,Child misbehaving,Playing,CHI: no !,"MOT: hey , hey hey hey hey .","William , ya [: you] know what , you need to start being nice or we're not gonna go play with Theo , and Liam .","MOT: you're not gonna play with them , you're gonna [: going to] stay home .",CHI: wanna play 0with Liam ?,,Conditional,Undesirable consequence,COM,ELS,Declarative,NA,0,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil24.cha,MOT,2;4.16,02/08/2001,06/24/2003,"Going to ride a bike, Child trying to take the backpack off",Choosing Activity,MOT: I think that's a good idea .,CHI: I'll do it .,"no , you gotta keep that on , or we're not gonna [: going to] ride the bike .","CHI: don't wanna ‹bike ,› the ‹bike ,› I don't wanna ‹bike ,› ‹yyy ,› backpack .","MOT: mhm , yeah here .",,Conditional,Undesirable consequence,COM,ELS,Declarative,NA,0,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil24.cha,MOT,2;4.16,02/08/2001,06/24/2003,Playing outside,Playing,CHI: wanna go yyy .,MOT: okay .,are we gonna hang out inside or are we gonna [: going to] come back outside ?,CHI: where did the van go ? where's the van go ?,MOT: the van ?,,Preference,Preference choice,EXC,EXC,Interrogative,0,2,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil24.cha,MOT,2;4.16,02/08/2001,06/24/2003,"The child is annoyed at the packpack, wants to take it off",Choosing Activity,MOT: I wanna take +...,MOT: no ya [: you] have_to keep that on William .,"ya [: you] have_to keep that on or, we're not gonna play .","CHI: ‹ah ,› I don't want backpack","MOT: well just don't lean , don't lean back William .",,Conditional,Undesirable consequence,COM,ELS,Declarative,NA,0,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil24.cha,MOT,2;4.16,02/08/2001,06/24/2003,The child is playing with a tissue outside,Playing,CHI: xxx.,MOT: xxx okay .,dya [: do you] think that's what we should do with that tissue or ya [: you] think maybe you should give that to mommy ?,"CHI: ‹no ,› yyy yyy me .",MOT: okay .,,Repair,Correction,EXC,EXC,Interrogative,YN,2,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil25.cha,MOT,2;5.0,02/08/2001,07/08/2003,SI and the child are holding a tennis racket each and playing,Playing,"SI1: oh , that's a good ball to play with .","CHI: let's ‹play [?] ,› ‹play [?]› with ‹it [?]›","are we gonna play golf , or tennis ?","CHI: ‹let's ,› ‹xxx ,› let's ‹hit [?]› . (o)kay ?",SI1: okay.,,Preference,Preference choice,COM,ELS,Interrogative,0,2,N,NOM,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil26.cha,MOT,2;5.16,02/08/2001,07/24/2003,Reading Book,Reading Book,MOT: need a tissue ?,MOT: some cars keep things from the rain .,"some cars carry trucks . ... or grain. or cows , or hogs . ([few turns later] ... or gas ... or log) ",MOT: what's another name for hogs ?,CHI: hogs .,,Description,Listing options,COM,ELS,Declarative,NA,0,N,NOM,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil26.cha,MOT,2;5.16,02/08/2001,07/24/2003,Reading Book,Reading Book,"MOT: it's windy up there , very very windy",MOT: Henry didn't like the wind .,"Henry didn't like rain , or snow , or hail either .","MOT: we're a big engine Henry , Thomas said , you shouldn't be afraid of a little wind !",MOT: but Henry was afraid .,,Description,Listing options,COM,ELS,Declarative,NA,0,N,NOM,NOR,IN,Under Negation
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil27.cha,MOT,2;5.29,02/08/2001,08/05/2003,The child is playing with the piano and seems hungry,Eating,"CHI: ‹yyy ,› I want some raisins .",MOT:  would you ... you want some raisins ?,how about some apples or some (.) peaches ?,"CHI: ‹&um ,› no !",MOT: no thank you ?,,Preference,Preference option,COM,ELS,Interrogative,YN,1,DP,NOM,IOR,IN,Awesome example for inclusive or
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil27.cha,MOT,2;5.29,02/08/2001,08/05/2003,Free play. The mother is trying to find something the child wants to do,Playing,MOT: no?,MOT: wanna color ?,"d'ya [: do you] wanna use paint , or magic markers ?","MOT: c'mon [: come on] , let's go sit in your chair .",MOT: go sit in your chair in the (.) dining room .,,Preference,Preference option,COM,ELS,Interrogative,0,1,N,NOM,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil27.cha,MOT,2;5.29,02/08/2001,08/05/2003,Coloring with crayons. The child is trying to get on the table and the mother wants him to sit in his chair,Coloring,MOT: sit in your chair,MOT: get in your chair .,"get in your chair , William ... or you're going to get down","MOT: you can't have this and wander around the house , not an option","MOT: you only play with that , in this chair with my supervision",,Conditional,Undesirable consequence,COM,ELS,Imperative-Declarative,NA,0,S,SEN,XOR,EX,Awesome example for undesirable consequences
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil29.cha,MOT,2;6.26,02/08/2001,09/02/2003,writing the alphabet,Writing,"MOT: please William honey , do you want me to do this for you ?","MOT: okay , I'm not gonna +//.","you have_to let me make it , or (.) we're not gonna do this because +...","MOT: I'll have_to keep xxx it , okay ?",MOT: xxx get back to +...,,Conditional,Undesirable consequence,COM,ELS,Declarative,NA,0,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil29.cha,MOT,2;6.26,02/08/2001,09/02/2003,Building and playing with a toy train track,Playing,CHI: it's going +...,MOT: you keep going around +//.,you can keep going around and around or you can get off if you want,MOT: ok? ... whoops!,"MOT: maybe you should use , &uh (.) a train piece",,Options,Listing options,EXC,EXC,Declarative,NA,0,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil29.cha,MOT,2;6.26,02/08/2001,09/02/2003,"Playing with trains, trying different ones",Playing,MOT: yyy .,"no the tractor's [: tractor is] not gonna work , why don't you try Percy over there ?",or Thomas ?,"MOT: (be)cause they're [: they are] trains , right ?",MOT: xxx this one +...,,Options,Listing options,COM,ELS,Interrogative,NA,0,N,NOM,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil29.cha,MOT,2;6.26,02/08/2001,09/02/2003,Playing with trains and exploring the possible routs the train can go,Playing,CHI: yyy yyy !,"CHI: go this ‹way ,› ‹go ,› down yyy yyy !","right , if you come down here you can come back up on here , or if you go down here you can go back up there .",CHI: yeah !,MOT: yeah !,,Options,Listing options,COM,ELS,Declarative,NA,0,S,SEN,AND,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil30.cha,MOT,2;7.8,02/08/2001,09/16/2003,Reading Book,Reading Book,MOT: Mr and Mrs Mallard were looking for a place to live .,"MOT: but everytime Mr Mallard saw what looked like a nice place , Mrs Mallard said it was no good .",there was sure to be foxes in the woods or turtles in the water .,MOT: and she was not going to raise a family where there might be foxes and turtles .,MOT: so they flew on and on .,,Description,Listing options,COM,ELS,Declarative,NA,0,NP,NOM,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil30.cha,MOT,2;7.8,02/08/2001,09/16/2003,Reading Book,Reading Book,MOT: after Mrs Mallard had laid eight eggs in the nest she couldn't go visit Michael anymore,MOT: (be)cause she had to sit on the eggs to keep them warm,she moved off the nest only to get a drink of water (1)or to have her lunch (2)or to count the eggs and make sure they were all there,MOT: one day the ducklings hatched out,"MOT: first came Jack , then Pack , then Lack , then Mack , and Nack , and Wack , and Pack , and Quack",,Description,Listing options,COM,ELS,Declarative,NA,0,VP,SEN,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil30.cha,MOT,2;7.8,02/08/2001,09/16/2003,Reading Book,Reading Book,CHI: I'm gonna do it .,MOT: alright,do you want mom to read it or do you wanna just do it ?,CHI: I wanna read it,MOT: alright.,,Preference,Preference choice,EXC,EXC,Interrogative,AB,2,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil31.cha,MOT,2;7.26,02/08/2001,10/02/2003,Having breakfast,Eating,"MOT: but you didn't eat your breakfast , so I thought maybe you might want something else +...","CHI: ‹look ,› it xxx .","but you have a cold or you're getting over one , right ?","CHI: she bork, boke, boke [broke!]",MOT: what broke William?,,Repair,Uncertainty/Indifference,COM,ELS,Declarative,NA,0,N,NOM,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil31.cha,MOT,2;7.26,02/08/2001,10/02/2003,Having breakfast,Eating,"CHI: ‹no ,› I don't want to +...","MOT: here's a banana and some apples , too +//.",would you like some bananas or apples ?,"CHI: ‹no ,› yyy take this off .","MOT: oh , you know what , I think we need to keep it on (.) for a little while .",,Preference,Preference option,COM,ELS,Interrogative,YN,1,N,NOM,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil31.cha,MOT,2;7.26,02/08/2001,10/02/2003,The child beign uncooperative and the mother explaining to him what they can do,Choosing Activity,"MOT: okay , put them down here , and we're gonna clean the table and then we can put them all back up .","MOT: if you want , we can build a track , for a train +...","or we can put the trucks up , or we can put signs up ... or , we can (.) play with the (.) Thomas boo:k +... or we can color: +...","CHI: xxx I want yyy . ‹no ,› yyy yyy yyy .","MOT: alright , well let's clean the table first .",,Options,Listing options,COM,ELS,Declarative,NA,0,S,SEN,AND,IN,"modal ""can"""
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil31.cha,MOT,2;7.26,02/08/2001,10/02/2003,Building and playing with a toy train track,Playing,MOT: you wanna build a track ?,CHI: yep [: yes] .,do you want mommy to help or do you wanna do it all by yourself ?,CHI: you do it xxx .,MOT: we'll do it together ?,,Preference,Preference choice,EXC,EXC,Interrogative,AB,2,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil31.cha,MOT,2;7.26,02/08/2001,10/02/2003,Building and playing with a toy train track,Playing,CHI: too big !,MOT: dump+truck's +//,"you're too big , or the dump+truck's too big ?","CHI: I yyy on it ‹that ,› dump+truck . yyy well ? dump+truck ! ",CHI: you dump it in !,,Clarification,Clarification,COM,ELS,Interrogative,0,2,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil31.cha,MOT,2;7.26,02/08/2001,10/02/2003,Building and playing with a toy train track,Playing,"MOT: okay , well , let's see , who do you think we should put in the front ?",MOT: right there,oh is that the front or is that the back ?,CHI: yyy back .,MOT: okay .,,Repair,Correction,EXC,EXC,Interrogative,AB,2,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil31.cha,MOT,2;7.26,02/08/2001,10/02/2003,The child is playing with the toy train track and making up stories and the mother is trying to figure out what the next step in the story is and what the child is actually saying,Playing,"MOT: yes , oh does Birdy need to help Thomas get back on track ?",MOT: does he need to get on the track ?,or is xxx +//. or is Thomas taking a rest?,MOT: (be)cause he's tired. What's happening:?,CHI: help me 0with Birdy .,,Clarification,Suggesting an alternative,EXC,EXC,Interrogative,0,2,S,SEN,XOR,EX,"we can classify this instance as ""clarification"" too since the mother is trying to find out what the child is saying or what the story is but here ""or"" seems to be used as a way of pushing for one storyline (evidenced by her saying because he is tired) so that's why I categorized it as ""suggesting an alternative"""
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil31.cha,MOT,2;7.26,02/08/2001,10/02/2003,The mother and child seem to be talking about a potty training seat that makes a sound when used by the child,Talking,"MOT: mm , you can do that all by yourself if you sat on the potty and used it .","CHI: ‹yeah ,› yyy .",if you went (.) you can do pee+pees or poopies in it,CHI: here ... let's get a battery xxx .,"MOT: alright well the battery's [: battery is] not in there , the batteries are upstairs .",,Options,Listing options,COM,ELS,Declarative,NA,0,N,NOM,AND,IN,"modal ""can"""
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil31.cha,MOT,2;7.26,02/08/2001,10/02/2003,Trying to find batteries and a screwdriver to fix a toy,Playing,CHI: that's called yyy .,CHI: yyy yyy all aboard ?,"William , I cannot find the screw+driver or the battery .",MOT: xxx look in that closet again .,"CHI: why ? ‹where's ,› yyy yyy ?",,Description,Listing options,COM,ELS,Declarative,NA,0,N,NOM,NOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil31.cha,MOT,2;7.26,02/08/2001,10/02/2003,Reading Book,Reading Book,MOT: that's right .,MOT: some are the ugliest you've ever seen .,they might be stripy +... or polka+dot,MOT: but we can all pajama in whatever we've got .,MOT: it's pajama time !,,Description,Listing options,COM,ELS,Declarative,NA,0,ADJ,NOM,AND,IN,"under ""might"""
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil31.cha,MOT,2;7.26,02/08/2001,10/02/2003,Reading Book,Reading Book,CHI: yeah . I wanna ‹read (.)› that xxx .,MOT: you wanna read (.) this one ?,or ... this one ?,CHI: xxx can dance. [name of the book],MOT: ok.,,Preference,Preference choice,COM,ELS,Interrogative,AB,2,DP,NOM,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil32.cha,MOT,2;8.8,02/08/2001,10/16/2003,going through an alphabet book,Reading Book,MOT: that's a kite. you should fly a kite huh +//?,MOT: there's a lamp .,"m@l , mug or milk .","MOT: n@l , night and nose .","MOT: o@l , orange and otter",,DefEx,Providing examples,EXC,EXC,Declarative,NA,0,N,NOM,AND,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil32.cha,MOT,2;8.8,02/08/2001,10/16/2003,suggesting an activity,Choosing Activity,MOT: oh look here +//.,MOT: why don't you rock +//?,why don't you rock your barneys or the alligator ?,MOT: you rock (th)em .,MOT: and sing (th)em +//.,,Options,Listing options,COM,ELS,Interrogative,NA,0,DP,NOM,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil33.cha,FAT,2;8.22,02/08/2001,10/30/2003,The father going through some of the toys on a table,Choosing Activity,"CHI: ‹go ,› I'm a dragon .",FAT: I see an alligator .,I see a crocodile or an alligator over here .,FAT: and an am(bulance) +/.,CHI: &wa !,,Repair,Uncertainty/Indifference,EXC,EXC,Declarative,NA,0,DP,NOM,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil33.cha,FAT,2;8.22,02/08/2001,10/30/2003,The father suggesting an activity to do,Choosing Activity,FAT: I'm gonna go downstairs and read a book .,FAT: do you wanna come with me +//? do you wanna pick a book ?,how (a)bout Thomas book ? or how (a)bout a new special book like +...,FAT: the best word book ever look at this one.,CHI: roar!,,Preference,Suggesting an alternative,COM,ELS,Interrogative,0,0,S,SEN,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil34.cha,FAT,2;9.5,02/08/2001,11/13/2003,Having breakfast,Eating,FAT: here's some toast Will .,CHI: thanks .,would you like some milk or juice ?,CHI: no!,FAT: what's the matter ?,,Preference,Preference option,COM,ELS,Interrogative,YN,1,N,NOM,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil34.cha,FAT,2;9.5,02/08/2001,11/13/2003,Having breakfast,Eating,FAT: here you go .,"FAT: keep the butter side up so you don't get all messy , alright .","do you want some juice or milk , Will ?",CHI: juice,FAT: juice .,,Preference,Preference option,COM,ELS,Interrogative,AB,1,N,NOM,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil35.cha,CHI,2;11.0,02/08/2001,01/08/2004,Playing a boardgame,Playing,"MOT: okay , I'm gonna put your xxx juice up here , okay ?",CHI: ‹how (a)bout› blue ?,or do orange .,CHI: how (a)bout to the orange ?,"MOT: no , you can't search for the color , you have_to just pick the color that you get .",,Directive,Suggesting an alternative,COM,ELS,Imperative,NA,0,ADJ,NOM,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil35.cha,MOT,2;11.0,02/08/2001,01/08/2004,Having breakfast,Eating,MOT: would you like some oatmeal ?,CHI: hot cereal .,"yeah , would you like oatmeal , or would you like the kind I made you yesterday, the cream of wheat?",CHI: how about the green bowl,MOT: ok,,Preference,Preference choice,COM,ELS,Interrogative,0,2,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil35.cha,MOT,2;11.0,02/08/2001,01/08/2004,Having breakfast,Eating,"MOT: yes , I heard you , you want cereal , what is +...",MOT: what kind of cereal ?,you want cold cereal or hot cereal ?,CHI: cold cereal .,"CHI: okay , cold cereal with milk .",,Preference,Preference choice,EXC,EXC,Interrogative,AB,2,NP,NOM,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil36.cha,MOT,2;11.14,02/08/2001,01/22/2004,Having breakfast,Eating,MOT: William?,"MOT: can you come in here , please ?",would you like some orange juice or would you like some grape juice,CHI: orange juice,MOT: okay .,,Preference,Preference choice,COM,ELS,Interrogative,AB,2,S,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil36.cha,MOT,2;11.14,02/08/2001,01/22/2004,The child is drinking juice out of a cup,Eating,"MOT: this is not a sippy cup . okay , you +/.",CHI: do it like that ?,"you can't spill it , you have_to keep it up or you have_to close it .",CHI: like that?,MOT: yes! like that!,,Directive,Listing options,COM,ELS,Declarative,NA,0,VP,SEN,IOR,IN,"Modal ""have to"""
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil36.cha,MOT,2;11.14,02/08/2001,01/22/2004,"Making food in the living room, mother wants to move back into the kitchen",Eating,MOT: 0are you sure ?,MOT: cause I'm gonna bring it in the kitchen .,do you want me to bring this in the kitchen ? or leave it here ?,CHI: leave it here,MOT: ok,,Preference,Preference choice,EXC,EXC,Interrogative,AB,2,VP,SEN,XOR,EX,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil36.cha,MOT,2;11.14,02/08/2001,01/22/2004,Having breakfast,Eating,CHI: I'm very hungry .,MOT: you're very hungry ?,"well that's good , you ha(ve) , eat some , eat some of your waffles , would you like some banana or some apple too ?","FAT: bye , buddy , gimme [: give me] a kiss .",FAT: I love you,,Preference,Preference option,COM,ELS,Interrogative,0,1,DP,NOM,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil36.cha,MOT,2;11.14,02/08/2001,01/22/2004,Having breakfast,Eating,CHI: yyy orange juice .,MOT: are you gonna have some more waffles ?,would you like some apples ? or bananas?,MOT: William . hello: ?,MOT: are you there ?,,Preference,Preference option,COM,ELS,Interrogative,0,1,NP,NOM,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil36.cha,MOT,2;11.14,02/08/2001,01/22/2004,Having breakfast,Eating,CHI: let's go .,MOT: no.,"we have_to get William dressed , Mommy has to finish her breakfast , maybe William will have a little bit more to eat , or maybe you'll have some banana (2)or some apple?",CHI: no,MOT: no? ok.,,Preference,Preference option,COM,ELS,Interrogative,YN,1,DP,NOM,IOR,IN,
+providence_william,CHILDES/Eng-NA-MOR/Providence/William/wil37.cha,MOT,3;0.11,02/08/2001,02/19/2004,Having breakfast,Eating,MOT: you want baseball juice ?,MOT: yep .,you want baseball orange juice or do you want baseball &um grape juice ?,MOT: ok,CHI: I want grapes too,,Preference,Preference choice,COM,ELS,Interrogative,AB,2,S,SEN,XOR,EX,
+,,,,,,,,"*MOT:	you're gonna go to the doctor's anyway ? %snd:""wil37""_817648_819725
+","*CHI:	yep . %snd:""wil37""_819725_820845
+","	do you have a cough (1)or daddy have a cough ? %snd:""wil37""_820845_824700
+","*MOT:	here you go , sweetie .
+","*CHI:	thanks for the grape juice . %snd:""wil37""_824991_826878
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	there's a tail ? %snd:""wil37""_1356216_1357350
+","*CHI:	yeah . %snd:""wil37""_1357351_1360570
+","	did you want a little milk in here (1)or did you just want to eat them like this ?
+","*CHI:	yyy the milk . %snd:""wil37""_1360570_1364130
+","*MOT:	okay . %snd:""wil37""_1364131_1364415
+",,,,,,,,,,,,IN,
+,,,,,,,,"*CHI:	you can talk to me when you talk to me . %snd:""wil37""_1469166_1475910
+","*MOT:	I can talk to you when I talk to you +/.
+","	but yyy yyy yyy (1)or a yyy (2)or a yyy . %snd:""wil37""_1475911_1484116
+","*CHI:	so . %snd:""wil37""_1484118_1487046
+","*CHI:	yyy yyy yyy yyy . %snd:""wil37""_1487046_1490790
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	you wanna use any of the colors ? %snd:""wil37""_2503111_2504821
+","*MOT:	on here ? %snd:""wil37""_2504823_2507153
+","	green (1)or purple ? %snd:""wil37""_2507153_2508546
+","*MOT:	red , blue ? %snd:""wil37""_2508546_2509753
+","*CHI:	xxx . %snd:""wil37""_2509753_2517895
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	xxx annoying xxx . %snd:""wil39""_1112706_1117090
+","*MOT:	come on , this is the deal , Shmely , you want the grape +..? %snd:""wil39""_1117090_1122195
+","	man , (1)or do you want the backpack ? %snd:""wil39""_1122195_1124361
+","*CHI:	the backpack . %snd:""wil39""_1124361_1125906
+","*MOT:	alright . %snd:""wil39""_1125906_1126561
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	you +/.
+","*CHI:	come on ! %snd:""wil39""_1375083_1378520
+","	better watch out (1)or the big fat wolf's [: wolf is] gonna [: going to] kiss you .
+","*CHI:	big ‹fat (.)› xxx ! %snd:""wil39""_1378520_1381146
+","*FAT:	xxx .
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	you wanna use this one ?
+","*CHI:	the yyy for the cave . %snd:""wil39""_1857355_1859555
+","	do you wanna use this one , (1)or you wanna , xxx , use the blue one ? %snd:""wil39""_1859555_1861770
+","*CHI:	the blue one . %snd:""wil39""_1861771_1864550
+","*MOT:	this o(ne) +//? %snd:""wil39""_1864551_1865810
+",,,,,,,,,,,,IN,
+,,,,,,,,"*CHI:	go into the cave . %snd:""wil39""_1893971_1895521
+","*MOT:	go into the cave +//. %snd:""wil39""_1895521_1898330
+","	(1)or maybe I'll just use , maybe I can move this chair .
+","*MOT:	maybe I'll do that . %snd:""wil39""_1898330_1899315
+","*MOT:	xxx maybe I'll do that instead . %snd:""wil39""_1899315_1902186
+",,,,,,,,,,,,IN,
+,,,,,,,,"*CHI:	0i need a xxx . %snd:""wil40""_213555_217921
+","*MOT:	well , you can stay there if you want but you still have_to put your backpack on .
+","	(1)or I'm not gonna make +... %snd:""wil40""_217921_219266
+","*MOT:	or I'm not gonna make &um +...
+","*CHI:	‹no ,› ‹no ,› ‹no ,› I'm getting 0in my chair . %snd:""wil40""_219266_222835
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	well , you can stay there if you want but you still have_to put your backpack on .
+","*MOT:	or I'm not gonna make +... %snd:""wil40""_217921_219266
+","	(1)or I'm not gonna make &um +...
+","*CHI:	‹no ,› ‹no ,› ‹no ,› I'm getting 0in my chair . %snd:""wil40""_219266_222835
+","*MOT:	you can get in your chair . %snd:""wil40""_222835_224123
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	but you want +//? %snd:""wil40""_843521_847923
+","*MOT:	do you wanna eat them ?
+","	(1)or would you like oatmeal ? %snd:""wil40""_847923_854266
+","*MOT:	with raisins . %snd:""wil40""_854266_861381
+","*MOT:	what would you like ?
+",,,,,,,,,,,,IN,
+,,,,,,,,"*CHI:	‹go ,› you have yours . %snd:""wil40""_1866440_1867895
+","*CHI:	they have yours . %snd:""wil40""_1867895_1869416
+","	you gonna have cereal (1)or +..? %snd:""wil40""_1869416_1870713
+","*FAT:	no &uh &uh you didn't get cereal did you ? %snd:""wil40""_1870713_1872361
+","*MOT:	oh I thought +//. %snd:""wil40""_1872361_1874401
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	there's some more up there still .
+","*FAT:	no there's xxx +/. %snd:""wil40""_1874401_1877030
+","	(1)or eggs , you could have eggs .
+","*FAT:	well I gotta run to catch the bus .
+","*MOT:	oh . %snd:""wil40""_1877031_1878465
+",,,,,,,,,,,,IN,
+,,,,,,,,"*CHI:	big dog ? %snd:""wil40""_2787473_2789035
+","*MOT:	mm . %snd:""wil40""_2789035_2789720
+","	&uh no , (1)or a little one . %snd:""wil40""_2789720_2791720
+","*MOT:	whatever you want .
+","*CHI:	&um . %snd:""wil40""_2791720_2793120
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	don't do that please , don't take the air out I just blew in . %snd:""wil40""_3390948_3397940
+","*MOT:	okay ? %snd:""wil40""_3397941_3398846
+","	don't do that , (1)or I'm just gonna take it away . %snd:""wil40""_3398846_3400996
+","*MOT:	cause it's too hard , this one's [: one is] very hard . %snd:""wil40""_3400996_3403301
+","*CHI:	xxx . %snd:""wil40""_3403301_3433198
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	yyy oh , I have_to cook it . %snd:""wil41""_36226_37458
+","*MOT:	it's frozen . %snd:""wil41""_37457_38365
+","	it's either frozen (1)or have_to make (th)em fresh and I have_to cook it in the pan (be)cause you can't have liquid waffle . %snd:""wil41""_38366_43471
+","*MOT:	xxx . %snd:""wil41""_43471_45423
+","*MOT:	would you li:ke some juice ? %snd:""wil41""_45423_47878
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	no . %snd:""wil41""_127303_127960
+","*CHI:	on over here . %snd:""wil41""_127960_131460
+","	you either put (th)em on (1)or you put , leave (th)em where Mommy leaves (th)em .
+","*MOT:	(be)cause I need to make sure Mister Grape is okay .
+","*CHI:	I wanna go move +... %snd:""wil41""_131461_133478
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	oh .
+","*MOT:	mm , careful with this .
+","	‹this ,› this 0is not my ‹seat ,› (1)or this ‹seat ,› (2)or this seat . %snd:""wil41""_600898_604545
+","*MOT:	ew .
+","*CHI:	this 0is my seat right here . %snd:""wil41""_604545_606640
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	no , it's not .
+","*MOT:	no , it's not . %snd:""wil41""_613355_614358
+","	(1)or seat . %snd:""wil41""_614358_616326
+","*MOT:	your seat , your seat is right where you're sitting .
+","*CHI:	okay . %snd:""wil41""_616326_617266
+",,,,,,,,,,,,IN,
+,,,,,,,,"*CHI:	do you want me my motorcycle . %snd:""wil41""_621136_623230
+","*MOT:	one more time , I can ride you in your motorcycle . %snd:""wil41""_623231_626240
+","	(1)or mine . %snd:""wil41""_626240_628383
+","*MOT:	I'll ride you in your motorcycle one more time . %snd:""wil41""_628384_630218
+","*CHI:	I want this . %snd:""wil41""_630219_631175
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	well .
+","*MOT:	you gonna talk to me ? %snd:""wil41""_1495253_1496420
+","	you need to talk to me William (1)or I'm gonna shut the television off . %snd:""wil41""_1496420_1501731
+","*MOT:	that is definitely the rule . %snd:""wil41""_1501731_1522341
+","*MOT:	William . %snd:""wil41""_1522343_1523230
+",,,,,,,,,,,,IN,
+,,,,,,,,"*CHI:	and you'll [: you will] get ‹in the› house . %snd:""wil41""_3162911_3165275
+","*CHI:	a house . %snd:""wil41""_3165276_3166373
+","	(1)or all 0of your house(s) . %snd:""wil41""_3166373_3167935
+","*CHI:	0you don't see that lobster at that window ? %snd:""wil41""_3167935_3170788
+","*CHI:	do you see the lobster at that window ? %snd:""wil41""_3170788_3173691
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	and help me . %snd:""wil42""_1134743_1135643
+","*CHI:	want it . %snd:""wil42""_1135643_1137613
+","	what do you want , you want your backpack (1)or +/.
+","*CHI:	I don't want that thing xxx . %snd:""wil42""_1137613_1141428
+","*MOT:	well that's [: that is] too bad , that's [: that is] how it comes . %snd:""wil42""_1141428_1143596
+",,,,,,,,,,,,IN,
+,,,,,,,,"*MOT:	can you do that for me ? %snd:""wil42""_1327271_1329016
+","*CHI:	sure . %snd:""wil42""_1329016_1330250
+","	alright , and if you need more Play_Ddoh (1)or if you need anything , you ask me for it and I'll get it for you . %snd:""wil42""_1330250_1334500
+","*MOT:	how's that sound ?
+","*CHI:	xxx . %snd:""wil42""_1334500_1336038
+",,,,,,,,,,,,IN,
+,,,,,,,,"*CHI:	pizzas . %snd:""wil42""_1760053_1761288
+","*MOT:	oh , these are little pizzettes@n ? %snd:""wil42""_1761508_1763026
+","	little , little ones , xxx , (1)or are these just slices of pizza ? %snd:""wil42""_1763026_1766855
+","*CHI:	‹please ,› a pizza . %snd:""wil42""_1766855_1768963
+","*MOT:	oh .
+",,,,,,,,,,,,IN,
+,,,,,,,,"*CHI:	this ? %snd:""wil42""_3390050_3391586
+","*MOT:	don't do that , please , don't take the air out I just blew in . %snd:""wil42""_3391586_3397911
+","	okay , don't do that (1)or I'm gonna just take it away . %snd:""wil42""_3397913_3401050
+","*MOT:	(be)cause it's too hard , this one's very hard . %snd:""wil42""_3401050_3435093
+","*CHI:	this 0is a ball . %snd:""wil42""_3432396_3435096
+",,,,,,,,,,,,IN,
+,,,,,,,,"*FAT:	look , I'll show ya [: you] , it's raining outside today .
+","*FAT:	here , let me show ya [: you] . %snd:""wil43""_880250_881098
+","	I want 0to swing inside (1)or out ? %snd:""wil43""_881098_887200
+","*FAT:	just gentle , putt , putting , see , there it is .
+","*FAT:	it's called putting . %snd:""wil43""_887203_892423
+",,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,
+,,,,,,,,,,,,,,,,,,,,,,,,IN,

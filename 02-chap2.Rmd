@@ -74,6 +74,10 @@ wordCounts_byCollection <- read_csv("connective_learning/2_processed_data/wordCo
 
 corpus_density <- read_csv("connective_learning/2_processed_data/corpusDensity.csv")
 child_density <- read_csv("connective_learning/2_processed_data/childDensity.csv")
+
+#freqTable_byAge %>%
+#  filter(word=="or", target_child_age_months < 30, speaker_role=="Target_Child")
+#library(tidyverse)
 ```
 
 ```{r corpusStats}

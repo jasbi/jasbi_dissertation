@@ -30,7 +30,7 @@ There are three main folders in this repository that contain the data and code u
 
 The folder [bib](https://github.com/jasbi/jasbi_dissertation/tree/master/bib) contains the bibTex file that has all the references used in the dissertation. The folder [figs](https://github.com/jasbi/jasbi_dissertation/tree/master/figs) contains the figures in the dissertation.
 
-The different .Rmd files contain different chapters and sections of the dissertation such as the abstract or the references. The main file to Knit is the [index.Rmd](https://github.com/jasbi/jasbi_dissertation/blob/master/index.Rmd). When you knit it, it puts together all the other Rmd files together.
+The different .Rmd files contain different chapters and sections of the dissertation such as the abstract or the references. The main file to Knit is the [index.Rmd](https://github.com/jasbi/jasbi_dissertation/blob/master/index.Rmd). When you knit it, it puts all the other Rmd files together and create a PDF version of the dissertation.
 
 ## Reproducibility
 
